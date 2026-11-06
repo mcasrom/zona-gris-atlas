@@ -1,7 +1,7 @@
 # B3 · Preparación de despliegue
 
 **Fecha:** 2026-11-06  
-**Dominio oficial:** `https://zonagris.viajeinteligencia.com`  
+**Dominio oficial:** `https://zonagris.pruebapublica.com`
 **Servidor:** `178.105.80.193`  
 **Estado:** preparación local y revisión remota en solo lectura. **No se ha desplegado, ni modificado Nginx, ni emitido certificado, ni hecho push.**
 
@@ -25,7 +25,7 @@ La marca visible de la web sigue usando el nombre corto «ZONA GRIS»; el nombre
 Comprobación en el servidor:
 
 ```text
-getent ahostsv4 zonagris.viajeinteligencia.com  -> vacío
+getent ahostsv4 zonagris.pruebapublica.com  -> vacío
 dig +short @1.1.1.1 zonagris... A                -> vacío
 /etc/letsencrypt/live/zonagris...                -> no existe
 ```
@@ -41,12 +41,12 @@ Certbot sigue activo para los certificados existentes; no se ha solicitado ni mo
 
 ## 3. B3.3 · Nginx preparado, no instalado
 
-Archivo: `deploy/zonagris.viajeinteligencia.com.conf`.
+Archivo: `deploy/zonagris.pruebapublica.com.conf`.
 
 Incluye:
 
 - HTTP 80 con `/.well-known/acme-challenge/` y redirección a HTTPS;
-- HTTPS 443 con certificado de `zonagris.viajeinteligencia.com`;
+- HTTPS 443 con certificado de `zonagris.pruebapublica.com`;
 - `cf-origin.conf`, `block-attacks.conf`, `indexnow.conf`;
 - TLS 1.2/1.3;
 - HSTS, `X-Content-Type-Options`, `X-Frame-Options`, `Referrer-Policy`, `Permissions-Policy` y CSP;
@@ -70,13 +70,13 @@ No se ha copiado a `sites-available`, no se ha enlazado, no se ha validado con `
 Comando previsto, **no ejecutado**:
 
 ```bash
-SERVER=178.105.80.193 ZG_DOMAIN=zonagris.viajeinteligencia.com \
+SERVER=178.105.80.193 ZG_DOMAIN=zonagris.pruebapublica.com \
   ./scripts/deploy_web.sh --apply
 ```
 
 ## 5. Condiciones exactas para autorizar B3
 
-1. Crear el registro A `zonagris.viajeinteligencia.com -> 178.105.80.193` (gris para HTTP-01; naranja después si se decide).
+1. Crear el registro A `zonagris.pruebapublica.com -> 178.105.80.193` (gris para HTTP-01; naranja después si se decide).
 2. Confirmar resolución pública y desde el servidor.
 3. Emitir certificado sin tocar los existentes.
 4. Backup de `sites-enabled` a `/etc/nginx/backups/2026-11-06/`.

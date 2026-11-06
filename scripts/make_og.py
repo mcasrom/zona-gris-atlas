@@ -33,7 +33,7 @@ def main() -> int:
     draw.text((76, 430), "El sistema no atribuye por su cuenta.", font=font(REGULAR, 31), fill=TEXT)
     draw.line((76, 512, 1124, 512), fill="#2C3642", width=2)
     draw.text((76, 540), "v0.1 · AGPL-3.0 · sin cookies ni rastreadores", font=font(REGULAR, 22), fill=MUTED)
-    draw.text((780, 540), "zonagris.viajeinteligencia.com", font=font(REGULAR, 20), fill=MUTED)
+    draw.text((780, 540), "zonagris.pruebapublica.com", font=font(REGULAR, 20), fill=MUTED)
     image.save(OUT, optimize=True)
     print(f"og: {OUT}")
     return 0

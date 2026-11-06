@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://zonagris.viajeinteligencia.com/sitemap.xml
+Sitemap: https://zonagris.pruebapublica.com/sitemap.xml

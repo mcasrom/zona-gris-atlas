@@ -1,77 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Atlas Zona Gris · Incidentes híbridos</title>
-  <link href="https://zonagris.viajeinteligencia.com/"/>
-  <updated>2026-11-06T13:37:32.606994+00:00</updated>
-  <id>https://zonagris.viajeinteligencia.com/feed.xml</id>
+  <link href="https://zonagris.pruebapublica.com/"/>
+  <updated>2026-11-06T13:49:46.407219+00:00</updated>
+  <id>https://zonagris.pruebapublica.com/feed.xml</id>
   <author><name>Miguel</name></author>
   <entry>
     <title>Interrupción de comunicaciones en el norte</title>
-    <id>https://zonagris.viajeinteligencia.com/mapa.html#EJ-0401</id>
-    <link href="https://zonagris.viajeinteligencia.com/mapa.html#EJ-0401"/>
+    <id>https://zonagris.pruebapublica.com/mapa.html#EJ-0401</id>
+    <link href="https://zonagris.pruebapublica.com/mapa.html#EJ-0401"/>
     <updated>2026-10-02T00:00:00Z</updated>
     <summary>Corte temporal de enlaces de datos que afectó a servicios civiles durante varias horas.</summary>
   </entry>
   <entry>
     <title>Dron no identificado cerca de una instalación</title>
-    <id>https://zonagris.viajeinteligencia.com/mapa.html#EJ-0402</id>
-    <link href="https://zonagris.viajeinteligencia.com/mapa.html#EJ-0402"/>
+    <id>https://zonagris.pruebapublica.com/mapa.html#EJ-0402</id>
+    <link href="https://zonagris.pruebapublica.com/mapa.html#EJ-0402"/>
     <updated>2026-10-09T00:00:00Z</updated>
     <summary>Aviso de presencia de un dron sin identificar en las proximidades de una infraestructura.</summary>
   </entry>
   <entry>
     <title>Perturbación de señal de navegación</title>
-    <id>https://zonagris.viajeinteligencia.com/mapa.html#EJ-0403</id>
-    <link href="https://zonagris.viajeinteligencia.com/mapa.html#EJ-0403"/>
+    <id>https://zonagris.pruebapublica.com/mapa.html#EJ-0403</id>
+    <link href="https://zonagris.pruebapublica.com/mapa.html#EJ-0403"/>
     <updated>2026-10-14T00:00:00Z</updated>
     <summary>Pérdida intermitente de señal GNSS documentada por receptores de una zona costera.</summary>
   </entry>
   <entry>
     <title>Sabotaje en una línea de transporte</title>
-    <id>https://zonagris.viajeinteligencia.com/mapa.html#EJ-0404</id>
-    <link href="https://zonagris.viajeinteligencia.com/mapa.html#EJ-0404"/>
+    <id>https://zonagris.pruebapublica.com/mapa.html#EJ-0404</id>
+    <link href="https://zonagris.pruebapublica.com/mapa.html#EJ-0404"/>
     <updated>2026-10-18T00:00:00Z</updated>
     <summary>Daños deliberados en equipos de una línea de transporte sin víctimas.</summary>
   </entry>
   <entry>
     <title>Campaña coordinada de mensajes falsos</title>
-    <id>https://zonagris.viajeinteligencia.com/mapa.html#EJ-0405</id>
-    <link href="https://zonagris.viajeinteligencia.com/mapa.html#EJ-0405"/>
+    <id>https://zonagris.pruebapublica.com/mapa.html#EJ-0405</id>
+    <link href="https://zonagris.pruebapublica.com/mapa.html#EJ-0405"/>
     <updated>2026-10-21T00:00:00Z</updated>
     <summary>Difusión de mensajes engañosos sobre una supuesta emergencia local.</summary>
   </entry>
   <entry>
     <title>Presión sobre un corredor energético</title>
-    <id>https://zonagris.viajeinteligencia.com/mapa.html#EJ-0406</id>
-    <link href="https://zonagris.viajeinteligencia.com/mapa.html#EJ-0406"/>
+    <id>https://zonagris.pruebapublica.com/mapa.html#EJ-0406</id>
+    <link href="https://zonagris.pruebapublica.com/mapa.html#EJ-0406"/>
     <updated>2026-10-23T00:00:00Z</updated>
     <summary>Restricciones comerciales anunciadas en un corredor de suministro regional.</summary>
   </entry>
   <entry>
     <title>Afluencia instrumentalizada en una frontera</title>
-    <id>https://zonagris.viajeinteligencia.com/mapa.html#EJ-0407</id>
-    <link href="https://zonagris.viajeinteligencia.com/mapa.html#EJ-0407"/>
+    <id>https://zonagris.pruebapublica.com/mapa.html#EJ-0407</id>
+    <link href="https://zonagris.pruebapublica.com/mapa.html#EJ-0407"/>
     <updated>2026-10-25T00:00:00Z</updated>
     <summary>Aumento repentino de cruces en un paso fronterizo con presión política.</summary>
   </entry>
   <entry>
     <title>Acceso no autorizado a una red industrial</title>
-    <id>https://zonagris.viajeinteligencia.com/mapa.html#EJ-0408</id>
-    <link href="https://zonagris.viajeinteligencia.com/mapa.html#EJ-0408"/>
+    <id>https://zonagris.pruebapublica.com/mapa.html#EJ-0408</id>
+    <link href="https://zonagris.pruebapublica.com/mapa.html#EJ-0408"/>
     <updated>2026-10-28T00:00:00Z</updated>
     <summary>Intento de acceso a una red de control industrial sin impacto confirmado.</summary>
   </entry>
   <entry>
     <title>Cierre preventivo de espacio aéreo</title>
-    <id>https://zonagris.viajeinteligencia.com/mapa.html#EJ-0409</id>
-    <link href="https://zonagris.viajeinteligencia.com/mapa.html#EJ-0409"/>
+    <id>https://zonagris.pruebapublica.com/mapa.html#EJ-0409</id>
+    <link href="https://zonagris.pruebapublica.com/mapa.html#EJ-0409"/>
     <updated>2026-10-30T00:00:00Z</updated>
     <summary>Suspensión temporal de operaciones por una alerta de seguridad aérea.</summary>
   </entry>
   <entry>
     <title>Manipulación de una baliza costera</title>
-    <id>https://zonagris.viajeinteligencia.com/mapa.html#EJ-0410</id>
-    <link href="https://zonagris.viajeinteligencia.com/mapa.html#EJ-0410"/>
+    <id>https://zonagris.pruebapublica.com/mapa.html#EJ-0410</id>
+    <link href="https://zonagris.pruebapublica.com/mapa.html#EJ-0410"/>
     <updated>2026-11-01T00:00:00Z</updated>
     <summary>Daño localizado en equipos de señalización sin atribución pública.</summary>
   </entry>

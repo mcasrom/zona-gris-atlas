@@ -8,7 +8,7 @@
 
 El script queda más seguro, pero **no está listo para B3** por dos motivos:
 
-1. La web publicada localmente todavía contiene el dominio candidato `zonagris.viajeinteligencia.com` en canonical, OG, sitemap, robots y feed. Debe reconstruirse con el dominio definitivo.
+1. La web publicada localmente todavía contiene el dominio candidato `zonagris.pruebapublica.com` en canonical, OG, sitemap, robots y feed. Debe reconstruirse con el dominio definitivo.
 2. El dominio, el autor público y el TLS del dominio nuevo siguen pendientes. El vhost y Certbot no se pueden cerrar sin ellos.
 
 **Estado:** B3 bloqueado hasta resolver esos puntos.
@@ -78,7 +78,7 @@ Con `PATH` falso para `ssh`/`rsync`, `SERVER=dummy` y un `ZG_REMOTE_ROOT` en `/t
 | Secretos | **No encontrados** en `web`, `config`, `deploy`, `scripts`, `docs` |
 | Contacto en web | **No aparece** |
 | `__DOMAIN__` en web | **0 apariciones** |
-| Dominio candidato viejo | **Fallo**: 9 archivos (`index`, `mapa`, `metodologia`, `limites`, `fuentes`, `privacidad`, `feed`, `sitemap`, `robots`) contienen `zonagris.viajeinteligencia.com` |
+| Dominio candidato viejo | **Fallo**: 9 archivos (`index`, `mapa`, `metodologia`, `limites`, `fuentes`, `privacidad`, `feed`, `sitemap`, `robots`) contienen `zonagris.pruebapublica.com` |
 | Recursos externos | **OK**: solo enlaces, canonical, OG y JSON-LD; no hay scripts, CSS ni imágenes remotas |
 | Coherencia de marca | **Pendiente**: la web aún dice «Zona Gris»; el nombre decidido es «Atlas Zona Gris» |
 
