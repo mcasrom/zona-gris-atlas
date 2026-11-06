@@ -1,0 +1,11 @@
+{
+  "name": "Zona Gris · Atlas abierto de incidentes híbridos",
+  "short_name": "Zona Gris",
+  "description": "Atlas abierto de incidentes de zona gris y amenazas híbridas. Registra hechos, fuentes y quién atribuye cada caso; nunca atribuye por su cuenta.",
+  "lang": "es",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#12171D",
+  "theme_color": "#12171D",
+  "icons": []
+}

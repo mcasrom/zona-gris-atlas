@@ -14,3 +14,6 @@ build/
 *.egg-info/
 .DS_Store
 web/assets/data/incidents.generated.json
+
+models/
+models/*.pkl

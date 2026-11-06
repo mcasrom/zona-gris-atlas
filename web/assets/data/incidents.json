@@ -1,0 +1,357 @@
+{
+  "generated_at": "2026-11-06T00:00:00Z",
+  "demo": true,
+  "count": 10,
+  "incidents": [
+    {
+      "id": "EJ-0401",
+      "title": "Interrupción de comunicaciones en el norte",
+      "summary": "Corte temporal de enlaces de datos que afectó a servicios civiles durante varias horas.",
+      "domain": "CIB",
+      "scale_position": "zona_gris",
+      "severity": "media",
+      "reality": "probable",
+      "lat": 59.33,
+      "lon": 18.07,
+      "place": "Puerto Norte",
+      "country_iso2": "SE",
+      "event_date": "2026-10-02",
+      "status": "published",
+      "demo": true,
+      "reviewed_by_human": false,
+      "reviewed_at": null,
+      "attributions": [
+        {
+          "status": "none",
+          "attributed_by": null,
+          "attributed_by_type": null,
+          "source_url": null,
+          "confidence": "low",
+          "quote": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "Fuente ilustrativa",
+          "url": "https://example.org/ejemplo/0401",
+          "published_at": "2026-10-02"
+        }
+      ]
+    },
+    {
+      "id": "EJ-0402",
+      "title": "Dron no identificado cerca de una instalación",
+      "summary": "Aviso de presencia de un dron sin identificar en las proximidades de una infraestructura.",
+      "domain": "AER",
+      "scale_position": "competencia",
+      "severity": "baja",
+      "reality": "dudoso",
+      "lat": 52.52,
+      "lon": 13.405,
+      "place": "Valle Central",
+      "country_iso2": "DE",
+      "event_date": "2026-10-09",
+      "status": "published",
+      "demo": true,
+      "reviewed_by_human": false,
+      "reviewed_at": null,
+      "attributions": [
+        {
+          "status": "none",
+          "attributed_by": null,
+          "attributed_by_type": null,
+          "source_url": null,
+          "confidence": "low",
+          "quote": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "Fuente ilustrativa",
+          "url": "https://example.org/ejemplo/0402",
+          "published_at": "2026-10-09"
+        }
+      ]
+    },
+    {
+      "id": "EJ-0403",
+      "title": "Perturbación de señal de navegación",
+      "summary": "Pérdida intermitente de señal GNSS documentada por receptores de una zona costera.",
+      "domain": "GNS",
+      "scale_position": "hostilidad_hibrida",
+      "severity": "alta",
+      "reality": "probable",
+      "lat": 34.85,
+      "lon": 32.97,
+      "place": "Costa Este",
+      "country_iso2": "CY",
+      "event_date": "2026-10-14",
+      "status": "published",
+      "demo": true,
+      "reviewed_by_human": false,
+      "reviewed_at": null,
+      "attributions": [
+        {
+          "status": "official",
+          "attributed_by": "Autoridad de ejemplo",
+          "attributed_by_type": "government",
+          "source_url": "https://example.org/ejemplo/0403",
+          "confidence": "medium",
+          "quote": "interferencia en la banda de navegación"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Fuente ilustrativa",
+          "url": "https://example.org/ejemplo/0403",
+          "published_at": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "id": "EJ-0404",
+      "title": "Sabotaje en una línea de transporte",
+      "summary": "Daños deliberados en equipos de una línea de transporte sin víctimas.",
+      "domain": "SAB",
+      "scale_position": "zona_gris",
+      "severity": "media",
+      "reality": "probable",
+      "lat": 48.85,
+      "lon": 2.35,
+      "place": "Distrito Oeste",
+      "country_iso2": "FR",
+      "event_date": "2026-10-18",
+      "status": "published",
+      "demo": true,
+      "reviewed_by_human": false,
+      "reviewed_at": null,
+      "attributions": [
+        {
+          "status": "claimed",
+          "attributed_by": "Grupo de ejemplo",
+          "attributed_by_type": "other",
+          "source_url": "https://example.org/ejemplo/0404",
+          "confidence": "low",
+          "quote": "reivindicación no verificada"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Fuente ilustrativa",
+          "url": "https://example.org/ejemplo/0404",
+          "published_at": "2026-10-18"
+        }
+      ]
+    },
+    {
+      "id": "EJ-0405",
+      "title": "Campaña coordinada de mensajes falsos",
+      "summary": "Difusión de mensajes engañosos sobre una supuesta emergencia local.",
+      "domain": "DES",
+      "scale_position": "competencia",
+      "severity": "baja",
+      "reality": "dudoso",
+      "lat": 40.4168,
+      "lon": -3.7038,
+      "place": "Ciudad Centro",
+      "country_iso2": "ES",
+      "event_date": "2026-10-21",
+      "status": "published",
+      "demo": true,
+      "reviewed_by_human": false,
+      "reviewed_at": null,
+      "attributions": [
+        {
+          "status": "none",
+          "attributed_by": null,
+          "attributed_by_type": null,
+          "source_url": null,
+          "confidence": "low",
+          "quote": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "Fuente ilustrativa",
+          "url": "https://example.org/ejemplo/0405",
+          "published_at": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "id": "EJ-0406",
+      "title": "Presión sobre un corredor energético",
+      "summary": "Restricciones comerciales anunciadas en un corredor de suministro regional.",
+      "domain": "ECO",
+      "scale_position": "zona_gris",
+      "severity": "media",
+      "reality": "probable",
+      "lat": 41.01,
+      "lon": 28.98,
+      "place": "Estrecho Norte",
+      "country_iso2": "TR",
+      "event_date": "2026-10-23",
+      "status": "published",
+      "demo": true,
+      "reviewed_by_human": false,
+      "reviewed_at": null,
+      "attributions": [
+        {
+          "status": "official",
+          "attributed_by": "Autoridad de ejemplo",
+          "attributed_by_type": "agency",
+          "source_url": "https://example.org/ejemplo/0406",
+          "confidence": "medium",
+          "quote": "medida temporal de suministro"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Fuente ilustrativa",
+          "url": "https://example.org/ejemplo/0406",
+          "published_at": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "id": "EJ-0407",
+      "title": "Afluencia instrumentalizada en una frontera",
+      "summary": "Aumento repentino de cruces en un paso fronterizo con presión política.",
+      "domain": "MIG",
+      "scale_position": "hostilidad_hibrida",
+      "severity": "alta",
+      "reality": "probable",
+      "lat": 35.88,
+      "lon": -5.32,
+      "place": "Paso Sur",
+      "country_iso2": "ES",
+      "event_date": "2026-10-25",
+      "status": "published",
+      "demo": true,
+      "reviewed_by_human": false,
+      "reviewed_at": null,
+      "attributions": [
+        {
+          "status": "none",
+          "attributed_by": null,
+          "attributed_by_type": null,
+          "source_url": null,
+          "confidence": "low",
+          "quote": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "Fuente ilustrativa",
+          "url": "https://example.org/ejemplo/0407",
+          "published_at": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "id": "EJ-0408",
+      "title": "Acceso no autorizado a una red industrial",
+      "summary": "Intento de acceso a una red de control industrial sin impacto confirmado.",
+      "domain": "INF",
+      "scale_position": "zona_gris",
+      "severity": "media",
+      "reality": "probable",
+      "lat": 51.5,
+      "lon": -0.12,
+      "place": "Cuenca Industrial",
+      "country_iso2": "GB",
+      "event_date": "2026-10-28",
+      "status": "published",
+      "demo": true,
+      "reviewed_by_human": false,
+      "reviewed_at": null,
+      "attributions": [
+        {
+          "status": "official",
+          "attributed_by": "Agencia de ejemplo",
+          "attributed_by_type": "agency",
+          "source_url": "https://example.org/ejemplo/0408",
+          "confidence": "high",
+          "quote": "actividad compatible con acceso remoto"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Fuente ilustrativa",
+          "url": "https://example.org/ejemplo/0408",
+          "published_at": "2026-10-28"
+        }
+      ]
+    },
+    {
+      "id": "EJ-0409",
+      "title": "Cierre preventivo de espacio aéreo",
+      "summary": "Suspensión temporal de operaciones por una alerta de seguridad aérea.",
+      "domain": "AER",
+      "scale_position": "competencia",
+      "severity": "baja",
+      "reality": "descartado",
+      "lat": 25.2,
+      "lon": 55.27,
+      "place": "Aeropuerto de ejemplo",
+      "country_iso2": "AE",
+      "event_date": "2026-10-30",
+      "status": "published",
+      "demo": true,
+      "reviewed_by_human": false,
+      "reviewed_at": null,
+      "attributions": [
+        {
+          "status": "none",
+          "attributed_by": null,
+          "attributed_by_type": null,
+          "source_url": null,
+          "confidence": "low",
+          "quote": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "Fuente ilustrativa",
+          "url": "https://example.org/ejemplo/0409",
+          "published_at": "2026-10-30"
+        }
+      ]
+    },
+    {
+      "id": "EJ-0410",
+      "title": "Manipulación de una baliza costera",
+      "summary": "Daño localizado en equipos de señalización sin atribución pública.",
+      "domain": "SAB",
+      "scale_position": "hostilidad_hibrida",
+      "severity": "alta",
+      "reality": "dudoso",
+      "lat": -33.86,
+      "lon": 151.21,
+      "place": "Bahía Sur",
+      "country_iso2": "AU",
+      "event_date": "2026-11-01",
+      "status": "published",
+      "demo": true,
+      "reviewed_by_human": false,
+      "reviewed_at": null,
+      "attributions": [
+        {
+          "status": "none",
+          "attributed_by": null,
+          "attributed_by_type": null,
+          "source_url": null,
+          "confidence": "low",
+          "quote": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "Fuente ilustrativa",
+          "url": "https://example.org/ejemplo/0410",
+          "published_at": "2026-11-01"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Método · Zona Gris</title>
+  <meta name="description" content="Cómo recojo, deduplico, clasifico y reviso cada incidente. La atribución se cita con fuente y confianza; nunca se inventa ni se infiere; sin atajos. Siempre.">
+  <link rel="canonical" href="https://zonagris.viajeinteligencia.com/metodologia.html">
+  <meta property="og:title" content="Método · Zona Gris">
+  <meta property="og:description" content="Pipeline, atribución, evaluación y límites del atlas.">
+  <meta property="og:image" content="https://zonagris.viajeinteligencia.com/assets/img/og-preview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" href="assets/fonts/archivo-latin-wdth.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/styles.css">
+    <style>/* CSS crítico */body{margin:0;background:#12171d;color:#e9ecef;font-family:Georgia,serif}.site-header{background:#12171d;border-bottom:1px solid #2c3642}.container{width:min(1120px,calc(100% - 48px));margin-inline:auto}.brand{color:#e9ecef;text-decoration:none}.btn{display:inline-flex;min-height:44px;align-items:center;border:1px solid #5b6877;color:#e9ecef;text-decoration:none;padding:10px 16px}.btn-primary{background:#ffb020;color:#12171d;border-color:#ffb020}h1,h2,h3{font-family:Arial,sans-serif;line-height:1.05}h1{font-size:clamp(2.8rem,6.7vw,6.7rem)}</style>
+  <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<header class="site-header"><div class="container header-inner"><a class="brand" href="index.html"><svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="#C5CCD4" stroke-width="1.6"/><path d="M3.5 12a8.5 8.5 0 0 0 17 0Z" fill="#FFB020"/></svg>ZONA GRIS</a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-principal">Menú</button><nav class="nav" id="nav-principal" aria-label="Navegación principal"><a href="index.html">Inicio</a><a href="mapa.html">Mapa</a><a href="metodologia.html" aria-current="page">Método</a><a href="fuentes.html">Fuentes</a><a href="limites.html">Límites</a><a href="https://github.com/mcasrom/zona-gris-atlas">Código</a></nav></div></header>
+<main id="contenido">
+  <div class="container page-hero"><p class="eyebrow">Método · v0.1</p><h1>Primero el hecho. Después, la fuente.</h1><p class="lead">Cada ficha conserva lo que ocurrió, dónde, cuándo, qué fuente lo sostiene y quién atribuye. El sistema propone; una persona revisa.</p></div>
+  <article class="container prose">
+    <h2 id="pipeline">El pipeline</h2>
+    <ol>
+      <li><strong>Ingesta.</strong> GDELT y feeds autorizados. Cada fuente tiene caché local, límite de ritmo y una ficha de licencia. Todas empiezan desactivadas.</li>
+      <li><strong>Deduplicado.</strong> Primero por hash de URL canónica; después por similitud de texto. Dos piezas iguales no crean dos incidentes.</li>
+      <li><strong>Clasificación.</strong> Un modelo TF-IDF + regresión logística propone dominio, gravedad y realidad. No publica y no atribuye.</li>
+      <li><strong>Revisión humana.</strong> Verifico fecha, lugar, fuente, tabla de atribución y contexto. Si no hay base, la ficha queda en <code>draft</code> o se rechaza.</li>
+      <li><strong>Publicación.</strong> Solo sale lo revisado. La etiqueta <code>demo: true</code> impide presentar datos ilustrativos como reales.</li>
+    </ol>
+
+    <h2 id="atribucion">La atribución</h2>
+    <p>El atlas no atribuye autoría por su cuenta. Registra tres estados: <code>none</code>, <code>official</code> y <code>claimed</code>. «Sin atribuir» es un resultado válido y frecuente.</p>
+    <ul>
+      <li><strong>official:</strong> un gobierno, una agencia o una empresa técnica señala un actor. Se guarda quién lo dice, con qué tipo de fuente y con qué confianza.</li>
+      <li><strong>claimed:</strong> un grupo reivindica el hecho. La reivindicación no equivale a prueba independiente.</li>
+      <li><strong>none:</strong> no hay atribución pública verificable. No se rellena el hueco por inferencia.</li>
+    </ul>
+    <p>La confianza de la fuente es <code>low</code>, <code>medium</code> o <code>high</code>. La cita se limita a 15 palabras y conserva el enlace original.</p>
+
+    <h2 id="realidad">Incidente real</h2>
+    <p>La etiqueta <code>probable</code>, <code>dudoso</code> o <code>descartado</code> filtra falsas alarmas, drones de aficionados y ransomware puramente criminal. No es una escala de gravedad: es una comprobación de si el hecho resiste la revisión.</p>
+
+    <h2 id="puerta">La puerta de publicación</h2>
+    <p>El clasificador no publica nada hasta superar un F1 macro de <strong>0,75</strong> sobre un conjunto de oro de al menos <strong>200 eventos</strong>. El umbral está en <code>eval/threshold.yaml</code> y sigue pendiente de calibración.</p>
+
+    <h2 id="datos">Datos y reproducción</h2>
+    <p>El esquema está en <code>db/schema.sql</code>; los comandos, en el <code>Makefile</code>. La web es estática y no necesita backend. Los datos de demostración son ilustrativos: no describen incidentes reales.</p>
+    <p><a href="limites.html">Ver los límites del atlas →</a></p>
+  </article>
+</main>
+<footer class="site-footer"><div class="container footer-grid"><div><p>Proyecto personal de un único autor. Código bajo AGPL-3.0. Sin cookies ni rastreadores.</p></div><div class="footer-links"><a href="index.html">Inicio</a><a href="mapa.html">Mapa</a><a href="fuentes.html">Fuentes</a><a href="https://github.com/mcasrom/zona-gris-atlas">GitHub</a></div></div></footer>
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>

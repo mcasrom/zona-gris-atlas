@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zona Gris · Atlas abierto de incidentes híbridos</title>
+  <meta name="description" content="Atlas abierto de incidentes de zona gris y amenazas híbridas. Registra hechos, fuentes y quién atribuye cada caso; el sistema nunca atribuye por su cuenta.">
+  <link rel="canonical" href="https://zonagris.viajeinteligencia.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Zona Gris · Atlas abierto de incidentes híbridos">
+  <meta property="og:description" content="Un atlas para leer lo que ocurre entre la paz y la guerra. Cada hecho con su fuente y su atribución.">
+  <meta property="og:url" content="https://zonagris.viajeinteligencia.com/">
+  <meta property="og:image" content="https://zonagris.viajeinteligencia.com/assets/img/og-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#12171d">
+  <link rel="preload" href="assets/fonts/archivo-latin-wdth.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/styles.css">
+    <style>/* CSS crítico */body{margin:0;background:#12171d;color:#e9ecef;font-family:Georgia,serif}.site-header{background:#12171d;border-bottom:1px solid #2c3642}.container{width:min(1120px,calc(100% - 48px));margin-inline:auto}.brand{color:#e9ecef;text-decoration:none}.btn{display:inline-flex;min-height:44px;align-items:center;border:1px solid #5b6877;color:#e9ecef;text-decoration:none;padding:10px 16px}.btn-primary{background:#ffb020;color:#12171d;border-color:#ffb020}h1,h2,h3{font-family:Arial,sans-serif;line-height:1.05}h1{font-size:clamp(2.8rem,6.7vw,6.7rem)}</style>
+  <link rel="manifest" href="site.webmanifest">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "Zona Gris", "url": "https://zonagris.viajeinteligencia.com/", "description": "Atlas abierto de incidentes de zona gris y amenazas híbridas. Registra hechos, fuentes y quién atribuye cada caso; nunca atribuye por su cuenta.", "inLanguage": "es"}</script>
+  <script type="application/ld+json"></script>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Zona Gris, inicio">
+      <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="#C5CCD4" stroke-width="1.6"/><path d="M3.5 12a8.5 8.5 0 0 0 17 0Z" fill="#FFB020"/></svg>
+      ZONA GRIS
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-principal">Menú</button>
+    <nav class="nav" id="nav-principal" aria-label="Navegación principal">
+      <a href="mapa.html">Mapa</a>
+      <a href="#escala">Escala</a>
+      <a href="metodologia.html">Método</a>
+      <a href="fuentes.html">Fuentes</a>
+      <a href="limites.html">Límites</a>
+      <a href="https://github.com/mcasrom/zona-gris-atlas">Código</a>
+      <a class="header-cta" href="mapa.html">Abrir el mapa</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenido">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Atlas abierto de incidentes híbridos · v0.1</p>
+        <h1>Lo que ocurre entre la paz y la guerra, en un mapa.</h1>
+        <p class="lead">Un registro de hechos de zona gris —ciber, infraestructura, aire, señales, sabotaje, desinformación, economía y migración— con la fuente y la atribución de cada caso.</p>
+        <p class="lead">No decide quién es culpable. Muestra qué ocurrió y quién lo afirma.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="mapa.html">Abrir el mapa</a>
+          <a class="btn" href="metodologia.html">Leer el método</a>
+          <a class="btn btn-ghost" href="https://github.com/mcasrom/zona-gris-atlas">Código en GitHub · AGPL-3.0</a>
+        </div>
+      </div>
+      <div class="hero-map">
+        <div class="map-frame" data-map="preview">
+          <img src="assets/img/world-dots.svg" alt="Mapa mundial de puntos" width="1000" height="435">
+          <div class="map-markers" aria-live="polite"></div>
+        </div>
+        <div class="map-legend" aria-label="Leyenda de atribución">
+          <span class="legend-item"><span class="legend-dot"></span>Sin atribuir</span>
+          <span class="legend-item"><span class="legend-dot official"></span>Fuente oficial o técnica</span>
+          <span class="legend-item"><span class="legend-dot claimed"></span>Reivindicado</span>
+        </div>
+        <div class="map-callout"><span class="data-badge">Datos ilustrativos</span><a href="mapa.html">Explorar los 10 casos →</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="paper section" id="escala">
+    <div class="container">
+      <div class="section-head">
+        <div><p class="eyebrow">La escala</p><h2>Zona gris es un tramo, no una etiqueta.</h2></div>
+        <p>La escala ordena el grado de confrontación. Este atlas cubre solo el centro: competencia, zona gris y hostilidad híbrida. La paz estable y el conflicto abierto quedan fuera de la v0.1.</p>
+      </div>
+      <div class="scale-bar" aria-label="Escala de paz a conflicto abierto">
+        <div class="scale-part"><span class="code-label">01 · paz_estable</span><strong>Paz estable</strong><span>Cooperación ordinaria y ausencia de presión hostil.</span></div>
+        <div class="scale-part"><span class="code-label">02 · competencia</span><strong>Competencia</strong><span>Rivalidad política o económica sin coerción directa.</span></div>
+        <div class="scale-part"><span class="code-label">03 · zona_gris</span><strong>Zona gris</strong><span>Coerción ambigua por debajo del umbral armado.</span></div>
+        <div class="scale-part"><span class="code-label">04 · hostilidad_hibrida</span><strong>Hostilidad híbrida</strong><span>Acciones hostiles combinadas, negables y sostenidas.</span></div>
+        <div class="scale-part"><span class="code-label">05 · conflicto_abierto</span><strong>Conflicto abierto</strong><span>Violencia armada declarada o confrontación directa.</span></div>
+      </div>
+      <div class="scale-bracket" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div><p class="eyebrow">Taxonomía</p><h2>Ocho dominios, una misma ficha.</h2></div>
+        <p>Un incidente puede tocar varios dominios, pero la ficha tiene uno principal. La clasificación es una hipótesis revisable, no una sentencia.</p>
+      </div>
+      <div class="domain-grid">
+        <div class="domain-cell"><span class="code-label">CIB</span><strong>Ciber</strong><p>Intrusiones, phishing, ransomware y operaciones contra sistemas.</p></div>
+        <div class="domain-cell"><span class="code-label">INF</span><strong>Infraestructura crítica</strong><p>Ataques o sabotajes contra energía, agua, transporte, sanidad o telecomunicaciones.</p></div>
+        <div class="domain-cell"><span class="code-label">AER</span><strong>Espacio aéreo y drones</strong><p>Incursiones, cierres de espacio aéreo, drones hostiles y alertas aeronáuticas.</p></div>
+        <div class="domain-cell"><span class="code-label">GNS</span><strong>Interferencia GNSS</strong><p>Interferencia o suplantación de GPS, Galileo y otros sistemas de navegación.</p></div>
+        <div class="domain-cell"><span class="code-label">SAB</span><strong>Sabotaje físico</strong><p>Daños deliberados a instalaciones, cables, gasoductos o equipos.</p></div>
+        <div class="domain-cell"><span class="code-label">DES</span><strong>Desinformación</strong><p>Operaciones coordinadas para alterar la percepción pública.</p></div>
+        <div class="domain-cell"><span class="code-label">ECO</span><strong>Coerción económica</strong><p>Presión comercial, energética o financiera con fines políticos.</p></div>
+        <div class="domain-cell"><span class="code-label">MIG</span><strong>Instrumentalización migratoria</strong><p>Uso político de flujos migratorios para presionar a un Estado.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="paper section">
+    <div class="container split">
+      <div>
+        <p class="eyebrow">La ficha</p>
+        <h2>No atribuimos. Registramos quién atribuye.</h2>
+        <p>La atribución es un dato, no una conclusión del sistema. Puede estar ausente, ser oficial o ser una reivindicación. Cada afirmación conserva su fuente y su nivel de confianza.</p>
+        <p><a href="metodologia.html#atribucion">Cómo se registra una atribución →</a></p>
+      </div>
+      <article class="incident-card" aria-label="Ficha ilustrativa">
+        <span class="eyebrow">Ejemplo ilustrativo · EJ-0403</span>
+        <h3>Perturbación de señal de navegación</h3>
+        <p>Pérdida intermitente de señal GNSS documentada por receptores de una zona costera.</p>
+        <dl class="incident-meta">
+          <div><dt>Dominio</dt><dd>GNS</dd></div>
+          <div><dt>Lugar</dt><dd>Costa Este</dd></div>
+          <div><dt>Gravedad</dt><dd>alta</dd></div>
+          <div><dt>Incidente real</dt><dd>probable</dd></div>
+          <div><dt>Atribución</dt><dd>official</dd></div>
+          <div><dt>Atribuido por</dt><dd>Autoridad de ejemplo</dd></div>
+          <div><dt>Fuentes</dt><dd>1 ilustrativa</dd></div>
+          <div><dt>Revisión humana</dt><dd>pendiente</dd></div>
+        </dl>
+        <p class="quote">«interferencia en la banda de navegación»</p>
+        <p class="card-note">Datos ilustrativos. No describe un incidente real.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div><p class="eyebrow">Pipeline</p><h2>Cómo funciona.</h2></div>
+        <p>Todo pasa por revisión humana. La clasificación automática no publica: propone. La puerta de salida exige datos, fuente y evaluación.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><span class="code-label">01</span><strong>Ingesta</strong><p>GDELT y feeds autorizados. Caché local y límite de ritmo.</p></div>
+        <div class="step"><span class="code-label">02</span><strong>Deduplicado</strong><p>Hash de URL y similitud de texto para no contar dos veces.</p></div>
+        <div class="step"><span class="code-label">03</span><strong>Clasificación</strong><p>Un modelo propone dominio, gravedad y realidad. No decide.</p></div>
+        <div class="step human"><span class="code-label">04</span><strong>Revisión humana</strong><p>Una persona verifica fuente, fecha, lugar y atribución.</p></div>
+        <div class="step"><span class="code-label">05</span><strong>Publicación</strong><p>Sale la ficha fechada, con su nivel de confianza y sus límites.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="paper section">
+    <div class="container">
+      <div class="section-head">
+        <div><p class="eyebrow">Fuentes previstas</p><h2>Primero las condiciones. Después los datos.</h2></div>
+        <p>Ninguna fuente está activa en la v0.1. Cada una se habilitará solo después de revisar sus condiciones de uso y su licencia.</p>
+      </div>
+      <div class="chips">
+        <span class="chip">GDELT</span><span class="chip">EuRepoC</span><span class="chip">CERT-EU</span><span class="chip">CCN-CERT</span><span class="chip">ENISA</span><span class="chip">CISA</span><span class="chip">ransomware.live</span><span class="chip">GPSJam</span><span class="chip">Eurocontrol</span><span class="chip">Hybrid CoE</span><span class="chip">EUvsDisinfo</span><span class="chip">EEAS</span>
+      </div>
+      <p class="chip-note">Cada fuente se activa solo después de revisar sus condiciones de uso.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div><p class="eyebrow">Límites</p><h2>Lo que este atlas no hace.</h2></div>
+        <p>La utilidad también está en lo que se deja fuera. Un mapa incompleto y explícito es más honesto que una conclusión sin base.</p>
+      </div>
+      <div class="limits-grid">
+        <div class="limit"><span class="no">NO</span><strong>Atribuye por su cuenta</strong><p>Registra atribuciones ajenas y las cita. No nombra autores por inferencia.</p></div>
+        <div class="limit"><span class="no">NO</span><strong>Predice ataques</strong><p>Describe hechos ocurridos y su contexto. No anuncia lo que pasará.</p></div>
+        <div class="limit"><span class="no">NO</span><strong>Juzga a personas</strong><p>No perfila individuos ni convierte sospechas en culpabilidad.</p></div>
+        <div class="limit"><span class="no">NO</span><strong>Cubre cables submarinos</strong><p>Quedan fuera de la v0.1, junto a otros dominios pendientes de método.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container">
+      <p class="eyebrow">Construir el atlas</p>
+      <h2>Una fuente, una corrección, una ficha.</h2>
+      <p>El proyecto se corrige en público. Si conoces una fuente verificable o detectas un error, abre una propuesta.</p>
+      <div class="actions">
+        <a class="btn" href="https://github.com/mcasrom/zona-gris-atlas/issues/new?template=proponer-fuente.yml">Proponer una fuente</a>
+        <a class="btn" href="https://github.com/mcasrom/zona-gris-atlas/issues/new?template=corregir-ficha.yml">Corregir una ficha</a>
+        <a class="btn" href="feed.xml">Seguir por RSS</a>
+        
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="brand" href="index.html"><svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="#C5CCD4" stroke-width="1.6"/><path d="M3.5 12a8.5 8.5 0 0 0 17 0Z" fill="#FFB020"/></svg>ZONA GRIS</a>
+      <p>Proyecto personal de un único autor. Código bajo AGPL-3.0. Sin cookies ni rastreadores.</p>
+      <p>Parte de viajeinteligencia.com. Complementa a FIMI Radar.</p>
+    </div>
+    <div class="footer-links">
+      <a href="mapa.html">Mapa</a><a href="metodologia.html">Método</a><a href="fuentes.html">Fuentes</a><a href="limites.html">Límites</a><a href="privacidad.html">Privacidad</a><a href="https://github.com/mcasrom/zona-gris-atlas">GitHub</a><a href="feed.xml">RSS</a>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/site.js" defer></script>
+<script src="assets/js/map.js" defer></script>
+</body>
+</html>
