@@ -1,10 +1,10 @@
 url: "https://zonagris.pruebapublica.com"  # dominio oficial B3
 name: Atlas Zona Gris
-title: "Atlas Zona Gris · Incidentes híbridos"
-description: "Atlas abierto de incidentes de zona gris y amenazas híbridas. Registra hechos, fuentes y quién atribuye cada caso; nunca atribuye por su cuenta."
+title: "Atlas Zona Gris · Mapa de acontecimientos"
+description: "Mapa de acontecimientos reales e incidencias en infraestructuras y servicios esenciales. Fecha, lugar documentado, estado de verificación y fuentes originales."
 author: "[DECIDIR: nombre público]"
 repo: https://github.com/mcasrom/zona-gris-atlas
-contact: "info.atlaszonagris@pruebapublica.com"
+contact: "info.zonagris@pruebapublica.com"
 contact_verified: false  # no publicar hasta comprobar el buzón
 kofi: ""  # [DECIDIR: KOFI_URL]
 dataset_license: "[DECIDIR: CC BY 4.0]"

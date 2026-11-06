@@ -1,78 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Atlas Zona Gris · Incidentes híbridos</title>
+  <title>Atlas Zona Gris · Mapa de acontecimientos</title>
   <link href="https://zonagris.pruebapublica.com/"/>
-  <updated>2026-11-06T13:49:46.407219+00:00</updated>
+  <updated>2026-11-06T15:58:37.383675+00:00</updated>
   <id>https://zonagris.pruebapublica.com/feed.xml</id>
   <author><name>Miguel</name></author>
   <entry>
-    <title>Interrupción de comunicaciones en el norte</title>
-    <id>https://zonagris.pruebapublica.com/mapa.html#EJ-0401</id>
-    <link href="https://zonagris.pruebapublica.com/mapa.html#EJ-0401"/>
-    <updated>2026-10-02T00:00:00Z</updated>
-    <summary>Corte temporal de enlaces de datos que afectó a servicios civiles durante varias horas.</summary>
+    <title>Cyber Brief 26-11 - October 2026</title>
+    <id>https://cert.europa.eu/publications/threat-intelligence/cb26-11/</id>
+    <link href="https://cert.europa.eu/publications/threat-intelligence/cb26-11/"/>
+    <updated>2026-11-06T15:00:00+01:00</updated>
+    <summary>Boletín mensual de inteligencia de amenazas del CERT-EU; resumen institucional, no un incidente atribuido.</summary>
+    <source>
+      <title>CERT-EU</title>
+      <link href="https://cert.europa.eu/publications/threat-intelligence/cb26-11/"/>
+    </source>
   </entry>
   <entry>
-    <title>Dron no identificado cerca de una instalación</title>
-    <id>https://zonagris.pruebapublica.com/mapa.html#EJ-0402</id>
-    <link href="https://zonagris.pruebapublica.com/mapa.html#EJ-0402"/>
-    <updated>2026-10-09T00:00:00Z</updated>
-    <summary>Aviso de presencia de un dron sin identificar en las proximidades de una infraestructura.</summary>
+    <title>Commission launches second Annual Migration Management Cycle under the Pact on Migration and Asylum</title>
+    <id>https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2365</id>
+    <link href="https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2365"/>
+    <updated>2026-11-06T09:39:32Z</updated>
+    <summary>Comunicado sobre el ciclo anual de gestión migratoria; no es un incidente.</summary>
+    <source>
+      <title>Comisión Europea</title>
+      <link href="https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2365"/>
+    </source>
   </entry>
   <entry>
-    <title>Perturbación de señal de navegación</title>
-    <id>https://zonagris.pruebapublica.com/mapa.html#EJ-0403</id>
-    <link href="https://zonagris.pruebapublica.com/mapa.html#EJ-0403"/>
-    <updated>2026-10-14T00:00:00Z</updated>
-    <summary>Pérdida intermitente de señal GNSS documentada por receptores de una zona costera.</summary>
+    <title>Questions and answers on the second Annual Migration Management Cycle</title>
+    <id>https://ec.europa.eu/commission/presscorner/detail/en/qanda_26_2366</id>
+    <link href="https://ec.europa.eu/commission/presscorner/detail/en/qanda_26_2366"/>
+    <updated>2026-11-06T09:40:34Z</updated>
+    <summary>Preguntas y respuestas institucionales sobre gestión migratoria; no es un incidente.</summary>
+    <source>
+      <title>Comisión Europea</title>
+      <link href="https://ec.europa.eu/commission/presscorner/detail/en/qanda_26_2366"/>
+    </source>
   </entry>
   <entry>
-    <title>Sabotaje en una línea de transporte</title>
-    <id>https://zonagris.pruebapublica.com/mapa.html#EJ-0404</id>
-    <link href="https://zonagris.pruebapublica.com/mapa.html#EJ-0404"/>
-    <updated>2026-10-18T00:00:00Z</updated>
-    <summary>Daños deliberados en equipos de una línea de transporte sin víctimas.</summary>
+    <title>Remarks by Commissioner Brunner on the second Annual Migration Management Cycle</title>
+    <id>https://ec.europa.eu/commission/presscorner/detail/en/speech_26_2368</id>
+    <link href="https://ec.europa.eu/commission/presscorner/detail/en/speech_26_2368"/>
+    <updated>2026-11-06T11:52:07Z</updated>
+    <summary>Intervención institucional sobre gestión migratoria; no es un incidente.</summary>
+    <source>
+      <title>Comisión Europea</title>
+      <link href="https://ec.europa.eu/commission/presscorner/detail/en/speech_26_2368"/>
+    </source>
   </entry>
   <entry>
-    <title>Campaña coordinada de mensajes falsos</title>
-    <id>https://zonagris.pruebapublica.com/mapa.html#EJ-0405</id>
-    <link href="https://zonagris.pruebapublica.com/mapa.html#EJ-0405"/>
-    <updated>2026-10-21T00:00:00Z</updated>
-    <summary>Difusión de mensajes engañosos sobre una supuesta emergencia local.</summary>
-  </entry>
-  <entry>
-    <title>Presión sobre un corredor energético</title>
-    <id>https://zonagris.pruebapublica.com/mapa.html#EJ-0406</id>
-    <link href="https://zonagris.pruebapublica.com/mapa.html#EJ-0406"/>
-    <updated>2026-10-23T00:00:00Z</updated>
-    <summary>Restricciones comerciales anunciadas en un corredor de suministro regional.</summary>
-  </entry>
-  <entry>
-    <title>Afluencia instrumentalizada en una frontera</title>
-    <id>https://zonagris.pruebapublica.com/mapa.html#EJ-0407</id>
-    <link href="https://zonagris.pruebapublica.com/mapa.html#EJ-0407"/>
-    <updated>2026-10-25T00:00:00Z</updated>
-    <summary>Aumento repentino de cruces en un paso fronterizo con presión política.</summary>
-  </entry>
-  <entry>
-    <title>Acceso no autorizado a una red industrial</title>
-    <id>https://zonagris.pruebapublica.com/mapa.html#EJ-0408</id>
-    <link href="https://zonagris.pruebapublica.com/mapa.html#EJ-0408"/>
-    <updated>2026-10-28T00:00:00Z</updated>
-    <summary>Intento de acceso a una red de control industrial sin impacto confirmado.</summary>
-  </entry>
-  <entry>
-    <title>Cierre preventivo de espacio aéreo</title>
-    <id>https://zonagris.pruebapublica.com/mapa.html#EJ-0409</id>
-    <link href="https://zonagris.pruebapublica.com/mapa.html#EJ-0409"/>
-    <updated>2026-10-30T00:00:00Z</updated>
-    <summary>Suspensión temporal de operaciones por una alerta de seguridad aérea.</summary>
-  </entry>
-  <entry>
-    <title>Manipulación de una baliza costera</title>
-    <id>https://zonagris.pruebapublica.com/mapa.html#EJ-0410</id>
-    <link href="https://zonagris.pruebapublica.com/mapa.html#EJ-0410"/>
-    <updated>2026-11-01T00:00:00Z</updated>
-    <summary>Daño localizado en equipos de señalización sin atribución pública.</summary>
+    <title>EU releases €16 million in humanitarian aid for Myanmar and Rohingya refugees in Bangladesh</title>
+    <id>https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2363</id>
+    <link href="https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2363"/>
+    <updated>2026-11-06T09:01:25Z</updated>
+    <summary>Comunicado de ayuda humanitaria; no es un incidente de seguridad.</summary>
+    <source>
+      <title>Comisión Europea</title>
+      <link href="https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2363"/>
+    </source>
   </entry>
 </feed>

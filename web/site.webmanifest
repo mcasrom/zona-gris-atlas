@@ -1,7 +1,7 @@
 {
-  "name": "Atlas Zona Gris · Incidentes híbridos",
+  "name": "Atlas Zona Gris · Mapa de acontecimientos",
   "short_name": "Atlas Zona Gris",
-  "description": "Atlas abierto de incidentes de zona gris y amenazas híbridas. Registra hechos, fuentes y quién atribuye cada caso; nunca atribuye por su cuenta.",
+  "description": "Mapa de acontecimientos reales e incidencias en infraestructuras y servicios esenciales. Fecha, lugar documentado, estado de verificación y fuentes originales.",
   "lang": "es",
   "start_url": "/",
   "display": "standalone",

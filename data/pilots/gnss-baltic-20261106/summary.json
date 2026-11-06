@@ -1,0 +1,16 @@
+{
+  "pilot_id": "gnss-baltic-20261106",
+  "period_start": "2026-10-30",
+  "period_end": "2026-11-06",
+  "consulted_at": "2026-11-06T15:40:00Z",
+  "sources_consulted": 3,
+  "sources_ok": 2,
+  "sources_failed": 1,
+  "candidates": 1,
+  "observations": 0,
+  "discarded": 1,
+  "duplicates": 0,
+  "manual_reviewed": 1,
+  "manual_review_pct": 100,
+  "notes": "No hay datos GNSS/Báltico verificables en la ventana. No se han creado observaciones reales."
+}

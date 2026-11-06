@@ -2,7 +2,8 @@
   "use strict";
   var D2R = Math.PI / 180;
   var projection = null;
-  var incidents = [];
+  var events = [];
+  var referenceDate = null;
 
   function naturalEarth1(lon, lat) {
     var lambda = lon * D2R;
@@ -18,166 +19,227 @@
     return { left: (xy[0] / projection.width) * 100, top: (xy[1] / projection.height) * 100 };
   }
 
-  function attribution(incident) {
-    var first = (incident.attributions || [])[0];
-    return first ? first.status : "none";
+  function statusLabel(status) {
+    if (status === "CONFIRMADO") return "Confirmado";
+    if (status === "PENDIENTE") return "Pendiente";
+    return "Documentado";
   }
 
-  function markerSize(severity) {
-    if (severity === "alta") return 14;
-    if (severity === "media") return 10;
-    return 7;
+  function statusClass(status) {
+    if (status === "CONFIRMADO") return "confirmed";
+    if (status === "PENDIENTE") return "pending";
+    return "documented";
   }
 
-  function marker(incident, full) {
-    var xy = naturalEarth1(incident.lon, incident.lat);
-    var pos = pct(xy);
+  function eventDate(item) {
+    return item.event_date || item.published_at || "";
+  }
+
+  function timeValue(item) {
+    var value = Date.parse(eventDate(item) + "T00:00:00Z");
+    return Number.isNaN(value) ? 0 : value;
+  }
+
+  function marker(item) {
     var button = document.createElement("button");
     button.type = "button";
     button.className = "marker";
-    button.dataset.id = incident.id;
-    button.dataset.attribution = attribution(incident);
+    button.dataset.id = item.id;
+    button.dataset.status = item.verification_status;
+    var pos = pct(naturalEarth1(item.lon, item.lat));
     button.style.left = pos.left + "%";
     button.style.top = pos.top + "%";
-    button.style.setProperty("--size", markerSize(incident.severity) + "px");
-    button.setAttribute(
-      "aria-label",
-      incident.title + ". Dominio " + incident.domain + ". Atribución: " + attribution(incident)
-    );
-    button.title = incident.title;
+    button.setAttribute("aria-label", item.title + ". " + item.place + ". Estado: " + statusLabel(item.verification_status));
+    button.title = item.title;
     button.addEventListener("click", function () {
-      if (full) {
-        select(incident);
-      } else {
-        window.location.href = "mapa.html#" + encodeURIComponent(incident.id);
-      }
+      if (!document.getElementById("detail")) window.location.href = "mapa.html#" + encodeURIComponent(item.id);
+      else select(item);
     });
     return button;
   }
 
-  function render(frame, list, full) {
+  function renderMap(frame, list) {
     var holder = frame.querySelector(".map-markers");
     if (!holder) return;
     holder.replaceChildren();
-    list.forEach(function (incident) {
-      if (incident.lat === null || incident.lon === null) return;
-      holder.appendChild(marker(incident, full));
+    list.forEach(function (item) {
+      if (item.lat === null || item.lon === null) return;
+      holder.appendChild(marker(item));
     });
   }
 
-  function selectedFromHash() {
-    var id = decodeURIComponent(window.location.hash.slice(1));
-    return incidents.find(function (item) { return item.id === id; });
+  function makeText(tag, className, text) {
+    var node = document.createElement(tag);
+    if (className) node.className = className;
+    node.textContent = text;
+    return node;
   }
 
-  function select(incident) {
-    if (!incident) return;
-    var detail = document.getElementById("detail");
-    if (detail) {
-      detail.classList.remove("detail-empty");
-      detail.innerHTML = "";
-      var badge = document.createElement("p");
-      badge.className = "data-badge";
-      badge.textContent = incident.demo ? "Ejemplo ilustrativo" : "Incidente publicado";
-      var title = document.createElement("h3");
-      title.textContent = incident.title;
-      var summary = document.createElement("p");
-      summary.textContent = incident.summary;
-      var meta = document.createElement("dl");
-      meta.className = "incident-meta";
-      [
-        ["Dominio", incident.domain],
-        ["Lugar", incident.place || "—"],
-        ["Gravedad", incident.severity],
-        ["Atribución", attribution(incident)],
-        ["Atribuido por", (incident.attributions[0] || {}).attributed_by || "—"],
-        ["Incidente real", incident.reality],
-        ["Fecha", incident.event_date],
-        ["Revisión humana", incident.reviewed_by_human ? "sí" : "pendiente"]
-      ].forEach(function (pair) {
-        var box = document.createElement("div");
-        var dt = document.createElement("dt");
-        dt.textContent = pair[0];
-        var dd = document.createElement("dd");
-        dd.textContent = pair[1];
-        box.appendChild(dt);
-        box.appendChild(dd);
-        meta.appendChild(box);
-      });
-      detail.appendChild(badge);
-      detail.appendChild(title);
-      detail.appendChild(summary);
-      detail.appendChild(meta);
+  function renderList(list) {
+    var listNode = document.getElementById("event-list");
+    if (!listNode) return;
+    listNode.replaceChildren();
+    if (!list.length) {
+      listNode.appendChild(makeText("li", "muted", "No hay acontecimientos con estos filtros."));
+      return;
     }
+    list.forEach(function (item) {
+      var li = document.createElement("li");
+      var button = document.createElement("button");
+      button.type = "button";
+      button.className = "event-row";
+      button.addEventListener("click", function () {
+      if (!document.getElementById("detail")) window.location.href = "mapa.html#" + encodeURIComponent(item.id);
+      else select(item);
+    });
+      button.appendChild(makeText("span", "event-date", eventDate(item)));
+      button.appendChild(makeText("strong", "", item.title));
+      button.appendChild(makeText("span", "event-meta", item.category_label + " · " + item.place + " · " + statusLabel(item.verification_status)));
+      li.appendChild(button);
+      listNode.appendChild(li);
+    });
+  }
+
+  function addMeta(meta, label, value) {
+    if (value === null || value === undefined || value === "") return;
+    var box = document.createElement("div");
+    box.appendChild(makeText("dt", "", label));
+    var dd = document.createElement("dd");
+    if (value instanceof Node) dd.appendChild(value); else dd.textContent = value;
+    box.appendChild(dd);
+    meta.appendChild(box);
+  }
+
+  function sourceList(item) {
+    var list = document.createElement("ul");
+    list.className = "source-list";
+    (item.sources || []).forEach(function (source) {
+      var li = document.createElement("li");
+      var a = document.createElement("a");
+      a.href = source.url;
+      a.target = "_blank";
+      a.rel = "noopener";
+      a.textContent = source.title || source.url;
+      li.appendChild(a);
+      li.appendChild(document.createTextNode(" · " + (source.type || "fuente")));
+      list.appendChild(li);
+    });
+    return list;
+  }
+
+  function select(item) {
+    if (!item) return;
+    var detail = document.getElementById("detail");
+    if (!detail) return;
+    detail.classList.remove("detail-empty");
+    detail.replaceChildren();
+    detail.appendChild(makeText("p", "data-badge", statusLabel(item.verification_status) + " · " + item.category_label));
+    detail.appendChild(makeText("h3", "", item.title));
+    detail.appendChild(makeText("p", "", item.description));
+    var meta = document.createElement("dl");
+    meta.className = "incident-meta";
+    addMeta(meta, "Fecha del acontecimiento", eventDate(item));
+    addMeta(meta, "Publicación", item.published_at || "—");
+    addMeta(meta, "Lugar", item.place || "No documentado");
+    addMeta(meta, "País", item.country || "—");
+    addMeta(meta, "Infraestructura", item.infrastructure);
+    addMeta(meta, "Consecuencias", item.consequences);
+    addMeta(meta, "Precisión geográfica", item.geo_precision || "sin coordenada");
+    addMeta(meta, "Atribución", item.attribution && item.attribution.note ? item.attribution.note : "No se atribuye autoría");
+    addMeta(meta, "Fuentes", sourceList(item));
+    detail.appendChild(meta);
+    if (item.observations) detail.appendChild(makeText("p", "muted small", "Limitación: " + item.observations));
     var open = document.getElementById("detail-open");
     if (open) {
-      open.href = "mapa.html#" + encodeURIComponent(incident.id);
+      open.href = "mapa.html#" + encodeURIComponent(item.id);
       open.setAttribute("aria-disabled", "false");
     }
     var report = document.getElementById("report-error");
     if (report) {
       var repo = document.body.dataset.repo || "";
-      report.href = repo + "/issues/new?template=corregir-ficha.yml&ficha=" + encodeURIComponent(incident.id);
+      report.href = repo + "/issues/new?template=corregir-ficha.yml&ficha=" + encodeURIComponent(item.id);
     }
-    if (window.location.hash !== "#" + incident.id) {
-      history.replaceState(null, "", "#" + incident.id);
-    }
+    if (window.location.hash !== "#" + item.id) history.replaceState(null, "", "#" + item.id);
   }
 
-  function filterList() {
-    var domains = new Set(Array.from(document.querySelectorAll('input[name="domain"]:checked')).map(function (x) { return x.value; }));
-    var severity = new Set(Array.from(document.querySelectorAll('input[name="severity"]:checked')).map(function (x) { return x.value; }));
-    var attributionValue = (document.querySelector('input[name="attribution"]:checked') || {}).value || "all";
-    var period = document.querySelector("[data-period][aria-pressed='true']");
-    var days = period ? Number(period.dataset.period) : 0;
-    var maxDate = Math.max.apply(null, incidents.map(function (incident) { return new Date(incident.event_date).getTime(); }));
-    return incidents.filter(function (incident) {
-      if (!domains.has(incident.domain) || !severity.has(incident.severity)) return false;
-      if (attributionValue !== "all" && attribution(incident) !== attributionValue) return false;
-      if (days && (maxDate - new Date(incident.event_date).getTime()) / 86400000 > days) return false;
+  function filtered() {
+    var dateValue = (document.getElementById("filter-date") || {}).value || "168";
+    var category = (document.getElementById("filter-category") || {}).value || "all";
+    var country = (document.getElementById("filter-country") || {}).value || "all";
+    var status = (document.getElementById("filter-status") || {}).value || "all";
+    var limit = dateValue === "all" ? Infinity : Number(dateValue) * 3600000;
+    var base = referenceDate ? referenceDate.getTime() : Date.now();
+    return events.filter(function (item) {
+      if (category !== "all" && item.category !== category) return false;
+      if (country !== "all" && item.country !== country) return false;
+      if (status !== "all" && item.verification_status !== status) return false;
+      if (limit !== Infinity && (base - timeValue(item)) > limit) return false;
       return true;
-    });
+    }).sort(function (a, b) { return timeValue(b) - timeValue(a); });
   }
 
   function update() {
     var frame = document.querySelector('[data-map="full"]');
-    if (!frame) return;
-    var list = filterList();
-    render(frame, list, true);
+    var list = filtered();
+    if (frame) renderMap(frame, list);
+    renderList(list);
     var count = document.getElementById("map-count");
     if (count) count.textContent = String(list.length);
-    var selected = selectedFromHash();
-    if (selected) select(selected);
   }
 
   function bindFilters() {
-    document.querySelectorAll('.filters input').forEach(function (input) {
-      input.addEventListener("change", update);
+    ["filter-date", "filter-category", "filter-country", "filter-status"].forEach(function (id) {
+      var node = document.getElementById(id);
+      if (node) node.addEventListener("change", update);
     });
-    document.querySelectorAll("[data-period]").forEach(function (button) {
-      button.addEventListener("click", function () {
-        document.querySelectorAll("[data-period]").forEach(function (other) {
-          other.setAttribute("aria-pressed", other === button ? "true" : "false");
-        });
-        update();
-      });
+    var reset = document.getElementById("filter-reset");
+    if (reset) reset.addEventListener("click", function () {
+      document.getElementById("filter-date").value = "168";
+      document.getElementById("filter-category").value = "all";
+      document.getElementById("filter-country").value = "all";
+      document.getElementById("filter-status").value = "all";
+      update();
     });
     var copy = document.getElementById("copy-link");
-    if (copy) {
-      copy.addEventListener("click", function () {
-        var url = window.location.href;
-        if (navigator.clipboard) {
-          navigator.clipboard.writeText(url).then(function () {
-            copy.textContent = "Enlace copiado";
-            setTimeout(function () { copy.textContent = "Copiar enlace"; }, 1600);
-          });
-        }
+    if (copy) copy.addEventListener("click", function () {
+      if (!navigator.clipboard) return;
+      navigator.clipboard.writeText(window.location.href).then(function () {
+        copy.textContent = "Enlace copiado";
+        setTimeout(function () { copy.textContent = "Copiar enlace"; }, 1600);
       });
-    }
-    window.addEventListener("hashchange", function () {
-      var selected = selectedFromHash();
-      if (selected) select(selected);
     });
+    window.addEventListener("hashchange", function () {
+      var id = decodeURIComponent(window.location.hash.slice(1));
+      var item = events.find(function (event) { return event.id === id; });
+      if (item) select(item);
+    });
+  }
+
+  function fillFilter(id, values) {
+    var node = document.getElementById(id);
+    if (!node) return;
+    values.forEach(function (pair) {
+      var option = document.createElement("option");
+      option.value = pair[0];
+      option.textContent = pair[1];
+      node.appendChild(option);
+    });
+  }
+
+  function buildFilters() {
+    var categories = {};
+    var countries = {};
+    events.forEach(function (item) {
+      categories[item.category] = item.category_label;
+      countries[item.country] = item.country;
+    });
+    fillFilter("filter-category", Object.keys(categories).sort().map(function (key) { return [key, categories[key]]; }));
+    fillFilter("filter-country", Object.keys(countries).sort().map(function (key) { return [key, countries[key]]; }));
+  }
+
+  function renderPreview(frame) {
+    var list = events.filter(function (item) { return item.lat !== null && item.lon !== null; }).slice(0, 10);
+    renderMap(frame, list);
   }
 
   function boot() {
@@ -185,23 +247,37 @@
     if (!frames.length) return;
     Promise.all([
       fetch("assets/data/projection.json").then(function (response) { return response.json(); }),
-      fetch("assets/data/incidents.json").then(function (response) { return response.json(); })
+      fetch("assets/data/events.json").then(function (response) { return response.json(); })
     ]).then(function (values) {
       projection = values[0];
-      incidents = values[1].incidents || [];
+      events = values[1].events || [];
+      referenceDate = new Date(values[1].generated_at || Date.now());
+      buildFilters();
       frames.forEach(function (frame) {
-        render(frame, frame.dataset.map === "preview" ? incidents.slice(0, 10) : incidents, frame.dataset.map === "full");
+        if (frame.dataset.map === "preview") renderPreview(frame); else renderMap(frame, events);
       });
-      bindFilters();
-      update();
-    }).catch(function () {
-      var frame = document.querySelector('[data-map="full"]');
-      if (frame) {
-        var fallback = document.createElement("p");
-        fallback.className = "muted small";
-        fallback.textContent = "No se pudo cargar el mapa. Revisa los datos locales.";
-        frame.appendChild(fallback);
+      if (document.querySelector('[data-map="full"]')) {
+        bindFilters();
+        update();
       }
+      var latest = document.getElementById("latest-events");
+      if (latest) {
+        var recent = events.slice().sort(function (a, b) { return timeValue(b) - timeValue(a); }).slice(0, 5);
+        recent.forEach(function (item) {
+          var li = document.createElement("li");
+          var a = document.createElement("a");
+          a.href = "mapa.html#" + encodeURIComponent(item.id);
+          a.textContent = item.title + " · " + item.place;
+          li.appendChild(a);
+          latest.appendChild(li);
+        });
+      }
+      var id = decodeURIComponent(window.location.hash.slice(1));
+      var selected = events.find(function (item) { return item.id === id; });
+      if (selected) select(selected);
+    }).catch(function () {
+      var frame = document.querySelector("[data-map]");
+      if (frame) frame.appendChild(makeText("p", "muted small", "No se pudo cargar el mapa. Revisa los datos locales."));
     });
   }
 

@@ -13,6 +13,9 @@ WEB = ROOT / "web"
 SITE = yaml.safe_load((ROOT / "config" / "site.yaml").read_text(encoding="utf-8"))
 DEMO = WEB / "assets" / "data" / "incidents.demo.json"
 PUBLIC_DATA = WEB / "assets" / "data" / "incidents.json"
+REGISTROS = WEB / "assets" / "data" / "registros.json"
+EVENTS = ROOT / "data" / "events" / "2026-11-06" / "events.jsonl"
+EVENTS_WEB = WEB / "assets" / "data" / "events.json"
 REPO = SITE["repo"].rstrip("/")
 SITE_URL = SITE["url"].rstrip("/")
 
@@ -50,7 +53,25 @@ def write_data() -> dict:
     return demo
 
 
+def write_events() -> None:
+    rows = [json.loads(line) for line in EVENTS.read_text(encoding="utf-8").splitlines() if line.strip()]
+    assert rows and all(row.get("demo") is False for row in rows)
+    payload = {
+        "generated_at": "2026-11-06T16:00:00Z",
+        "demo": False,
+        "count": len(rows),
+        "events": rows,
+    }
+    EVENTS_WEB.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
 def write_feed(demo: dict) -> None:
+    docs = []
+    if REGISTROS.exists():
+        docs = json.loads(REGISTROS.read_text(encoding="utf-8")).get("documents", [])
+        # La promoción militar es un documento B13, no una noticia del Atlas.
+        # Se excluye de la superficie pública de novedades, sin tocar B13/B14.
+        docs = [doc for doc in docs if not any(term in doc.get("title", "") for term in ("promoción al empleo de General", "Adenda del Mando de Apoyo Logístico"))]
     updated = datetime.now(timezone.utc).isoformat()
     lines = [
         '<?xml version="1.0" encoding="utf-8"?>',
@@ -61,16 +82,20 @@ def write_feed(demo: dict) -> None:
         f"  <id>{SITE_URL}/feed.xml</id>",
         "  <author><name>Miguel</name></author>",
     ]
-    for incident in demo.get("incidents", []):
-        url = f"{SITE_URL}/mapa.html#{escape(incident['id'])}"
+    for doc in docs:
+        url = escape(doc["url"])
         lines.extend(
             [
                 "  <entry>",
-                f"    <title>{escape(incident['title'])}</title>",
+                f"    <title>{escape(doc['title'])}</title>",
                 f"    <id>{url}</id>",
                 f'    <link href="{url}"/>',
-                f"    <updated>{incident['event_date']}T00:00:00Z</updated>",
-                f"    <summary>{escape(incident['summary'])}</summary>",
+                f"    <updated>{escape(doc['published_at'])}</updated>",
+                f"    <summary>{escape(doc['summary'])}</summary>",
+                "    <source>",
+                f"      <title>{escape(doc['source'])}</title>",
+                f'      <link href="{url}"/>',
+                "    </source>",
                 "  </entry>",
             ]
         )
@@ -79,7 +104,7 @@ def write_feed(demo: dict) -> None:
 
 
 def write_sitemap() -> None:
-    pages = ["", "mapa.html", "metodologia.html", "limites.html", "fuentes.html", "privacidad.html"]
+    pages = ["", "mapa.html", "registros.html", "metodologia.html", "limites.html", "fuentes.html", "privacidad.html", "avisos.html", "about.html"]
     today = datetime.now(timezone.utc).date().isoformat()
     rows = [
         '<?xml version="1.0" encoding="UTF-8"?>',
@@ -139,6 +164,7 @@ def replace_tokens(demo: dict) -> None:
 
 def main() -> int:
     demo = write_data()
+    write_events()
     write_feed(demo)
     write_sitemap()
     write_manifest()

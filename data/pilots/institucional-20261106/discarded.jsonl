@@ -1,0 +1,3 @@
+{"batch_id": "DISC-20261106-CERT-9", "source": "CERT-EU", "count": 9, "reason": "Fuera de la ventana de 7 días."}
+{"batch_id": "DISC-20261106-BOE-189", "source": "BOE", "count": 189, "reason": "Fuera del filtro temático: anuncios, nombramientos u otras disposiciones sin relación con seguridad, defensa o infraestructura."}
+{"batch_id": "DISC-20261106-EC-6", "source": "Comisión Europea", "count": 6, "reason": "Fuera del filtro temático: discursos, fiscalidad, fondos o notas diarias sin relación directa."}

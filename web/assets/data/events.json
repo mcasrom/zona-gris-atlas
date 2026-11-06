@@ -1,0 +1,657 @@
+{
+  "generated_at": "2026-11-06T16:00:00Z",
+  "demo": false,
+  "count": 16,
+  "events": [
+    {
+      "id": "EV-20261106-001",
+      "event_date": "2026-11-05",
+      "published_at": "2026-11-06",
+      "captured_at": "2026-11-06T16:00:00Z",
+      "country": "Alemania",
+      "country_iso2": "DE",
+      "city": "Leipzig",
+      "place": "Aeropuerto de Leipzig/Halle, Schkeuditz",
+      "lat": 51.42,
+      "lon": 12.24,
+      "geo_precision": "city",
+      "category": "drones_aeropuertos",
+      "category_label": "Drones e incursiones en aeropuertos",
+      "title": "Investigación por un intento de ataque con dron en Leipzig/Halle",
+      "description": "La policía federal alemana investiga un intento de ataque con dron contra el aeropuerto de Leipzig/Halle y busca a una persona relacionada. La fuente no permite atribuir autoría ni confirmar la carga del aparato.",
+      "infrastructure": "Aeropuerto de Leipzig/Halle",
+      "consequences": "Investigación policial y búsqueda de una persona; no se documentan daños personales en la fuente consultada.",
+      "sources": [
+        {
+          "title": "Tagesspiegel · Anschlagsversuch mit Drohne in Leipzig",
+          "url": "https://www.tagesspiegel.de/politik/anschlagsversuch-mit-drohne-in-leipzig-ermittler-fahnden-mit-ki-bild-nach-verdachtigem-auf-e-bike-16251482.html",
+          "type": "news",
+          "published_at": "2026-11-06"
+        },
+        {
+          "title": "Zeit · Drohnenangriff auf Flughafen Leipzig/Halle",
+          "url": "https://www.zeit.de/politik/deutschland/2026-11/drohnenangriff-flughafen-leipzig-halle-bka-fahndung",
+          "type": "news",
+          "published_at": "2026-11-05"
+        }
+      ],
+      "contrast_sources": [],
+      "verification_status": "DOCUMENTADO",
+      "attribution": {
+        "status": "none",
+        "claimed_by": null,
+        "note": "No se atribuye autoría sin evidencia independiente."
+      },
+      "observations": "Investigación policial; el incidente está documentado, pero no se eleva a ataque confirmado ni se atribuye autoría.",
+      "reviewed_by_human": true,
+      "reviewed_at": "2026-11-06",
+      "demo": false
+    },
+    {
+      "id": "EV-20261106-002",
+      "event_date": "2026-11-01",
+      "published_at": "2026-11-01",
+      "captured_at": "2026-11-06T16:00:00Z",
+      "country": "Jersey",
+      "country_iso2": "JE",
+      "city": "Saint Peter",
+      "place": "Aeropuerto de Jersey",
+      "lat": 49.21,
+      "lon": -2.2,
+      "geo_precision": "city",
+      "category": "drones_aeropuertos",
+      "category_label": "Drones e incursiones en aeropuertos",
+      "title": "Actividad de drones interrumpe el aeropuerto de Jersey",
+      "description": "La actividad persistente de drones cerca del aeropuerto de Jersey obligó a investigar y adoptar medidas de seguridad. Las fuentes describen interrupciones, sin confirmar autoría ni intención.",
+      "infrastructure": "Aeropuerto de Jersey",
+      "consequences": "Interrupciones aeroportuarias y despliegue policial; no se detalla el número de vuelos afectados.",
+      "sources": [
+        {
+          "title": "Island FM · Airport drones: every available avenue is being pursued",
+          "url": "https://www.islandfm.com/news/jersey/airport-drones-every-available-avenue-is-being-pursued/",
+          "type": "news",
+          "published_at": "2026-11-01"
+        },
+        {
+          "title": "BBC · Patients stranded during airport drone disruption",
+          "url": "https://www.bbc.com/news/articles/c893z5kw9kgdo",
+          "type": "news",
+          "published_at": "2026-11-02"
+        }
+      ],
+      "contrast_sources": [],
+      "verification_status": "DOCUMENTADO",
+      "attribution": {
+        "status": "none",
+        "claimed_by": null,
+        "note": "No se atribuye autoría."
+      },
+      "observations": "Se desconoce el número exacto de vuelos y la identidad de los operadores.",
+      "reviewed_by_human": true,
+      "reviewed_at": "2026-11-06",
+      "demo": false
+    },
+    {
+      "id": "EV-20261106-004",
+      "event_date": "2026-11-05",
+      "published_at": "2026-11-05",
+      "captured_at": "2026-11-06T16:00:00Z",
+      "country": "Arabia Saudí",
+      "country_iso2": "SA",
+      "city": "Dammam",
+      "place": "Aeropuerto Rey Fahd",
+      "lat": 26.47,
+      "lon": 49.8,
+      "geo_precision": "city",
+      "category": "drones_aeropuertos",
+      "category_label": "Drones e incursiones en aeropuertos",
+      "title": "Reivindicación de ataque con dron contra el aeropuerto de Dammam",
+      "description": "Los hutíes reivindicaron un ataque con dron contra el aeropuerto Rey Fahd; la coalición saudí afirmó haber interceptado un misil y un dron. No hay confirmación independiente del impacto.",
+      "infrastructure": "Aeropuerto Rey Fahd, Dammam",
+      "consequences": "Interceptación comunicada por la coalición; impacto no confirmado de forma independiente.",
+      "sources": [
+        {
+          "title": "Siasat · Houthis claim drone attack on Dammam airport",
+          "url": "https://www.siasat.com/houthis-claim-drone-attack-on-dammam-airport-3570433/",
+          "type": "news",
+          "published_at": "2026-11-05"
+        },
+        {
+          "title": "Bastille Post · Houthis claim Saudi airport attack",
+          "url": "https://www.bastillepost.com/global/article/6333028-houthis-claim-saudi-airport-attack-as-saudi-led-coalition-says-intercepted-missile-drone",
+          "type": "news",
+          "published_at": "2026-11-06"
+        }
+      ],
+      "contrast_sources": [],
+      "verification_status": "DOCUMENTADO",
+      "attribution": {
+        "status": "claimed",
+        "claimed_by": "Ansar Allah (hutíes)",
+        "note": "Reivindicación no verificada independientemente; no se atribuye responsabilidad más allá de la reivindicación."
+      },
+      "observations": "Distinguir reivindicación de ataque de impacto confirmado.",
+      "reviewed_by_human": true,
+      "reviewed_at": "2026-11-06",
+      "demo": false
+    },
+    {
+      "id": "EV-20261106-006",
+      "event_date": "2026-11-06",
+      "published_at": "2026-11-06",
+      "captured_at": "2026-11-06T16:00:00Z",
+      "country": "Dinamarca",
+      "country_iso2": "DK",
+      "city": "Copenhague",
+      "place": "Aeropuerto de Copenhague-Kastrup",
+      "lat": 55.62,
+      "lon": 12.65,
+      "geo_precision": "city",
+      "category": "amenazas_bomba",
+      "category_label": "Amenazas de bomba y evacuaciones aeroportuarias",
+      "title": "Amenaza de bomba en el aeropuerto de Copenhague",
+      "description": "El aeropuerto de Copenhague recibió una nueva amenaza de bomba en el contexto de una oleada europea. Se trata de una amenaza comunicada; no se confirma la presencia de explosivos ni un ataque.",
+      "infrastructure": "Aeropuerto de Copenhague-Kastrup",
+      "consequences": "Dispositivo de seguridad y perturbaciones; no se confirma explosivo.",
+      "sources": [
+        {
+          "title": "London Loves Business · Copenhagen Airport hit by fresh bomb threat",
+          "url": "https://londonlovesbusiness.com/copenhagen-airport-hit-by-fresh-bomb-threat-as-european-aviation-faces-growing-wave-of-security-scares/",
+          "type": "news",
+          "published_at": "2026-11-06"
+        },
+        {
+          "title": "BBC · Hoax bomb threats target European airlines and airports",
+          "url": "https://www.bbc.com/news/articles/cmpqg08nz3pqo",
+          "type": "news",
+          "published_at": "2026-11-05"
+        }
+      ],
+      "contrast_sources": [],
+      "verification_status": "DOCUMENTADO",
+      "attribution": {
+        "status": "none",
+        "claimed_by": null,
+        "note": "No se atribuye autoría."
+      },
+      "observations": "Amenaza de bomba documentada; no se confirma explosivo ni ataque consumado.",
+      "reviewed_by_human": true,
+      "reviewed_at": "2026-11-06",
+      "demo": false
+    },
+    {
+      "id": "EV-20261106-007",
+      "event_date": "2026-11-06",
+      "published_at": "2026-11-06",
+      "captured_at": "2026-11-06T16:00:00Z",
+      "country": "Chequia",
+      "country_iso2": "CZ",
+      "city": "Praga",
+      "place": "Aeropuerto de Praga-Václav Havel",
+      "lat": 50.1,
+      "lon": 14.26,
+      "geo_precision": "city",
+      "category": "amenazas_bomba",
+      "category_label": "Amenazas de bomba y evacuaciones aeroportuarias",
+      "title": "Amenaza de bomba en un vuelo desde Praga",
+      "description": "Un vuelo procedente de Praga recibió una amenaza de bomba y aterrizó sin incidentes; las autoridades no confirmaron la presencia de explosivos.",
+      "infrastructure": "Aeropuerto de Praga-Václav Havel",
+      "consequences": "Aterrizaje de seguridad; no se confirma explosivo.",
+      "sources": [
+        {
+          "title": "NL Times · More bomb threats reported at Prague Airport",
+          "url": "https://nltimes.nl/2026/11/06/bomb-threats-reported-prague-airport-including-flight-netherlands",
+          "type": "news",
+          "published_at": "2026-11-06"
+        },
+        {
+          "title": "Cyprus Mail · Prague flight to Cyprus lands safely after bomb threat",
+          "url": "https://cyprus-mail.com/2026/11/06/bomb-threat-targets-cyprus-bound-flight-from-prague",
+          "type": "news",
+          "published_at": "2026-11-06"
+        }
+      ],
+      "contrast_sources": [],
+      "verification_status": "DOCUMENTADO",
+      "attribution": {
+        "status": "none",
+        "claimed_by": null,
+        "note": "No se atribuye autoría."
+      },
+      "observations": "Amenaza comunicada, no ataque confirmado.",
+      "reviewed_by_human": true,
+      "reviewed_at": "2026-11-06",
+      "demo": false
+    },
+    {
+      "id": "EV-20261106-008",
+      "event_date": "2026-11-06",
+      "published_at": "2026-11-06",
+      "captured_at": "2026-11-06T16:00:00Z",
+      "country": "Italia",
+      "country_iso2": "IT",
+      "city": "Milán",
+      "place": "Aeropuerto de Malpensa",
+      "lat": 45.63,
+      "lon": 8.72,
+      "geo_precision": "city",
+      "category": "amenazas_bomba",
+      "category_label": "Amenazas de bomba y evacuaciones aeroportuarias",
+      "title": "Amenaza de bomba en Malpensa",
+      "description": "Una amenaza de bomba obligó a inmovilizar vuelos procedentes de Salónica y Oporto en el aeropuerto de Malpensa. No se confirma la presencia de explosivos.",
+      "infrastructure": "Aeropuerto de Malpensa",
+      "consequences": "Vuelos inmovilizados y revisados; no se confirma explosivo.",
+      "sources": [
+        {
+          "title": "Notizie · Bomb threat at Malpensa",
+          "url": "https://www.notizie.it/en/Bomb-threat-at-Malpensa%3B-flights-from-Thessaloniki-and-Porto-blocked./",
+          "type": "news",
+          "published_at": "2026-11-06"
+        }
+      ],
+      "contrast_sources": [],
+      "verification_status": "DOCUMENTADO",
+      "attribution": {
+        "status": "none",
+        "claimed_by": null,
+        "note": "No se atribuye autoría."
+      },
+      "observations": "Amenaza, no ataque confirmado.",
+      "reviewed_by_human": true,
+      "reviewed_at": "2026-11-06",
+      "demo": false
+    },
+    {
+      "id": "EV-20261106-009",
+      "event_date": "2026-11-06",
+      "published_at": "2026-11-06",
+      "captured_at": "2026-11-06T16:00:00Z",
+      "country": "Francia",
+      "country_iso2": "FR",
+      "city": "París",
+      "place": "Espacio aéreo y aeropuertos de París",
+      "lat": 49.01,
+      "lon": 2.55,
+      "geo_precision": "city",
+      "category": "amenazas_bomba",
+      "category_label": "Amenazas de bomba y evacuaciones aeroportuarias",
+      "title": "Cuatro vuelos sobre Francia afectados por amenazas de bomba",
+      "description": "Cuatro vuelos que sobrevolaban Francia recibieron amenazas de bomba; las autoridades informaron de que no se confirmó la presencia de explosivos.",
+      "infrastructure": "Aeropuertos y espacio aéreo francés",
+      "consequences": "Vuelos afectados y revisiones; no se confirma explosivo.",
+      "sources": [
+        {
+          "title": "The Local France · Four new bomb threats on flights over France",
+          "url": "https://www.thelocal.fr/20261106/latest-four-new-bomb-threats-on-flights-over-france",
+          "type": "news",
+          "published_at": "2026-11-06"
+        },
+        {
+          "title": "DW · Bomb threats disrupt several flights across Europe",
+          "url": "https://www.dw.com/en/bomb-threats-disrupt-several-flights-across-europe/a-79861216",
+          "type": "news",
+          "published_at": "2026-11-05"
+        }
+      ],
+      "contrast_sources": [],
+      "verification_status": "DOCUMENTADO",
+      "attribution": {
+        "status": "none",
+        "claimed_by": null,
+        "note": "No se atribuye autoría."
+      },
+      "observations": "Amenaza, no ataque confirmado. La ubicación es el espacio aéreo francés, no un aeropuerto único.",
+      "reviewed_by_human": true,
+      "reviewed_at": "2026-11-06",
+      "demo": false
+    },
+    {
+      "id": "EV-20261106-010",
+      "event_date": "2026-11-05",
+      "published_at": "2026-11-05",
+      "captured_at": "2026-11-06T16:00:00Z",
+      "country": "Israel",
+      "country_iso2": "IL",
+      "city": "Tel Aviv",
+      "place": "Aeropuerto Ben Gurion",
+      "lat": 32.01,
+      "lon": 34.89,
+      "geo_precision": "city",
+      "category": "proteccion_civil",
+      "category_label": "Alertas de seguridad civil y protección de infraestructuras",
+      "title": "Evacuación por susto de seguridad en el aeropuerto Ben Gurion",
+      "description": "Un susto de seguridad provocó una evacuación en el aeropuerto Ben Gurion. La fuente no confirma un ataque ni la presencia de explosivos.",
+      "infrastructure": "Aeropuerto Ben Gurion",
+      "consequences": "Evacuación y respuesta de seguridad; no se confirma ataque.",
+      "sources": [
+        {
+          "title": "Ynet · Panic at Ben Gurion Airport as security scare sparks emergency evacuation",
+          "url": "https://www.ynetnews.com/travel/article/hyqi4rtagl",
+          "type": "news",
+          "published_at": "2026-11-05"
+        }
+      ],
+      "contrast_sources": [],
+      "verification_status": "DOCUMENTADO",
+      "attribution": {
+        "status": "none",
+        "claimed_by": null,
+        "note": "No se atribuye autoría."
+      },
+      "observations": "Susto de seguridad, no ataque confirmado.",
+      "reviewed_by_human": true,
+      "reviewed_at": "2026-11-06",
+      "demo": false
+    },
+    {
+      "id": "EV-20261106-011",
+      "event_date": "2026-11-04",
+      "published_at": "2026-11-04",
+      "captured_at": "2026-11-06T16:00:00Z",
+      "country": "Francia",
+      "country_iso2": "FR",
+      "city": null,
+      "place": "Servicio Nacional de Sangre (Francia)",
+      "lat": null,
+      "lon": null,
+      "geo_precision": null,
+      "category": "ciberataque",
+      "category_label": "Ciberataques contra infraestructuras y servicios",
+      "title": "Ciberataque contra la cadena de frío del servicio de sangre francés",
+      "description": "Un ciberataque afectó a sistemas de refrigeración de almacenes de sangre en Francia. La fuente no documenta daños a personas; el incidente se centra en la cadena de frío.",
+      "infrastructure": "Servicio Nacional de Sangre y cadena de frío",
+      "consequences": "Afectación de sistemas de refrigeración; alcance no cuantificado en la fuente.",
+      "sources": [
+        {
+          "title": "The Guardian · French blood banks hacked",
+          "url": "https://www.theguardian.com/technology/2026/nov/04/france-national-blood-service-hack-cyber-attack-europe",
+          "type": "news",
+          "published_at": "2026-11-04"
+        },
+        {
+          "title": "France 24 · French blood banks foil new cyberattack",
+          "url": "https://www.france24.com/en/france/20261104-french-blood-banks-foil-new-cyberattack-targeting-refrigerators",
+          "type": "news",
+          "published_at": "2026-11-04"
+        }
+      ],
+      "contrast_sources": [],
+      "verification_status": "DOCUMENTADO",
+      "attribution": {
+        "status": "none",
+        "claimed_by": null,
+        "note": "No se atribuye autoría."
+      },
+      "observations": "No se documenta impacto sanitario directo.",
+      "reviewed_by_human": true,
+      "reviewed_at": "2026-11-06",
+      "demo": false
+    },
+    {
+      "id": "EV-20261106-012",
+      "event_date": "2026-11-04",
+      "published_at": "2026-11-04",
+      "captured_at": "2026-11-06T16:00:00Z",
+      "country": "Rusia",
+      "country_iso2": "RU",
+      "city": null,
+      "place": "Proveedor de alojamiento Beget (Rusia)",
+      "lat": null,
+      "lon": null,
+      "geo_precision": null,
+      "category": "ciberataque",
+      "category_label": "Ciberataques contra infraestructuras y servicios",
+      "title": "Ciberataque borra datos en la nube del proveedor ruso Beget",
+      "description": "Un ciberataque eliminó datos alojados en la nube del proveedor ruso Beget. La fuente no permite atribuir autoría ni determinar el alcance total.",
+      "infrastructure": "Proveedor de hosting y servicios cloud",
+      "consequences": "Pérdida de datos comunicada; alcance no verificado.",
+      "sources": [
+        {
+          "title": "The Record · Cyberattack wipes cloud data at Beget",
+          "url": "https://therecord.media/russia-cyberattack-beget-cloud",
+          "type": "news",
+          "published_at": "2026-11-04"
+        }
+      ],
+      "contrast_sources": [],
+      "verification_status": "DOCUMENTADO",
+      "attribution": {
+        "status": "none",
+        "claimed_by": null,
+        "note": "No se atribuye autoría."
+      },
+      "observations": "No se asigna una ubicación física única.",
+      "reviewed_by_human": true,
+      "reviewed_at": "2026-11-06",
+      "demo": false
+    },
+    {
+      "id": "EV-20261106-013",
+      "event_date": "2026-11-02",
+      "published_at": "2026-11-02",
+      "captured_at": "2026-11-06T16:00:00Z",
+      "country": "Unión Europea",
+      "country_iso2": "EU",
+      "city": null,
+      "place": "Supermercados europeos",
+      "lat": null,
+      "lon": null,
+      "geo_precision": null,
+      "category": "ciberataque",
+      "category_label": "Ciberataques contra infraestructuras y servicios",
+      "title": "Ciberataque contra neveras conectadas de supermercados europeos",
+      "description": "Un ciberataque afectó a sistemas de refrigeración conectados de supermercados europeos. La fuente no confirma autoría ni el número final de establecimientos afectados.",
+      "infrastructure": "Cadena de frío y sistemas conectados de supermercados",
+      "consequences": "Afectación de refrigeración; alcance no verificado.",
+      "sources": [
+        {
+          "title": "Press TV · European supermarkets reel from cyberattack",
+          "url": "https://www.presstv.co.uk/Detail/2026/11/03/779816/european-supermarkets-reel-from-cyberattack-raising-infrastructure-security-concerns",
+          "type": "news",
+          "published_at": "2026-11-02"
+        }
+      ],
+      "contrast_sources": [],
+      "verification_status": "PENDIENTE",
+      "attribution": {
+        "status": "none",
+        "claimed_by": null,
+        "note": "No se atribuye autoría."
+      },
+      "observations": "Sin coordenada única: afecta a varios países.",
+      "reviewed_by_human": true,
+      "reviewed_at": "2026-11-06",
+      "demo": false
+    },
+    {
+      "id": "EV-20261106-015",
+      "event_date": "2026-11-03",
+      "published_at": "2026-11-03",
+      "captured_at": "2026-11-06T16:00:00Z",
+      "country": "Francia",
+      "country_iso2": "FR",
+      "city": "Marsella",
+      "place": "Red ferroviaria del sur de Francia",
+      "lat": 43.3,
+      "lon": 5.37,
+      "geo_precision": "region",
+      "category": "ferroviario",
+      "category_label": "Incidentes ferroviarios y aeroportuarios",
+      "title": "Lluvias e inundaciones interrumpen trenes en el sur de Francia",
+      "description": "Lluvias e inundaciones provocaron interrupciones y retrasos graves en la red ferroviaria del sur de Francia, con afectación de servicios TGV y TER.",
+      "infrastructure": "Red ferroviaria del sur de Francia",
+      "consequences": "Retrasos y cancelaciones; no se detalla el número total.",
+      "sources": [
+        {
+          "title": "Nomad Lawyer · Southern France railway disruption",
+          "url": "https://www.nomadlawyer.org/southern-france-railway-disruption-marseille-sncf-flood-damage-ter-tgv-2026",
+          "type": "news",
+          "published_at": "2026-11-03"
+        }
+      ],
+      "contrast_sources": [],
+      "verification_status": "PENDIENTE",
+      "attribution": {
+        "status": "none",
+        "claimed_by": null,
+        "note": "No se atribuye autoría; causa meteorológica."
+      },
+      "observations": "La coordenada es regional, no la ubicación exacta de una estación.",
+      "reviewed_by_human": true,
+      "reviewed_at": "2026-11-06",
+      "demo": false
+    },
+    {
+      "id": "EV-20261106-016",
+      "event_date": "2026-11-04",
+      "published_at": "2026-11-04",
+      "captured_at": "2026-11-06T16:00:00Z",
+      "country": "Reino Unido",
+      "country_iso2": "GB",
+      "city": "Mánchester",
+      "place": "Manchester Piccadilly",
+      "lat": 53.48,
+      "lon": -2.23,
+      "geo_precision": "city",
+      "category": "ferroviario",
+      "category_label": "Incidentes ferroviarios y aeroportuarios",
+      "title": "Incidente de emergencia interrumpe trenes entre Manchester Piccadilly y el aeropuerto",
+      "description": "Un incidente de emergencia en una estación obligó a detener los trenes entre Manchester Piccadilly y el aeropuerto. La fuente no confirma la causa del incidente.",
+      "infrastructure": "Línea Manchester Piccadilly–aeropuerto",
+      "consequences": "Circulación interrumpida; no se confirma la causa.",
+      "sources": [
+        {
+          "title": "Mirror · Manchester airport trains disrupted after emergency incident",
+          "url": "https://www.mirror.co.uk/news/uk-news/manchester-airport-trains-disruption-mauldeth-37844592",
+          "type": "news",
+          "published_at": "2026-11-04"
+        }
+      ],
+      "contrast_sources": [],
+      "verification_status": "DOCUMENTADO",
+      "attribution": {
+        "status": "none",
+        "claimed_by": null,
+        "note": "No se atribuye autoría."
+      },
+      "observations": "No se confunde emergencia operativa con ataque.",
+      "reviewed_by_human": true,
+      "reviewed_at": "2026-11-06",
+      "demo": false
+    },
+    {
+      "id": "EV-20261106-017",
+      "event_date": "2026-11-05",
+      "published_at": "2026-11-05",
+      "captured_at": "2026-11-06T16:00:00Z",
+      "country": "Reino Unido",
+      "country_iso2": "GB",
+      "city": "Birmingham",
+      "place": "Entre University y Five Ways",
+      "lat": 52.48,
+      "lon": -1.9,
+      "geo_precision": "city",
+      "category": "ferroviario",
+      "category_label": "Incidentes ferroviarios y aeroportuarios",
+      "title": "Fallo de señalización interrumpe trenes en Birmingham",
+      "description": "Un fallo de señalización causó interrupciones entre las estaciones de University y Five Ways, en Birmingham. No se documenta causa intencionada.",
+      "infrastructure": "Red ferroviaria de Birmingham",
+      "consequences": "Trenes interrumpidos y retrasos.",
+      "sources": [
+        {
+          "title": "Express & Star · Signalling fault causes train disruption",
+          "url": "https://www.expressandstar.com/news/birmingham/train-disruption-between-university-and-five-ways-9331206",
+          "type": "news",
+          "published_at": "2026-11-05"
+        }
+      ],
+      "contrast_sources": [],
+      "verification_status": "DOCUMENTADO",
+      "attribution": {
+        "status": "none",
+        "claimed_by": null,
+        "note": "No se atribuye autoría."
+      },
+      "observations": "Fallo técnico; no se presenta como sabotaje.",
+      "reviewed_by_human": true,
+      "reviewed_at": "2026-11-06",
+      "demo": false
+    },
+    {
+      "id": "EV-20261106-018",
+      "event_date": "2026-11-06",
+      "published_at": "2026-11-06",
+      "captured_at": "2026-11-06T16:00:00Z",
+      "country": "Reino Unido",
+      "country_iso2": "GB",
+      "city": "Wiltshire",
+      "place": "Tramo ferroviario de Wiltshire",
+      "lat": 51.35,
+      "lon": -1.99,
+      "geo_precision": "region",
+      "category": "ferroviario",
+      "category_label": "Incidentes ferroviarios y aeroportuarios",
+      "title": "Fallo en Wiltshire interrumpe trenes de Londres a Devon",
+      "description": "Un fallo en la infraestructura ferroviaria de Wiltshire interrumpió los trenes entre Londres y Devon. La fuente no detalla la causa técnica.",
+      "infrastructure": "Línea Londres–Devon",
+      "consequences": "Trenes interrumpidos y retrasos.",
+      "sources": [
+        {
+          "title": "RailAdvent · London to Devon trains disrupted after fault in Wiltshire",
+          "url": "https://www.railadvent.co.uk/2026/11/london-to-devon-trains-disrupted-after-fault-in-wiltshire.html",
+          "type": "news",
+          "published_at": "2026-11-06"
+        }
+      ],
+      "contrast_sources": [],
+      "verification_status": "DOCUMENTADO",
+      "attribution": {
+        "status": "none",
+        "claimed_by": null,
+        "note": "No se atribuye autoría."
+      },
+      "observations": "La coordenada es regional.",
+      "reviewed_by_human": true,
+      "reviewed_at": "2026-11-06",
+      "demo": false
+    },
+    {
+      "id": "EV-20261106-020",
+      "event_date": "2026-11-04",
+      "published_at": "2026-11-04",
+      "captured_at": "2026-11-06T16:00:00Z",
+      "country": "OTAN (flanco este)",
+      "country_iso2": null,
+      "city": null,
+      "place": "Frontera este de la OTAN",
+      "lat": null,
+      "lon": null,
+      "geo_precision": null,
+      "category": "gnss",
+      "category_label": "Interferencias GNSS y navegación",
+      "title": "Interferencias GPS a gran escala en el flanco este de la OTAN",
+      "description": "Se detectaron interferencias GPS a gran escala a lo largo de la frontera este de la OTAN. La fuente no atribuye autoría ni identifica un único emisor.",
+      "infrastructure": "Navegación por satélite y espacio aéreo",
+      "consequences": "Afectación de señal GNSS; alcance operativo no cuantificado.",
+      "sources": [
+        {
+          "title": "Militarnyi · Large-scale GPS jamming detected along NATO borders",
+          "url": "https://militarnyi.com/en/news/from-the-baltic-to-the-black-sea-large-scale-gps-jamming-detected-along-nato-borders/",
+          "type": "news",
+          "published_at": "2026-11-04"
+        }
+      ],
+      "contrast_sources": [],
+      "verification_status": "DOCUMENTADO",
+      "attribution": {
+        "status": "none",
+        "claimed_by": null,
+        "note": "No se atribuye autoría."
+      },
+      "observations": "Sin coordenada única: el evento es regional.",
+      "reviewed_by_human": true,
+      "reviewed_at": "2026-11-06",
+      "demo": false
+    }
+  ]
+}

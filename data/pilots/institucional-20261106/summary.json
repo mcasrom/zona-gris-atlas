@@ -1,0 +1,28 @@
+{
+  "pilot_id": "institucional-20261106",
+  "period_start": "2026-10-30",
+  "period_end": "2026-11-06",
+  "consulted_at": "2026-11-06T15:55:00Z",
+  "sources_consulted": 5,
+  "sources_ok": 5,
+  "sources_failed": 0,
+  "documents_consulted": 212,
+  "documents_included": 8,
+  "documents_discarded": 204,
+  "duplicates": 0,
+  "manual_reviewed": 8,
+  "manual_review_pct": 100,
+  "by_source": {
+    "CERT-EU": 1,
+    "BOE": 3,
+    "Comisión Europea": 4,
+    "EASA": 0,
+    "EUROCONTROL": 0
+  },
+  "by_type": {
+    "alerta_tecnica": 1,
+    "disposicion_normativa": 2,
+    "comunicacion_institucional": 5
+  },
+  "notes": "8 documentos reales, solo metadatos; ninguno se presenta como incidente confirmado."
+}
