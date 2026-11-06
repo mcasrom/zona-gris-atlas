@@ -1,21 +1,23 @@
+# Plantilla. Sustituir __DOMAIN__, __TLS_CERT__ y __TLS_KEY__ solo
+# después de confirmar el dominio y emitir el certificado.
 server {
     listen 80;
     listen [::]:80;
-    server_name zonagris.viajeinteligencia.com;
+    server_name __DOMAIN__;
     return 301 https://$host$request_uri;
 }
 
 server {
     listen 443 ssl;
     listen [::]:443 ssl;
-    server_name zonagris.viajeinteligencia.com;
+    server_name __DOMAIN__;
 
-    root /var/www/zonagris;
+    root /var/www/atlas-zonagris/current;
     index index.html;
     charset utf-8;
 
-    ssl_certificate /etc/letsencrypt/live/zonagris.viajeinteligencia.com/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/zonagris.viajeinteligencia.com/privkey.pem;
+    ssl_certificate __TLS_CERT__;
+    ssl_certificate_key __TLS_KEY__;
     ssl_protocols TLSv1.2 TLSv1.3;
     ssl_prefer_server_ciphers off;
 

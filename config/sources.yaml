@@ -1,7 +1,5 @@
 version: 0.1
-
-# Ninguna fuente se activa hasta revisar sus condiciones de uso.
-# licencia: [DECIDIR] en todas las fuentes.
+# Registro inicial. Ninguna fuente está autorizada ni activada.
 sources:
   - id: gdelt
     name: GDELT DOC API
@@ -9,69 +7,117 @@ sources:
     type: api
     enabled: false
     licencia: "[DECIDIR]"
+    licencia_url: "[DECIDIR]"
+    fecha_revision: ""
+    limite_ritmo: "[DECIDIR]"
+    justificacion: "Cobertura global de titulares; requiere revisar términos y cuota."
   - id: eurepoc
     name: EuRepoC
     url: https://eurepoc.eu/
     type: web
     enabled: false
     licencia: "[DECIDIR]"
+    licencia_url: "[DECIDIR]"
+    fecha_revision: ""
+    limite_ritmo: "[DECIDIR]"
+    justificacion: "Repositorio académico europeo sobre ciberconflicto."
   - id: cert-eu
     name: CERT-EU
     url: https://cert.europa.eu/
     type: rss
     enabled: false
     licencia: "[DECIDIR]"
+    licencia_url: "[DECIDIR]"
+    fecha_revision: ""
+    limite_ritmo: "[DECIDIR]"
+    justificacion: "Avisos institucionales de ciberseguridad de la UE."
   - id: ccn-cert
     name: CCN-CERT
     url: https://www.ccn-cert.cni.es/
     type: rss
     enabled: false
     licencia: "[DECIDIR]"
+    licencia_url: "[DECIDIR]"
+    fecha_revision: ""
+    limite_ritmo: "[DECIDIR]"
+    justificacion: "Alertas públicas del CERT español."
   - id: enisa
     name: ENISA
     url: https://www.enisa.europa.eu/
     type: rss
     enabled: false
     licencia: "[DECIDIR]"
+    licencia_url: "[DECIDIR]"
+    fecha_revision: ""
+    limite_ritmo: "[DECIDIR]"
+    justificacion: "Agencia europea de ciberseguridad; publicaciones y avisos."
   - id: cisa
     name: CISA
     url: https://www.cisa.gov/
     type: rss
     enabled: false
     licencia: "[DECIDIR]"
+    licencia_url: "[DECIDIR]"
+    fecha_revision: ""
+    limite_ritmo: "[DECIDIR]"
+    justificacion: "Avisos y guías públicas de ciberseguridad de EE. UU."
   - id: ransomware-live
     name: ransomware.live
     url: https://ransomware.live/
     type: web
     enabled: false
     licencia: "[DECIDIR]"
+    licencia_url: "[DECIDIR]"
+    fecha_revision: ""
+    limite_ritmo: "[DECIDIR]"
+    justificacion: "Seguimiento de reivindicaciones; alto riesgo de ruido criminal."
   - id: gpsjam
     name: GPSJam
     url: https://gpsjam.org/
     type: web
     enabled: false
     licencia: "[DECIDIR]"
+    licencia_url: "[DECIDIR]"
+    fecha_revision: ""
+    limite_ritmo: "[DECIDIR]"
+    justificacion: "Indicadores agregados de interferencia GNSS."
   - id: eurocontrol
     name: Eurocontrol
     url: https://www.eurocontrol.int/
     type: rss
     enabled: false
     licencia: "[DECIDIR]"
+    licencia_url: "[DECIDIR]"
+    fecha_revision: ""
+    limite_ritmo: "[DECIDIR]"
+    justificacion: "Avisos aeronáuticos y contexto de espacio aéreo europeo."
   - id: hybrid-coe
     name: Hybrid CoE
     url: https://www.hybridcoe.fi/
     type: rss
     enabled: false
     licencia: "[DECIDIR]"
+    licencia_url: "[DECIDIR]"
+    fecha_revision: ""
+    limite_ritmo: "[DECIDIR]"
+    justificacion: "Centro de excelencia OTAN sobre amenazas híbridas."
   - id: euvsdisinfo
     name: EUvsDisinfo
     url: https://euvsdisinfo.eu/
     type: rss
     enabled: false
     licencia: "[DECIDIR]"
+    licencia_url: "[DECIDIR]"
+    fecha_revision: ""
+    limite_ritmo: "[DECIDIR]"
+    justificacion: "Contraste público de desinformación; no equivale a atribución."
   - id: eeas
     name: EEAS
     url: https://www.eeas.europa.eu/
     type: rss
     enabled: false
     licencia: "[DECIDIR]"
+    licencia_url: "[DECIDIR]"
+    fecha_revision: ""
+    limite_ritmo: "[DECIDIR]"
+    justificacion: "Comunicados institucionales de la acción exterior europea."
