@@ -1,0 +1,39 @@
+name: Corregir una ficha
+description: Corregir un dato, una fecha, un lugar o una atribución.
+title: "[Ficha] "
+labels: ["correccion"]
+body:
+  - type: input
+    id: ficha
+    attributes:
+      label: Id de la ficha
+      description: Por ejemplo, EJ-0403.
+    validations:
+      required: true
+  - type: textarea
+    id: error
+    attributes:
+      label: Qué está mal
+    validations:
+      required: true
+  - type: textarea
+    id: propuesta
+    attributes:
+      label: Corrección propuesta
+    validations:
+      required: true
+  - type: input
+    id: fuente
+    attributes:
+      label: Fuente que sostiene la corrección
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmacion
+    attributes:
+      label: Confirmación
+      options:
+        - label: La fuente es pública y verificable.
+          required: true
+        - label: No incluyo datos personales innecesarios.
+          required: true

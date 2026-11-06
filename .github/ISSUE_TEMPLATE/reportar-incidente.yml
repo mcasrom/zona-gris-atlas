@@ -1,0 +1,46 @@
+name: Reportar un incidente
+description: Proponer un incidente para revisión, con fuente y fecha.
+title: "[Incidente] "
+labels: ["incidente"]
+body:
+  - type: input
+    id: fecha
+    attributes:
+      label: Fecha del hecho
+      description: AAAA-MM-DD.
+    validations:
+      required: true
+  - type: input
+    id: lugar
+    attributes:
+      label: Lugar
+    validations:
+      required: true
+  - type: dropdown
+    id: dominio
+    attributes:
+      label: Dominio
+      options: [CIB, INF, AER, GNS, SAB, DES, ECO, MIG]
+    validations:
+      required: true
+  - type: textarea
+    id: resumen
+    attributes:
+      label: Qué ocurrió
+      description: Sin adjetivos de culpabilidad; solo hechos y atribuciones citadas.
+    validations:
+      required: true
+  - type: textarea
+    id: fuentes
+    attributes:
+      label: Fuentes
+      description: Una URL por línea, con medio y fecha.
+    validations:
+      required: true
+  - type: textarea
+    id: atribucion
+    attributes:
+      label: Atribución
+      description: Quién atribuye, con qué fuente y con qué confianza. Si no hay, escribe «sin atribuir».
+    validations:
+      required: true

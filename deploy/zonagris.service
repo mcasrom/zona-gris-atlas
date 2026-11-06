@@ -1,0 +1,21 @@
+[Unit]
+Description=Zona Gris batch pipeline
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=deploy
+Group=deploy
+WorkingDirectory=/opt/zona-gris-atlas
+EnvironmentFile=-/opt/zona-gris-atlas/.env
+ExecStart=/opt/zona-gris-atlas/.venv/bin/python -m zonagris.cli ingest --source gdelt --query "hybrid threat europe"
+ExecStart=/opt/zona-gris-atlas/.venv/bin/python -m zonagris.cli dedupe
+ExecStart=/opt/zona-gris-atlas/.venv/bin/python -m zonagris.cli export --out /opt/zona-gris-atlas/web/assets/data
+MemoryMax=1200M
+Nice=10
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+NoNewPrivileges=true
+ReadWritePaths=/opt/zona-gris-atlas/data /opt/zona-gris-atlas/web/assets/data

@@ -1,0 +1,11 @@
+[Unit]
+Description=Nightly Zona Gris batch
+Requires=zonagris.service
+
+[Timer]
+OnCalendar=*-*-* 03:15:00
+Persistent=true
+RandomizedDelaySec=300
+
+[Install]
+WantedBy=timers.target

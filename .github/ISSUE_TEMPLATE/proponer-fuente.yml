@@ -1,0 +1,40 @@
+name: Proponer una fuente
+description: Proponer una fuente verificable para el atlas.
+title: "[Fuente] "
+labels: ["fuente"]
+body:
+  - type: input
+    id: nombre
+    attributes:
+      label: Nombre de la fuente
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: URL principal
+    validations:
+      required: true
+  - type: textarea
+    id: licencia
+    attributes:
+      label: Licencia y condiciones de uso
+      description: Enlaza los términos o indica si no están claros.
+    validations:
+      required: true
+  - type: textarea
+    id: metodo
+    attributes:
+      label: Qué aporta y cómo se extraería
+      description: Formato, frecuencia, riesgo de duplicación y límites.
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmacion
+    attributes:
+      label: Confirmación
+      options:
+        - label: La fuente es pública y no requiere pago.
+          required: true
+        - label: No incluyo datos personales ni secretos.
+          required: true
