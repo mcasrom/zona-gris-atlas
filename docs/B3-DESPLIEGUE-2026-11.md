@@ -22,22 +22,16 @@ La marca visible de la web sigue usando el nombre corto «ZONA GRIS»; el nombre
 
 ## 2. B3.2 · DNS y certificados
 
-Comprobación en el servidor:
+Comprobación:
 
 ```text
-getent ahostsv4 zonagris.pruebapublica.com  -> vacío
-dig +short @1.1.1.1 zonagris... A                -> vacío
-/etc/letsencrypt/live/zonagris...                -> no existe
+dig +short @1.1.1.1 zonagris.pruebapublica.com A -> 178.105.80.193
+dig +short @8.8.8.8 zonagris.pruebapublica.com A -> 178.105.80.193
+getent ahostsv4 desde el servidor               -> vacío (caché negativa local)
+/etc/letsencrypt/live/zonagris...               -> no existe
 ```
 
-**El dominio no resuelve.** No hay registro A, por tanto:
-
-- no se puede validar HTTP-01;
-- no se puede emitir certificado;
-- no se puede instalar el vhost TLS;
-- **B3.2 queda bloqueado**.
-
-Certbot sigue activo para los certificados existentes; no se ha solicitado ni modificado nada.
+**DNS público correcto.** El resolver local del servidor está desactualizado; no se toca. El certificado sigue pendiente de autorización y de instalar el vhost HTTP temporal de ACME. No se ha solicitado ni modificado nada.
 
 ## 3. B3.3 · Nginx preparado, no instalado
 
@@ -47,7 +41,8 @@ Incluye:
 
 - HTTP 80 con `/.well-known/acme-challenge/` y redirección a HTTPS;
 - HTTPS 443 con certificado de `zonagris.pruebapublica.com`;
-- `cf-origin.conf`, `block-attacks.conf`, `indexnow.conf`;
+- DNS-only: **sin** `cf-origin.conf`;
+- `block-attacks.conf`, `indexnow.conf`;
 - TLS 1.2/1.3;
 - HSTS, `X-Content-Type-Options`, `X-Frame-Options`, `Referrer-Policy`, `Permissions-Policy` y CSP;
 - raíz `/var/www/atlas-zonagris/current` (coincide con `ZG_REMOTE_ROOT`);
@@ -76,9 +71,9 @@ SERVER=178.105.80.193 ZG_DOMAIN=zonagris.pruebapublica.com \
 
 ## 5. Condiciones exactas para autorizar B3
 
-1. Crear el registro A `zonagris.pruebapublica.com -> 178.105.80.193` (gris para HTTP-01; naranja después si se decide).
-2. Confirmar resolución pública y desde el servidor.
-3. Emitir certificado sin tocar los existentes.
+1. Confirmar la resolución pública (ya correcta).
+2. Instalar el vhost HTTP temporal y emitir certificado.
+3. Confirmar renovación sin tocar los existentes.
 4. Backup de `sites-enabled` a `/etc/nginx/backups/2026-11-06/`.
 5. Instalar el vhost, `nginx -t` y `reload` (nunca restart).
 6. Ejecutar el despliegue en dry-run y revisar el plan.
@@ -89,9 +84,9 @@ No se ha ejecutado ninguno de estos pasos.
 
 ## 6. Riesgos pendientes
 
-- **DNS ausente:** bloqueo principal.
+- **Resolver local del servidor:** sigue con caché negativa; no se reinicia.
 - **Certificado ausente:** el vhost no puede activarse.
-- **`cf-origin.conf`:** presupone el patrón Cloudflare/mTLS del servidor; confirmar si el registro será proxied.
+- **DNS-only:** no se incluye `cf-origin.conf`; si se pasa a proxied habrá que añadirlo con autorización.
 - **CSP:** mantiene `style-src 'unsafe-inline'` por el CSS crítico y atributos de estilo.
 - **TLS global:** sigue con TLS 1.0/1.1; no se toca.
 - **Marca:** la web usa «ZONA GRIS» como nombre corto; el proyecto es «Atlas Zona Gris».
