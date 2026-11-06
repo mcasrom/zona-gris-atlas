@@ -1,0 +1,77 @@
+version: 0.1
+
+# Ninguna fuente se activa hasta revisar sus condiciones de uso.
+# licencia: [DECIDIR] en todas las fuentes.
+sources:
+  - id: gdelt
+    name: GDELT DOC API
+    url: https://api.gdeltproject.org/api/v2/doc/doc
+    type: api
+    enabled: false
+    licencia: "[DECIDIR]"
+  - id: eurepoc
+    name: EuRepoC
+    url: https://eurepoc.eu/
+    type: web
+    enabled: false
+    licencia: "[DECIDIR]"
+  - id: cert-eu
+    name: CERT-EU
+    url: https://cert.europa.eu/
+    type: rss
+    enabled: false
+    licencia: "[DECIDIR]"
+  - id: ccn-cert
+    name: CCN-CERT
+    url: https://www.ccn-cert.cni.es/
+    type: rss
+    enabled: false
+    licencia: "[DECIDIR]"
+  - id: enisa
+    name: ENISA
+    url: https://www.enisa.europa.eu/
+    type: rss
+    enabled: false
+    licencia: "[DECIDIR]"
+  - id: cisa
+    name: CISA
+    url: https://www.cisa.gov/
+    type: rss
+    enabled: false
+    licencia: "[DECIDIR]"
+  - id: ransomware-live
+    name: ransomware.live
+    url: https://ransomware.live/
+    type: web
+    enabled: false
+    licencia: "[DECIDIR]"
+  - id: gpsjam
+    name: GPSJam
+    url: https://gpsjam.org/
+    type: web
+    enabled: false
+    licencia: "[DECIDIR]"
+  - id: eurocontrol
+    name: Eurocontrol
+    url: https://www.eurocontrol.int/
+    type: rss
+    enabled: false
+    licencia: "[DECIDIR]"
+  - id: hybrid-coe
+    name: Hybrid CoE
+    url: https://www.hybridcoe.fi/
+    type: rss
+    enabled: false
+    licencia: "[DECIDIR]"
+  - id: euvsdisinfo
+    name: EUvsDisinfo
+    url: https://euvsdisinfo.eu/
+    type: rss
+    enabled: false
+    licencia: "[DECIDIR]"
+  - id: eeas
+    name: EEAS
+    url: https://www.eeas.europa.eu/
+    type: rss
+    enabled: false
+    licencia: "[DECIDIR]"

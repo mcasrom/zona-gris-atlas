@@ -1,0 +1,12 @@
+url: https://zonagris.viajeinteligencia.com  # [DECIDIR: dominio]
+name: Zona Gris
+title: "Zona Gris · Atlas abierto de incidentes híbridos"
+description: "Atlas abierto de incidentes de zona gris y amenazas híbridas. Registra hechos, fuentes y quién atribuye cada caso; nunca atribuye por su cuenta."
+author: "[DECIDIR: nombre público]"
+repo: https://github.com/mcasrom/zona-gris-atlas
+contact: "[DECIDIR: contacto]"
+kofi: ""  # [DECIDIR: KOFI_URL]
+dataset_license: "[DECIDIR: CC BY 4.0]"
+analytics: false
+version: 0.1.0
+language: es

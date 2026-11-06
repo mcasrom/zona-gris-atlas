@@ -1,0 +1,83 @@
+version: 0.1
+
+domains:
+  CIB:
+    name: Ciber
+    description: Intrusiones, campañas de phishing, ransomware y operaciones contra sistemas.
+  INF:
+    name: Infraestructura crítica
+    description: Ataques o sabotajes contra energía, agua, transporte, sanidad o telecomunicaciones.
+  AER:
+    name: Espacio aéreo y drones
+    description: Incursiones, cierres de espacio aéreo, drones hostiles y alertas aeronáuticas.
+  GNS:
+    name: Interferencia GNSS
+    description: Interferencia o suplantación de GPS, Galileo y otros sistemas de navegación.
+  SAB:
+    name: Sabotaje físico
+    description: Daños deliberados a instalaciones, cables, gasoductos o equipos.
+  DES:
+    name: Desinformación
+    description: Operaciones coordinadas para alterar la percepción pública.
+  ECO:
+    name: Coerción económica
+    description: Presión comercial, energética o financiera con fines políticos.
+  MIG:
+    name: Instrumentalización migratoria
+    description: Uso político de flujos migratorios para presionar a un Estado.
+
+scale:
+  paz_estable:
+    label: Paz estable
+    description: Cooperación ordinaria y ausencia de presión hostil.
+  competencia:
+    label: Competencia
+    description: Rivalidad política o económica sin coerción directa.
+  zona_gris:
+    label: Zona gris
+    description: Coerción ambigua por debajo del umbral del conflicto armado.
+  hostilidad_hibrida:
+    label: Hostilidad híbrida
+    description: Acciones hostiles combinadas, negables y sostenidas.
+  conflicto_abierto:
+    label: Conflicto abierto
+    description: Violencia armada declarada o confrontación militar directa.
+
+atlas_scale:
+  - competencia
+  - zona_gris
+  - hostilidad_hibrida
+
+severity:
+  baja:
+    label: Baja
+  media:
+    label: Media
+  alta:
+    label: Alta
+
+attribution_status:
+  none:
+    label: Sin atribuir
+  official:
+    label: Fuente oficial o técnica
+  claimed:
+    label: Reivindicado
+
+attribution_type:
+  government:
+    label: Gobierno
+  agency:
+    label: Agencia
+  vendor:
+    label: Empresa de ciberseguridad
+  other:
+    label: Otro
+
+reality:
+  probable:
+    label: Probable
+  dudoso:
+    label: Dudoso
+  descartado:
+    label: Descartado
