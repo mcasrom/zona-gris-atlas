@@ -18,7 +18,7 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = [
-  "pytest>=8,<9",
+  "pytest>=8,<10",
   "ruff>=0.6,<1",
   "bandit>=1.7,<2",
   "pip-audit>=2.7,<3",
