@@ -49,10 +49,10 @@ def cmd_dedupe(args) -> int:
 
 
 def cmd_classify(args) -> int:
-    gold = Path(args.gold)
-    if not gold.exists():
-        raise SystemExit(f"no existe el conjunto de oro: {gold}")
-    rows = baseline.load_jsonl(gold)
+    sample = Path(args.gold)
+    if not sample.exists():
+        raise SystemExit(f"no existe la muestra opcional: {sample}")
+    rows = baseline.load_jsonl(sample)
     model = baseline.train(rows)
     baseline.save(model, Path(args.model))
     print(f"modelo guardado: {args.model} · ejemplos: {len(rows)}")
@@ -96,7 +96,7 @@ def build_parser() -> argparse.ArgumentParser:
     dedupe.set_defaults(func=cmd_dedupe)
 
     classify = sub.add_parser("classify")
-    classify.add_argument("--gold", default=str(config.ROOT / "eval" / "gold" / "ejemplo.jsonl"))
+    classify.add_argument("--gold", required=True, help="JSONL opcional de muestra para clasificar")
     classify.add_argument("--model", default=str(config.ROOT / "models" / "baseline.pkl"))
     classify.add_argument("--show", type=int, default=3)
     classify.set_defaults(func=cmd_classify)

@@ -24,13 +24,11 @@ continuidad no dependa de conocimiento tácito.
 - Cualquier persona que retome el proyecto debe revisar primero las condiciones
   de las fuentes y no reactivar capturas sin comprobarlas.
 
-## Copia de seguridad
+## Copias
 
-`scripts/backup.sh` crea un `git bundle` en el portátil y conserva 10 copias.
-GitHub es la copia principal y el portátil es una segunda copia verificable, pero
-**ambos pueden fallar con el mismo incidente local**: no sustituye a una copia
-off-site. Para cerrar el riesgo hay que añadir otra máquina u object storage y
-probar una restauración completa.
+GitHub es la copia principal. El servidor conserva releases estáticas anteriores
+para rollback. `scripts/backup.sh` puede crear un bundle en el portátil, pero es
+opcional; no se exige otra copia adicional.
 
 ## Restauración mínima
 

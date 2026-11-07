@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1 — 2026-11-07
+
+- Sin demo, sin gold set obligatorio, autoría/contacto público y versión en el pie.
+
 ## 0.1.0 — 2026-11-06
 
 - Esqueleto del proyecto y repositorio.
@@ -16,7 +20,7 @@
 
 - Bing News RSS queda registrado como agregador de descubrimiento activo, no como fuente primaria.
 - Los candidatos automáticos nunca pasan a `DOCUMENTADO`; el constructor los degrada a `PENDIENTE` si detecta un registro sin revisión humana.
-- El clasificador se declara experimental; se elimina el gold set de 200 eventos como requisito y no hay puerta de publicación.
+- El clasificador se declara experimental; se elimina el conjunto de validación obligatorio y no hay puerta de publicación.
 - Licencia de datos CC BY 4.0 para estructura y metadatos propios; los titulares de terceros conservan sus derechos.
 - Criterios de inclusión MIG y límites de sesgo de fuentes documentados.
 - Rutas personales sustituidas por rutas genéricas y fichero de continuidad añadido.

@@ -144,6 +144,7 @@ def replace_tokens() -> None:
         "{{KOFI_BUTTON}}": kofi_button(),
         "{{WEBSITE_JSONLD}}": website_jsonld(),
         "{{YEAR}}": str(datetime.now(timezone.utc).year),
+        "{{VERSION}}": str(SITE.get("version", "0.0.0")),
     }
     for path in WEB.rglob("*"):
         if path.suffix not in {".html", ".js", ".xml", ".txt", ".webmanifest"} or not path.is_file():

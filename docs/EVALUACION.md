@@ -3,7 +3,7 @@
 ## Sin puerta de publicación
 
 El clasificador es **experimental y no publica fichas**. No hay un requisito de
-etiquetar 200 eventos ni un lote de oro obligatorio. La revisión humana relevante
+etiquetado masivo ni un lote de validación obligatorio. La revisión humana relevante
 es **por ficha**: fuente, fecha, lugar, atribución y estado.
 
 ## Conjunto de muestra
@@ -20,9 +20,6 @@ puede contener:
 - `attribution.status`
 - `attribution.attributed_by`
 - `attribution.source_url`
-
-`eval/gold/ejemplo.jsonl` solo documenta el formato. No es un conjunto de
-evaluación ni una obligación de etiquetado.
 
 ## Métricas
 

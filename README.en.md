@@ -3,7 +3,7 @@
 [![CI](https://github.com/mcasrom/zona-gris-atlas/actions/workflows/ci.yml/badge.svg)](https://github.com/mcasrom/zona-gris-atlas/actions/workflows/ci.yml)
 [![License: AGPL-3.0](https://img.shields.io/badge/license-AGPL--3.0-ffb020)](LICENSE)
 
-> **Visible warning:** the public map contains curated records and automatic candidates. Candidates remain `PENDIENTE` and are never presented as confirmed incidents. There is no demonstration data.
+> **Visible warning:** the public map contains reviewed records and automatic candidates. Candidates remain `PENDIENTE` and are never presented as confirmed incidents. There is no demonstration data.
 
 An open atlas of gray-zone and hybrid-threat incidents. It records the event, its source and **who attributes it**. The system does not attribute authorship on its own.
 
@@ -41,7 +41,7 @@ flowchart LR
 - **Live:** <https://zonagris.pruebapublica.com>.
 - **Automatic capture:** every 6 hours from Bing News RSS, registered as a discovery aggregator, not as a primary source.
 - **Publication rule:** automatic candidates always remain `PENDIENTE`; only human review can promote a record to `DOCUMENTADO`.
-- **Classifier:** experimental and never publishes. There is no release gate and no requirement to label 200 events; human review is per record.
+- **Classifier:** experimental and never publishes. There is no release gate and no bulk-labelling requirement; human review is per record.
 
 ## Quick start
 
@@ -75,7 +75,7 @@ The last **10** bundles are kept.
 
 ## Evaluation
 
-`eval/metrics.py` is available for optional sample checks, but there is **no publication gate and no 200-event labelling requirement**. Human review is per record. The classifier is experimental and never publishes.
+`eval/metrics.py` is available for optional sample checks, but there is **no publication gate and no bulk-labelling requirement**. Human review is per record. The classifier is experimental and never publishes.
 
 ## Sources and licences
 
@@ -99,4 +99,4 @@ FIMI Radar measures network diffusion. Zona Gris measures **real-world events**.
 
 ## Continuity
 
-See `docs/CONTINUIDAD.md` for maintainer, recovery and off-site backup status. A verified off-site copy is still pending.
+See `docs/CONTINUIDAD.md` for maintainer and recovery. GitHub and the server are the copies; a local bundle is optional.

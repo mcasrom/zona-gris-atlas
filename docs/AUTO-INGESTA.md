@@ -16,7 +16,7 @@ La evaluación es deliberadamente conservadora:
 - no se descarga el artículo completo ni se inventan coordenadas.
 
 `scripts/build_web.py` y `scripts/build_events_data.py` comparten la misma función
-de fusión: los curados tienen prioridad, se descartan los automáticos que repiten
+de fusión: los revisados tienen prioridad, se descartan los automáticos que repiten
 URL o titular similar y **nunca se publica un automático como `DOCUMENTADO`**.
 Bing News RSS está registrado en `config/sources.yaml` como agregador de
 descubrimiento, no como fuente primaria; sus condiciones de uso siguen pendientes

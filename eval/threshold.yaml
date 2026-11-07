@@ -1,7 +1,0 @@
-# El clasificador es experimental y no publica fichas.
-# No hay puerta de publicación ni se exige un lote de etiquetado humano.
-status: experimental
-gate_result: no_aplica
-classifier_publica: false
-# Métricas opcionales si algún día se evalúa una muestra; no bloquean releases.
-min_macro_f1: 0.75

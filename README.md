@@ -49,7 +49,7 @@ flowchart LR
   C --> D[Evaluación conservadora]
   D --> E[PENDIENTE]
   E --> H[Revisión humana]
-  H --> F[Fusión con registros curados]
+  H --> F[Fusión con registros revisados]
   F --> G[Web estática + JSON + feed]
   F --> X[Sin confirmación automática]
 ```
@@ -58,7 +58,7 @@ La captura automática consulta **Bing News RSS** (registrado como agregador de
 descubrimiento en `config/sources.yaml`), conserva titulares, resumen corto, URL,
 fecha y huella SHA-256. Ningún candidato automático pasa a `DOCUMENTADO`: una o
 varias fuentes lo dejan en `PENDIENTE` hasta la revisión humana. El constructor
-degrada también los registros antiguos sin revisión. Los registros curados tienen
+degrada también los registros antiguos sin revisión. Los registros revisados tienen
 prioridad en la fusión. Detalle: [`docs/AUTO-INGESTA.md`](docs/AUTO-INGESTA.md).
 
 La web usa **dos columnas con scroll propio** para la lista del mapa, y una columna en
@@ -99,7 +99,7 @@ No hay claves en el repo. Copia `.env.example` a `.env` solo si lo necesitas.
 ## Copia de seguridad
 
 GitHub es la copia principal. El bundle local es la segunda; **todavía no hay
-copia off-site verificada** (ver [`docs/CONTINUIDAD.md`](docs/CONTINUIDAD.md)):
+copia de trabajo en el portátil (opcional):
 
 ```bash
 make backup
@@ -130,9 +130,9 @@ scripts/      backup, build_web, mapa y OG
 ## Evaluación y criterios de salida
 
 `eval/metrics.py` permite medir una muestra si alguien quiere hacerlo, pero **no
-hay puerta de publicación ni se exige etiquetar 200 eventos**. El clasificador es
+hay puerta de publicación ni se exige un etiquetado masivo**. El clasificador es
 experimental y no publica fichas. La revisión humana es por ficha, no un lote
-masivo de etiquetado. `eval/threshold.yaml` no bloquea releases.
+masivo de etiquetado. No hay fichero de umbral ni conjunto de validación obligatorio.
 
 ## Fuentes y licencias
 
@@ -179,9 +179,6 @@ FIMI Radar mide difusión en redes. Zona Gris mide **eventos del mundo real**. N
 - Mantener la revisión editorial antes de promocionar cualquier registro a
   `DOCUMENTADO` o `CONFIRMADO`; la automatización no toma esa decisión.
 - Vigilar el log del cron y la antigüedad de la última captura.
-- Añadir una copia off-site verificada y probar la restauración
-  ([`docs/CONTINUIDAD.md`](docs/CONTINUIDAD.md)).
-- Medir una muestra solo si hay una pregunta concreta; no se exige un gold set
-  masivo ni se presenta el clasificador como validado.
+- Medir una muestra solo si hay una pregunta concreta; no se exige ni se espera una validación masiva.
 - Revisar la dieta de fuentes y documentar la incorporación de fuentes no
   occidentales; el registro actual no es geográficamente neutral.

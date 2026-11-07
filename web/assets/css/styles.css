@@ -356,3 +356,5 @@ button.btn:hover { background: var(--panel); }
 @media (max-width: 640px) {
   .event-list { max-height: 440px; padding-right: 0; }
 }
+
+.footer-version { color: var(--muted); font-family: "IBM Plex Mono", monospace; font-size: 0.78rem; white-space: nowrap; }
