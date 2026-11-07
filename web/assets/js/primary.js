@@ -5,7 +5,8 @@
   if (!list) return;
   fetch("assets/data/primary.json").then(function (r) { return r.json(); }).then(function (data) {
     var docs = data.documents || [];
-    if (meta) meta.textContent = docs.length + " documentos · " + (data.source || "fuente primaria") + " · " + (data.license || "licencia no indicada");
+    var sources = (data.sources || []).map(function (s) { return s.name; }).join(" · ");
+    if (meta) meta.textContent = docs.length + " documentos · " + (sources || "fuentes primarias") + " · condiciones por fuente";
     list.replaceChildren();
     if (!docs.length) {
       list.innerHTML = "<li class=\"muted\">No hay documentos primarios cargados.</li>";
@@ -19,7 +20,7 @@
       li.appendChild(a);
       var p = document.createElement("p");
       p.className = "muted small";
-      p.textContent = (doc.published_at || "sin fecha") + " · " + doc.source + (doc.tlp ? " · TLP:" + doc.tlp : "");
+      p.textContent = (doc.published_at || "sin fecha") + " · " + doc.source + (doc.source_country ? " · " + doc.source_country : "") + (doc.tlp ? " · TLP:" + doc.tlp : "");
       li.appendChild(p);
       if (doc.summary) {
         var s = document.createElement("p");

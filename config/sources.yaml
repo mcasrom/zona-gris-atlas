@@ -149,25 +149,25 @@ sources:
   - id: jpcert
     name: JPCERT/CC (Japón)
     tier: primary
-    url: https://www.jpcert.or.jp/english/
-    type: web
-    enabled: false
+    url: https://www.jpcert.or.jp/rss/jpcert.rdf
+    type: rss
+    enabled: true
     licencia: "[REVISAR]"
-    licencia_url: "[REVISAR]"
-    fecha_revision: ""
-    limite_ritmo: "[REVISAR]"
-    justificacion: "CERT nacional de Japón; pendiente de feed y condiciones."
+    licencia_url: "https://www.jpcert.or.jp/english/"
+    fecha_revision: "2026-11-07"
+    limite_ritmo: "1 consulta / 6 h"
+    justificacion: "Documentos primarios de JPCERT/CC; no se publican como incidentes."
   - id: cert-br
     name: CERT.br (Brasil)
     tier: primary
-    url: https://www.cert.br/
-    type: web
-    enabled: false
+    url: https://www.cert.br/rss/
+    type: rss
+    enabled: true
     licencia: "[REVISAR]"
-    licencia_url: "[REVISAR]"
-    fecha_revision: ""
-    limite_ritmo: "[REVISAR]"
-    justificacion: "CERT nacional de Brasil; pendiente de feed y condiciones."
+    licencia_url: "https://www.cert.br/"
+    fecha_revision: "2026-11-07"
+    limite_ritmo: "1 consulta / 6 h"
+    justificacion: "Documentos primarios de CERT.br; no se publican como incidentes."
   - id: cncert
     name: CNCERT/CC (China)
     tier: primary
@@ -179,3 +179,14 @@ sources:
     fecha_revision: ""
     limite_ritmo: "[REVISAR]"
     justificacion: "CERT nacional de China; pendiente de acceso, idioma y condiciones."
+  - id: ncsc-uk
+    name: NCSC-UK
+    tier: primary
+    url: https://www.ncsc.gov.uk/api/1/services/v1/report-rss-feed.xml
+    type: rss
+    enabled: true
+    licencia: "[REVISAR]"
+    licencia_url: "https://www.ncsc.gov.uk/"
+    fecha_revision: "2026-11-07"
+    limite_ritmo: "1 consulta / 6 h"
+    justificacion: "Documentos primarios de NCSC-UK; no se publican como incidentes."

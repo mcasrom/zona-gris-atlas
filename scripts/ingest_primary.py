@@ -20,11 +20,21 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_OUT = ROOT / "data" / "events" / "primary" / "documents.json"
+SOURCES = (
+    {"id": "cert-eu", "name": "CERT-EU", "url": "https://cert.europa.eu/publications/threat-intelligence-rss",
+     "country": "EU", "language": "en", "license": "CC BY 4.0", "license_url": "https://cert.europa.eu/legal-notice"},
+    {"id": "jpcert", "name": "JPCERT/CC", "url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+     "country": "JP", "language": "ja", "license": "Revisar condiciones", "license_url": "https://www.jpcert.or.jp/english/"},
+    {"id": "cert-br", "name": "CERT.br", "url": "https://www.cert.br/rss/",
+     "country": "BR", "language": "pt", "license": "Revisar condiciones", "license_url": "https://www.cert.br/"},
+    {"id": "ncsc-uk", "name": "NCSC-UK", "url": "https://www.ncsc.gov.uk/api/1/services/v1/report-rss-feed.xml",
+     "country": "GB", "language": "en", "license": "Revisar condiciones", "license_url": "https://www.ncsc.gov.uk/"},
+)
 SOURCE_ID = "cert-eu"
 SOURCE_NAME = "CERT-EU"
-SOURCE_URL = "https://cert.europa.eu/publications/threat-intelligence-rss"
-LICENSE = "CC BY 4.0"
-LICENSE_URL = "https://cert.europa.eu/legal-notice"
+SOURCE_URL = SOURCES[0]["url"]
+LICENSE = SOURCES[0]["license"]
+LICENSE_URL = SOURCES[0]["license_url"]
 UA = "Mozilla/5.0 (compatible; AtlasZonaGris/0.4; +https://zonagris.pruebapublica.com/metodologia.html)"
 MAX_BYTES = 2_000_000
 
@@ -56,33 +66,53 @@ def document_id(guid: str, url: str) -> str:
     return "DOC-" + hashlib.sha256((guid or url).encode()).hexdigest()[:12].upper()
 
 
-def parse_feed(raw: bytes) -> list[dict]:
+def local_name(tag: str) -> str:
+    return tag.rsplit("}", 1)[-1]
+
+
+def child_text(item: ET.Element, names: tuple[str, ...]) -> str:
+    for child in list(item):
+        if local_name(child.tag) in names and (child.text or "").strip():
+            return clean(child.text)
+    return ""
+
+
+def parse_feed(raw: bytes, meta: dict | None = None) -> list[dict]:
+    meta = meta or SOURCES[0]
     root = ET.fromstring(raw)  # nosec B314
-    if root.tag != "rss":
-        raise ValueError("feed RSS no reconocido")
     documents = []
-    for item in root.findall(".//item"):
-        title = clean(item.findtext("title"))
-        url = clean(item.findtext("link"))
-        if not title or not url:
+    for item in root.iter():
+        if local_name(item.tag) != "item":
             continue
-        summary = clean(item.findtext("description"))
-        published = parse_date(item.findtext("pubDate"))
-        guid = clean(item.findtext("guid"))
+        title = child_text(item, ("title",))
+        link = child_text(item, ("link",))
+        if not link:
+            for child in list(item):
+                if local_name(child.tag) == "link":
+                    link = clean(child.attrib.get("href") or child.attrib.get("{http://www.w3.org/1999/02/22-rdf-syntax-ns#}about"))
+                    if link:
+                        break
+        if not title or not link:
+            continue
+        summary = child_text(item, ("description", "summary", "content"))
+        published = parse_date(child_text(item, ("pubDate", "date", "updated")))
+        guid = child_text(item, ("guid", "identifier", "id"))
         documents.append({
-            "id": document_id(guid, url),
+            "id": document_id(guid, link),
             "kind": "primary_document",
             "is_incident": False,
             "tier": "primary",
-            "source_id": SOURCE_ID,
-            "source": SOURCE_NAME,
+            "source_id": meta["id"],
+            "source": meta["name"],
+            "source_country": meta["country"],
+            "source_language": meta["language"],
             "title": title,
-            "url": url,
+            "url": link,
             "summary": summary,
             "published_at": published,
-            "language": "en",
-            "license": LICENSE,
-            "license_url": LICENSE_URL,
+            "language": meta["language"],
+            "license": meta["license"],
+            "license_url": meta["license_url"],
             "tlp": "CLEAR" if "TLP:CLEAR" in summary else None,
         })
     return documents
@@ -91,26 +121,23 @@ def parse_feed(raw: bytes) -> list[dict]:
 def main() -> int:
     parser = argparse.ArgumentParser(description="Capa de documentos primarios CERT-EU")
     parser.add_argument("--out", type=Path, default=DEFAULT_OUT)
-    parser.add_argument("--limit", type=int, default=20)
+    parser.add_argument("--limit", type=int, default=60)
     args = parser.parse_args()
 
-    try:
-        documents = parse_feed(fetch())
-    except Exception as exc:  # noqa: BLE001 - la fuente no debe tumbar el build
-        print(f"error CERT-EU: {exc}", file=sys.stderr)
-        return 1
+    documents = []
+    for meta in SOURCES:
+        try:
+            documents.extend(parse_feed(fetch(meta["url"]), meta))
+        except Exception as exc:  # noqa: BLE001 - una fuente no debe tumbar la capa
+            print(f"error {meta['name']}: {exc}", file=sys.stderr)
     documents = documents[: args.limit]
     if not documents:
-        print("error CERT-EU: feed sin documentos; se conserva la capa anterior", file=sys.stderr)
+        print("error capa primaria: ninguna fuente devolvió documentos; se conserva la anterior", file=sys.stderr)
         return 1
 
     payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "source_id": SOURCE_ID,
-        "source": SOURCE_NAME,
-        "source_url": SOURCE_URL,
-        "license": LICENSE,
-        "license_url": LICENSE_URL,
+        "sources": [{"id": m["id"], "name": m["name"], "country": m["country"], "language": m["language"]} for m in SOURCES],
         "count": len(documents),
         "documents": documents,
     }
