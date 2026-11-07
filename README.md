@@ -70,9 +70,11 @@ demás registros quedan en la lista.
 ## Estado actual
 
 - **Publicado en Hetzner:** `https://zonagris.pruebapublica.com`.
-- **Release actual:** `20261107T135509Z`.
-- **Captura automática:** cron cada 6 horas; Bing News RSS como descubrimiento y una **capa primaria CERT-EU** separada del mapa.
+- **Release actual:** consultar `current`; las releases anteriores se conservan para rollback.
+- **Captura automática:** cron cada 6 horas; Bing News RSS como descubrimiento, matriz regional de consultas y capa primaria separada.
 - **Capa primaria:** `/primarias.html` · CERT-EU, JPCERT/CC, CERT.br y NCSC-UK; documentos, no incidentes.
+- **Cobertura:** `/cobertura.html` · separa ámbito de consulta, candidatos y registros con ubicación documentada.
+- **Geolocalización:** `--geo-shadow` calcula sugerencias sin publicarlas; no está activa en producción.
 - **Resumen semanal:** `/suscribirse.html` · lista propia con doble opt-in, Resend y baja en un clic; no se mezcla con otras listas.
 - **Automatización:** un fallo de captura no cambia `current`; las releases anteriores
   se conservan para rollback. La capa primaria falla de forma aislada: no tumba el mapa.
@@ -102,8 +104,8 @@ No hay claves en el repo. Copia `.env.example` a `.env` solo si lo necesitas.
 
 ## Copia de seguridad
 
-GitHub es la copia principal. El bundle local es la segunda; **todavía no hay
-copia de trabajo en el portátil (opcional):
+GitHub es la copia principal. El servidor conserva las releases. El bundle del
+portátil es opcional:
 
 ```bash
 make backup
@@ -121,14 +123,14 @@ Se conservan los últimos **10** bundles.
 ## Estructura
 
 ```text
-config/       taxonomía, fuentes y sitio
+config/       taxonomía, fuentes, sitio, matriz de consultas y países
 db/           esquema SQLite
-docs/         método, límites, atribución, evaluación, arquitectura, privacidad
+docs/         método, límites, atribución, geolocalización, privacidad
 src/zonagris/ ingesta, deduplicado, clasificación, exportación y CLI
-eval/         formato de oro, métricas y umbral
-web/          HTML, CSS, JS, fuentes, mapa y documentos primarios
+eval/         métricas opcionales
+web/          HTML, CSS, JS, fuentes, mapa, incidentes, cobertura y primarias
 deploy/       systemd, nginx y Dockerfile
-scripts/      backup, build_web, mapa y OG
+scripts/      captura, capa primaria, resumen semanal, backup, build_web y OG
 ```
 
 ## Evaluación y criterios de salida
@@ -140,14 +142,12 @@ masivo de etiquetado. No hay fichero de umbral ni conjunto de validación obliga
 
 ## Fuentes y licencias
 
-La captura automática usa **Bing News RSS** como descubrimiento y una fuente primaria **CERT-EU**; conserva la URL
-del medio y no publica el artículo completo. Está registrado como fuente de
-descubrimiento activa en `config/sources.yaml`, con revisión de condiciones pendiente;
-nunca se presenta como fuente primaria. Los registros institucionales de B13
-proceden de CERT-EU, BOE y Comisión Europea, con sus condiciones de reutilización
-documentadas. No hay APIs de pago, claves de proveedores ni cookies. La lista y las
-pruebas de fuentes están en `data/events/2026-11-06/sources.json` y
-`data/events/auto/sources.json`.
+La captura automática usa **Bing News RSS** como descubrimiento. La **capa primaria**
+usa CERT-EU, JPCERT/CC, CERT.br y NCSC-UK; se muestran como documentos, no como
+incidentes. Bing no se presenta como fuente primaria y no se publica el artículo
+completo. No hay APIs de pago, claves de proveedores ni cookies. La lista y las
+pruebas de fuentes están en `config/sources.yaml`, `data/events/auto/sources.json`
+y `data/events/primary/documents.json`.
 
 ## Límites y ética
 
@@ -187,3 +187,5 @@ FIMI Radar mide difusión en redes. Zona Gris mide **eventos del mundo real**. N
 - Medir una muestra solo si hay una pregunta concreta; no se exige ni se espera una validación masiva.
 - Revisar la dieta de fuentes y documentar la incorporación de fuentes no
   occidentales; el registro actual no es geográficamente neutral.
+- No activar `--geo` hasta que las sugerencias del modo sombra tengan una tasa de
+  error aceptable y exista metadata de país fiable.

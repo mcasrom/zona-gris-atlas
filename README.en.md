@@ -9,9 +9,9 @@ An open atlas of gray-zone and hybrid-threat incidents. It records the event, it
 
 ## What it is, and what it is not
 
-**It is** a dated record across eight domains: cyber, critical infrastructure, airspace and drones, GNSS interference, physical sabotage, disinformation, economic coercion and migration instrumentalisation.
+**It is** a dated record across ten domains: cyber, critical infrastructure, airspace and drones, GNSS interference, physical sabotage, disinformation, economic coercion, migration instrumentalisation, submarine cables and AI-enabled attacks.
 
-**It is not** an automatic attribution engine, an attack predictor, a people profiler or a real-time intelligence base. Submarine cables are outside v0.1.
+**It is not** an automatic attribution engine, an attack predictor, a people profiler or a real-time intelligence base.
 
 ## Attribution principle
 
@@ -21,7 +21,7 @@ Attribution is a datum, not the system's conclusion. Each record keeps one of th
 
 The full scale runs from `paz_estable` to `conflicto_abierto`. This atlas covers only the middle: `competencia`, `zona_gris` and `hostilidad_hibrida`.
 
-Domains: `CIB`, `INF`, `AER`, `GNS`, `SAB`, `DES`, `ECO`, `MIG`.
+Domains: `CIB`, `INF`, `AER`, `GNS`, `SAB`, `DES`, `ECO`, `MIG`, `CAB`, `IAA`.
 
 ## Pipeline
 
@@ -39,9 +39,12 @@ flowchart LR
 ## Current state
 
 - **Live:** <https://zonagris.pruebapublica.com>.
-- **Automatic capture:** every 6 hours from Bing News RSS, registered as a discovery aggregator, not as a primary source.
+- **Automatic capture:** every 6 hours from Bing News RSS as discovery, plus a regional query matrix.
+- **Primary layer:** `/primarias.html` — CERT-EU, JPCERT/CC, CERT.br and NCSC-UK documents; not incidents.
+- **Coverage:** `/cobertura.html` — query scope, candidates and documented locations are separate.
 - **Publication rule:** automatic candidates always remain `PENDIENTE`; only human review can promote a record to `DOCUMENTADO`.
 - **Classifier:** experimental and never publishes. There is no release gate and no bulk-labelling requirement; human review is per record.
+- **Geolocation:** `--geo-shadow` suggests countries without publishing them; not active in production.
 
 ## Quick start
 
@@ -79,11 +82,11 @@ The last **10** bundles are kept.
 
 ## Sources and licences
 
-See `config/sources.yaml`. Bing News RSS is an **active discovery aggregator**; institutional sources remain disabled pending review. No paid APIs, cookies, trackers or remote Google Fonts.
+See `config/sources.yaml`. Bing News RSS is **discovery**. CERT-EU, JPCERT/CC, CERT.br and NCSC-UK feed the separate primary-document layer. CISA, CCN-CERT and other sources remain pending review. No paid APIs, cookies, trackers or remote Google Fonts.
 
 ## Limits
 
-Read [`docs/LIMITES.md`](docs/LIMITES.md): no self-attribution, no prediction, no judging people and no submarine cables in v0.1. It also documents source-diet bias and the strict **MIG** inclusion criteria: a migration flow is not, by itself, instrumentalisation.
+Read [`docs/LIMITES.md`](docs/LIMITES.md): no self-attribution, no prediction and no judging people. Submarine cables and AI-enabled attacks have explicit categories and strict criteria. It also documents source-diet bias and the strict **MIG** inclusion criteria: a migration flow is not, by itself, instrumentalisation.
 
 ## Contributing
 
@@ -96,6 +99,10 @@ Code under **AGPL-3.0** (see [`LICENSE`](LICENSE)). Original data (structure, me
 ## Relationship with FIMI Radar
 
 FIMI Radar measures network diffusion. Zona Gris measures **real-world events**. They do not share code.
+
+## Geolocation shadow mode
+
+`scripts/ingest_events.py --geo-shadow` proposes a country but does not publish it. The 7-Nov test produced false positives (hypothetical countries and actor mentions), so the flag stays off. See `docs/GEO-SOMBRA.md`.
 
 ## Continuity
 
