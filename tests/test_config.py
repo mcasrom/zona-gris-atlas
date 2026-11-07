@@ -18,4 +18,7 @@ def test_source_registry_records_active_discovery_aggregator():
     assert by_id["bing-news-rss"]["enabled"] is True
     assert by_id["bing-news-rss"]["type"] == "aggregator"
     assert by_id["bing-news-rss"]["fecha_revision"] == "2026-11-07"
+    assert by_id["cert-eu"]["enabled"] is True
+    assert by_id["cert-eu"]["tier"] == "primary"
+    assert by_id["cert-eu"]["licencia"] == "CC BY 4.0"
     assert all(source["licencia"] for source in data["sources"])

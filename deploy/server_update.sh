@@ -20,6 +20,7 @@ cd "$BASE"
   --out data/events/auto/events.jsonl \
   --sources data/events/auto/sources.json \
   --limit 120
+/usr/bin/python3 scripts/ingest_primary.py || echo "CERT-EU no disponible; se conserva la capa anterior" >&2
 /usr/bin/python3 scripts/build_events_data.py \
   --curated data/events/2026-11-06/events.jsonl \
   --auto data/events/auto/events.jsonl \
@@ -29,6 +30,9 @@ test -f "$CURRENT/assets/data/events.json"
 mkdir -p "$TARGET"
 cp -a "$CURRENT"/. "$TARGET/"
 cp "$BASE/build/events.json" "$TARGET/assets/data/events.json"
+if [ -s "$BASE/data/events/primary/documents.json" ]; then
+  cp "$BASE/data/events/primary/documents.json" "$TARGET/assets/data/primary.json"
+fi
 /usr/bin/python3 - "$TARGET/assets/data/events.json" <<'PY2'
 import json, sys
 p=sys.argv[1]

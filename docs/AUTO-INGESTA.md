@@ -30,6 +30,9 @@ make web          # reconstruye feed, sitemap, eventos y OG
 scripts/auto_update.sh
 ```
 
+La capa primaria se captura con `scripts/ingest_primary.py` desde CERT-EU y se publica
+en `/primarias.html` como documentos, nunca como incidentes.
+
 Para que no dependa de una revisión diaria, programar `scripts/auto_update.sh` en el
 servidor o en el equipo que tenga el repositorio. Ejemplo de cron (horario a ajustar):
 

@@ -16,6 +16,8 @@ REGISTROS = WEB / "assets" / "data" / "registros.json"
 EVENTS = ROOT / "data" / "events" / "2026-11-06" / "events.jsonl"
 EVENTS_AUTO = ROOT / "data" / "events" / "auto" / "events.jsonl"
 EVENTS_WEB = WEB / "assets" / "data" / "events.json"
+PRIMARY = ROOT / "data" / "events" / "primary" / "documents.json"
+PRIMARY_WEB = WEB / "assets" / "data" / "primary.json"
 REPO = SITE["repo"].rstrip("/")
 SITE_URL = SITE["url"].rstrip("/")
 
@@ -62,6 +64,14 @@ def write_events() -> None:
     EVENTS_WEB.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
+def write_primary() -> None:
+    if PRIMARY.exists():
+        payload = json.loads(PRIMARY.read_text(encoding="utf-8"))
+    else:
+        payload = {"count": 0, "documents": [], "source": "CERT-EU", "license": "CC BY 4.0"}
+    PRIMARY_WEB.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
 def write_feed() -> None:
     docs = []
     if REGISTROS.exists():
@@ -101,7 +111,7 @@ def write_feed() -> None:
 
 
 def write_sitemap() -> None:
-    pages = ["", "mapa.html", "registros.html", "metodologia.html", "limites.html", "fuentes.html", "privacidad.html", "avisos.html", "about.html"]
+    pages = ["", "mapa.html", "registros.html", "primarias.html", "metodologia.html", "limites.html", "fuentes.html", "privacidad.html", "avisos.html", "about.html"]
     today = datetime.now(timezone.utc).date().isoformat()
     rows = [
         '<?xml version="1.0" encoding="UTF-8"?>',
@@ -161,6 +171,7 @@ def replace_tokens() -> None:
 
 def main() -> int:
     write_events()
+    write_primary()
     write_feed()
     write_sitemap()
     write_manifest()

@@ -119,7 +119,7 @@ if remote "test -e '$TARGET'"; then
 fi
 remote "mkdir -p '$RELEASES'"
 rsync -az --delete -e ssh "$ROOT/web/" "deploy@$SERVER:$TARGET/"
-for required in index.html mapa.html 404.html assets/css/styles.css assets/js/map.js; do
+for required in index.html mapa.html primarias.html 404.html assets/css/styles.css assets/js/map.js; do
   if ! remote "test -f '$TARGET/$required'"; then
     echo "release incompleto: falta $required; no se cambia current." >&2
     exit 1

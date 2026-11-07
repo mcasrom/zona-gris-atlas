@@ -69,9 +69,10 @@ demás registros quedan en la lista.
 
 - **Publicado en Hetzner:** `https://zonagris.pruebapublica.com`.
 - **Release actual:** `20261107T135509Z`.
-- **Captura automática:** cron cada 6 horas en `<ruta-de-despliegue>/atlas-zonagris-auto/`.
+- **Captura automática:** cron cada 6 horas; Bing News RSS como descubrimiento y una **capa primaria CERT-EU** separada del mapa.
+- **Capa primaria:** `/primarias.html` · CERT-EU Threat Intelligence · CC BY 4.0; no se cuenta como incidente.
 - **Automatización:** un fallo de captura no cambia `current`; las releases anteriores
-  se conservan para rollback.
+  se conservan para rollback. La capa primaria falla de forma aislada: no tumba el mapa.
 
 ## Arranque rápido
 
@@ -122,7 +123,7 @@ db/           esquema SQLite
 docs/         método, límites, atribución, evaluación, arquitectura, privacidad
 src/zonagris/ ingesta, deduplicado, clasificación, exportación y CLI
 eval/         formato de oro, métricas y umbral
-web/          HTML, CSS, JS, fuentes y datos
+web/          HTML, CSS, JS, fuentes, mapa y documentos primarios
 deploy/       systemd, nginx y Dockerfile
 scripts/      backup, build_web, mapa y OG
 ```
@@ -136,7 +137,7 @@ masivo de etiquetado. No hay fichero de umbral ni conjunto de validación obliga
 
 ## Fuentes y licencias
 
-La captura automática usa **Bing News RSS** como agregador de enlaces; conserva la URL
+La captura automática usa **Bing News RSS** como descubrimiento y una fuente primaria **CERT-EU**; conserva la URL
 del medio y no publica el artículo completo. Está registrado como fuente de
 descubrimiento activa en `config/sources.yaml`, con revisión de condiciones pendiente;
 nunca se presenta como fuente primaria. Los registros institucionales de B13
