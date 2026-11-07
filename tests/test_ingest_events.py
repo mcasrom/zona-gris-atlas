@@ -86,3 +86,8 @@ def test_geo_shadow_suggests_without_assigning_country() -> None:
     events = ingest.build_events([[row]], {"places": []}, "2026-11-07T00:00:00Z", geo_shadow=True)
     assert events[0]["country"] is None
     assert events[0]["geo_suggestion"]["country_iso2"] == "FR"
+
+
+def test_generic_migration_is_not_instrumentalisation() -> None:
+    assert ingest.query_relevant("migracion_instrumentalizada", "Migrants arrive at the border") is False
+    assert ingest.query_relevant("migracion_instrumentalizada", "Belarus weaponised migration at the border") is True

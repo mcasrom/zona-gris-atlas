@@ -52,12 +52,20 @@
         {
           "category": "ia_ataques",
           "query": "AI cyberattack Europe"
+        },
+        {
+          "category": "migracion_instrumentalizada",
+          "query": "instrumentalized migration Europe"
+        },
+        {
+          "category": "migracion_instrumentalizada",
+          "query": "border pressure hybrid Europe"
         }
       ],
-      "scope_events": 25,
-      "located_events": 2,
-      "events": 2,
-      "queries_count": 10
+      "scope_events": 27,
+      "located_events": 3,
+      "events": 3,
+      "queries_count": 12
     },
     {
       "id": "americas",
@@ -91,12 +99,16 @@
         {
           "category": "ia_ataques",
           "query": "AI cyberattack United States"
+        },
+        {
+          "category": "migracion_instrumentalizada",
+          "query": "instrumentalized migration border Americas"
         }
       ],
       "scope_events": 1,
       "located_events": 0,
       "events": 0,
-      "queries_count": 6
+      "queries_count": 7
     },
     {
       "id": "asia",
@@ -131,12 +143,16 @@
         {
           "category": "ia_ataques",
           "query": "AI cyberattack Japan"
+        },
+        {
+          "category": "migracion_instrumentalizada",
+          "query": "instrumentalized migration Asia"
         }
       ],
       "scope_events": 4,
       "located_events": 0,
       "events": 0,
-      "queries_count": 6
+      "queries_count": 7
     },
     {
       "id": "china",
@@ -165,12 +181,16 @@
         {
           "category": "ia_ataques",
           "query": "AI cyberattack China"
+        },
+        {
+          "category": "migracion_instrumentalizada",
+          "query": "instrumentalized migration China"
         }
       ],
-      "scope_events": 7,
+      "scope_events": 8,
       "located_events": 0,
       "events": 0,
-      "queries_count": 5
+      "queries_count": 6
     },
     {
       "id": "africa",
@@ -200,12 +220,16 @@
         {
           "category": "ia_ataques",
           "query": "AI cyberattack Africa"
+        },
+        {
+          "category": "migracion_instrumentalizada",
+          "query": "instrumentalized migration Africa"
         }
       ],
       "scope_events": 1,
       "located_events": 0,
       "events": 0,
-      "queries_count": 5
+      "queries_count": 6
     },
     {
       "id": "middle_east",
@@ -235,12 +259,16 @@
         {
           "category": "ia_ataques",
           "query": "AI cyberattack Middle East"
+        },
+        {
+          "category": "migracion_instrumentalizada",
+          "query": "instrumentalized migration Middle East"
         }
       ],
       "scope_events": 2,
       "located_events": 0,
       "events": 0,
-      "queries_count": 5
+      "queries_count": 6
     }
   ]
 }

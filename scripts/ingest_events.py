@@ -68,6 +68,7 @@ CATEGORY_LABELS = {
     "energia_telecom": "Incidentes energéticos y de telecomunicaciones",
     "cables_submarinos": "Cables submarinos",
     "ia_ataques": "Ataques con IA",
+    "migracion_instrumentalizada": "Instrumentalización migratoria",
 }
 CATEGORY_TERMS = {
     "drones_aeropuertos": ("drone", "dron", "uav", "airport", "aeropuerto"),
@@ -80,6 +81,7 @@ CATEGORY_TERMS = {
     "energia_telecom": ("power outage", "blackout", "apagón", "telecom", "telecomunicaciones", "grid"),
     "cables_submarinos": ("submarine cable", "subsea cable", "cable submarino", "cable cut", "cable break", "cable damage", "cable sabotage"),
     "ia_ataques": ("ai-powered", "ai attack", "artificial intelligence attack", "llm attack", "machine learning attack", "model poisoning", "prompt injection", "ai cyberattack"),
+    "migracion_instrumentalizada": ("instrumentalized migration", "instrumentalised migration", "weaponized migration", "weaponised migration", "hybrid migration", "border pressure", "migratory pressure", "migration as a weapon", "state-sponsored migration"),
 }
 NOISE = re.compile(r"\b(opinion|opinión|analysis|análisis|explainer|explicador|what we know|lo que sabemos|raise[sd]? concerns?|raise[sd]? questions?|rail works|engineering works|rail strike|planned disruption|forecast|outlook)\b", re.I)
 OFFICIAL_DOMAINS = {
@@ -172,6 +174,8 @@ def query_relevant(category: str, text: str) -> bool:
         return any(term in low for term in CABLE_EVENT_TERMS) and not any(term in low for term in CABLE_NOISE)
     if category == "ia_ataques":
         return any(term in low for term in AI_TERMS) and any(term in low for term in AI_ATTACK_TERMS)
+    if category == "migracion_instrumentalizada":
+        return any(term in low for term in CATEGORY_TERMS["migracion_instrumentalizada"])
     return True
 
 

@@ -52,6 +52,14 @@
         {
           "category": "ia_ataques",
           "query": "AI cyberattack Europe"
+        },
+        {
+          "category": "migracion_instrumentalizada",
+          "query": "instrumentalized migration Europe"
+        },
+        {
+          "category": "migracion_instrumentalizada",
+          "query": "border pressure hybrid Europe"
         }
       ]
     },
@@ -87,6 +95,10 @@
         {
           "category": "ia_ataques",
           "query": "AI cyberattack United States"
+        },
+        {
+          "category": "migracion_instrumentalizada",
+          "query": "instrumentalized migration border Americas"
         }
       ]
     },
@@ -123,6 +135,10 @@
         {
           "category": "ia_ataques",
           "query": "AI cyberattack Japan"
+        },
+        {
+          "category": "migracion_instrumentalizada",
+          "query": "instrumentalized migration Asia"
         }
       ]
     },
@@ -153,6 +169,10 @@
         {
           "category": "ia_ataques",
           "query": "AI cyberattack China"
+        },
+        {
+          "category": "migracion_instrumentalizada",
+          "query": "instrumentalized migration China"
         }
       ]
     },
@@ -184,6 +204,10 @@
         {
           "category": "ia_ataques",
           "query": "AI cyberattack Africa"
+        },
+        {
+          "category": "migracion_instrumentalizada",
+          "query": "instrumentalized migration Africa"
         }
       ]
     },
@@ -215,6 +239,10 @@
         {
           "category": "ia_ataques",
           "query": "AI cyberattack Middle East"
+        },
+        {
+          "category": "migracion_instrumentalizada",
+          "query": "instrumentalized migration Middle East"
         }
       ]
     }

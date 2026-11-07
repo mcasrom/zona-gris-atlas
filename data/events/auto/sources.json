@@ -1,5 +1,5 @@
 {
-  "captured_at": "2026-11-07T16:22:48.649194+00:00",
+  "captured_at": "2026-11-07T16:38:59.400639+00:00",
   "runs": [
     {
       "source": "Bing News RSS",
@@ -34,7 +34,7 @@
       "region": "europe",
       "query": "rail disruption Europe",
       "http": 200,
-      "records": 5,
+      "records": 6,
       "error": null
     },
     {
@@ -94,10 +94,28 @@
     {
       "source": "Bing News RSS",
       "tier": "discovery",
+      "region": "europe",
+      "query": "instrumentalized migration Europe",
+      "http": 200,
+      "records": 1,
+      "error": null
+    },
+    {
+      "source": "Bing News RSS",
+      "tier": "discovery",
+      "region": "europe",
+      "query": "border pressure hybrid Europe",
+      "http": 200,
+      "records": 0,
+      "error": null
+    },
+    {
+      "source": "Bing News RSS",
+      "tier": "discovery",
       "region": "americas",
       "query": "airport drone United States",
       "http": 200,
-      "records": 7,
+      "records": 6,
       "error": null
     },
     {
@@ -141,6 +159,15 @@
       "tier": "discovery",
       "region": "americas",
       "query": "AI cyberattack United States",
+      "http": 200,
+      "records": 0,
+      "error": null
+    },
+    {
+      "source": "Bing News RSS",
+      "tier": "discovery",
+      "region": "americas",
+      "query": "instrumentalized migration border Americas",
       "http": 200,
       "records": 0,
       "error": null
@@ -202,6 +229,15 @@
     {
       "source": "Bing News RSS",
       "tier": "discovery",
+      "region": "asia",
+      "query": "instrumentalized migration Asia",
+      "http": 200,
+      "records": 1,
+      "error": null
+    },
+    {
+      "source": "Bing News RSS",
+      "tier": "discovery",
       "region": "china",
       "query": "airport drone China",
       "http": 200,
@@ -242,6 +278,15 @@
       "query": "AI cyberattack China",
       "http": 200,
       "records": 6,
+      "error": null
+    },
+    {
+      "source": "Bing News RSS",
+      "tier": "discovery",
+      "region": "china",
+      "query": "instrumentalized migration China",
+      "http": 200,
+      "records": 1,
       "error": null
     },
     {
@@ -292,10 +337,19 @@
     {
       "source": "Bing News RSS",
       "tier": "discovery",
+      "region": "africa",
+      "query": "instrumentalized migration Africa",
+      "http": 200,
+      "records": 1,
+      "error": null
+    },
+    {
+      "source": "Bing News RSS",
+      "tier": "discovery",
       "region": "middle_east",
       "query": "airport drone Middle East",
       "http": 200,
-      "records": 3,
+      "records": 4,
       "error": null
     },
     {
@@ -330,6 +384,15 @@
       "tier": "discovery",
       "region": "middle_east",
       "query": "AI cyberattack Middle East",
+      "http": 200,
+      "records": 0,
+      "error": null
+    },
+    {
+      "source": "Bing News RSS",
+      "tier": "discovery",
+      "region": "middle_east",
+      "query": "instrumentalized migration Middle East",
       "http": 200,
       "records": 0,
       "error": null

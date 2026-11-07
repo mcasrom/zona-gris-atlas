@@ -190,3 +190,47 @@ sources:
     fecha_revision: "2026-11-07"
     limite_ritmo: "1 consulta / 6 h"
     justificacion: "Documentos primarios de NCSC-UK; no se publican como incidentes."
+  - id: frontex
+    name: Frontex
+    tier: primary
+    url: https://www.frontex.europa.eu/
+    type: web
+    enabled: false
+    licencia: "[REVISAR]"
+    licencia_url: "[REVISAR]"
+    fecha_revision: ""
+    limite_ritmo: "[REVISAR]"
+    justificacion: "Datos de presión fronteriza; pendiente de condiciones y adaptador; no todo flujo es instrumentalización."
+  - id: acnur
+    name: ACNUR/UNHCR
+    tier: primary
+    url: https://www.acnur.org/
+    type: web
+    enabled: false
+    licencia: "[REVISAR]"
+    licencia_url: "[REVISAR]"
+    fecha_revision: ""
+    limite_ritmo: "[REVISAR]"
+    justificacion: "Contexto y protección; no se usa para atribuir instrumentalización."
+  - id: oim
+    name: OIM/IOM
+    tier: primary
+    url: https://www.iom.int/
+    type: web
+    enabled: false
+    licencia: "[REVISAR]"
+    licencia_url: "[REVISAR]"
+    fecha_revision: ""
+    limite_ritmo: "[REVISAR]"
+    justificacion: "Contexto migratorio; pendiente de condiciones y adaptador."
+  - id: interior-migracion
+    name: Ministerio del Interior (España)
+    tier: primary
+    url: https://www.interior.gob.es/
+    type: web
+    enabled: false
+    licencia: "[REVISAR]"
+    licencia_url: "[REVISAR]"
+    fecha_revision: ""
+    limite_ritmo: "[REVISAR]"
+    justificacion: "Fuente institucional para actos documentados; pendiente de revisión."
