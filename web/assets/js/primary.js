@@ -6,6 +6,7 @@
   fetch("assets/data/primary.json").then(function (r) { return r.json(); }).then(function (data) {
     var docs = data.documents || [];
     if (meta) meta.textContent = docs.length + " documentos · " + (data.source || "fuente primaria") + " · " + (data.license || "licencia no indicada");
+    list.replaceChildren();
     if (!docs.length) {
       list.innerHTML = "<li class=\"muted\">No hay documentos primarios cargados.</li>";
       return;
