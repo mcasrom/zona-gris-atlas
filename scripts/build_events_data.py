@@ -36,11 +36,24 @@ def similar(left: str, right: str) -> bool:
     return bool(a and b and len(a & b) / len(a | b) >= 0.55)
 
 
+def public_auto(row: dict) -> dict:
+    """Un registro automático nunca sale como DOCUMENTADO sin revisión humana."""
+    if row.get("automated") and not row.get("reviewed_by_human"):
+        row = dict(row)
+        row["verification_status"] = "PENDIENTE"
+        row["status_reason"] = (
+            "candidato automático; pendiente de revisión humana"
+            + (f" · {row['status_reason']}" if row.get("status_reason") else "")
+        )
+    return row
+
+
 def merge(curated: list[dict], automatic: list[dict]) -> list[dict]:
     rows = list(curated)
     titles = [row["title"] for row in rows]
     urls = {source["url"].split("#")[0].rstrip("/") for row in rows for source in row.get("sources", [])}
     for row in automatic:
+        row = public_auto(row)
         new_urls = {source["url"].split("#")[0].rstrip("/") for source in row.get("sources", [])}
         if new_urls & urls or key(row["title"]) in {key(title) for title in titles} or any(similar(row["title"], title) for title in titles):
             continue

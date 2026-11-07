@@ -1,6 +1,18 @@
 version: 0.1
-# Registro inicial. Ninguna fuente está autorizada ni activada.
+# Registro de fuentes. Una fuente solo se consulta si está enabled: true.
+# Bing News RSS es un agregador de descubrimiento: no se usa como fuente
+# primaria ni se publica como confirmación.
 sources:
+  - id: bing-news-rss
+    name: Bing News RSS
+    url: https://www.bing.com/news/search
+    type: aggregator
+    enabled: true
+    licencia: "Agregador de enlaces; solo se conservan titulares, resumen corto y URL original. Condiciones de uso pendientes de revisión legal."
+    licencia_url: "https://www.bing.com/news"
+    fecha_revision: "2026-11-07"
+    limite_ritmo: "8 consultas / 6 h"
+    justificacion: "Vía de descubrimiento de candidatos; nunca eleva un registro a DOCUMENTADO por sí sola."
   - id: gdelt
     name: GDELT DOC API
     url: https://api.gdeltproject.org/api/v2/doc/doc

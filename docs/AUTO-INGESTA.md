@@ -6,16 +6,21 @@ editorial (`data/event_places.json`) y escribe `data/events/auto/events.jsonl`.
 
 La evaluación es deliberadamente conservadora:
 
-- una fuente: `PENDIENTE`;
-- dos dominios independientes o una fuente institucional identificada: `DOCUMENTADO`;
+- **todos** los candidatos automáticos quedan en `PENDIENTE`, incluso si varios
+  dominios publican el mismo hecho: pueden compartir cable o nota de prensa;
+- `DOCUMENTADO` exige revisión humana; el constructor degrada a `PENDIENTE`
+  cualquier registro automático sin revisión;
 - `CONFIRMADO` nunca se asigna automáticamente;
 - `reviewed_by_human` queda en `false`;
 - cada evento conserva URL, fecha de publicación, fecha de captura y `source_sha256`;
 - no se descarga el artículo completo ni se inventan coordenadas.
 
-`scripts/build_web.py` fusiona los registros curados y los automáticos. Los curados
-tienen prioridad; se descartan los automáticos que repiten URL o titular similar.
-La web recalcula los contadores y el filtro de estado desde el JSON resultante.
+`scripts/build_web.py` y `scripts/build_events_data.py` comparten la misma función
+de fusión: los curados tienen prioridad, se descartan los automáticos que repiten
+URL o titular similar y **nunca se publica un automático como `DOCUMENTADO`**.
+Bing News RSS está registrado en `config/sources.yaml` como agregador de
+descubrimiento, no como fuente primaria; sus condiciones de uso siguen pendientes
+de revisión legal.
 
 ## Ejecución
 
@@ -40,16 +45,16 @@ Si se quiere publicar desde el mismo proceso, añadir `ZG_AUTO_DEPLOY=1`, `SERVE
 La automatización está instalada en:
 
 ```text
-/home/deploy/atlas-zonagris-auto/server_update.sh
+<ruta-de-despliegue>/atlas-zonagris-auto/server_update.sh
 ```
 
 El cron de `deploy` la ejecuta cada 6 horas:
 
 ```cron
-17 */6 * * * /home/deploy/atlas-zonagris-auto/server_update.sh >> /home/deploy/atlas-zonagris-auto/logs/update.log 2>&1
+17 */6 * * * <ruta-de-despliegue>/atlas-zonagris-auto/server_update.sh >> <ruta-de-despliegue>/atlas-zonagris-auto/logs/update.log 2>&1
 ```
 
 Cada ejecución captura, fusiona, crea una release fechada a partir de `current`,
 valida el JSON y mueve el symlink `current`. No modifica Nginx, DNS ni TLS. Las
 releases anteriores se conservan para rollback; el log está en
-`/home/deploy/atlas-zonagris-auto/logs/update.log`.
+`<ruta-de-despliegue>/atlas-zonagris-auto/logs/update.log`.

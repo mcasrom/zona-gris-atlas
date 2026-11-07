@@ -193,13 +193,19 @@ def group_rows(rows: list[dict], places: dict | None = None) -> list[list[dict]]
 
 
 def assess(group: list[dict]) -> tuple[str, str]:
+    """Un candidato automático nunca supera PENDIENTE.
+
+    La promoción a DOCUMENTADO exige revisión humana. Varios dominios pueden
+    compartir el mismo cable o la misma nota de prensa; contarlos como
+    confirmación automática confundiría sindicación con independencia.
+    """
     domains = {row["domain"] for row in group if row["domain"]}
     official = any(any(d == domain or d.endswith("." + domain) for d in domains) for domain in OFFICIAL_DOMAINS)
     if official:
-        return "DOCUMENTADO", "fuente institucional identificada; sin confirmación independiente automática"
+        return "PENDIENTE", "fuente institucional identificada; pendiente de revisión humana"
     if len(domains) >= 2:
-        return "DOCUMENTADO", f"{len(domains)} medios/dominios independientes identificados"
-    return "PENDIENTE", "una sola fuente identificable; no se eleva a confirmado"
+        return "PENDIENTE", f"{len(domains)} dominios citados; pendiente de revisión humana (posible sindicación)"
+    return "PENDIENTE", "una sola fuente identificable; pendiente de revisión humana"
 
 
 def place_for(text: str, places: dict) -> dict | None:

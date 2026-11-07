@@ -24,13 +24,14 @@ def test_feed_is_parsed_and_opinion_is_filtered() -> None:
     assert rows[0]["category"] == "amenazas_bomba"
 
 
-def test_similar_headlines_are_grouped_and_multiple_domains_are_documented() -> None:
+def test_similar_headlines_are_grouped_but_remain_pending() -> None:
     rows = ingest.parse_feed(XML, "amenazas_bomba")
     groups = ingest.group_rows(rows)
     assert len(groups) == 1
     status, reason = ingest.assess(groups[0])
-    assert status == "DOCUMENTADO"
-    assert "2 medios" in reason
+    assert status == "PENDIENTE"
+    assert "revisión humana" in reason
+    assert "sindicación" in reason
 
 
 def test_single_source_stays_pending() -> None:
@@ -46,12 +47,12 @@ def test_place_is_optional_and_never_invented() -> None:
     assert ingest.place_for("A threat without a city", places) is None
 
 
-def test_automatic_events_are_not_marked_confirmed() -> None:
+def test_automatic_events_are_never_documented_without_human_review() -> None:
     rows = ingest.parse_feed(XML, "amenazas_bomba")
     events = ingest.build_events(ingest.group_rows(rows), json.loads((ROOT / "data" / "event_places.json").read_text(encoding="utf-8")), "2026-11-07T00:00:00Z")
     assert events
     assert all(event["automated"] is True for event in events)
-    assert all(event["verification_status"] in {"DOCUMENTADO", "PENDIENTE"} for event in events)
+    assert all(event["verification_status"] == "PENDIENTE" for event in events)
     assert all(event["reviewed_by_human"] is False for event in events)
     assert events[0]["demo"] is False
     assert events[0]["source_sha256"]

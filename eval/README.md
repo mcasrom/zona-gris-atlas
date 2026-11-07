@@ -1,10 +1,17 @@
-# Evaluación
+# Evaluación opcional
 
-El clasificador no publica nada hasta superar `min_macro_f1` sobre un conjunto de
-oro de al menos 200 eventos etiquetados. El ejemplo de `gold/ejemplo.jsonl`
-documenta el formato; no es un conjunto de evaluación real.
+El clasificador es **experimental y no publica fichas**. No existe una puerta
+de publicación ni un requisito de etiquetar 200 eventos.
 
-Campos de cada línea:
+`metrics.py` está disponible para quien quiera medir una muestra concreta, pero
+sus resultados no bloquean releases ni convierten una propuesta en un hecho
+publicado. La revisión humana relevante es **por ficha**: fuente, fecha, lugar,
+atribución y estado.
+
+`gold/ejemplo.jsonl` documenta únicamente el formato de una posible muestra
+opcional. No es un conjunto de evaluación ni una obligación de etiquetado.
+
+Campos de cada línea, si se usa una muestra:
 
 - `id`
 - `title`
@@ -13,7 +20,3 @@ Campos de cada línea:
 - `severity` (`baja`, `media`, `alta`)
 - `reality` (`probable`, `dudoso`, `descartado`)
 - `attribution`: `status`, `attributed_by`, `source_url`
-
-`metrics.py` calcula precisión, recall, F1 por clase, F1 macro y matriz de
-confusión. La puerta de publicación está en `threshold.yaml` y sigue pendiente
-de calibración con datos reales.

@@ -3,7 +3,7 @@
 [![CI](https://github.com/mcasrom/zona-gris-atlas/actions/workflows/ci.yml/badge.svg)](https://github.com/mcasrom/zona-gris-atlas/actions/workflows/ci.yml)
 [![License: AGPL-3.0](https://img.shields.io/badge/license-AGPL--3.0-ffb020)](LICENSE)
 
-> **Visible warning:** the demonstration data on the website is **not real**. Every record has `demo: true` and an “Illustrative example” label. It does not describe real incidents, actors or organisations.
+> **Visible warning:** demonstration records are not real. They carry `demo: true`, live on a separate page and never enter indicators, feeds or the sitemap. The public map contains curated records and automatic candidates; a single source is never presented as a confirmed incident.
 
 An open atlas of gray-zone and hybrid-threat incidents. It records the event, its source and **who attributes it**. The system does not attribute authorship on its own.
 
@@ -27,7 +27,7 @@ Domains: `CIB`, `INF`, `AER`, `GNS`, `SAB`, `DES`, `ECO`, `MIG`.
 
 ```mermaid
 flowchart LR
-  A[Authorised sources] --> B[Ingestion with cache]
+  A[Registered sources] --> B[Ingestion with cache]
   B --> C[URL and text dedupe]
   C --> D[Classifier suggests]
   D --> E[Human review]
@@ -38,11 +38,10 @@ flowchart LR
 
 ## Current state
 
-- **Phase 0 — laptop:** repository, schema, minimal pipeline, evaluation and static site.
-- **Phase 1 — server:** pending; nothing is deployed in this session.
-- **Phase 2 — publication:** pending domain, data licence and source review.
-
-The site uses **10 demonstration incidents**. The classifier never publishes: the gate requires a macro F1 ≥ 0.75 over a gold set of at least 200 events.
+- **Live:** <https://zonagris.pruebapublica.com>.
+- **Automatic capture:** every 6 hours from Bing News RSS, registered as a discovery aggregator, not as a primary source.
+- **Publication rule:** automatic candidates always remain `PENDIENTE`; only human review can promote a record to `DOCUMENTADO`.
+- **Classifier:** experimental and never publishes. There is no release gate and no requirement to label 200 events; human review is per record.
 
 ## Quick start
 
@@ -69,22 +68,22 @@ make backup
 Daily cron example:
 
 ```cron
-15 3 * * * cd /home/miguelc/Desktop/zona-gris-atlas && ./scripts/backup.sh >> "$HOME/backups/zona-gris-atlas/backup.log" 2>&1
+15 3 * * * cd "$HOME/zona-gris-atlas" && ./scripts/backup.sh >> "$HOME/backups/zona-gris-atlas/backup.log" 2>&1
 ```
 
 The last **10** bundles are kept.
 
 ## Evaluation
 
-`eval/metrics.py` computes precision, recall, per-class F1, macro F1 and the confusion matrix. The current threshold is `0.75` with a minimum of `200` gold events; both are pending decisions. Until they are met, the classifier only suggests.
+`eval/metrics.py` is available for optional sample checks, but there is **no publication gate and no 200-event labelling requirement**. Human review is per record. The classifier is experimental and never publishes.
 
 ## Sources and licences
 
-See `config/sources.yaml`. **All sources are `enabled: false`** and their licence is `[DECIDIR]`. No paid APIs, no cookies, no trackers and no remote Google Fonts.
+See `config/sources.yaml`. Bing News RSS is an **active discovery aggregator**; institutional sources remain disabled pending review. No paid APIs, cookies, trackers or remote Google Fonts.
 
 ## Limits
 
-Read [`docs/LIMITES.md`](docs/LIMITES.md): no self-attribution, no prediction, no judging people and no submarine cables in v0.1.
+Read [`docs/LIMITES.md`](docs/LIMITES.md): no self-attribution, no prediction, no judging people and no submarine cables in v0.1. It also documents source-diet bias and the strict **MIG** inclusion criteria: a migration flow is not, by itself, instrumentalisation.
 
 ## Contributing
 
@@ -92,8 +91,12 @@ Read [`CONTRIBUTING.md`](CONTRIBUTING.md). Open an issue with the relevant templ
 
 ## License
 
-Code under **AGPL-3.0** (see [`LICENSE`](LICENSE)). The data licence is pending: `[DECIDIR: CC BY 4.0]`.
+Code under **AGPL-3.0** (see [`LICENSE`](LICENSE)). Original data (structure, metadata and editorial notes) is under **CC BY 4.0**; third-party headlines and articles keep their own rights and are only linked. See [`DATA-LICENSE.md`](DATA-LICENSE.md).
 
 ## Relationship with FIMI Radar
 
 FIMI Radar measures network diffusion. Zona Gris measures **real-world events**. They do not share code.
+
+## Continuity
+
+See `docs/CONTINUIDAD.md` for maintainer, recovery and off-site backup status. A verified off-site copy is still pending.

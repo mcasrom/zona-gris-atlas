@@ -7,7 +7,7 @@ repo: https://github.com/mcasrom/zona-gris-atlas
 contact: "info.zonagris@pruebapublica.com"
 contact_verified: false  # no publicar hasta comprobar el buzón
 kofi: ""  # [DECIDIR: KOFI_URL]
-dataset_license: "[DECIDIR: CC BY 4.0]"
+dataset_license: "CC BY 4.0 (estructura y metadatos propios; titulares de terceros con sus derechos)"
 analytics: false
 version: 0.1.0
 language: es

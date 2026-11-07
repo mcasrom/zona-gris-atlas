@@ -47,17 +47,19 @@ flowchart LR
   A[Bing News RSS] --> B[Captura de metadatos]
   B --> C[Deduplicado y agrupación]
   C --> D[Evaluación conservadora]
-  D --> E[PENDIENTE o DOCUMENTADO]
-  E --> F[Fusión con registros curados]
+  D --> E[PENDIENTE]
+  E --> H[Revisión humana]
+  H --> F[Fusión con registros curados]
   F --> G[Web estática + JSON + feed]
   F --> X[Sin confirmación automática]
 ```
 
-La captura automática consulta Bing News RSS, conserva titulares, resumen corto, URL,
-fecha y huella SHA-256. Nunca asigna `CONFIRMADO`: una fuente deja el registro en
-`PENDIENTE`; dos dominios independientes o una fuente institucional identificada lo
-pasan a `DOCUMENTADO`. Los registros curados tienen prioridad en la fusión. Detalle:
-[`docs/AUTO-INGESTA.md`](docs/AUTO-INGESTA.md).
+La captura automática consulta **Bing News RSS** (registrado como agregador de
+descubrimiento en `config/sources.yaml`), conserva titulares, resumen corto, URL,
+fecha y huella SHA-256. Ningún candidato automático pasa a `DOCUMENTADO`: una o
+varias fuentes lo dejan en `PENDIENTE` hasta la revisión humana. El constructor
+degrada también los registros antiguos sin revisión. Los registros curados tienen
+prioridad en la fusión. Detalle: [`docs/AUTO-INGESTA.md`](docs/AUTO-INGESTA.md).
 
 La web usa **dos columnas con scroll propio** para la lista del mapa, y una columna en
 móvil. Los marcadores solo aparecen cuando hay una ciudad o región documentada; los
@@ -67,7 +69,7 @@ demás registros quedan en la lista.
 
 - **Publicado en Hetzner:** `https://zonagris.pruebapublica.com`.
 - **Release actual:** `20261107T135509Z`.
-- **Captura automática:** cron cada 6 horas en `/home/deploy/atlas-zonagris-auto/`.
+- **Captura automática:** cron cada 6 horas en `<ruta-de-despliegue>/atlas-zonagris-auto/`.
 - **Demo:** aislada, con `demo: true`, `noindex` y fuera del sitemap.
 - **Automatización:** un fallo de captura no cambia `current`; las releases anteriores
   se conservan para rollback.
@@ -97,7 +99,8 @@ No hay claves en el repo. Copia `.env.example` a `.env` solo si lo necesitas.
 
 ## Copia de seguridad
 
-GitHub es la copia principal. El bundle local es la segunda:
+GitHub es la copia principal. El bundle local es la segunda; **todavía no hay
+copia off-site verificada** (ver [`docs/CONTINUIDAD.md`](docs/CONTINUIDAD.md)):
 
 ```bash
 make backup
@@ -107,7 +110,7 @@ make backup
 Para programarlo cada día a las 03:15:
 
 ```cron
-15 3 * * * cd /home/miguelc/Desktop/zona-gris-atlas && ./scripts/backup.sh >> "$HOME/backups/zona-gris-atlas/backup.log" 2>&1
+15 3 * * * cd "$HOME/zona-gris-atlas" && ./scripts/backup.sh >> "$HOME/backups/zona-gris-atlas/backup.log" 2>&1
 ```
 
 Se conservan los últimos **10** bundles.
@@ -127,17 +130,17 @@ scripts/      backup, build_web, mapa y OG
 
 ## Evaluación y criterios de salida
 
-`eval/metrics.py` calcula precisión, recall, F1 por clase, F1 macro y matriz de confusión. La puerta está en `eval/threshold.yaml`:
-
-- `min_macro_f1: 0.75` **[DECIDIR]**
-- `min_gold_events: 200`
-
-Mientras no se cumpla, el clasificador solo propone y nunca publica.
+`eval/metrics.py` permite medir una muestra si alguien quiere hacerlo, pero **no
+hay puerta de publicación ni se exige etiquetar 200 eventos**. El clasificador es
+experimental y no publica fichas. La revisión humana es por ficha, no un lote
+masivo de etiquetado. `eval/threshold.yaml` no bloquea releases.
 
 ## Fuentes y licencias
 
 La captura automática usa **Bing News RSS** como agregador de enlaces; conserva la URL
-del medio y no publica el artículo completo. Los registros institucionales de B13
+del medio y no publica el artículo completo. Está registrado como fuente de
+descubrimiento activa en `config/sources.yaml`, con revisión de condiciones pendiente;
+nunca se presenta como fuente primaria. Los registros institucionales de B13
 proceden de CERT-EU, BOE y Comisión Europea, con sus condiciones de reutilización
 documentadas. No hay APIs de pago, claves de proveedores ni cookies. La lista y las
 pruebas de fuentes están en `data/events/2026-11-06/sources.json` y
@@ -145,7 +148,15 @@ pruebas de fuentes están en `data/events/2026-11-06/sources.json` y
 
 ## Límites y ética
 
-El detalle está en [`docs/LIMITES.md`](docs/LIMITES.md). En resumen: no atribuye por su cuenta, no predice, no juzga personas y no cubre cables submarinos en la v0.1.
+El detalle está en [`docs/LIMITES.md`](docs/LIMITES.md). En resumen: no atribuye por su
+cuenta, no predice, no juzga personas y no cubre cables submarinos en la v0.1.
+También se declaran el sesgo de la dieta de fuentes y el criterio estricto de la
+categoría **MIG**: no todo flujo migratorio es instrumentalización.
+
+## Seguridad
+
+La política de divulgación está en [`SECURITY.md`](SECURITY.md). No abras una
+issue pública con una vulnerabilidad explotable.
 
 ## Cómo contribuir
 
@@ -153,7 +164,10 @@ Lee [`CONTRIBUTING.md`](CONTRIBUTING.md), abre una issue con la plantilla adecua
 
 ## Licencia
 
-Código bajo **AGPL-3.0** (ver [`LICENSE`](LICENSE)). La licencia de los datos queda pendiente: `[DECIDIR: CC BY 4.0]`.
+Código bajo **AGPL-3.0** (ver [`LICENSE`](LICENSE)). Los datos propios
+(estructura, metadatos y notas editoriales) se publican bajo **CC BY 4.0**; los
+titulares y artículos de terceros conservan sus derechos y solo se enlazan. Ver
+[`DATA-LICENSE.md`](DATA-LICENSE.md).
 
 ## Relación con FIMI Radar
 
@@ -163,7 +177,12 @@ FIMI Radar mide difusión en redes. Zona Gris mide **eventos del mundo real**. N
 
 - Revisar periódicamente las condiciones de uso de Bing News RSS y de las fuentes
   institucionales.
-- Mantener la revisión editorial de los registros que pasen a banda alta o a
-  `CONFIRMADO`; la automatización no toma esa decisión.
+- Mantener la revisión editorial antes de promocionar cualquier registro a
+  `DOCUMENTADO` o `CONFIRMADO`; la automatización no toma esa decisión.
 - Vigilar el log del cron y la antigüedad de la última captura.
-- Definir la licencia de los datos cuando se publique una distribución estable.
+- Añadir una copia off-site verificada y probar la restauración
+  ([`docs/CONTINUIDAD.md`](docs/CONTINUIDAD.md)).
+- Medir una muestra solo si hay una pregunta concreta; no se exige un gold set
+  masivo ni se presenta el clasificador como validado.
+- Revisar la dieta de fuentes y documentar la incorporación de fuentes no
+  occidentales; el registro actual no es geográficamente neutral.
