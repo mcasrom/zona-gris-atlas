@@ -1,60 +1,337 @@
 {
-  "captured_at": "2026-11-07T13:47:51.350542+00:00",
+  "captured_at": "2026-11-07T16:01:38.326394+00:00",
   "runs": [
     {
       "source": "Bing News RSS",
-      "query": "airport drone",
+      "tier": "discovery",
+      "region": "europe",
+      "query": "airport drone Europe",
+      "http": 200,
+      "records": 10,
+      "error": null
+    },
+    {
+      "source": "Bing News RSS",
+      "tier": "discovery",
+      "region": "europe",
+      "query": "bomb threat airport Europe",
       "http": 200,
       "records": 12,
       "error": null
     },
     {
       "source": "Bing News RSS",
-      "query": "bomb threat airport",
+      "tier": "discovery",
+      "region": "europe",
+      "query": "cyberattack infrastructure Europe",
       "http": 200,
       "records": 12,
       "error": null
     },
     {
       "source": "Bing News RSS",
-      "query": "cyberattack infrastructure",
+      "tier": "discovery",
+      "region": "europe",
+      "query": "rail disruption Europe",
       "http": 200,
-      "records": 8,
+      "records": 5,
       "error": null
     },
     {
       "source": "Bing News RSS",
-      "query": "rail disruption",
-      "http": 200,
-      "records": 3,
-      "error": null
-    },
-    {
-      "source": "Bing News RSS",
-      "query": "GPS jamming",
+      "tier": "discovery",
+      "region": "europe",
+      "query": "GPS jamming Europe",
       "http": 200,
       "records": 9,
       "error": null
     },
     {
       "source": "Bing News RSS",
-      "query": "airport emergency evacuation",
-      "http": 200,
-      "records": 6,
-      "error": null
-    },
-    {
-      "source": "Bing News RSS",
-      "query": "sabotage infrastructure",
+      "tier": "discovery",
+      "region": "europe",
+      "query": "airport emergency evacuation Europe",
       "http": 200,
       "records": 0,
       "error": null
     },
     {
       "source": "Bing News RSS",
-      "query": "power outage telecom",
+      "tier": "discovery",
+      "region": "europe",
+      "query": "sabotage infrastructure Europe",
+      "http": 200,
+      "records": 0,
+      "error": null
+    },
+    {
+      "source": "Bing News RSS",
+      "tier": "discovery",
+      "region": "europe",
+      "query": "power outage telecom Europe",
       "http": 200,
       "records": 1,
+      "error": null
+    },
+    {
+      "source": "Bing News RSS",
+      "tier": "discovery",
+      "region": "europe",
+      "query": "submarine cable damage Europe",
+      "http": 200,
+      "records": 0,
+      "error": null
+    },
+    {
+      "source": "Bing News RSS",
+      "tier": "discovery",
+      "region": "europe",
+      "query": "AI cyberattack Europe",
+      "http": 200,
+      "records": 2,
+      "error": null
+    },
+    {
+      "source": "Bing News RSS",
+      "tier": "discovery",
+      "region": "americas",
+      "query": "airport drone United States",
+      "http": 200,
+      "records": 6,
+      "error": null
+    },
+    {
+      "source": "Bing News RSS",
+      "tier": "discovery",
+      "region": "americas",
+      "query": "cyberattack infrastructure Brazil",
+      "http": 200,
+      "records": 0,
+      "error": null
+    },
+    {
+      "source": "Bing News RSS",
+      "tier": "discovery",
+      "region": "americas",
+      "query": "power outage Chile",
+      "http": 200,
+      "records": 1,
+      "error": null
+    },
+    {
+      "source": "Bing News RSS",
+      "tier": "discovery",
+      "region": "americas",
+      "query": "rail disruption Mexico",
+      "http": 200,
+      "records": 0,
+      "error": null
+    },
+    {
+      "source": "Bing News RSS",
+      "tier": "discovery",
+      "region": "americas",
+      "query": "submarine cable damage Americas",
+      "http": 200,
+      "records": 1,
+      "error": null
+    },
+    {
+      "source": "Bing News RSS",
+      "tier": "discovery",
+      "region": "americas",
+      "query": "AI cyberattack United States",
+      "http": 200,
+      "records": 0,
+      "error": null
+    },
+    {
+      "source": "Bing News RSS",
+      "tier": "discovery",
+      "region": "asia",
+      "query": "airport drone Japan",
+      "http": 200,
+      "records": 3,
+      "error": null
+    },
+    {
+      "source": "Bing News RSS",
+      "tier": "discovery",
+      "region": "asia",
+      "query": "cyberattack infrastructure India",
+      "http": 200,
+      "records": 7,
+      "error": null
+    },
+    {
+      "source": "Bing News RSS",
+      "tier": "discovery",
+      "region": "asia",
+      "query": "rail disruption Taiwan",
+      "http": 200,
+      "records": 1,
+      "error": null
+    },
+    {
+      "source": "Bing News RSS",
+      "tier": "discovery",
+      "region": "asia",
+      "query": "power outage South Korea",
+      "http": 200,
+      "records": 3,
+      "error": null
+    },
+    {
+      "source": "Bing News RSS",
+      "tier": "discovery",
+      "region": "asia",
+      "query": "submarine cable damage Asia",
+      "http": 200,
+      "records": 0,
+      "error": null
+    },
+    {
+      "source": "Bing News RSS",
+      "tier": "discovery",
+      "region": "asia",
+      "query": "AI cyberattack Japan",
+      "http": 200,
+      "records": 5,
+      "error": null
+    },
+    {
+      "source": "Bing News RSS",
+      "tier": "discovery",
+      "region": "china",
+      "query": "airport drone China",
+      "http": 200,
+      "records": 5,
+      "error": null
+    },
+    {
+      "source": "Bing News RSS",
+      "tier": "discovery",
+      "region": "china",
+      "query": "cyberattack infrastructure China",
+      "http": 200,
+      "records": 12,
+      "error": null
+    },
+    {
+      "source": "Bing News RSS",
+      "tier": "discovery",
+      "region": "china",
+      "query": "power outage China",
+      "http": 200,
+      "records": 0,
+      "error": null
+    },
+    {
+      "source": "Bing News RSS",
+      "tier": "discovery",
+      "region": "china",
+      "query": "submarine cable China",
+      "http": 200,
+      "records": 0,
+      "error": null
+    },
+    {
+      "source": "Bing News RSS",
+      "tier": "discovery",
+      "region": "china",
+      "query": "AI cyberattack China",
+      "http": 200,
+      "records": 6,
+      "error": null
+    },
+    {
+      "source": "Bing News RSS",
+      "tier": "discovery",
+      "region": "africa",
+      "query": "airport drone Africa",
+      "http": 200,
+      "records": 1,
+      "error": null
+    },
+    {
+      "source": "Bing News RSS",
+      "tier": "discovery",
+      "region": "africa",
+      "query": "cyberattack infrastructure Nigeria",
+      "http": 200,
+      "records": 1,
+      "error": null
+    },
+    {
+      "source": "Bing News RSS",
+      "tier": "discovery",
+      "region": "africa",
+      "query": "rail disruption South Africa",
+      "http": 200,
+      "records": 0,
+      "error": null
+    },
+    {
+      "source": "Bing News RSS",
+      "tier": "discovery",
+      "region": "africa",
+      "query": "submarine cable Africa",
+      "http": 200,
+      "records": 0,
+      "error": null
+    },
+    {
+      "source": "Bing News RSS",
+      "tier": "discovery",
+      "region": "africa",
+      "query": "AI cyberattack Africa",
+      "http": 200,
+      "records": 0,
+      "error": null
+    },
+    {
+      "source": "Bing News RSS",
+      "tier": "discovery",
+      "region": "middle_east",
+      "query": "airport drone Middle East",
+      "http": 200,
+      "records": 2,
+      "error": null
+    },
+    {
+      "source": "Bing News RSS",
+      "tier": "discovery",
+      "region": "middle_east",
+      "query": "cyberattack infrastructure Israel",
+      "http": 200,
+      "records": 4,
+      "error": null
+    },
+    {
+      "source": "Bing News RSS",
+      "tier": "discovery",
+      "region": "middle_east",
+      "query": "power outage Saudi Arabia",
+      "http": 200,
+      "records": 1,
+      "error": null
+    },
+    {
+      "source": "Bing News RSS",
+      "tier": "discovery",
+      "region": "middle_east",
+      "query": "submarine cable Middle East",
+      "http": 200,
+      "records": 1,
+      "error": null
+    },
+    {
+      "source": "Bing News RSS",
+      "tier": "discovery",
+      "region": "middle_east",
+      "query": "AI cyberattack Middle East",
+      "http": 200,
+      "records": 0,
       "error": null
     }
   ]

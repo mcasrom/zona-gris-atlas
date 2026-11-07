@@ -319,6 +319,7 @@ def main() -> int:
     parser.add_argument("--places", type=Path, default=DEFAULT_PLACES)
     parser.add_argument("--days", type=int, default=7)
     parser.add_argument("--limit", type=int, default=120)
+    parser.add_argument("--source", choices=["bing"], default="bing", help="fuente de descubrimiento")
     parser.add_argument("--cached-dir", type=Path, help="XML de Bing ya descargados; no usa red")
     args = parser.parse_args()
     places = json.loads(args.places.read_text(encoding="utf-8"))
