@@ -36,7 +36,7 @@
   <div class="container header-inner">
     <a class="brand" href="index.html" aria-label="Atlas Zona Gris, inicio"><svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="#C5CCD4" stroke-width="1.6"/><path d="M3.5 12a8.5 8.5 0 0 0 17 0Z" fill="#FFB020"/></svg>ZONA GRIS</a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-principal">Menú</button>
-    <nav class="nav" id="nav-principal" aria-label="Navegación principal"><a href="mapa.html">Mapa</a><a href="incidentes.html">Incidentes</a><a href="registros.html">Registros</a><a href="metodologia.html">Método</a><a href="fuentes.html">Fuentes</a><a href="primarias.html">Primarias</a><a href="limites.html">Límites</a><a href="avisos.html">Avisos</a><a href="about.html">About</a><a href="https://github.com/mcasrom/zona-gris-atlas">Código</a></nav>
+    <nav class="nav" id="nav-principal" aria-label="Navegación principal"><a href="mapa.html">Mapa</a><a href="incidentes.html">Incidentes</a><a href="cobertura.html">Cobertura</a><a href="registros.html">Registros</a><a href="metodologia.html">Método</a><a href="fuentes.html">Fuentes</a><a href="primarias.html">Primarias</a><a href="limites.html">Límites</a><a href="avisos.html">Avisos</a><a href="about.html">About</a><a href="en.html" hreflang="en">EN</a><a href="https://github.com/mcasrom/zona-gris-atlas">Código</a></nav>
   </div>
 </header>
 
@@ -48,17 +48,17 @@
         <h1>Acontecimientos reales, situados y con fuente.</h1>
         <p class="lead">Atlas Zona Gris es un mapa de acontecimientos e incidencias en infraestructuras y servicios esenciales. Cada registro indica fecha, lugar documentado, categoría, estado de verificación y enlace a la fuente original.</p>
         <p class="lead">No mide incidentes confirmados donde no los hay, no atribuye autoría y no convierte una amenaza en un ataque consumado.</p>
-        <div class="actions"><a class="btn btn-primary" href="mapa.html">Abrir el mapa</a><a class="btn" href="registros.html">Ver los registros</a><a class="btn" href="metodologia.html">Leer el método</a><a class="btn btn-ghost" href="fuentes.html">Fuentes y condiciones</a></div>
+        <div class="actions"><a class="btn btn-primary" href="mapa.html">Abrir el mapa</a><a class="btn" href="incidentes.html">Ver matriz de incidentes</a><a class="btn" href="registros.html">Ver los registros</a><a class="btn" href="metodologia.html">Leer el método</a><a class="btn btn-ghost" href="fuentes.html">Fuentes y condiciones</a></div>
       </div>
       <aside class="hero-map" aria-label="Balance de la captura real">
         <p class="eyebrow">Captura documental</p>
         <div class="hero-stats">
-          <div class="hero-stat"><strong data-stat="total">16</strong><span>acontecimientos</span></div>
+          <div class="hero-stat"><strong data-stat="total">56</strong><span>acontecimientos</span></div>
           <div class="hero-stat"><strong>6</strong><span>categorías</span></div>
           <div class="hero-stat"><strong data-stat="confirmed">0</strong><span>confirmados</span></div>
           <div class="hero-stat"><strong data-stat="documented">14</strong><span>documentados</span></div>
-          <div class="hero-stat"><strong data-stat="pending">2</strong><span>pendientes</span></div>
-          <div class="hero-stat"><strong data-stat="sources">23</strong><span>enlaces de fuente</span></div>
+          <div class="hero-stat"><strong data-stat="pending">42</strong><span>pendientes</span></div>
+          <div class="hero-stat"><strong data-stat="sources">63</strong><span>enlaces de fuente</span></div>
         </div>
         <div class="map-callout"><span class="data-badge">Datos reales</span><a href="mapa.html">Abrir mapa con filtros →</a></div>
       </aside>
@@ -89,9 +89,9 @@
     <div class="container">
       <div class="section-head"><div><p class="eyebrow">Actividad real</p><h2>Qué hay en la captura.</h2></div><p>Indicadores de acontecimientos, no de documentos revisados.</p></div>
       <div class="state-grid">
-        <div class="state-card"><span class="code-label">01 · registros</span><strong><span data-stat="total">16</span> acontecimientos</strong><p>Drones, amenazas de bomba, ciberataques, ferrocarril, aeropuertos y GNSS.</p></div>
-        <div class="state-card"><span class="code-label">02 · verificación</span><strong><span data-stat="confirmed">0</span> confirmados · <span data-stat="documented">14</span> documentados</strong><p><span data-stat="pending">2</span> pendientes. Ningún registro se eleva a ataque confirmado sin base.</p></div>
-        <div class="state-card"><span class="code-label">03 · ubicación</span><strong><span data-stat="coordinates">12</span> con ciudad o región</strong><p><span data-stat="unlocated">4</span> registros sin coordenada única aparecen solo en la lista.</p></div>
+        <div class="state-card"><span class="code-label">01 · registros</span><strong><span data-stat="total">56</span> acontecimientos</strong><p>Drones, amenazas de bomba, ciberataques, ferrocarril, aeropuertos y GNSS.</p></div>
+        <div class="state-card"><span class="code-label">02 · verificación</span><strong><span data-stat="confirmed">0</span> confirmados · <span data-stat="documented">14</span> documentados</strong><p><span data-stat="pending">42</span> pendientes. Ningún registro se eleva a ataque confirmado sin base.</p></div>
+        <div class="state-card"><span class="code-label">03 · ubicación</span><strong><span data-stat="coordinates">15</span> con ciudad o región</strong><p><span data-stat="unlocated">41</span> registros sin coordenada única aparecen solo en la lista.</p></div>
       </div>
       <p class="muted small" style="margin-top:18px">Los documentos institucionales de B13 siguen en <a href="registros.html">Registros</a>; no se cuentan como acontecimientos.</p>
     </div>
@@ -106,7 +106,7 @@
 
 </main>
 
-<footer class="site-footer"><div class="container footer-grid"><div><a class="brand" href="index.html"><svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="#C5CCD4" stroke-width="1.6"/><path d="M3.5 12a8.5 8.5 0 0 0 17 0Z" fill="#FFB020"/></svg>ZONA GRIS</a><p>Proyecto personal de un único autor. Código bajo AGPL-3.0. Sin cookies ni rastreadores.</p><p>Parte del ecosistema de Prueba Pública. Complementa a FIMI Radar.</p></div><div class="footer-links"><a href="mapa.html">Mapa</a><a href="incidentes.html">Incidentes</a><a href="registros.html">Registros</a><a href="metodologia.html">Método</a><a href="fuentes.html">Fuentes</a><a href="primarias.html">Primarias</a><a href="limites.html">Límites</a><a href="avisos.html">Avisos</a><a href="about.html">About</a><a href="privacidad.html">Privacidad</a><a href="https://github.com/mcasrom/zona-gris-atlas">GitHub</a><a href="feed.xml">RSS</a><a class="kofi-link" href="https://ko-fi.com/m_castillo">Apoyar en Ko-fi</a><span class="footer-version">Miguel Castillo · v0.1.1</span></div></div></footer>
+<footer class="site-footer"><div class="container footer-grid"><div><a class="brand" href="index.html"><svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="#C5CCD4" stroke-width="1.6"/><path d="M3.5 12a8.5 8.5 0 0 0 17 0Z" fill="#FFB020"/></svg>ZONA GRIS</a><p>Proyecto personal de un único autor. Código bajo AGPL-3.0. Sin cookies ni rastreadores.</p><p>Parte del ecosistema de Prueba Pública. Complementa a FIMI Radar.</p></div><div class="footer-links"><a href="mapa.html">Mapa</a><a href="incidentes.html">Incidentes</a><a href="cobertura.html">Cobertura</a><a href="registros.html">Registros</a><a href="metodologia.html">Método</a><a href="fuentes.html">Fuentes</a><a href="primarias.html">Primarias</a><a href="limites.html">Límites</a><a href="avisos.html">Avisos</a><a href="about.html">About</a><a href="privacidad.html">Privacidad</a><a href="https://github.com/mcasrom/zona-gris-atlas">GitHub</a><a href="feed.xml">RSS</a><a class="kofi-link" href="https://ko-fi.com/m_castillo">Apoyar en Ko-fi</a><span class="footer-version">Miguel Castillo · v0.1.1</span></div></div></footer>
 <script src="assets/js/site.js" defer></script>
 <script src="assets/js/map.js" defer></script>
 </body>

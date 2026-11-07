@@ -135,3 +135,47 @@ sources:
     fecha_revision: ""
     limite_ritmo: "[DECIDIR]"
     justificacion: "Comunicados institucionales de la acción exterior europea."
+  - id: cert-in
+    name: CERT-In (India)
+    tier: primary
+    url: https://www.cert-in.org.in/
+    type: web
+    enabled: false
+    licencia: "[REVISAR]"
+    licencia_url: "[REVISAR]"
+    fecha_revision: ""
+    limite_ritmo: "[REVISAR]"
+    justificacion: "CERT nacional de India; pendiente de adaptador y condiciones."
+  - id: jpcert
+    name: JPCERT/CC (Japón)
+    tier: primary
+    url: https://www.jpcert.or.jp/english/
+    type: web
+    enabled: false
+    licencia: "[REVISAR]"
+    licencia_url: "[REVISAR]"
+    fecha_revision: ""
+    limite_ritmo: "[REVISAR]"
+    justificacion: "CERT nacional de Japón; pendiente de feed y condiciones."
+  - id: cert-br
+    name: CERT.br (Brasil)
+    tier: primary
+    url: https://www.cert.br/
+    type: web
+    enabled: false
+    licencia: "[REVISAR]"
+    licencia_url: "[REVISAR]"
+    fecha_revision: ""
+    limite_ritmo: "[REVISAR]"
+    justificacion: "CERT nacional de Brasil; pendiente de feed y condiciones."
+  - id: cncert
+    name: CNCERT/CC (China)
+    tier: primary
+    url: https://www.cert.org.cn/
+    type: web
+    enabled: false
+    licencia: "[REVISAR]"
+    licencia_url: "[REVISAR]"
+    fecha_revision: ""
+    limite_ritmo: "[REVISAR]"
+    justificacion: "CERT nacional de China; pendiente de acceso, idioma y condiciones."

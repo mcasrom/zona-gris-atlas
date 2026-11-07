@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import re
 from datetime import datetime, timezone
 from pathlib import Path
 from xml.sax.saxutils import escape
@@ -18,6 +19,8 @@ EVENTS_AUTO = ROOT / "data" / "events" / "auto" / "events.jsonl"
 EVENTS_WEB = WEB / "assets" / "data" / "events.json"
 PRIMARY = ROOT / "data" / "events" / "primary" / "documents.json"
 PRIMARY_WEB = WEB / "assets" / "data" / "primary.json"
+QUERIES_CONFIG = ROOT / "config" / "queries.json"
+COVERAGE_WEB = WEB / "assets" / "data" / "coverage.json"
 REPO = SITE["repo"].rstrip("/")
 SITE_URL = SITE["url"].rstrip("/")
 
@@ -64,12 +67,48 @@ def write_events() -> None:
     EVENTS_WEB.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
+def write_index_stats() -> None:
+    if not EVENTS_WEB.exists():
+        return
+    events = json.loads(EVENTS_WEB.read_text(encoding="utf-8")).get("events", [])
+    if not events:
+        return
+    counts = {
+        "total": len(events),
+        "confirmed": sum(1 for e in events if e.get("verification_status") == "CONFIRMADO"),
+        "documented": sum(1 for e in events if e.get("verification_status") == "DOCUMENTADO"),
+        "pending": sum(1 for e in events if e.get("verification_status") == "PENDIENTE"),
+        "coordinates": sum(1 for e in events if e.get("lat") is not None and e.get("lon") is not None),
+        "unlocated": sum(1 for e in events if e.get("lat") is None or e.get("lon") is None),
+        "sources": len({s.get("url") for e in events for s in e.get("sources", []) if s.get("url")}),
+    }
+    page = WEB / "index.html"
+    text = page.read_text(encoding="utf-8")
+    for key, value in counts.items():
+        text = re.sub(rf'data-stat="{key}">\d+', f'data-stat="{key}">{value}', text)
+    page.write_text(text, encoding="utf-8")
+
+
 def write_primary() -> None:
     if PRIMARY.exists():
         payload = json.loads(PRIMARY.read_text(encoding="utf-8"))
     else:
         payload = {"count": 0, "documents": [], "source": "CERT-EU", "license": "CC BY 4.0"}
     PRIMARY_WEB.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+def write_coverage() -> None:
+    config = json.loads(QUERIES_CONFIG.read_text(encoding="utf-8"))
+    events = json.loads(EVENTS_WEB.read_text(encoding="utf-8")).get("events", []) if EVENTS_WEB.exists() else []
+    counts = {}
+    for event in events:
+        region = event.get("region")
+        if region:
+            counts[region] = counts.get(region, 0) + 1
+    for region in config.get("regions", []):
+        region["events"] = counts.get(region["id"], 0)
+        region["queries_count"] = len(region.get("queries", []))
+    COVERAGE_WEB.write_text(json.dumps(config, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
 def write_feed() -> None:
@@ -111,7 +150,7 @@ def write_feed() -> None:
 
 
 def write_sitemap() -> None:
-    pages = ["", "mapa.html", "incidentes.html", "registros.html", "primarias.html", "metodologia.html", "limites.html", "fuentes.html", "privacidad.html", "avisos.html", "about.html"]
+    pages = ["", "mapa.html", "incidentes.html", "cobertura.html", "en.html", "registros.html", "primarias.html", "metodologia.html", "limites.html", "fuentes.html", "privacidad.html", "avisos.html", "about.html"]
     today = datetime.now(timezone.utc).date().isoformat()
     rows = [
         '<?xml version="1.0" encoding="UTF-8"?>',
@@ -171,6 +210,8 @@ def replace_tokens() -> None:
 
 def main() -> int:
     write_events()
+    write_index_stats()
+    write_coverage()
     write_primary()
     write_feed()
     write_sitemap()

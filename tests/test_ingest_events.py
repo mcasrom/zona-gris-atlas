@@ -55,3 +55,10 @@ def test_automatic_events_are_never_documented_without_human_review() -> None:
     assert all(event["verification_status"] == "PENDIENTE" for event in events)
     assert all(event["reviewed_by_human"] is False for event in events)
     assert events[0]["source_sha256"]
+
+
+def test_query_matrix_declares_all_regions() -> None:
+    rows = ingest.query_matrix()
+    regions = {row[0] for row in rows}
+    assert {"europe", "americas", "asia", "china", "africa", "middle_east"} <= regions
+    assert all(len(row) == 3 for row in rows)

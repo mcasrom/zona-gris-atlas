@@ -27,6 +27,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_OUT = ROOT / "data" / "events" / "auto" / "events.jsonl"
 DEFAULT_SOURCES = ROOT / "data" / "events" / "auto" / "sources.json"
 DEFAULT_PLACES = ROOT / "data" / "event_places.json"
+QUERY_MATRIX = ROOT / "config" / "queries.json"
 UA = "Mozilla/5.0 (compatible; AtlasZonaGris/0.3; +https://zonagris.pruebapublica.com/metodologia.html)"
 MAX_BYTES = 2_500_000
 QUERIES = (
@@ -39,6 +40,22 @@ QUERIES = (
     ("sabotaje_infraestructura", "sabotage infrastructure"),
     ("energia_telecom", "power outage telecom"),
 )
+def query_matrix() -> list[tuple[str, str, str]]:
+    try:
+        data = json.loads(QUERY_MATRIX.read_text(encoding="utf-8"))
+        rows = [
+            (region["id"], query["category"], query["query"])
+            for region in data.get("regions", [])
+            for query in region.get("queries", [])
+            if region.get("id") and query.get("category") and query.get("query")
+        ]
+        if rows:
+            return rows
+    except (OSError, ValueError, KeyError):
+        pass
+    return [("global", category, query) for category, query in QUERIES]
+
+
 CATEGORY_LABELS = {
     "drones_aeropuertos": "Drones e incursiones en aeropuertos",
     "amenazas_bomba": "Amenazas de bomba y evacuaciones aeroportuarias",
@@ -129,7 +146,7 @@ def classify(text: str) -> str:
     return best if scores[best] else "proteccion_civil"
 
 
-def parse_feed(raw: bytes, category: str) -> list[dict]:
+def parse_feed(raw: bytes, category: str, region: str = "") -> list[dict]:
     root = ET.fromstring(raw)
     if root.tag not in {"rss", "feed"}:
         raise ValueError("feed RSS/Atom no reconocido")
@@ -161,6 +178,7 @@ def parse_feed(raw: bytes, category: str) -> list[dict]:
             "domain": domain(decode_bing(raw_link)),
             "published_at": published,
             "category": category_guess,
+            "region": region,
             "source_name": "Bing News RSS",
             "digest": hashlib.sha256((title + description + decode_bing(raw_link)).encode()).hexdigest(),
         })
@@ -257,6 +275,7 @@ def build_events(groups: list[list[dict]], places: dict, captured_at: str) -> li
             "geo_precision": place["precision"] if place else None,
             "category": first["category"],
             "category_label": CATEGORY_LABELS[first["category"]],
+            "region": first.get("region") or None,
             "title": first["title"],
             "description": first["description"] or "Titular y resumen disponibles en la fuente original.",
             "infrastructure": "No especificada en la fuente",
@@ -295,15 +314,15 @@ def main() -> int:
             except Exception as exc:
                 source_runs.append({"source": str(path), "http": None, "records": 0, "error": str(exc)})
     else:
-        for category, query in QUERIES:
+        for region, category, query in query_matrix():
             url = "https://www.bing.com/news/search?" + urllib.parse.urlencode({"q": query, "format": "RSS"})
             try:
-                part = parse_feed(fetch(url), category)
+                part = parse_feed(fetch(url), category, region)
                 rows.extend(part)
-                source_runs.append({"source": "Bing News RSS", "query": query, "http": 200, "records": len(part), "error": None})
+                source_runs.append({"source": "Bing News RSS", "tier": "discovery", "region": region, "query": query, "http": 200, "records": len(part), "error": None})
             except Exception as exc:
                 print(f"error: {url}: {exc}", file=sys.stderr)
-                source_runs.append({"source": "Bing News RSS", "query": query, "http": None, "records": 0, "error": str(exc)})
+                source_runs.append({"source": "Bing News RSS", "tier": "discovery", "region": region, "query": query, "http": None, "records": 0, "error": str(exc)})
     cutoff = datetime.now(timezone.utc).date() - timedelta(days=args.days - 1)
     rows = [row for row in rows if date.fromisoformat(row["published_at"]) >= cutoff]
     # Una misma URL puede aparecer en varias consultas; se conserva una sola categoría.

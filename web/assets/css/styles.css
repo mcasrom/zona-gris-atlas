@@ -373,3 +373,8 @@ button.btn:hover { background: var(--panel); }
 .status-pill { display:inline-block; border:1px solid var(--line); border-radius:999px; padding:1px 7px; font-size:.72rem; }
 .status-pill.documented { color:var(--signal); border-color:var(--signal); }
 .status-pill.pending { color:var(--muted); }
+
+.coverage-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:12px; margin:14px 0; }
+.coverage-card { border:1px solid var(--line); padding:14px; background:var(--panel); }
+.coverage-card h3 { margin:0 0 6px; }
+.coverage-card ul { margin:8px 0 0; padding-left:18px; font-size:.84rem; }
