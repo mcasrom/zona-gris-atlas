@@ -86,6 +86,18 @@ def write_index_stats() -> None:
     text = page.read_text(encoding="utf-8")
     for key, value in counts.items():
         text = re.sub(rf'data-stat="{key}">\d+', f'data-stat="{key}">{value}', text)
+    captured = json.loads(EVENTS_WEB.read_text(encoding="utf-8")).get("generated_at")
+    if captured:
+        from datetime import datetime
+        from zoneinfo import ZoneInfo
+        try:
+            stamp = datetime.fromisoformat(captured.replace("Z", "+00:00")).astimezone(ZoneInfo("Europe/Madrid"))
+            months = ("ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic")
+            label = f"{stamp.day} {months[stamp.month - 1]} {stamp.year}, {stamp:%H:%M}"
+            text = re.sub(r'(<time[^>]*data-last-capture[^>]*>)[^<]*(</time>)', rf'\g<1>{label}\g<2>', text)
+            text = text.replace('data-last-capture>', f'data-last-capture datetime="{captured}">', 1)
+        except ValueError:
+            pass
     page.write_text(text, encoding="utf-8")
 
 
