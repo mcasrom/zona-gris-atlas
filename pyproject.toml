@@ -22,7 +22,7 @@ dev = [
   "ruff>=0.6,<1",
   "bandit>=1.7,<2",
   "pip-audit>=2.7,<3",
-  "Pillow>=10,<12",
+  "Pillow>=10,<14",
 ]
 ml = [
   "sentence-transformers>=3.0,<6",
