@@ -73,6 +73,7 @@ demás registros quedan en la lista.
 - **Release actual:** `20261107T135509Z`.
 - **Captura automática:** cron cada 6 horas; Bing News RSS como descubrimiento y una **capa primaria CERT-EU** separada del mapa.
 - **Capa primaria:** `/primarias.html` · CERT-EU Threat Intelligence · CC BY 4.0; no se cuenta como incidente.
+- **Resumen semanal:** `/suscribirse.html` · lista propia con doble opt-in, Resend y baja en un clic; no se mezcla con otras listas.
 - **Automatización:** un fallo de captura no cambia `current`; las releases anteriores
   se conservan para rollback. La capa primaria falla de forma aislada: no tumba el mapa.
 

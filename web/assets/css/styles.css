@@ -378,3 +378,9 @@ button.btn:hover { background: var(--panel); }
 .coverage-card { border:1px solid var(--line); padding:14px; background:var(--panel); }
 .coverage-card h3 { margin:0 0 6px; }
 .coverage-card ul { margin:8px 0 0; padding-left:18px; font-size:.84rem; }
+
+.newsletter-box { border:1px solid var(--line); background:var(--panel); padding:22px; margin:18px 0; }
+.newsletter-box h2 { margin-top:0; }
+.newsletter-box form { display:flex; gap:10px; align-items:flex-end; flex-wrap:wrap; margin:14px 0 8px; }
+.newsletter-box label { display:block; font-size:.82rem; color:var(--muted); margin-bottom:4px; }
+.newsletter-box input[type=email] { min-width:250px; min-height:42px; padding:8px 10px; background:var(--ink); color:var(--paper); border:1px solid var(--line); border-radius:4px; }

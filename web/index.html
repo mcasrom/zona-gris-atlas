@@ -36,7 +36,7 @@
   <div class="container header-inner">
     <a class="brand" href="index.html" aria-label="Atlas Zona Gris, inicio"><svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="#C5CCD4" stroke-width="1.6"/><path d="M3.5 12a8.5 8.5 0 0 0 17 0Z" fill="#FFB020"/></svg>ZONA GRIS</a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-principal">Menú</button>
-    <nav class="nav" id="nav-principal" aria-label="Navegación principal"><a href="mapa.html">Mapa</a><a href="incidentes.html">Incidentes</a><a href="cobertura.html">Cobertura</a><a href="registros.html">Registros</a><a href="metodologia.html">Método</a><a href="fuentes.html">Fuentes</a><a href="primarias.html">Primarias</a><a href="limites.html">Límites</a><a href="avisos.html">Avisos</a><a href="about.html">About</a><a href="en.html" hreflang="en">EN</a><a href="https://github.com/mcasrom/zona-gris-atlas">Código</a></nav>
+    <nav class="nav" id="nav-principal" aria-label="Navegación principal"><a href="mapa.html">Mapa</a><a href="incidentes.html">Incidentes</a><a href="cobertura.html">Cobertura</a><a href="registros.html">Registros</a><a href="metodologia.html">Método</a><a href="fuentes.html">Fuentes</a><a href="primarias.html">Primarias</a><a href="limites.html">Límites</a><a href="avisos.html">Avisos</a><a href="about.html">About</a><a href="suscribirse.html">Resumen</a><a href="en.html" hreflang="en">EN</a><a href="https://github.com/mcasrom/zona-gris-atlas">Código</a></nav>
   </div>
 </header>
 
@@ -104,10 +104,27 @@
     </div>
   </section>
 
+  <section class="section" id="resumen-semanal">
+    <div class="container">
+      <div class="newsletter-box">
+        <p class="eyebrow">Resumen semanal</p>
+        <h2>Recibe lo que el atlas incorpora. Sin ruido diario.</h2>
+        <p>Un correo semanal con nuevos documentados, candidatos pendientes y cambios de cobertura. Doble confirmación y baja en un clic.</p>
+        <form data-subscribe data-lang="es">
+          <input type="hidden" name="page" value="/">
+          <label for="home-subs-email">Email</label>
+          <input id="home-subs-email" type="email" name="email" autocomplete="email" required placeholder="tu@email.com">
+          <button class="btn btn-primary" type="submit">Recibir el resumen</button>
+          <p class="muted small" data-subscribe-status role="status"></p>
+        </form>
+        <p class="muted small">Sin cookies. Baja en un clic. <a href="suscribirse.html">Qué incluye</a>.</p>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer class="site-footer"><div class="container footer-grid"><div><a class="brand" href="index.html"><svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="#C5CCD4" stroke-width="1.6"/><path d="M3.5 12a8.5 8.5 0 0 0 17 0Z" fill="#FFB020"/></svg>ZONA GRIS</a><p>Proyecto personal de un único autor. Código bajo AGPL-3.0. Sin cookies ni rastreadores.</p><p>Parte del ecosistema de Prueba Pública. Complementa a FIMI Radar.</p></div><div class="footer-links"><a href="mapa.html">Mapa</a><a href="incidentes.html">Incidentes</a><a href="cobertura.html">Cobertura</a><a href="registros.html">Registros</a><a href="metodologia.html">Método</a><a href="fuentes.html">Fuentes</a><a href="primarias.html">Primarias</a><a href="limites.html">Límites</a><a href="avisos.html">Avisos</a><a href="about.html">About</a><a href="privacidad.html">Privacidad</a><a href="https://github.com/mcasrom/zona-gris-atlas">GitHub</a><a href="feed.xml">RSS</a><a class="kofi-link" href="https://ko-fi.com/m_castillo">Apoyar en Ko-fi</a><span class="footer-version">Miguel Castillo · v0.1.1</span></div></div></footer>
 <script src="assets/js/site.js" defer></script>
-<script src="assets/js/map.js" defer></script>
+<script src="assets/js/map.js" defer></script><script src="assets/js/subscribe.js" defer></script>
 </body>
 </html>

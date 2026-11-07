@@ -41,6 +41,18 @@
       <li><a href="primarias.html">Primary documents</a> — CERT-EU Threat Intelligence, CC BY 4.0, kept separate from incidents.</li>
       <li><a href="cobertura.html">Coverage</a> — query matrix and explicit regional gaps.</li>
     </ul>
+    <h2>Weekly digest</h2>
+    <div class="newsletter-box">
+      <p>One email a week: documented events, pending candidates and coverage changes. Double opt-in and one-click unsubscribe.</p>
+      <form data-subscribe data-lang="en">
+        <input type="hidden" name="page" value="/en.html">
+        <label for="en-subs-email">Email</label>
+        <input id="en-subs-email" type="email" name="email" autocomplete="email" required placeholder="you@example.com">
+        <button class="btn btn-primary" type="submit">Get the weekly digest</button>
+        <p class="muted small" data-subscribe-status role="status"></p>
+      </form>
+      <p class="muted small">No cookies. No sharing with other projects. <a href="suscribirse.html">What you get</a>.</p>
+    </div>
     <h2>What it does not do</h2>
     <p>It does not confirm an attack without evidence, does not infer an actor, and does not fill a missing severity or attribution field by guesswork. A pending record is a candidate, not a confirmed incident.</p>
     <h2>Coverage gaps</h2>
@@ -51,5 +63,6 @@
 </main>
 <footer class="site-footer"><div class="container footer-grid"><div><p>Personal project by Miguel Castillo. AGPL-3.0 code. No cookies, no trackers.</p></div><div class="footer-links"><a href="index.html">ES</a><a href="incidentes.html">Incidents</a><a href="cobertura.html">Coverage</a><a href="primarias.html">Primary</a><a href="https://github.com/mcasrom/zona-gris-atlas">GitHub</a><a class="kofi-link" href="https://ko-fi.com/m_castillo">Support on Ko-fi</a><span class="footer-version">Miguel Castillo · v0.1.1</span></div></div></footer>
 <script src="assets/js/site.js" defer></script>
+<script src="assets/js/subscribe.js" defer></script>
 </body>
 </html>

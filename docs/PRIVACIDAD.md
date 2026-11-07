@@ -28,3 +28,13 @@ El alojamiento registra peticiones HTTP como cualquier servidor. La aplicación 
 - **Copias:** los bundles locales conservan 10 versiones; no se envían a terceros.
 
 No se guardan direcciones IP en una base propia ni se cruzan con otros servicios.
+
+## Resumen semanal
+
+- **Dato:** email, fecha, página de origen y UTM. No se guarda la IP en la base.
+- **Finalidad:** enviar el resumen semanal.
+- **Base jurídica:** consentimiento; doble confirmación obligatoria.
+- **Conservación:** mientras la suscripción esté activa. Las solicitudes pendientes se borran a los 30 días.
+- **Baja:** enlace en cada correo; se marca como baja y no se vuelve a escribir.
+- **Encargado:** Resend para el envío. No se cede a terceros.
+- **Lista separada:** no se mezcla con FIMI, el blog ni el hub.

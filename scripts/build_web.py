@@ -150,7 +150,7 @@ def write_feed() -> None:
 
 
 def write_sitemap() -> None:
-    pages = ["", "mapa.html", "incidentes.html", "cobertura.html", "en.html", "registros.html", "primarias.html", "metodologia.html", "limites.html", "fuentes.html", "privacidad.html", "avisos.html", "about.html"]
+    pages = ["", "mapa.html", "incidentes.html", "cobertura.html", "suscribirse.html", "en.html", "registros.html", "primarias.html", "metodologia.html", "limites.html", "fuentes.html", "privacidad.html", "avisos.html", "about.html"]
     today = datetime.now(timezone.utc).date().isoformat()
     rows = [
         '<?xml version="1.0" encoding="UTF-8"?>',
