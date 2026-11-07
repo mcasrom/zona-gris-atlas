@@ -1,0 +1,57 @@
+from __future__ import annotations
+
+import importlib.util
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+spec = importlib.util.spec_from_file_location("ingest_events", ROOT / "scripts" / "ingest_events.py")
+ingest = importlib.util.module_from_spec(spec)
+assert spec.loader is not None
+spec.loader.exec_module(ingest)
+
+XML = b"""<?xml version="1.0"?><rss><channel>
+<item><title>Bomb threat at Copenhagen Airport</title><link>https://www.bing.com/news/apiclick.aspx?url=https%3A%2F%2Fexample.com%2Fa</link><description>Airport evacuated after a threat; police investigate.</description><pubDate>Fri, 06 Nov 2026 10:00:00 GMT</pubDate></item>
+<item><title>Bomb threat at Copenhagen Airport</title><link>https://www.bing.com/news/apiclick.aspx?url=https%3A%2F%2Fexample.net%2Fb</link><description>Flights delayed after a bomb threat at the airport.</description><pubDate>Fri, 06 Nov 2026 11:00:00 GMT</pubDate></item>
+<item><title>Opinion: what the airport threat means</title><link>https://example.org/opinion</link><description>Analysis.</description><pubDate>Fri, 06 Nov 2026 12:00:00 GMT</pubDate></item>
+</channel></rss>"""
+
+
+def test_feed_is_parsed_and_opinion_is_filtered() -> None:
+    rows = ingest.parse_feed(XML, "amenazas_bomba")
+    assert len(rows) == 2
+    assert rows[0]["url"] == "https://example.com/a"
+    assert rows[0]["category"] == "amenazas_bomba"
+
+
+def test_similar_headlines_are_grouped_and_multiple_domains_are_documented() -> None:
+    rows = ingest.parse_feed(XML, "amenazas_bomba")
+    groups = ingest.group_rows(rows)
+    assert len(groups) == 1
+    status, reason = ingest.assess(groups[0])
+    assert status == "DOCUMENTADO"
+    assert "2 medios" in reason
+
+
+def test_single_source_stays_pending() -> None:
+    row = ingest.parse_feed(XML, "amenazas_bomba")[0]
+    status, reason = ingest.assess([row])
+    assert status == "PENDIENTE"
+    assert "una sola" in reason
+
+
+def test_place_is_optional_and_never_invented() -> None:
+    places = json.loads((ROOT / "data" / "event_places.json").read_text(encoding="utf-8"))
+    assert ingest.place_for("Bomb threat at Copenhagen Airport", places)["city"] == "Copenhagen"
+    assert ingest.place_for("A threat without a city", places) is None
+
+
+def test_automatic_events_are_not_marked_confirmed() -> None:
+    rows = ingest.parse_feed(XML, "amenazas_bomba")
+    events = ingest.build_events(ingest.group_rows(rows), json.loads((ROOT / "data" / "event_places.json").read_text(encoding="utf-8")), "2026-11-07T00:00:00Z")
+    assert events
+    assert all(event["automated"] is True for event in events)
+    assert all(event["verification_status"] in {"DOCUMENTADO", "PENDIENTE"} for event in events)
+    assert all(event["reviewed_by_human"] is False for event in events)
+    assert events[0]["demo"] is False
+    assert events[0]["source_sha256"]

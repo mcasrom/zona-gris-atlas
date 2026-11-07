@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import re
 from datetime import datetime, timezone
 from pathlib import Path
 from xml.sax.saxutils import escape
@@ -15,6 +16,7 @@ DEMO = WEB / "assets" / "data" / "incidents.demo.json"
 PUBLIC_DATA = WEB / "assets" / "data" / "incidents.json"
 REGISTROS = WEB / "assets" / "data" / "registros.json"
 EVENTS = ROOT / "data" / "events" / "2026-11-06" / "events.jsonl"
+EVENTS_AUTO = ROOT / "data" / "events" / "auto" / "events.jsonl"
 EVENTS_WEB = WEB / "assets" / "data" / "events.json"
 REPO = SITE["repo"].rstrip("/")
 SITE_URL = SITE["url"].rstrip("/")
@@ -53,11 +55,48 @@ def write_data() -> dict:
     return demo
 
 
+def _jsonl(path: Path) -> list[dict]:
+    if not path.exists():
+        return []
+    return [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
+
+
+def _title_key(title: str) -> str:
+    return " ".join("".join(c.lower() if c.isalnum() or c.isspace() else " " for c in title).split())
+
+
+def _title_tokens(title: str) -> set[str]:
+    return {word for word in re.findall(r"[a-z0-9áéíóúüñ]{4,}", title.casefold())}
+
+
+def _similar_titles(left: str, right: str) -> bool:
+    a, b = _title_tokens(left), _title_tokens(right)
+    if not a or not b:
+        return False
+    return len(a & b) / len(a | b) >= 0.55
+
+
 def write_events() -> None:
-    rows = [json.loads(line) for line in EVENTS.read_text(encoding="utf-8").splitlines() if line.strip()]
-    assert rows and all(row.get("demo") is False for row in rows)
+    # Los curados tienen prioridad. Los automáticos se incorporan después y
+    # solo si no repiten una URL ni un titular ya presente.
+    curated = _jsonl(EVENTS)
+    automatic = _jsonl(EVENTS_AUTO)
+    assert curated and all(row.get("demo") is False for row in curated + automatic)
+    rows = list(curated)
+    seen_urls = {source["url"].split("#")[0].rstrip("/") for row in rows for source in row.get("sources", [])}
+    curated_titles = [row["title"] for row in rows]
+    for row in automatic:
+        urls = {source["url"].split("#")[0].rstrip("/") for source in row.get("sources", [])}
+        if urls & seen_urls or _title_key(row["title"]) in {_title_key(title) for title in curated_titles}:
+            continue
+        if any(_similar_titles(row["title"], title) for title in curated_titles):
+            continue
+        rows.append(row)
+        curated_titles.append(row["title"])
+        seen_urls |= urls
+    generated_at = max((row.get("captured_at") or "" for row in rows), default="")
     payload = {
-        "generated_at": "2026-11-06T16:00:00Z",
+        "generated_at": generated_at or "2026-11-06T16:00:00Z",
         "demo": False,
         "count": len(rows),
         "events": rows,

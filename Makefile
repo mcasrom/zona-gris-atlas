@@ -23,6 +23,9 @@ classify:
 export:
 	$(PY) -m zonagris.cli export
 
+events:
+	$(PY) scripts/ingest_events.py
+
 web:
 	$(PY) scripts/build_web.py
 	$(PY) scripts/make_og.py

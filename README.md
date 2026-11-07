@@ -1,19 +1,19 @@
-# Zona Gris · Atlas abierto de incidentes híbridos
+# Zona Gris · Mapa de acontecimientos reales
 
 [![CI](https://github.com/mcasrom/zona-gris-atlas/actions/workflows/ci.yml/badge.svg)](https://github.com/mcasrom/zona-gris-atlas/actions/workflows/ci.yml)
 [![Licencia: AGPL-3.0](https://img.shields.io/badge/licencia-AGPL--3.0-ffb020)](LICENSE)
 
-> **Aviso visible:** los datos de demostración de la web **no son reales**. Llevan `demo: true` y la etiqueta «Ejemplo ilustrativo». No describen incidentes, autores ni organizaciones reales.
+> **Aviso visible:** la demo de la web **no es el mapa real**. Sus casos llevan `demo: true`, están en una página separada y no entran en indicadores, feed ni sitemap. El mapa público contiene registros documentados y candidatos automáticos; una fuente única no se presenta como incidente confirmado.
 
-Atlas abierto de incidentes de zona gris y amenazas híbridas. Registra el hecho, su fuente y **quién atribuye**; el sistema no atribuye autoría por su cuenta.
+Atlas Zona Gris es un mapa documental de acontecimientos e incidencias en infraestructuras y servicios esenciales. Registra fecha, lugar documentado, categoría, estado de verificación y enlace a la fuente original. El sistema **no atribuye autoría ni intención** por su cuenta.
 
-![Vista previa de Zona Gris](web/assets/img/og-preview.png)
+![Vista previa de Zona Gris](web/assets/img/og-atlas.png)
 
 ## Qué es y qué no es
 
-**Es** un registro fechado de incidentes en ocho dominios: ciber, infraestructura crítica, espacio aéreo y drones, interferencia GNSS, sabotaje físico, desinformación, coerción económica e instrumentalización migratoria.
+**Es** un registro fechado de acontecimientos documentados y candidatos automáticos en aeropuertos, ferrocarril, ciberseguridad, GNSS, energía, telecomunicaciones y protección civil.
 
-**No es** un atribuidor automático, un predictor de ataques, un perfilador de personas ni una base de inteligencia en tiempo real. Los cables submarinos quedan fuera de la v0.1.
+**No es** un atribuidor automático, un predictor de ataques, un perfilador de personas ni una base de inteligencia en tiempo real. Las alertas, amenazas y reivindicaciones se conservan como tales; no se convierten en ataques confirmados.
 
 ## Principio de atribución
 
@@ -44,24 +44,33 @@ La escala completa va de `paz_estable` a `conflicto_abierto`. El atlas cubre sol
 
 ```mermaid
 flowchart LR
-  A[Fuentes autorizadas] --> B[Ingesta con caché]
-  B --> C[Deduplicado URL + texto]
-  C --> D[Clasificador propone]
-  D --> E[Revisión humana]
-  E --> F[Ficha publicada]
-  F --> G[Web estática + JSON + Atom]
-  E --> X[Rechazo o borrador]
+  A[Bing News RSS] --> B[Captura de metadatos]
+  B --> C[Deduplicado y agrupación]
+  C --> D[Evaluación conservadora]
+  D --> E[PENDIENTE o DOCUMENTADO]
+  E --> F[Fusión con registros curados]
+  F --> G[Web estática + JSON + feed]
+  F --> X[Sin confirmación automática]
 ```
 
-Cada paso está documentado en [`docs/METODOLOGIA.md`](docs/METODOLOGIA.md). La atribución tiene su propia página: [`docs/ATRIBUCION.md`](docs/ATRIBUCION.md).
+La captura automática consulta Bing News RSS, conserva titulares, resumen corto, URL,
+fecha y huella SHA-256. Nunca asigna `CONFIRMADO`: una fuente deja el registro en
+`PENDIENTE`; dos dominios independientes o una fuente institucional identificada lo
+pasan a `DOCUMENTADO`. Los registros curados tienen prioridad en la fusión. Detalle:
+[`docs/AUTO-INGESTA.md`](docs/AUTO-INGESTA.md).
+
+La web usa **dos columnas con scroll propio** para la lista del mapa, y una columna en
+móvil. Los marcadores solo aparecen cuando hay una ciudad o región documentada; los
+demás registros quedan en la lista.
 
 ## Estado actual
 
-- **Fase 0 — portátil:** repo, esquema, pipeline mínimo, evaluación y web estática.
-- **Fase 1 — servidor:** pendiente; no se despliega nada en esta sesión.
-- **Fase 2 — publicación:** pendiente de dominio, licencia de datos y revisión de fuentes.
-
-La web usa **10 incidentes de demostración**. El clasificador **no publica nada**: la puerta exige F1 macro ≥ 0,75 sobre un conjunto de oro de al menos 200 eventos.
+- **Publicado en Hetzner:** `https://zonagris.pruebapublica.com`.
+- **Release actual:** `20261107T135509Z`.
+- **Captura automática:** cron cada 6 horas en `/home/deploy/atlas-zonagris-auto/`.
+- **Demo:** aislada, con `demo: true`, `noindex` y fuera del sitemap.
+- **Automatización:** un fallo de captura no cambia `current`; las releases anteriores
+  se conservan para rollback.
 
 ## Arranque rápido
 
@@ -69,12 +78,13 @@ La web usa **10 incidentes de demostración**. El clasificador **no publica nada
 make setup
 make lint
 make test
+make events       # captura automática
 make web
 make serve
 # http://localhost:8080
 ```
 
-Comandos disponibles: `setup`, `lint`, `test`, `ingest`, `classify`, `export`, `web`, `serve`, `backup`.
+Comandos disponibles: `setup`, `lint`, `test`, `events`, `ingest`, `classify`, `export`, `web`, `serve`, `backup`.
 
 Para la ingesta GDELT, primero revisa sus condiciones y configura `--query`:
 
@@ -126,7 +136,12 @@ Mientras no se cumpla, el clasificador solo propone y nunca publica.
 
 ## Fuentes y licencias
 
-La lista prevista está en `config/sources.yaml`. **Todas las fuentes están `enabled: false`** y con licencia `[DECIDIR]`. No hay APIs de pago. No se usan cookies, rastreadores ni Google Fonts remoto.
+La captura automática usa **Bing News RSS** como agregador de enlaces; conserva la URL
+del medio y no publica el artículo completo. Los registros institucionales de B13
+proceden de CERT-EU, BOE y Comisión Europea, con sus condiciones de reutilización
+documentadas. No hay APIs de pago, claves de proveedores ni cookies. La lista y las
+pruebas de fuentes están en `data/events/2026-11-06/sources.json` y
+`data/events/auto/sources.json`.
 
 ## Límites y ética
 
@@ -144,13 +159,11 @@ Código bajo **AGPL-3.0** (ver [`LICENSE`](LICENSE)). La licencia de los datos q
 
 FIMI Radar mide difusión en redes. Zona Gris mide **eventos del mundo real**. No comparten código. Enlaces: [FIMI Radar](https://fimi.viajeinteligencia.com/) · [viajeinteligencia.com](https://viajeinteligencia.com/).
 
-## Decisiones pendientes
+## Pendientes
 
-- `[DECIDIR: dominio]`
-- `[DECIDIR: nombre público del autor]`
-- `[DECIDIR: contacto]`
-- `[DECIDIR: KOFI_URL]`
-- `[DECIDIR: licencia de los datos, propuesta CC BY 4.0]`
-- `[DECIDIR: condiciones de uso de cada fuente]`
-- `[DECIDIR: umbral F1 y tamaño del conjunto de oro]`
-- `[DECIDIR: política de retención de textos crudos]`
+- Revisar periódicamente las condiciones de uso de Bing News RSS y de las fuentes
+  institucionales.
+- Mantener la revisión editorial de los registros que pasen a banda alta o a
+  `CONFIRMADO`; la automatización no toma esa decisión.
+- Vigilar el log del cron y la antigüedad de la última captura.
+- Definir la licencia de los datos cuando se publique una distribución estable.

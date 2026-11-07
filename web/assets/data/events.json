@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-06T16:00:00Z",
+  "generated_at": "2026-11-07T13:47:51.350542+00:00",
   "demo": false,
-  "count": 16,
+  "count": 33,
   "events": [
     {
       "id": "EV-20261106-001",
@@ -652,6 +652,703 @@
       "reviewed_by_human": true,
       "reviewed_at": "2026-11-06",
       "demo": false
+    },
+    {
+      "id": "AUTO-67894411CECB",
+      "event_date": "2026-11-07",
+      "published_at": "2026-11-07",
+      "captured_at": "2026-11-07T13:47:51.350542+00:00",
+      "country": null,
+      "country_iso2": null,
+      "city": null,
+      "place": "No documentado",
+      "lat": null,
+      "lon": null,
+      "geo_precision": null,
+      "category": "amenazas_bomba",
+      "category_label": "Amenazas de bomba y evacuaciones aeroportuarias",
+      "title": "How dozens of bomb threats caused flight chaos in Europe this week",
+      "description": "Whether the \"malicious hoax threats\" are linked and who they came from aren't clear, but analysts have some ideas.",
+      "infrastructure": "No especificada en la fuente",
+      "consequences": "No cuantificadas en la fuente",
+      "sources": [
+        {
+          "title": "How dozens of bomb threats caused flight chaos in Europe this week",
+          "url": "https://www.msn.com/en-us/news/other/mapped-how-dozens-of-bomb-threats-caused-flight-chaos-in-europe-this-week/ar-AA2gWCCt",
+          "type": "news",
+          "published_at": "2026-11-07",
+          "source": "Bing News RSS"
+        }
+      ],
+      "contrast_sources": [],
+      "verification_status": "PENDIENTE",
+      "status_reason": "una sola fuente identificable; no se eleva a confirmado",
+      "attribution": {
+        "status": "none",
+        "claimed_by": null,
+        "note": "No se atribuye autoría ni intención."
+      },
+      "observations": "Registro automático: metadatos y resumen de la fuente; no implica confirmación oficial ni atribución. Revisar el enlace original.",
+      "reviewed_by_human": false,
+      "automated": true,
+      "demo": false,
+      "source_sha256": "4d92bef03588718410ca184b41be0e352f2836cde2cba630b0e7abe41068a458"
+    },
+    {
+      "id": "AUTO-74E92E592126",
+      "event_date": "2026-11-06",
+      "published_at": "2026-11-06",
+      "captured_at": "2026-11-07T13:47:51.350542+00:00",
+      "country": null,
+      "country_iso2": null,
+      "city": null,
+      "place": "No documentado",
+      "lat": null,
+      "lon": null,
+      "geo_precision": null,
+      "category": "drones_aeropuertos",
+      "category_label": "Drones e incursiones en aeropuertos",
+      "title": "Rising airport drone alerts raise safety concerns",
+      "description": "Fuelled by cheaper prices and better technology, drone flights near airports pose a serious risk.",
+      "infrastructure": "No especificada en la fuente",
+      "consequences": "No cuantificadas en la fuente",
+      "sources": [
+        {
+          "title": "Rising airport drone alerts raise safety concerns",
+          "url": "https://www.msn.com/en-us/news/other/rising-airport-drone-alerts-raise-safety-concerns/ar-AA2gWxOV",
+          "type": "news",
+          "published_at": "2026-11-06",
+          "source": "Bing News RSS"
+        }
+      ],
+      "contrast_sources": [],
+      "verification_status": "PENDIENTE",
+      "status_reason": "una sola fuente identificable; no se eleva a confirmado",
+      "attribution": {
+        "status": "none",
+        "claimed_by": null,
+        "note": "No se atribuye autoría ni intención."
+      },
+      "observations": "Registro automático: metadatos y resumen de la fuente; no implica confirmación oficial ni atribución. Revisar el enlace original.",
+      "reviewed_by_human": false,
+      "automated": true,
+      "demo": false,
+      "source_sha256": "74df347ec9a85fa6798def81105021a25cca79f4f9b085e9acfd46e622a2d436"
+    },
+    {
+      "id": "AUTO-48121207DEAF",
+      "event_date": "2026-11-06",
+      "published_at": "2026-11-06",
+      "captured_at": "2026-11-07T13:47:51.350542+00:00",
+      "country": "Reino Unido",
+      "country_iso2": "GB",
+      "city": "Birmingham",
+      "place": "Birmingham, Reino Unido",
+      "lat": 52.48,
+      "lon": -1.9,
+      "geo_precision": "city",
+      "category": "amenazas_bomba",
+      "category_label": "Amenazas de bomba y evacuaciones aeroportuarias",
+      "title": "Plane bomb threats: Flights at Heathrow and Birmingham airports hit by hoax",
+      "description": "Multiple flights across Europe have been hit by bomb threats just two days after seven flights were targeted in a series of suspected hoaxes ...",
+      "infrastructure": "No especificada en la fuente",
+      "consequences": "No cuantificadas en la fuente",
+      "sources": [
+        {
+          "title": "Plane bomb threats: Flights at Heathrow and Birmingham airports hit by hoax",
+          "url": "https://www.mirror.co.uk/news/world-news/europe-plane-bomb-threat-flights-37845303",
+          "type": "news",
+          "published_at": "2026-11-06",
+          "source": "Bing News RSS"
+        }
+      ],
+      "contrast_sources": [],
+      "verification_status": "PENDIENTE",
+      "status_reason": "una sola fuente identificable; no se eleva a confirmado",
+      "attribution": {
+        "status": "none",
+        "claimed_by": null,
+        "note": "No se atribuye autoría ni intención."
+      },
+      "observations": "Registro automático: metadatos y resumen de la fuente; no implica confirmación oficial ni atribución. Revisar el enlace original.",
+      "reviewed_by_human": false,
+      "automated": true,
+      "demo": false,
+      "source_sha256": "98f450a7d522f65ccffa475a46b16e0cbf6a7914e96ed1c74b763302c8d578f8"
+    },
+    {
+      "id": "AUTO-FB0D2EA0814F",
+      "event_date": "2026-11-06",
+      "published_at": "2026-11-06",
+      "captured_at": "2026-11-07T13:47:51.350542+00:00",
+      "country": null,
+      "country_iso2": null,
+      "city": null,
+      "place": "No documentado",
+      "lat": null,
+      "lon": null,
+      "geo_precision": null,
+      "category": "ciberataque",
+      "category_label": "Ciberataques contra infraestructuras y servicios",
+      "title": "Cyberattack on trio of French blood storage sites highlights security blind spots",
+      "description": "The cyberattack on the French National Blood Establishment (EFS) was fortunately detected before any damage could be done.",
+      "infrastructure": "No especificada en la fuente",
+      "consequences": "No cuantificadas en la fuente",
+      "sources": [
+        {
+          "title": "Cyberattack on trio of French blood storage sites highlights security blind spots",
+          "url": "https://www.msn.com/en-us/news/other/cyberattack-on-trio-of-french-blood-storage-sites-highlights-security-blind-spots/ar-AA2gUGOI",
+          "type": "news",
+          "published_at": "2026-11-06",
+          "source": "Bing News RSS"
+        }
+      ],
+      "contrast_sources": [],
+      "verification_status": "PENDIENTE",
+      "status_reason": "una sola fuente identificable; no se eleva a confirmado",
+      "attribution": {
+        "status": "none",
+        "claimed_by": null,
+        "note": "No se atribuye autoría ni intención."
+      },
+      "observations": "Registro automático: metadatos y resumen de la fuente; no implica confirmación oficial ni atribución. Revisar el enlace original.",
+      "reviewed_by_human": false,
+      "automated": true,
+      "demo": false,
+      "source_sha256": "3b30915ad37b216225bd85d2094bb3126d9669d73e6792f60cdfdfd4fac26d9b"
+    },
+    {
+      "id": "AUTO-A2A2DD35997B",
+      "event_date": "2026-11-06",
+      "published_at": "2026-11-06",
+      "captured_at": "2026-11-07T13:47:51.350542+00:00",
+      "country": null,
+      "country_iso2": null,
+      "city": null,
+      "place": "No documentado",
+      "lat": null,
+      "lon": null,
+      "geo_precision": null,
+      "category": "amenazas_bomba",
+      "category_label": "Amenazas de bomba y evacuaciones aeroportuarias",
+      "title": "Bomb threats disrupt flights at multiple European airports",
+      "description": "Air travel across several European countries was disrupted after airports in France, Czech Republic, Denmark, Italy, and Portugal received bomb threats.",
+      "infrastructure": "No especificada en la fuente",
+      "consequences": "No cuantificadas en la fuente",
+      "sources": [
+        {
+          "title": "Bomb threats disrupt flights at multiple European airports",
+          "url": "https://english.ajel.sa/world/2etthdcw1",
+          "type": "news",
+          "published_at": "2026-11-06",
+          "source": "Bing News RSS"
+        }
+      ],
+      "contrast_sources": [],
+      "verification_status": "PENDIENTE",
+      "status_reason": "una sola fuente identificable; no se eleva a confirmado",
+      "attribution": {
+        "status": "none",
+        "claimed_by": null,
+        "note": "No se atribuye autoría ni intención."
+      },
+      "observations": "Registro automático: metadatos y resumen de la fuente; no implica confirmación oficial ni atribución. Revisar el enlace original.",
+      "reviewed_by_human": false,
+      "automated": true,
+      "demo": false,
+      "source_sha256": "9cbe65deda08ca161aa0b99497bb8f7a0c2778b90d9af541309394f33098499e"
+    },
+    {
+      "id": "AUTO-27C4A5440F8B",
+      "event_date": "2026-11-05",
+      "published_at": "2026-11-05",
+      "captured_at": "2026-11-07T13:47:51.350542+00:00",
+      "country": null,
+      "country_iso2": null,
+      "city": null,
+      "place": "No documentado",
+      "lat": null,
+      "lon": null,
+      "geo_precision": null,
+      "category": "amenazas_bomba",
+      "category_label": "Amenazas de bomba y evacuaciones aeroportuarias",
+      "title": "Hoax bomb threats target European airlines and airports for second time in a week",
+      "description": "At least 21 aircraft and several airports across Europe have been targeted by bomb threats in the second such incident this week, with the UK calling it a \"malicious hoax\".",
+      "infrastructure": "No especificada en la fuente",
+      "consequences": "No cuantificadas en la fuente",
+      "sources": [
+        {
+          "title": "Hoax bomb threats target European airlines and airports for second time in a week",
+          "url": "https://www.bbc.com/news/articles/cmpqg08nz3pqo?at_bbc_team=studios&at_objective=awareness&at_ptr_name=1440&at_link_origin=1440",
+          "type": "news",
+          "published_at": "2026-11-05",
+          "source": "Bing News RSS"
+        }
+      ],
+      "contrast_sources": [],
+      "verification_status": "PENDIENTE",
+      "status_reason": "una sola fuente identificable; no se eleva a confirmado",
+      "attribution": {
+        "status": "none",
+        "claimed_by": null,
+        "note": "No se atribuye autoría ni intención."
+      },
+      "observations": "Registro automático: metadatos y resumen de la fuente; no implica confirmación oficial ni atribución. Revisar el enlace original.",
+      "reviewed_by_human": false,
+      "automated": true,
+      "demo": false,
+      "source_sha256": "2b91ac2842f6b4c373e1a37c16efdc54635965dc38438642ffa7b9542aa3e64e"
+    },
+    {
+      "id": "AUTO-1194BFD82F03",
+      "event_date": "2026-11-05",
+      "published_at": "2026-11-05",
+      "captured_at": "2026-11-07T13:47:51.350542+00:00",
+      "country": null,
+      "country_iso2": null,
+      "city": null,
+      "place": "No documentado",
+      "lat": null,
+      "lon": null,
+      "geo_precision": null,
+      "category": "amenazas_bomba",
+      "category_label": "Amenazas de bomba y evacuaciones aeroportuarias",
+      "title": "Hoax bomb threats force emergency landings, evacuations across Europe",
+      "description": "Bomb threats are causing travel disruptions at airports across Europe, targeting at least 27 flights. Officials found nothing suspicious during initial searches of the diverted planes.",
+      "infrastructure": "No especificada en la fuente",
+      "consequences": "No cuantificadas en la fuente",
+      "sources": [
+        {
+          "title": "Hoax bomb threats force emergency landings, evacuations across Europe",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/hoax-bomb-threats-force-emergency-landings-evacuations-across-europe",
+          "type": "news",
+          "published_at": "2026-11-05",
+          "source": "Bing News RSS"
+        }
+      ],
+      "contrast_sources": [],
+      "verification_status": "PENDIENTE",
+      "status_reason": "una sola fuente identificable; no se eleva a confirmado",
+      "attribution": {
+        "status": "none",
+        "claimed_by": null,
+        "note": "No se atribuye autoría ni intención."
+      },
+      "observations": "Registro automático: metadatos y resumen de la fuente; no implica confirmación oficial ni atribución. Revisar el enlace original.",
+      "reviewed_by_human": false,
+      "automated": true,
+      "demo": false,
+      "source_sha256": "5ad07ee3020a05726aae68172677db8c69794631697033feed13dd59d477cae9"
+    },
+    {
+      "id": "AUTO-881659B7A887",
+      "event_date": "2026-11-05",
+      "published_at": "2026-11-05",
+      "captured_at": "2026-11-07T13:47:51.350542+00:00",
+      "country": null,
+      "country_iso2": null,
+      "city": null,
+      "place": "No documentado",
+      "lat": null,
+      "lon": null,
+      "geo_precision": null,
+      "category": "amenazas_bomba",
+      "category_label": "Amenazas de bomba y evacuaciones aeroportuarias",
+      "title": "Bomb threats spark aviation chaos across Europe as armed police meet passengers at Sydney Airport",
+      "description": "While a wave of bomb threats has affected nearly 30 flights across Europe, there's been a security scare in Australia, with armed AFP officers meeting a flight in Sydney overnight after threats were ...",
+      "infrastructure": "No especificada en la fuente",
+      "consequences": "No cuantificadas en la fuente",
+      "sources": [
+        {
+          "title": "Bomb threats spark aviation chaos across Europe as armed police meet passengers at Sydney Airport",
+          "url": "https://www.abc.net.au/news/2026-11-06/afp-search-sydney-flight-after-european-airline-bomb-threats/107354870",
+          "type": "news",
+          "published_at": "2026-11-05",
+          "source": "Bing News RSS"
+        }
+      ],
+      "contrast_sources": [],
+      "verification_status": "PENDIENTE",
+      "status_reason": "una sola fuente identificable; no se eleva a confirmado",
+      "attribution": {
+        "status": "none",
+        "claimed_by": null,
+        "note": "No se atribuye autoría ni intención."
+      },
+      "observations": "Registro automático: metadatos y resumen de la fuente; no implica confirmación oficial ni atribución. Revisar el enlace original.",
+      "reviewed_by_human": false,
+      "automated": true,
+      "demo": false,
+      "source_sha256": "f41c08cdf8311dea3132594a63726968c78d76373ac7f4780f4519b7d8d15b74"
+    },
+    {
+      "id": "AUTO-7F69D32C4027",
+      "event_date": "2026-11-05",
+      "published_at": "2026-11-05",
+      "captured_at": "2026-11-07T13:47:51.350542+00:00",
+      "country": null,
+      "country_iso2": null,
+      "city": null,
+      "place": "No documentado",
+      "lat": null,
+      "lon": null,
+      "geo_precision": null,
+      "category": "amenazas_bomba",
+      "category_label": "Amenazas de bomba y evacuaciones aeroportuarias",
+      "title": "Bomb hoaxes across Europe disrupt flights as two UK airports also receive threats",
+      "description": "At least 21 flights have been affected on Thursday, following similar disruption on Tuesday. Some flights were escorted by military jets and diverted.",
+      "infrastructure": "No especificada en la fuente",
+      "consequences": "No cuantificadas en la fuente",
+      "sources": [
+        {
+          "title": "Bomb hoaxes across Europe disrupt flights as two UK airports also receive threats",
+          "url": "https://www.bbc.com/news/live/cwjdmnrg94ezt?page=3",
+          "type": "news",
+          "published_at": "2026-11-05",
+          "source": "Bing News RSS"
+        }
+      ],
+      "contrast_sources": [],
+      "verification_status": "PENDIENTE",
+      "status_reason": "una sola fuente identificable; no se eleva a confirmado",
+      "attribution": {
+        "status": "none",
+        "claimed_by": null,
+        "note": "No se atribuye autoría ni intención."
+      },
+      "observations": "Registro automático: metadatos y resumen de la fuente; no implica confirmación oficial ni atribución. Revisar el enlace original.",
+      "reviewed_by_human": false,
+      "automated": true,
+      "demo": false,
+      "source_sha256": "0985b5cd4d0344547d1799564a7d30c4b81c90d2c2e185da1f19e9d6ff23ee2b"
+    },
+    {
+      "id": "AUTO-7B6EFB919FE6",
+      "event_date": "2026-11-04",
+      "published_at": "2026-11-04",
+      "captured_at": "2026-11-07T13:47:51.350542+00:00",
+      "country": null,
+      "country_iso2": null,
+      "city": null,
+      "place": "No documentado",
+      "lat": null,
+      "lon": null,
+      "geo_precision": null,
+      "category": "ciberataque",
+      "category_label": "Ciberataques contra infraestructuras y servicios",
+      "title": "Japan Post Suspends Deliveries Due to Cyberattack—What Individual Investors Should Learn from the Risks of Infrastructure Companies",
+      "description": "What Individual Investors Should Learn from the Risks of Infrastructure CompaniesIntroductionIn 2025, Japan Post was hit by a cyberattack, leading to the suspension of part of its international ...",
+      "infrastructure": "No especificada en la fuente",
+      "consequences": "No cuantificadas en la fuente",
+      "sources": [
+        {
+          "title": "Japan Post Suspends Deliveries Due to Cyberattack—What Individual Investors Should Learn from the Risks of Infrastructure Companies",
+          "url": "https://note.com/atsushikudo/n/nb99ad8d40c87?hl=en",
+          "type": "news",
+          "published_at": "2026-11-04",
+          "source": "Bing News RSS"
+        }
+      ],
+      "contrast_sources": [],
+      "verification_status": "PENDIENTE",
+      "status_reason": "una sola fuente identificable; no se eleva a confirmado",
+      "attribution": {
+        "status": "none",
+        "claimed_by": null,
+        "note": "No se atribuye autoría ni intención."
+      },
+      "observations": "Registro automático: metadatos y resumen de la fuente; no implica confirmación oficial ni atribución. Revisar el enlace original.",
+      "reviewed_by_human": false,
+      "automated": true,
+      "demo": false,
+      "source_sha256": "fff02be98ec11fb945747a7fe70b887820ed6ead36c46c3507d37a78188e5616"
+    },
+    {
+      "id": "AUTO-2E1A669EC2FF",
+      "event_date": "2026-11-04",
+      "published_at": "2026-11-04",
+      "captured_at": "2026-11-07T13:47:51.350542+00:00",
+      "country": null,
+      "country_iso2": null,
+      "city": null,
+      "place": "No documentado",
+      "lat": null,
+      "lon": null,
+      "geo_precision": null,
+      "category": "ferroviario",
+      "category_label": "Incidentes ferroviarios y aeroportuarios",
+      "title": "'Not good enough' - c2c bosses summoned to Parliament after recent disruption",
+      "description": "Rail bosses have been summoned to Parliament after an Essex MP condemned the “misery” suffered by c2c passengers.",
+      "infrastructure": "No especificada en la fuente",
+      "consequences": "No cuantificadas en la fuente",
+      "sources": [
+        {
+          "title": "'Not good enough' - c2c bosses summoned to Parliament after recent disruption",
+          "url": "https://www.msn.com/en-gb/news/other/not-good-enough-c2c-bosses-summoned-to-parliament-after-recent-disruption/ar-AA2gLf59",
+          "type": "news",
+          "published_at": "2026-11-04",
+          "source": "Bing News RSS"
+        }
+      ],
+      "contrast_sources": [],
+      "verification_status": "PENDIENTE",
+      "status_reason": "una sola fuente identificable; no se eleva a confirmado",
+      "attribution": {
+        "status": "none",
+        "claimed_by": null,
+        "note": "No se atribuye autoría ni intención."
+      },
+      "observations": "Registro automático: metadatos y resumen de la fuente; no implica confirmación oficial ni atribución. Revisar el enlace original.",
+      "reviewed_by_human": false,
+      "automated": true,
+      "demo": false,
+      "source_sha256": "276ea93d3bdde192be66f1031fe6792dddecf0a72c6441aff647d65b3325ffe2"
+    },
+    {
+      "id": "AUTO-FAC7A26CE872",
+      "event_date": "2026-11-03",
+      "published_at": "2026-11-03",
+      "captured_at": "2026-11-07T13:47:51.350542+00:00",
+      "country": null,
+      "country_iso2": null,
+      "city": null,
+      "place": "No documentado",
+      "lat": null,
+      "lon": null,
+      "geo_precision": null,
+      "category": "proteccion_civil",
+      "category_label": "Alertas de seguridad civil y protección de infraestructuras",
+      "title": "UAE medical evacuations surge as conflict raises demand for emergency response",
+      "description": "Medical evacuations from conflict-affected areas can involve considerably more than dispatching an aircraft. When airspace is closed or an airport cannot be reached, patients may first have to be ...",
+      "infrastructure": "No especificada en la fuente",
+      "consequences": "No cuantificadas en la fuente",
+      "sources": [
+        {
+          "title": "UAE medical evacuations surge as conflict raises demand for emergency response",
+          "url": "https://www.msn.com/en-ae/news/national/uae-medical-evacuations-surge-as-conflict-raises-demand-for-emergency-response/ar-AA2gHKu5",
+          "type": "news",
+          "published_at": "2026-11-03",
+          "source": "Bing News RSS"
+        }
+      ],
+      "contrast_sources": [],
+      "verification_status": "PENDIENTE",
+      "status_reason": "una sola fuente identificable; no se eleva a confirmado",
+      "attribution": {
+        "status": "none",
+        "claimed_by": null,
+        "note": "No se atribuye autoría ni intención."
+      },
+      "observations": "Registro automático: metadatos y resumen de la fuente; no implica confirmación oficial ni atribución. Revisar el enlace original.",
+      "reviewed_by_human": false,
+      "automated": true,
+      "demo": false,
+      "source_sha256": "1ae672f33a19a601de23e4a00280493e53dacfd79a461942e92d1b2a1d06e115"
+    },
+    {
+      "id": "AUTO-E5C788F63629",
+      "event_date": "2026-11-03",
+      "published_at": "2026-11-03",
+      "captured_at": "2026-11-07T13:47:51.350542+00:00",
+      "country": null,
+      "country_iso2": null,
+      "city": null,
+      "place": "No documentado",
+      "lat": null,
+      "lon": null,
+      "geo_precision": null,
+      "category": "proteccion_civil",
+      "category_label": "Alertas de seguridad civil y protección de infraestructuras",
+      "title": "Qantas addresses emergency flight evacuation as passengers show flames erupting on plane's wing",
+      "description": "Passengers aboard the Qantas flight QF1737 to Perth spotted flames shooting out from underneath the plane's wing.",
+      "infrastructure": "No especificada en la fuente",
+      "consequences": "No cuantificadas en la fuente",
+      "sources": [
+        {
+          "title": "Qantas addresses emergency flight evacuation as passengers show flames erupting on plane's wing",
+          "url": "https://www.msn.com/en-ca/news/other/qantas-addresses-emergency-flight-evacuation-as-passengers-show-flames-erupting-on-planes-wing/ar-AA2gElZ9",
+          "type": "news",
+          "published_at": "2026-11-03",
+          "source": "Bing News RSS"
+        }
+      ],
+      "contrast_sources": [],
+      "verification_status": "PENDIENTE",
+      "status_reason": "una sola fuente identificable; no se eleva a confirmado",
+      "attribution": {
+        "status": "none",
+        "claimed_by": null,
+        "note": "No se atribuye autoría ni intención."
+      },
+      "observations": "Registro automático: metadatos y resumen de la fuente; no implica confirmación oficial ni atribución. Revisar el enlace original.",
+      "reviewed_by_human": false,
+      "automated": true,
+      "demo": false,
+      "source_sha256": "ee52fa4e2a5f6e96838a21546eb516ba3f193e388ef607f0f152d77f96f6f85a"
+    },
+    {
+      "id": "AUTO-F3DDA42891E0",
+      "event_date": "2026-11-03",
+      "published_at": "2026-11-03",
+      "captured_at": "2026-11-07T13:47:51.350542+00:00",
+      "country": null,
+      "country_iso2": null,
+      "city": null,
+      "place": "No documentado",
+      "lat": null,
+      "lon": null,
+      "geo_precision": null,
+      "category": "ciberataque",
+      "category_label": "Ciberataques contra infraestructuras y servicios",
+      "title": "GitBook Suffers AI-Powered Targeted Cyberattack; Some Infrastructure Credentials Possibly Compromised",
+      "description": "The document platform GitBook disclosed that on November 2, it suffered a targeted cyberattack utilizing AI agents, during which att ...",
+      "infrastructure": "No especificada en la fuente",
+      "consequences": "No cuantificadas en la fuente",
+      "sources": [
+        {
+          "title": "GitBook Suffers AI-Powered Targeted Cyberattack; Some Infrastructure Credentials Possibly Compromised",
+          "url": "https://www.kucoin.com/news/flash/gitbook-suffers-ai-powered-targeted-cyberattack-some-infrastructure-credentials-possibly-exposed",
+          "type": "news",
+          "published_at": "2026-11-03",
+          "source": "Bing News RSS"
+        }
+      ],
+      "contrast_sources": [],
+      "verification_status": "PENDIENTE",
+      "status_reason": "una sola fuente identificable; no se eleva a confirmado",
+      "attribution": {
+        "status": "none",
+        "claimed_by": null,
+        "note": "No se atribuye autoría ni intención."
+      },
+      "observations": "Registro automático: metadatos y resumen de la fuente; no implica confirmación oficial ni atribución. Revisar el enlace original.",
+      "reviewed_by_human": false,
+      "automated": true,
+      "demo": false,
+      "source_sha256": "95018fe6203110ff4294e67c4a1f34655f5521c8f8aa2e0df2432048fa431046"
+    },
+    {
+      "id": "AUTO-A50CF46D9FCB",
+      "event_date": "2026-11-02",
+      "published_at": "2026-11-02",
+      "captured_at": "2026-11-07T13:47:51.350542+00:00",
+      "country": null,
+      "country_iso2": null,
+      "city": null,
+      "place": "No documentado",
+      "lat": null,
+      "lon": null,
+      "geo_precision": null,
+      "category": "amenazas_bomba",
+      "category_label": "Amenazas de bomba y evacuaciones aeroportuarias",
+      "title": "UK warns of AI-powered cyberattack risk to critical infrastructure",
+      "description": "The UK warns AI is accelerating cyberattack risks to critical infrastructure, with threats to essential services likely within two years. Stay informed.",
+      "infrastructure": "No especificada en la fuente",
+      "consequences": "No cuantificadas en la fuente",
+      "sources": [
+        {
+          "title": "UK warns of AI-powered cyberattack risk to critical infrastructure",
+          "url": "https://tradersunion.com/news/regulators/show/4068910-uk-ai-cyberattack-critical-infrastructure/",
+          "type": "news",
+          "published_at": "2026-11-02",
+          "source": "Bing News RSS"
+        }
+      ],
+      "contrast_sources": [],
+      "verification_status": "PENDIENTE",
+      "status_reason": "una sola fuente identificable; no se eleva a confirmado",
+      "attribution": {
+        "status": "none",
+        "claimed_by": null,
+        "note": "No se atribuye autoría ni intención."
+      },
+      "observations": "Registro automático: metadatos y resumen de la fuente; no implica confirmación oficial ni atribución. Revisar el enlace original.",
+      "reviewed_by_human": false,
+      "automated": true,
+      "demo": false,
+      "source_sha256": "9fe640d0fae54e18336abbe78e27e51b1dd99eab10571d31ebbecf3b6d64c3bc"
+    },
+    {
+      "id": "AUTO-2A73B7B9A743",
+      "event_date": "2026-11-01",
+      "published_at": "2026-11-01",
+      "captured_at": "2026-11-07T13:47:51.350542+00:00",
+      "country": null,
+      "country_iso2": null,
+      "city": null,
+      "place": "No documentado",
+      "lat": null,
+      "lon": null,
+      "geo_precision": null,
+      "category": "ciberataque",
+      "category_label": "Ciberataques contra infraestructuras y servicios",
+      "title": "Importance of timely Cyberattack Reporting for Critical Infrastructure",
+      "description": "AI is evolving at a rapid pace, and the uptake of Generative AI (GenAI) is revolutionising the way humans interact and leverage this technology. GenAI is ...",
+      "infrastructure": "No especificada en la fuente",
+      "consequences": "No cuantificadas en la fuente",
+      "sources": [
+        {
+          "title": "Importance of timely Cyberattack Reporting for Critical Infrastructure",
+          "url": "https://www.cybersecurity-insiders.com/importance-of-timely-cyberattack-reporting-for-critical-infrastructure/",
+          "type": "news",
+          "published_at": "2026-11-01",
+          "source": "Bing News RSS"
+        }
+      ],
+      "contrast_sources": [],
+      "verification_status": "PENDIENTE",
+      "status_reason": "una sola fuente identificable; no se eleva a confirmado",
+      "attribution": {
+        "status": "none",
+        "claimed_by": null,
+        "note": "No se atribuye autoría ni intención."
+      },
+      "observations": "Registro automático: metadatos y resumen de la fuente; no implica confirmación oficial ni atribución. Revisar el enlace original.",
+      "reviewed_by_human": false,
+      "automated": true,
+      "demo": false,
+      "source_sha256": "4f38fe0dba132917debd4feed7f987604d3f6382d0d6d54a5323d48adc08bba8"
+    },
+    {
+      "id": "AUTO-A37D01C13608",
+      "event_date": "2026-11-01",
+      "published_at": "2026-11-01",
+      "captured_at": "2026-11-07T13:47:51.350542+00:00",
+      "country": null,
+      "country_iso2": null,
+      "city": null,
+      "place": "No documentado",
+      "lat": null,
+      "lon": null,
+      "geo_precision": null,
+      "category": "drones_aeropuertos",
+      "category_label": "Drones e incursiones en aeropuertos",
+      "title": "Calls for 'severe' deterrents after airport drone disruption",
+      "description": "Islanders say the disruption to flights caused has been concerning and \"ridiculous\".",
+      "infrastructure": "No especificada en la fuente",
+      "consequences": "No cuantificadas en la fuente",
+      "sources": [
+        {
+          "title": "Calls for 'severe' deterrents after airport drone disruption",
+          "url": "https://www.msn.com/en-us/news/other/calls-for-severe-deterrents-after-airport-drone-disruption/ar-AA2gzbEj",
+          "type": "news",
+          "published_at": "2026-11-01",
+          "source": "Bing News RSS"
+        }
+      ],
+      "contrast_sources": [],
+      "verification_status": "PENDIENTE",
+      "status_reason": "una sola fuente identificable; no se eleva a confirmado",
+      "attribution": {
+        "status": "none",
+        "claimed_by": null,
+        "note": "No se atribuye autoría ni intención."
+      },
+      "observations": "Registro automático: metadatos y resumen de la fuente; no implica confirmación oficial ni atribución. Revisar el enlace original.",
+      "reviewed_by_human": false,
+      "automated": true,
+      "demo": false,
+      "source_sha256": "84a6c7564ccdec72435cb3ca296f337d4f68c3a6d6cc0aa6cc80d300082e1b1f"
     }
   ]
 }

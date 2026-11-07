@@ -337,3 +337,22 @@ button.btn:hover { background: var(--panel); }
   h1 { font-stretch: 100%; font-size: clamp(1.8rem, 7.2vw, 2.8rem); max-width: 100%; letter-spacing: -0.02em; overflow-wrap: break-word; }
   .page-hero h1 { max-width: 100%; }
 }
+
+/* Lista de acontecimientos: dos columnas y scroll propio en escritorio. */
+.event-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 28px;
+  max-height: 470px;
+  overflow-y: auto;
+  scrollbar-color: var(--border-strong) transparent;
+  padding-right: 8px;
+  border-top: 1px solid var(--line);
+}
+.event-list li { break-inside: avoid; }
+@media (max-width: 900px) {
+  .event-list { grid-template-columns: 1fr; max-height: 520px; }
+}
+@media (max-width: 640px) {
+  .event-list { max-height: 440px; padding-right: 0; }
+}

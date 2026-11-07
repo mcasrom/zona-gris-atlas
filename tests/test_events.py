@@ -51,10 +51,12 @@ def test_each_record_has_a_source_and_defensible_location() -> None:
 def test_map_data_is_generated_from_real_records_only() -> None:
     payload = json.loads(WEB.read_text(encoding="utf-8"))
     assert payload["demo"] is False
-    assert payload["count"] == 16
-    assert len(payload["events"]) == 16
+    assert payload["count"] >= 16
+    assert len(payload["events"]) >= 16
     assert all(event["demo"] is False for event in payload["events"])
     assert not any("EJ-" in event["id"] for event in payload["events"])
+    assert all(event["verification_status"] in STATUSES for event in payload["events"])
+    assert all(event["verification_status"] != "CONFIRMADO" for event in payload["events"] if event.get("automated"))
 
 
 def test_map_page_uses_real_events_and_keeps_demo_out() -> None:

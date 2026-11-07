@@ -226,12 +226,29 @@
     });
   }
 
+  function updateStats() {
+    var counts = {total: events.length, confirmed: 0, documented: 0, pending: 0, coordinates: 0, unlocated: 0, sources: 0};
+    var urls = new Set();
+    events.forEach(function (item) {
+      if (item.verification_status === "CONFIRMADO") counts.confirmed += 1;
+      else if (item.verification_status === "PENDIENTE") counts.pending += 1;
+      else counts.documented += 1;
+      if (item.lat !== null && item.lon !== null) counts.coordinates += 1; else counts.unlocated += 1;
+      (item.sources || []).forEach(function (source) { if (source.url) urls.add(source.url); });
+    });
+    counts.sources = urls.size;
+    document.querySelectorAll("[data-stat]").forEach(function (node) {
+      var key = node.getAttribute("data-stat");
+      if (Object.prototype.hasOwnProperty.call(counts, key)) node.textContent = String(counts[key]);
+    });
+  }
+
   function buildFilters() {
     var categories = {};
     var countries = {};
     events.forEach(function (item) {
       categories[item.category] = item.category_label;
-      countries[item.country] = item.country;
+      if (item.country) countries[item.country] = item.country;
     });
     fillFilter("filter-category", Object.keys(categories).sort().map(function (key) { return [key, categories[key]]; }));
     fillFilter("filter-country", Object.keys(countries).sort().map(function (key) { return [key, countries[key]]; }));
@@ -252,6 +269,7 @@
       projection = values[0];
       events = values[1].events || [];
       referenceDate = new Date(values[1].generated_at || Date.now());
+      updateStats();
       buildFilters();
       frames.forEach(function (frame) {
         if (frame.dataset.map === "preview") renderPreview(frame); else renderMap(frame, events);
