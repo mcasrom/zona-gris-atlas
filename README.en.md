@@ -3,7 +3,7 @@
 [![CI](https://github.com/mcasrom/zona-gris-atlas/actions/workflows/ci.yml/badge.svg)](https://github.com/mcasrom/zona-gris-atlas/actions/workflows/ci.yml)
 [![License: AGPL-3.0](https://img.shields.io/badge/license-AGPL--3.0-ffb020)](LICENSE)
 
-> **Visible warning:** demonstration records are not real. They carry `demo: true`, live on a separate page and never enter indicators, feeds or the sitemap. The public map contains curated records and automatic candidates; a single source is never presented as a confirmed incident.
+> **Visible warning:** the public map contains curated records and automatic candidates. Candidates remain `PENDIENTE` and are never presented as confirmed incidents. There is no demonstration data.
 
 An open atlas of gray-zone and hybrid-threat incidents. It records the event, its source and **who attributes it**. The system does not attribute authorship on its own.
 

@@ -12,8 +12,6 @@ from build_events_data import merge
 ROOT = Path(__file__).resolve().parents[1]
 WEB = ROOT / "web"
 SITE = yaml.safe_load((ROOT / "config" / "site.yaml").read_text(encoding="utf-8"))
-DEMO = WEB / "assets" / "data" / "incidents.demo.json"
-PUBLIC_DATA = WEB / "assets" / "data" / "incidents.json"
 REGISTROS = WEB / "assets" / "data" / "registros.json"
 EVENTS = ROOT / "data" / "events" / "2026-11-06" / "events.jsonl"
 EVENTS_AUTO = ROOT / "data" / "events" / "auto" / "events.jsonl"
@@ -25,7 +23,7 @@ SITE_URL = SITE["url"].rstrip("/")
 def kofi_button() -> str:
     if not SITE.get("kofi"):
         return ""
-    return f'<a class="btn" href="{escape(SITE["kofi"])}">Apoyar en Ko-fi</a>'
+    return f'<a class="kofi-link" href="{escape(SITE["kofi"])}">Apoyar en Ko-fi</a>'
 
 
 def website_jsonld() -> str:
@@ -42,19 +40,6 @@ def website_jsonld() -> str:
     )
 
 
-def dataset_jsonld(demo: dict) -> str:
-    incidents = demo.get("incidents", [])
-    if any(not item.get("demo") for item in incidents):
-        return ""
-    return ""
-
-
-def write_data() -> dict:
-    demo = json.loads(DEMO.read_text(encoding="utf-8"))
-    PUBLIC_DATA.write_text(json.dumps(demo, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    return demo
-
-
 def _jsonl(path: Path) -> list[dict]:
     if not path.exists():
         return []
@@ -66,19 +51,18 @@ def write_events() -> None:
     # solo si no repiten una URL ni un titular ya presente.
     curated = _jsonl(EVENTS)
     automatic = _jsonl(EVENTS_AUTO)
-    assert curated and all(row.get("demo") is False for row in curated + automatic)
+    assert curated
     rows = merge(curated, automatic)
     generated_at = max((row.get("captured_at") or "" for row in rows), default="")
     payload = {
         "generated_at": generated_at or "2026-11-06T16:00:00Z",
-        "demo": False,
         "count": len(rows),
         "events": rows,
     }
     EVENTS_WEB.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
-def write_feed(demo: dict) -> None:
+def write_feed() -> None:
     docs = []
     if REGISTROS.exists():
         docs = json.loads(REGISTROS.read_text(encoding="utf-8")).get("documents", [])
@@ -149,7 +133,7 @@ def write_manifest() -> None:
     (WEB / "site.webmanifest").write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
-def replace_tokens(demo: dict) -> None:
+def replace_tokens() -> None:
     replacements = {
         "{{SITE_URL}}": SITE_URL,
         "{{SITE_NAME}}": SITE["name"],
@@ -159,7 +143,6 @@ def replace_tokens(demo: dict) -> None:
         "{{REPO}}": REPO,
         "{{KOFI_BUTTON}}": kofi_button(),
         "{{WEBSITE_JSONLD}}": website_jsonld(),
-        "{{DATASET_JSONLD}}": dataset_jsonld(demo),
         "{{YEAR}}": str(datetime.now(timezone.utc).year),
     }
     for path in WEB.rglob("*"):
@@ -176,13 +159,12 @@ def replace_tokens(demo: dict) -> None:
 
 
 def main() -> int:
-    demo = write_data()
     write_events()
-    write_feed(demo)
+    write_feed()
     write_sitemap()
     write_manifest()
-    replace_tokens(demo)
-    print(f"web ok · {len(demo.get('incidents', []))} incidentes demo")
+    replace_tokens()
+    print("web ok")
     return 0
 
 

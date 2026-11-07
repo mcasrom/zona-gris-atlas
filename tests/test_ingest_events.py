@@ -54,5 +54,4 @@ def test_automatic_events_are_never_documented_without_human_review() -> None:
     assert all(event["automated"] is True for event in events)
     assert all(event["verification_status"] == "PENDIENTE" for event in events)
     assert all(event["reviewed_by_human"] is False for event in events)
-    assert events[0]["demo"] is False
     assert events[0]["source_sha256"]

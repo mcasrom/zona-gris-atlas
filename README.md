@@ -3,7 +3,7 @@
 [![CI](https://github.com/mcasrom/zona-gris-atlas/actions/workflows/ci.yml/badge.svg)](https://github.com/mcasrom/zona-gris-atlas/actions/workflows/ci.yml)
 [![Licencia: AGPL-3.0](https://img.shields.io/badge/licencia-AGPL--3.0-ffb020)](LICENSE)
 
-> **Aviso visible:** la demo de la web **no es el mapa real**. Sus casos llevan `demo: true`, están en una página separada y no entran en indicadores, feed ni sitemap. El mapa público contiene registros documentados y candidatos automáticos; una fuente única no se presenta como incidente confirmado.
+> **Aviso visible:** el mapa público contiene registros documentados y candidatos automáticos. Los candidatos llevan `PENDIENTE` y no se presentan como incidentes confirmados. No hay datos de demostración.
 
 Atlas Zona Gris es un mapa documental de acontecimientos e incidencias en infraestructuras y servicios esenciales. Registra fecha, lugar documentado, categoría, estado de verificación y enlace a la fuente original. El sistema **no atribuye autoría ni intención** por su cuenta.
 
@@ -70,7 +70,6 @@ demás registros quedan en la lista.
 - **Publicado en Hetzner:** `https://zonagris.pruebapublica.com`.
 - **Release actual:** `20261107T135509Z`.
 - **Captura automática:** cron cada 6 horas en `<ruta-de-despliegue>/atlas-zonagris-auto/`.
-- **Demo:** aislada, con `demo: true`, `noindex` y fuera del sitemap.
 - **Automatización:** un fallo de captura no cambia `current`; las releases anteriores
   se conservan para rollback.
 
@@ -123,7 +122,7 @@ db/           esquema SQLite
 docs/         método, límites, atribución, evaluación, arquitectura, privacidad
 src/zonagris/ ingesta, deduplicado, clasificación, exportación y CLI
 eval/         formato de oro, métricas y umbral
-web/          HTML, CSS, JS, fuentes y datos demo
+web/          HTML, CSS, JS, fuentes y datos
 deploy/       systemd, nginx y Dockerfile
 scripts/      backup, build_web, mapa y OG
 ```

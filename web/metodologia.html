@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="alternate icon" href="favicon.ico" type="image/x-icon">
   <title>Método documental · Atlas Zona Gris</title>
   <meta name="description" content="Cómo reviso 212 documentos institucionales: deduplicación, contexto y revisión manual. 8 incorporados, 204 descartados y sin atribuciones inventadas.">
   <link rel="canonical" href="https://zonagris.pruebapublica.com/metodologia.html">
@@ -40,7 +42,7 @@
       <li><strong>Deduplicado.</strong> Primero por URL canónica; después por contenido. Dos piezas iguales no crean dos registros.</li>
       <li><strong>Contexto.</strong> Cada documento se clasifica por organismo, tipo, ámbito y utilidad documental. La clasificación no atribuye autoría.</li>
       <li><strong>Revisión humana.</strong> Verifico fecha, organismo, enlace, resumen y condiciones de reutilización. Si no hay base suficiente, se descarta.</li>
-      <li><strong>Publicación.</strong> Solo sale lo revisado. La web principal publica registros documentales; la demo está separada y conserva <code>demo: true</code>.</li>
+      <li><strong>Publicación.</strong> Solo sale lo revisado. La web principal solo publica registros documentales revisados; los candidatos automáticos quedan en <code>PENDIENTE</code>.</li>
     </ol>
 
     <h2 id="atribucion">La atribución</h2>
@@ -59,11 +61,11 @@
     <p>La puerta es humana: 212 documentos revisados, 8 incorporados y 204 descartados. No hay un modelo que publique por su cuenta. El registro conserva la fuente original y la condición de reutilización.</p>
 
     <h2 id="datos">Datos y reproducción</h2>
-    <p>El esquema está en <code>db/schema.sql</code>; los comandos, en el <code>Makefile</code>. La web es estática y no necesita backend. La demo es ilustrativa y no describe incidentes reales; los registros institucionales no son incidentes confirmados.</p>
+    <p>El esquema está en <code>db/schema.sql</code>; los comandos, en el <code>Makefile</code>. La web es estática y no necesita backend. Los registros institucionales no son incidentes confirmados.</p>
     <p><a href="limites.html">Ver los límites del atlas →</a></p>
   </article>
 </main>
-<footer class="site-footer"><div class="container footer-grid"><div><p>Proyecto personal de un único autor. Código bajo AGPL-3.0. Sin cookies ni rastreadores.</p></div><div class="footer-links"><a href="mapa.html">Mapa</a><a href="index.html">Inicio</a><a href="registros.html">Registros</a><a href="fuentes.html">Fuentes</a><a href="https://github.com/mcasrom/zona-gris-atlas">GitHub</a></div></div></footer>
+<footer class="site-footer"><div class="container footer-grid"><div><p>Proyecto personal de un único autor. Código bajo AGPL-3.0. Sin cookies ni rastreadores.</p></div><div class="footer-links"><a href="mapa.html">Mapa</a><a href="index.html">Inicio</a><a href="registros.html">Registros</a><a href="fuentes.html">Fuentes</a><a href="https://github.com/mcasrom/zona-gris-atlas">GitHub</a><a class="kofi-link" href="https://ko-fi.com/m_castillo">Apoyar en Ko-fi</a></div></div></footer>
 <script src="assets/js/site.js" defer></script>
 </body>
 </html>

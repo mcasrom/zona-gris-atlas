@@ -1,6 +1,5 @@
 {
   "generated_at": "2026-11-07T13:47:51.350542+00:00",
-  "demo": false,
   "count": 33,
   "events": [
     {
@@ -44,8 +43,7 @@
       },
       "observations": "Investigación policial; el incidente está documentado, pero no se eleva a ataque confirmado ni se atribuye autoría.",
       "reviewed_by_human": true,
-      "reviewed_at": "2026-11-06",
-      "demo": false
+      "reviewed_at": "2026-11-06"
     },
     {
       "id": "EV-20261106-002",
@@ -88,8 +86,7 @@
       },
       "observations": "Se desconoce el número exacto de vuelos y la identidad de los operadores.",
       "reviewed_by_human": true,
-      "reviewed_at": "2026-11-06",
-      "demo": false
+      "reviewed_at": "2026-11-06"
     },
     {
       "id": "EV-20261106-004",
@@ -132,8 +129,7 @@
       },
       "observations": "Distinguir reivindicación de ataque de impacto confirmado.",
       "reviewed_by_human": true,
-      "reviewed_at": "2026-11-06",
-      "demo": false
+      "reviewed_at": "2026-11-06"
     },
     {
       "id": "EV-20261106-006",
@@ -176,8 +172,7 @@
       },
       "observations": "Amenaza de bomba documentada; no se confirma explosivo ni ataque consumado.",
       "reviewed_by_human": true,
-      "reviewed_at": "2026-11-06",
-      "demo": false
+      "reviewed_at": "2026-11-06"
     },
     {
       "id": "EV-20261106-007",
@@ -220,8 +215,7 @@
       },
       "observations": "Amenaza comunicada, no ataque confirmado.",
       "reviewed_by_human": true,
-      "reviewed_at": "2026-11-06",
-      "demo": false
+      "reviewed_at": "2026-11-06"
     },
     {
       "id": "EV-20261106-008",
@@ -258,8 +252,7 @@
       },
       "observations": "Amenaza, no ataque confirmado.",
       "reviewed_by_human": true,
-      "reviewed_at": "2026-11-06",
-      "demo": false
+      "reviewed_at": "2026-11-06"
     },
     {
       "id": "EV-20261106-009",
@@ -302,8 +295,7 @@
       },
       "observations": "Amenaza, no ataque confirmado. La ubicación es el espacio aéreo francés, no un aeropuerto único.",
       "reviewed_by_human": true,
-      "reviewed_at": "2026-11-06",
-      "demo": false
+      "reviewed_at": "2026-11-06"
     },
     {
       "id": "EV-20261106-010",
@@ -340,8 +332,7 @@
       },
       "observations": "Susto de seguridad, no ataque confirmado.",
       "reviewed_by_human": true,
-      "reviewed_at": "2026-11-06",
-      "demo": false
+      "reviewed_at": "2026-11-06"
     },
     {
       "id": "EV-20261106-011",
@@ -384,8 +375,7 @@
       },
       "observations": "No se documenta impacto sanitario directo.",
       "reviewed_by_human": true,
-      "reviewed_at": "2026-11-06",
-      "demo": false
+      "reviewed_at": "2026-11-06"
     },
     {
       "id": "EV-20261106-012",
@@ -422,8 +412,7 @@
       },
       "observations": "No se asigna una ubicación física única.",
       "reviewed_by_human": true,
-      "reviewed_at": "2026-11-06",
-      "demo": false
+      "reviewed_at": "2026-11-06"
     },
     {
       "id": "EV-20261106-013",
@@ -460,8 +449,7 @@
       },
       "observations": "Sin coordenada única: afecta a varios países.",
       "reviewed_by_human": true,
-      "reviewed_at": "2026-11-06",
-      "demo": false
+      "reviewed_at": "2026-11-06"
     },
     {
       "id": "EV-20261106-015",
@@ -498,8 +486,7 @@
       },
       "observations": "La coordenada es regional, no la ubicación exacta de una estación.",
       "reviewed_by_human": true,
-      "reviewed_at": "2026-11-06",
-      "demo": false
+      "reviewed_at": "2026-11-06"
     },
     {
       "id": "EV-20261106-016",
@@ -536,8 +523,7 @@
       },
       "observations": "No se confunde emergencia operativa con ataque.",
       "reviewed_by_human": true,
-      "reviewed_at": "2026-11-06",
-      "demo": false
+      "reviewed_at": "2026-11-06"
     },
     {
       "id": "EV-20261106-017",
@@ -574,8 +560,7 @@
       },
       "observations": "Fallo técnico; no se presenta como sabotaje.",
       "reviewed_by_human": true,
-      "reviewed_at": "2026-11-06",
-      "demo": false
+      "reviewed_at": "2026-11-06"
     },
     {
       "id": "EV-20261106-018",
@@ -612,8 +597,7 @@
       },
       "observations": "La coordenada es regional.",
       "reviewed_by_human": true,
-      "reviewed_at": "2026-11-06",
-      "demo": false
+      "reviewed_at": "2026-11-06"
     },
     {
       "id": "EV-20261106-020",
@@ -650,8 +634,7 @@
       },
       "observations": "Sin coordenada única: el evento es regional.",
       "reviewed_by_human": true,
-      "reviewed_at": "2026-11-06",
-      "demo": false
+      "reviewed_at": "2026-11-06"
     },
     {
       "id": "AUTO-67894411CECB",
@@ -691,7 +674,6 @@
       "observations": "Registro automático: metadatos y resumen de la fuente; no implica confirmación oficial ni atribución. Revisar el enlace original.",
       "reviewed_by_human": false,
       "automated": true,
-      "demo": false,
       "source_sha256": "4d92bef03588718410ca184b41be0e352f2836cde2cba630b0e7abe41068a458"
     },
     {
@@ -732,7 +714,6 @@
       "observations": "Registro automático: metadatos y resumen de la fuente; no implica confirmación oficial ni atribución. Revisar el enlace original.",
       "reviewed_by_human": false,
       "automated": true,
-      "demo": false,
       "source_sha256": "74df347ec9a85fa6798def81105021a25cca79f4f9b085e9acfd46e622a2d436"
     },
     {
@@ -773,7 +754,6 @@
       "observations": "Registro automático: metadatos y resumen de la fuente; no implica confirmación oficial ni atribución. Revisar el enlace original.",
       "reviewed_by_human": false,
       "automated": true,
-      "demo": false,
       "source_sha256": "98f450a7d522f65ccffa475a46b16e0cbf6a7914e96ed1c74b763302c8d578f8"
     },
     {
@@ -814,7 +794,6 @@
       "observations": "Registro automático: metadatos y resumen de la fuente; no implica confirmación oficial ni atribución. Revisar el enlace original.",
       "reviewed_by_human": false,
       "automated": true,
-      "demo": false,
       "source_sha256": "3b30915ad37b216225bd85d2094bb3126d9669d73e6792f60cdfdfd4fac26d9b"
     },
     {
@@ -855,7 +834,6 @@
       "observations": "Registro automático: metadatos y resumen de la fuente; no implica confirmación oficial ni atribución. Revisar el enlace original.",
       "reviewed_by_human": false,
       "automated": true,
-      "demo": false,
       "source_sha256": "9cbe65deda08ca161aa0b99497bb8f7a0c2778b90d9af541309394f33098499e"
     },
     {
@@ -896,7 +874,6 @@
       "observations": "Registro automático: metadatos y resumen de la fuente; no implica confirmación oficial ni atribución. Revisar el enlace original.",
       "reviewed_by_human": false,
       "automated": true,
-      "demo": false,
       "source_sha256": "2b91ac2842f6b4c373e1a37c16efdc54635965dc38438642ffa7b9542aa3e64e"
     },
     {
@@ -937,7 +914,6 @@
       "observations": "Registro automático: metadatos y resumen de la fuente; no implica confirmación oficial ni atribución. Revisar el enlace original.",
       "reviewed_by_human": false,
       "automated": true,
-      "demo": false,
       "source_sha256": "5ad07ee3020a05726aae68172677db8c69794631697033feed13dd59d477cae9"
     },
     {
@@ -978,7 +954,6 @@
       "observations": "Registro automático: metadatos y resumen de la fuente; no implica confirmación oficial ni atribución. Revisar el enlace original.",
       "reviewed_by_human": false,
       "automated": true,
-      "demo": false,
       "source_sha256": "f41c08cdf8311dea3132594a63726968c78d76373ac7f4780f4519b7d8d15b74"
     },
     {
@@ -1019,7 +994,6 @@
       "observations": "Registro automático: metadatos y resumen de la fuente; no implica confirmación oficial ni atribución. Revisar el enlace original.",
       "reviewed_by_human": false,
       "automated": true,
-      "demo": false,
       "source_sha256": "0985b5cd4d0344547d1799564a7d30c4b81c90d2c2e185da1f19e9d6ff23ee2b"
     },
     {
@@ -1060,7 +1034,6 @@
       "observations": "Registro automático: metadatos y resumen de la fuente; no implica confirmación oficial ni atribución. Revisar el enlace original.",
       "reviewed_by_human": false,
       "automated": true,
-      "demo": false,
       "source_sha256": "fff02be98ec11fb945747a7fe70b887820ed6ead36c46c3507d37a78188e5616"
     },
     {
@@ -1101,7 +1074,6 @@
       "observations": "Registro automático: metadatos y resumen de la fuente; no implica confirmación oficial ni atribución. Revisar el enlace original.",
       "reviewed_by_human": false,
       "automated": true,
-      "demo": false,
       "source_sha256": "276ea93d3bdde192be66f1031fe6792dddecf0a72c6441aff647d65b3325ffe2"
     },
     {
@@ -1142,7 +1114,6 @@
       "observations": "Registro automático: metadatos y resumen de la fuente; no implica confirmación oficial ni atribución. Revisar el enlace original.",
       "reviewed_by_human": false,
       "automated": true,
-      "demo": false,
       "source_sha256": "1ae672f33a19a601de23e4a00280493e53dacfd79a461942e92d1b2a1d06e115"
     },
     {
@@ -1183,7 +1154,6 @@
       "observations": "Registro automático: metadatos y resumen de la fuente; no implica confirmación oficial ni atribución. Revisar el enlace original.",
       "reviewed_by_human": false,
       "automated": true,
-      "demo": false,
       "source_sha256": "ee52fa4e2a5f6e96838a21546eb516ba3f193e388ef607f0f152d77f96f6f85a"
     },
     {
@@ -1224,7 +1194,6 @@
       "observations": "Registro automático: metadatos y resumen de la fuente; no implica confirmación oficial ni atribución. Revisar el enlace original.",
       "reviewed_by_human": false,
       "automated": true,
-      "demo": false,
       "source_sha256": "95018fe6203110ff4294e67c4a1f34655f5521c8f8aa2e0df2432048fa431046"
     },
     {
@@ -1265,7 +1234,6 @@
       "observations": "Registro automático: metadatos y resumen de la fuente; no implica confirmación oficial ni atribución. Revisar el enlace original.",
       "reviewed_by_human": false,
       "automated": true,
-      "demo": false,
       "source_sha256": "9fe640d0fae54e18336abbe78e27e51b1dd99eab10571d31ebbecf3b6d64c3bc"
     },
     {
@@ -1306,7 +1274,6 @@
       "observations": "Registro automático: metadatos y resumen de la fuente; no implica confirmación oficial ni atribución. Revisar el enlace original.",
       "reviewed_by_human": false,
       "automated": true,
-      "demo": false,
       "source_sha256": "4f38fe0dba132917debd4feed7f987604d3f6382d0d6d54a5323d48adc08bba8"
     },
     {
@@ -1347,7 +1314,6 @@
       "observations": "Registro automático: metadatos y resumen de la fuente; no implica confirmación oficial ni atribución. Revisar el enlace original.",
       "reviewed_by_human": false,
       "automated": true,
-      "demo": false,
       "source_sha256": "84a6c7564ccdec72435cb3ca296f337d4f68c3a6d6cc0aa6cc80d300082e1b1f"
     }
   ]

@@ -103,7 +103,6 @@ def parse_feed(raw: bytes, source: str, category: str) -> list[dict]:
             "category_guess": category if category else classify(title),
             "captured_at": datetime.now(timezone.utc).isoformat(),
             "reviewed_by_human": False,
-            "demo": False,
         })
     return rows
 

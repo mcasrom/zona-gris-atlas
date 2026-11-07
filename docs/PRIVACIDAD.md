@@ -18,4 +18,13 @@ La caché local de GDELT y RSS se guarda en `data/` (ignorada por git). No se en
 
 ## Registros del servidor
 
-El alojamiento puede registrar peticiones HTTP como cualquier servidor. La aplicación no añade identificadores, píxeles ni almacenamiento local. La política de retención de logs del servidor queda pendiente de revisión.
+El alojamiento registra peticiones HTTP como cualquier servidor. La aplicación no añade identificadores, píxeles ni almacenamiento local.
+
+## Retención
+
+- **Logs HTTP del servidor:** 14 días. Se usan para seguridad y diagnóstico, no para perfilado.
+- **Candidatos y caché de captura:** 30 días como máximo; los registros publicados y sus fuentes se conservan.
+- **Datos personales:** no se recogen formularios, cuentas, cookies ni analítica. No hay base de datos de usuarios.
+- **Copias:** los bundles locales conservan 10 versiones; no se envían a terceros.
+
+No se guardan direcciones IP en una base propia ni se cruzan con otros servicios.

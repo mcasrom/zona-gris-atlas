@@ -269,7 +269,6 @@ def build_events(groups: list[list[dict]], places: dict, captured_at: str) -> li
             "observations": "Registro automático: metadatos y resumen de la fuente; no implica confirmación oficial ni atribución. Revisar el enlace original.",
             "reviewed_by_human": False,
             "automated": True,
-            "demo": False,
             "source_sha256": first["digest"],
         })
     return sorted(events, key=lambda item: (item["event_date"], item["title"]), reverse=True)

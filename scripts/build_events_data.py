@@ -36,10 +36,10 @@ def similar(left: str, right: str) -> bool:
     return bool(a and b and len(a & b) / len(a | b) >= 0.55)
 
 
-def public_auto(row: dict) -> dict:
-    """Un registro automático nunca sale como DOCUMENTADO sin revisión humana."""
+def public_row(row: dict) -> dict:
+    """Prepara una ficha pública: sin demo y sin promoción automática."""
+    row = {key: value for key, value in row.items() if key != "demo"}
     if row.get("automated") and not row.get("reviewed_by_human"):
-        row = dict(row)
         row["verification_status"] = "PENDIENTE"
         row["status_reason"] = (
             "candidato automático; pendiente de revisión humana"
@@ -49,11 +49,11 @@ def public_auto(row: dict) -> dict:
 
 
 def merge(curated: list[dict], automatic: list[dict]) -> list[dict]:
-    rows = list(curated)
+    rows = [public_row(row) for row in curated]
     titles = [row["title"] for row in rows]
     urls = {source["url"].split("#")[0].rstrip("/") for row in rows for source in row.get("sources", [])}
     for row in automatic:
-        row = public_auto(row)
+        row = public_row(row)
         new_urls = {source["url"].split("#")[0].rstrip("/") for source in row.get("sources", [])}
         if new_urls & urls or key(row["title"]) in {key(title) for title in titles} or any(similar(row["title"], title) for title in titles):
             continue
@@ -72,10 +72,10 @@ def main() -> int:
     curated = load(args.curated)
     automatic = load(args.auto)
     rows = merge(curated, automatic)
-    if not rows or any(row.get("demo") for row in rows):
-        raise SystemExit("datos inválidos: faltan registros o hay demo")
+    if not rows:
+        raise SystemExit("datos inválidos: faltan registros")
     generated = max((row.get("captured_at") or "" for row in rows), default="") or datetime.now(timezone.utc).isoformat()
-    payload = {"generated_at": generated, "demo": False, "count": len(rows), "events": rows}
+    payload = {"generated_at": generated, "count": len(rows), "events": rows}
     args.out.parent.mkdir(parents=True, exist_ok=True)
     args.out.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"eventos fusionados: {len(rows)} ({len(curated)} curados, {len(automatic)} automáticos)")

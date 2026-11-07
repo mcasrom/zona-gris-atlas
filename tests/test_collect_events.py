@@ -22,7 +22,6 @@ def test_bing_link_is_decoded_and_duplicates_are_removed() -> None:
     deduped = collect_events.dedupe(rows, 7)
     assert len(deduped) == 1
     assert deduped[0]["published_at"] == "2026-11-06"
-    assert deduped[0]["demo"] is False
     assert deduped[0]["reviewed_by_human"] is False
 
 

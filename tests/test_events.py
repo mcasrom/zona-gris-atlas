@@ -27,7 +27,6 @@ def test_real_events_are_complete_and_deduplicated() -> None:
     ids = [row["id"] for row in rows]
     assert len(ids) == len(set(ids))
     assert {row["category"] for row in rows} >= {"drones_aeropuertos", "amenazas_bomba", "ciberataque", "ferroviario", "gnss"}
-    assert all(row["demo"] is False for row in rows)
     assert all(row["verification_status"] in STATUSES for row in rows)
     assert all(row["category"] in CATEGORIES for row in rows)
     assert {row["verification_status"] for row in rows} == {"DOCUMENTADO", "PENDIENTE"}
@@ -50,10 +49,8 @@ def test_each_record_has_a_source_and_defensible_location() -> None:
 
 def test_map_data_is_generated_from_real_records_only() -> None:
     payload = json.loads(WEB.read_text(encoding="utf-8"))
-    assert payload["demo"] is False
     assert payload["count"] >= 16
     assert len(payload["events"]) >= 16
-    assert all(event["demo"] is False for event in payload["events"])
     assert not any("EJ-" in event["id"] for event in payload["events"])
     assert all(event["verification_status"] in STATUSES for event in payload["events"])
     assert all(event["verification_status"] != "CONFIRMADO" for event in payload["events"] if event.get("automated"))
@@ -70,8 +67,7 @@ def test_map_page_uses_real_events_and_keeps_demo_out() -> None:
     assert 'id="filter-country"' in page
     assert 'id="filter-status"' in page
     assert 'noindex' not in page
-    demo = (ROOT / "web" / "demo.html").read_text(encoding="utf-8")
-    assert 'noindex' in demo
+    assert not (ROOT / "web" / "demo.html").exists()
 
 
 def test_public_surfaces_do_not_present_military_promotions() -> None:
