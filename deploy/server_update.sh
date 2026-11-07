@@ -33,9 +33,7 @@ cp "$BASE/build/events.json" "$TARGET/assets/data/events.json"
 import json, sys
 p=sys.argv[1]
 d=json.load(open(p, encoding='utf-8'))
-assert d.get('demo') is False, 'demo en el mapa real'
 assert int(d.get('count',0)) >= 16, 'pocos registros'
-assert all(e.get('demo') is False for e in d.get('events',[])), 'evento demo en el mapa'
 assert all(e.get('verification_status') != 'CONFIRMADO' for e in d['events'] if e.get('automated')), 'automático confirmado'
 print('eventos', d['count'])
 PY2

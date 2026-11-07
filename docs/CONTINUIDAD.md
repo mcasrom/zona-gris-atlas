@@ -26,10 +26,11 @@ continuidad no dependa de conocimiento tácito.
 
 ## Copia de seguridad
 
-`scripts/backup.sh` crea un `git bundle` local y conserva 10 copias. GitHub es la
-copia principal. **Falta una copia off-site verificada**: debe añadirse un destino
-externo (otra máquina u object storage) y probar una restauración completa. Hasta
-que exista, la continuidad depende de GitHub y del disco local.
+`scripts/backup.sh` crea un `git bundle` en el portátil y conserva 10 copias.
+GitHub es la copia principal y el portátil es una segunda copia verificable, pero
+**ambos pueden fallar con el mismo incidente local**: no sustituye a una copia
+off-site. Para cerrar el riesgo hay que añadir otra máquina u object storage y
+probar una restauración completa.
 
 ## Restauración mínima
 
