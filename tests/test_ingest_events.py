@@ -62,3 +62,13 @@ def test_query_matrix_declares_all_regions() -> None:
     regions = {row[0] for row in rows}
     assert {"europe", "americas", "asia", "china", "africa", "middle_east"} <= regions
     assert all(len(row) == 3 for row in rows)
+
+
+def test_cable_market_noise_is_filtered() -> None:
+    xml = b"""<?xml version="1.0"?><rss><channel>
+    <item><title>Global Submarine Cables Market Size Report</title><link>https://example.org/market</link><description>Forecast and share.</description><pubDate>Fri, 06 Nov 2026 10:00:00 GMT</pubDate></item>
+    <item><title>Submarine cable cut disrupts internet</title><link>https://example.org/cut</link><description>Damage to a subsea cable.</description><pubDate>Fri, 06 Nov 2026 11:00:00 GMT</pubDate></item>
+    </channel></rss>"""
+    rows = ingest.parse_feed(xml, "cables_submarinos")
+    assert len(rows) == 1
+    assert "cut" in rows[0]["title"].lower()

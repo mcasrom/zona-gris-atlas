@@ -39,6 +39,8 @@ La escala completa va de `paz_estable` a `conflicto_abierto`. El atlas cubre sol
 | DES | Desinformación | Operaciones coordinadas para alterar la percepción. |
 | ECO | Coerción económica | Presión comercial, energética o financiera. |
 | MIG | Instrumentalización migratoria | Uso político de flujos migratorios. |
+| CAB | Cables submarinos | Cortes o daños en cables submarinos de comunicaciones o energía. |
+| IAA | Ataques con IA | Uso de IA para atacar sistemas o infraestructuras; no toda mención de IA. |
 
 ## Cómo funciona
 
@@ -149,7 +151,8 @@ pruebas de fuentes están en `data/events/2026-11-06/sources.json` y
 ## Límites y ética
 
 El detalle está en [`docs/LIMITES.md`](docs/LIMITES.md). En resumen: no atribuye por su
-cuenta, no predice, no juzga personas y no cubre cables submarinos en la v0.1.
+cuenta, no predice, no juzga personas. Cables submarinos e IA tienen categoría propia,
+con criterios estrictos y sin atribución por inferencia.
 También se declaran el sesgo de la dieta de fuentes y el criterio estricto de la
 categoría **MIG**: no todo flujo migratorio es instrumentalización.
 

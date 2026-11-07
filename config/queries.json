@@ -4,68 +4,218 @@
     {
       "id": "europe",
       "label": "Europa",
-      "languages": ["en", "es", "fr", "de", "it", "pt"],
+      "languages": [
+        "en",
+        "es",
+        "fr",
+        "de",
+        "it",
+        "pt"
+      ],
       "queries": [
-        {"category": "drones_aeropuertos", "query": "airport drone Europe"},
-        {"category": "amenazas_bomba", "query": "bomb threat airport Europe"},
-        {"category": "ciberataque", "query": "cyberattack infrastructure Europe"},
-        {"category": "ferroviario", "query": "rail disruption Europe"},
-        {"category": "gnss", "query": "GPS jamming Europe"},
-        {"category": "proteccion_civil", "query": "airport emergency evacuation Europe"},
-        {"category": "sabotaje_infraestructura", "query": "sabotage infrastructure Europe"},
-        {"category": "energia_telecom", "query": "power outage telecom Europe"}
+        {
+          "category": "drones_aeropuertos",
+          "query": "airport drone Europe"
+        },
+        {
+          "category": "amenazas_bomba",
+          "query": "bomb threat airport Europe"
+        },
+        {
+          "category": "ciberataque",
+          "query": "cyberattack infrastructure Europe"
+        },
+        {
+          "category": "ferroviario",
+          "query": "rail disruption Europe"
+        },
+        {
+          "category": "gnss",
+          "query": "GPS jamming Europe"
+        },
+        {
+          "category": "proteccion_civil",
+          "query": "airport emergency evacuation Europe"
+        },
+        {
+          "category": "sabotaje_infraestructura",
+          "query": "sabotage infrastructure Europe"
+        },
+        {
+          "category": "energia_telecom",
+          "query": "power outage telecom Europe"
+        },
+        {
+          "category": "cables_submarinos",
+          "query": "submarine cable damage Europe"
+        },
+        {
+          "category": "ia_ataques",
+          "query": "AI cyberattack Europe"
+        }
       ]
     },
     {
       "id": "americas",
       "label": "América",
-      "languages": ["en", "es", "pt"],
+      "languages": [
+        "en",
+        "es",
+        "pt"
+      ],
       "queries": [
-        {"category": "drones_aeropuertos", "query": "airport drone United States"},
-        {"category": "ciberataque", "query": "cyberattack infrastructure Brazil"},
-        {"category": "energia_telecom", "query": "power outage Chile"},
-        {"category": "ferroviario", "query": "rail disruption Mexico"}
+        {
+          "category": "drones_aeropuertos",
+          "query": "airport drone United States"
+        },
+        {
+          "category": "ciberataque",
+          "query": "cyberattack infrastructure Brazil"
+        },
+        {
+          "category": "energia_telecom",
+          "query": "power outage Chile"
+        },
+        {
+          "category": "ferroviario",
+          "query": "rail disruption Mexico"
+        },
+        {
+          "category": "cables_submarinos",
+          "query": "submarine cable damage Americas"
+        },
+        {
+          "category": "ia_ataques",
+          "query": "AI cyberattack United States"
+        }
       ]
     },
     {
       "id": "asia",
       "label": "Asia",
-      "languages": ["en", "ja", "ko", "hi"],
+      "languages": [
+        "en",
+        "ja",
+        "ko",
+        "hi"
+      ],
       "queries": [
-        {"category": "drones_aeropuertos", "query": "airport drone Japan"},
-        {"category": "ciberataque", "query": "cyberattack infrastructure India"},
-        {"category": "ferroviario", "query": "rail disruption Taiwan"},
-        {"category": "energia_telecom", "query": "power outage South Korea"}
+        {
+          "category": "drones_aeropuertos",
+          "query": "airport drone Japan"
+        },
+        {
+          "category": "ciberataque",
+          "query": "cyberattack infrastructure India"
+        },
+        {
+          "category": "ferroviario",
+          "query": "rail disruption Taiwan"
+        },
+        {
+          "category": "energia_telecom",
+          "query": "power outage South Korea"
+        },
+        {
+          "category": "cables_submarinos",
+          "query": "submarine cable damage Asia"
+        },
+        {
+          "category": "ia_ataques",
+          "query": "AI cyberattack Japan"
+        }
       ]
     },
     {
       "id": "china",
       "label": "China",
-      "languages": ["zh", "en"],
+      "languages": [
+        "zh",
+        "en"
+      ],
       "queries": [
-        {"category": "drones_aeropuertos", "query": "airport drone China"},
-        {"category": "ciberataque", "query": "cyberattack infrastructure China"},
-        {"category": "energia_telecom", "query": "power outage China"}
+        {
+          "category": "drones_aeropuertos",
+          "query": "airport drone China"
+        },
+        {
+          "category": "ciberataque",
+          "query": "cyberattack infrastructure China"
+        },
+        {
+          "category": "energia_telecom",
+          "query": "power outage China"
+        },
+        {
+          "category": "cables_submarinos",
+          "query": "submarine cable China"
+        },
+        {
+          "category": "ia_ataques",
+          "query": "AI cyberattack China"
+        }
       ]
     },
     {
       "id": "africa",
       "label": "África",
-      "languages": ["en", "fr", "pt"],
+      "languages": [
+        "en",
+        "fr",
+        "pt"
+      ],
       "queries": [
-        {"category": "drones_aeropuertos", "query": "airport drone Africa"},
-        {"category": "ciberataque", "query": "cyberattack infrastructure Nigeria"},
-        {"category": "ferroviario", "query": "rail disruption South Africa"}
+        {
+          "category": "drones_aeropuertos",
+          "query": "airport drone Africa"
+        },
+        {
+          "category": "ciberataque",
+          "query": "cyberattack infrastructure Nigeria"
+        },
+        {
+          "category": "ferroviario",
+          "query": "rail disruption South Africa"
+        },
+        {
+          "category": "cables_submarinos",
+          "query": "submarine cable Africa"
+        },
+        {
+          "category": "ia_ataques",
+          "query": "AI cyberattack Africa"
+        }
       ]
     },
     {
       "id": "middle_east",
       "label": "Oriente Medio",
-      "languages": ["en", "ar", "he"],
+      "languages": [
+        "en",
+        "ar",
+        "he"
+      ],
       "queries": [
-        {"category": "drones_aeropuertos", "query": "airport drone Middle East"},
-        {"category": "ciberataque", "query": "cyberattack infrastructure Israel"},
-        {"category": "energia_telecom", "query": "power outage Saudi Arabia"}
+        {
+          "category": "drones_aeropuertos",
+          "query": "airport drone Middle East"
+        },
+        {
+          "category": "ciberataque",
+          "query": "cyberattack infrastructure Israel"
+        },
+        {
+          "category": "energia_telecom",
+          "query": "power outage Saudi Arabia"
+        },
+        {
+          "category": "cables_submarinos",
+          "query": "submarine cable Middle East"
+        },
+        {
+          "category": "ia_ataques",
+          "query": "AI cyberattack Middle East"
+        }
       ]
     }
   ]

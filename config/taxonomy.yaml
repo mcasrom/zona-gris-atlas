@@ -25,6 +25,12 @@ domains:
   MIG:
     name: Instrumentalización migratoria
     description: Uso político de flujos migratorios para presionar a un Estado.
+  CAB:
+    name: Cables submarinos
+    description: Daños, cortes o sabotajes de cables submarinos de comunicaciones o energía; no se infiere autoría.
+  IAA:
+    name: Ataques con IA
+    description: Incidentes en los que se usa inteligencia artificial para atacar sistemas o infraestructuras; no toda mención de IA.
 
 scale:
   paz_estable:

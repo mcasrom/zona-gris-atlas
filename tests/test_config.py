@@ -3,7 +3,7 @@ from zonagris import config
 
 def test_taxonomy_has_all_domains():
     data = config.taxonomy()
-    assert set(data["domains"]) == {"CIB", "INF", "AER", "GNS", "SAB", "DES", "ECO", "MIG"}
+    assert set(data["domains"]) == {"CIB", "INF", "AER", "GNS", "SAB", "DES", "ECO", "MIG", "CAB", "IAA"}
 
 
 def test_atlas_covers_only_central_scale():

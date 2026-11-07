@@ -65,6 +65,8 @@ CATEGORY_LABELS = {
     "proteccion_civil": "Alertas de seguridad civil y protección de infraestructuras",
     "sabotaje_infraestructura": "Sabotaje e interrupciones de infraestructuras",
     "energia_telecom": "Incidentes energéticos y de telecomunicaciones",
+    "cables_submarinos": "Cables submarinos",
+    "ia_ataques": "Ataques con IA",
 }
 CATEGORY_TERMS = {
     "drones_aeropuertos": ("drone", "dron", "uav", "airport", "aeropuerto"),
@@ -75,6 +77,8 @@ CATEGORY_TERMS = {
     "proteccion_civil": ("emergency", "evacuat", "civil protection", "protección civil", "sirena"),
     "sabotaje_infraestructura": ("sabotage", "sabotaje", "sabotaged", "saboteado"),
     "energia_telecom": ("power outage", "blackout", "apagón", "telecom", "telecomunicaciones", "grid"),
+    "cables_submarinos": ("submarine cable", "subsea cable", "cable submarino", "cable cut", "cable break", "cable damage", "cable sabotage"),
+    "ia_ataques": ("ai-powered", "ai attack", "artificial intelligence attack", "llm attack", "machine learning attack", "model poisoning", "prompt injection", "ai cyberattack"),
 }
 NOISE = re.compile(r"\b(opinion|opinión|analysis|análisis|explainer|explicador|what we know|lo que sabemos|raise[sd]? concerns?|raise[sd]? questions?|rail works|engineering works|rail strike|planned disruption|forecast|outlook)\b", re.I)
 OFFICIAL_DOMAINS = {
@@ -82,6 +86,10 @@ OFFICIAL_DOMAINS = {
     "eurocontrol.int", "cisa.gov", "nato.int", "interior.gob.es", "guardiacivil.es",
     "policia.es", "rtve.es", "efe.com",
 }
+CABLE_EVENT_TERMS = ("cut", "damage", "sabotage", "outage", "disrupt", "fault", "break", "severed")
+CABLE_NOISE = ("market", "forecast", "size", "share", "trend", "connectivity", "investment", "contract", "launch", "report")
+AI_ATTACK_TERMS = ("attack", "cyberattack", "exploit", "poison", "prompt injection", "malicious", "disrupt")
+AI_TERMS = ("ai-powered", "artificial intelligence", "llm", "machine learning", "generative ai", "ai model")
 STOP = set("the a an and or of to in on for with from by at as is are was were be been being this that these those it its de la el los las un una unos unas y o en por para con del al se su sus es son".split())
 
 
@@ -139,6 +147,15 @@ def similar(a: set[str], b: set[str]) -> float:
     return len(a & b) / len(a | b)
 
 
+def query_relevant(category: str, text: str) -> bool:
+    low = text.casefold()
+    if category == "cables_submarinos":
+        return any(term in low for term in CABLE_EVENT_TERMS) and not any(term in low for term in CABLE_NOISE)
+    if category == "ia_ataques":
+        return any(term in low for term in AI_TERMS) and any(term in low for term in AI_ATTACK_TERMS)
+    return True
+
+
 def classify(text: str) -> str:
     low = text.casefold()
     scores = {key: sum(1 for term in terms if term in low) for key, terms in CATEGORY_TERMS.items()}
@@ -164,6 +181,8 @@ def parse_feed(raw: bytes, category: str, region: str = "") -> list[dict]:
             or text_of(item, "{http://www.w3.org/2005/Atom}content")
         )
         if NOISE.search(title):
+            continue
+        if not query_relevant(category, title + " " + description):
             continue
         published = parse_date(text_of(item, "pubDate") or text_of(item, "{http://www.w3.org/2005/Atom}updated"))
         if not published:

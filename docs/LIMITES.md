@@ -12,9 +12,22 @@ Registra hechos ocurridos y su contexto. No estima objetivos, fechas ni probabil
 
 No perfila individuos ni convierte una sospecha en culpabilidad. No publica datos personales innecesarios.
 
-## No cubre cables submarinos en la v0.1
+## Cables submarinos
 
-Quedan fuera por alcance y método. Tampoco cubre paz estable ni conflicto armado abierto: el foco es competencia, zona gris y hostilidad híbrida.
+La categoría **CAB** registra cortes, daños o sabotajes de cables submarinos cuando
+hay una fuente verificable. No se infiere autoría ni se convierte cualquier avería
+en sabotaje. La cobertura geográfica depende de fuentes locales y de la matriz de
+consultas; un cero es un hueco de captura, no una prueba de que no ocurra.
+
+## Ataques con IA
+
+La categoría **IAA** registra incidentes en los que se usa IA para atacar sistemas o
+infraestructuras. No incluye toda noticia que mencione IA, ni convierte una
+herramienta defensiva en ataque. La atribución sigue el mismo criterio: fuente
+verificable o `none`.
+
+No cubre paz estable ni conflicto armado abierto: el foco es competencia, zona gris
+y hostilidad híbrida.
 
 ## No es tiempo real
 
