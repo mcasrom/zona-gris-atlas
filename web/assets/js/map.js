@@ -269,6 +269,13 @@
       projection = values[0];
       events = values[1].events || [];
       referenceDate = new Date(values[1].generated_at || Date.now());
+      var capture = document.getElementById("last-capture");
+      if (capture && values[1].generated_at) {
+        capture.textContent = new Intl.DateTimeFormat("es-ES", {
+          dateStyle: "medium", timeStyle: "short", timeZone: "Europe/Madrid"
+        }).format(new Date(values[1].generated_at));
+        capture.dateTime = values[1].generated_at;
+      }
       updateStats();
       buildFilters();
       frames.forEach(function (frame) {

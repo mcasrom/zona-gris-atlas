@@ -81,3 +81,11 @@ def test_public_surfaces_do_not_present_military_promotions() -> None:
     assert "general de división" not in registros
     assert "promoción al empleo" not in registros
     assert "adenda del mando de apoyo logístico" not in registros
+
+
+def test_landing_shows_last_capture_timestamp() -> None:
+    page = (ROOT / "web" / "index.html").read_text(encoding="utf-8")
+    script = (ROOT / "web" / "assets" / "js" / "map.js").read_text(encoding="utf-8")
+    assert 'data-last-capture' in page
+    assert 'last-capture' in script
+    assert 'generated_at' in script
