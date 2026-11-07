@@ -54,7 +54,9 @@
           "query": "AI cyberattack Europe"
         }
       ],
-      "events": 27,
+      "scope_events": 25,
+      "located_events": 2,
+      "events": 2,
       "queries_count": 10
     },
     {
@@ -91,7 +93,9 @@
           "query": "AI cyberattack United States"
         }
       ],
-      "events": 1,
+      "scope_events": 1,
+      "located_events": 0,
+      "events": 0,
       "queries_count": 6
     },
     {
@@ -129,7 +133,9 @@
           "query": "AI cyberattack Japan"
         }
       ],
-      "events": 4,
+      "scope_events": 4,
+      "located_events": 0,
+      "events": 0,
       "queries_count": 6
     },
     {
@@ -161,7 +167,9 @@
           "query": "AI cyberattack China"
         }
       ],
-      "events": 7,
+      "scope_events": 7,
+      "located_events": 0,
+      "events": 0,
       "queries_count": 5
     },
     {
@@ -194,7 +202,9 @@
           "query": "AI cyberattack Africa"
         }
       ],
-      "events": 1,
+      "scope_events": 1,
+      "located_events": 0,
+      "events": 0,
       "queries_count": 5
     },
     {
@@ -227,7 +237,9 @@
           "query": "AI cyberattack Middle East"
         }
       ],
-      "events": 1,
+      "scope_events": 2,
+      "located_events": 0,
+      "events": 0,
       "queries_count": 5
     }
   ]

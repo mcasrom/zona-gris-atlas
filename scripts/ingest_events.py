@@ -197,7 +197,7 @@ def parse_feed(raw: bytes, category: str, region: str = "") -> list[dict]:
             "domain": domain(decode_bing(raw_link)),
             "published_at": published,
             "category": category_guess,
-            "region": region,
+            "query_scope": region,
             "source_name": "Bing News RSS",
             "digest": hashlib.sha256((title + description + decode_bing(raw_link)).encode()).hexdigest(),
         })
@@ -294,7 +294,7 @@ def build_events(groups: list[list[dict]], places: dict, captured_at: str) -> li
             "geo_precision": place["precision"] if place else None,
             "category": first["category"],
             "category_label": CATEGORY_LABELS[first["category"]],
-            "region": first.get("region") or None,
+            "query_scope": first.get("query_scope") or None,
             "title": first["title"],
             "description": first["description"] or "Titular y resumen disponibles en la fuente original.",
             "infrastructure": "No especificada en la fuente",

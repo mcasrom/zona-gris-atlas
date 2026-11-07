@@ -13,7 +13,7 @@
       card.appendChild(h);
       var p = document.createElement("p");
       p.className = "muted small";
-      p.textContent = (region.events || 0) + " acontecimientos · " + (region.queries_count || 0) + " consultas · idiomas: " + (region.languages || []).join(", ");
+      p.textContent = (region.queries_count || 0) + " consultas · " + (region.scope_events || 0) + " candidatos en el ámbito · " + (region.located_events || 0) + " con ubicación documentada";
       card.appendChild(p);
       var ul = document.createElement("ul");
       (region.queries || []).forEach(function (q) {

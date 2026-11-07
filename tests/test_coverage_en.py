@@ -12,6 +12,7 @@ def test_coverage_matrix_declares_regions_and_gaps() -> None:
     ids = {region["id"] for region in config["regions"]}
     assert {"europe", "americas", "asia", "china", "africa", "middle_east"} <= ids
     assert "Matriz de consultas" in page
+    assert "ámbito de la consulta" in page
     assert "cobertura.html" in (ROOT / "web" / "sitemap.xml").read_text(encoding="utf-8")
 
 

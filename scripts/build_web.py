@@ -100,13 +100,18 @@ def write_primary() -> None:
 def write_coverage() -> None:
     config = json.loads(QUERIES_CONFIG.read_text(encoding="utf-8"))
     events = json.loads(EVENTS_WEB.read_text(encoding="utf-8")).get("events", []) if EVENTS_WEB.exists() else []
-    counts = {}
+    scope_counts = {}
+    located_counts = {}
     for event in events:
-        region = event.get("region")
-        if region:
-            counts[region] = counts.get(region, 0) + 1
+        scope = event.get("query_scope")
+        if scope:
+            scope_counts[scope] = scope_counts.get(scope, 0) + 1
+            if event.get("country") or event.get("city") or (event.get("place") and event.get("place") != "No documentado"):
+                located_counts[scope] = located_counts.get(scope, 0) + 1
     for region in config.get("regions", []):
-        region["events"] = counts.get(region["id"], 0)
+        region["scope_events"] = scope_counts.get(region["id"], 0)
+        region["located_events"] = located_counts.get(region["id"], 0)
+        region["events"] = region["located_events"]
         region["queries_count"] = len(region.get("queries", []))
     COVERAGE_WEB.write_text(json.dumps(config, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 

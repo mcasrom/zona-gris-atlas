@@ -1,5 +1,5 @@
 {
-  "captured_at": "2026-11-07T16:01:38.326394+00:00",
+  "captured_at": "2026-11-07T16:22:48.649194+00:00",
   "runs": [
     {
       "source": "Bing News RSS",
@@ -7,7 +7,7 @@
       "region": "europe",
       "query": "airport drone Europe",
       "http": 200,
-      "records": 10,
+      "records": 9,
       "error": null
     },
     {
@@ -97,7 +97,7 @@
       "region": "americas",
       "query": "airport drone United States",
       "http": 200,
-      "records": 6,
+      "records": 7,
       "error": null
     },
     {
@@ -295,7 +295,7 @@
       "region": "middle_east",
       "query": "airport drone Middle East",
       "http": 200,
-      "records": 2,
+      "records": 3,
       "error": null
     },
     {
