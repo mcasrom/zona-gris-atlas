@@ -358,3 +358,18 @@ button.btn:hover { background: var(--panel); }
 }
 
 .footer-version { color: var(--muted); font-family: "IBM Plex Mono", monospace; font-size: 0.78rem; white-space: nowrap; }
+
+.incident-toolbar { display:flex; justify-content:space-between; gap:16px; align-items:flex-start; flex-wrap:wrap; margin:18px 0; }
+.incident-filters { display:flex; gap:10px; flex-wrap:wrap; align-items:flex-end; }
+.incident-filters label { display:flex; flex-direction:column; gap:4px; color:var(--muted); font-size:.78rem; }
+.incident-filters select, .incident-filters input { min-height:38px; padding:6px 9px; background:var(--panel); color:var(--ink); border:1px solid var(--line); border-radius:4px; }
+.incident-summary { color:var(--muted); font-size:.82rem; margin:8px 0 12px; }
+.table-wrap { overflow:auto; border:1px solid var(--line); }
+.incident-table { width:100%; border-collapse:collapse; min-width:900px; font-size:.86rem; }
+.incident-table th { text-align:left; color:var(--muted); font-size:.72rem; text-transform:uppercase; letter-spacing:.06em; padding:9px 10px; border-bottom:1px solid var(--line); }
+.incident-table td { vertical-align:top; padding:10px; border-bottom:1px solid var(--line); }
+.incident-table td p { margin:4px 0 0; line-height:1.35; }
+.incident-table code { font-size:.78rem; color:var(--muted); }
+.status-pill { display:inline-block; border:1px solid var(--line); border-radius:999px; padding:1px 7px; font-size:.72rem; }
+.status-pill.documented { color:var(--signal); border-color:var(--signal); }
+.status-pill.pending { color:var(--muted); }

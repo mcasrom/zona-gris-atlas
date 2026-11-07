@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="alternate icon" href="favicon.ico" type="image/x-icon">
+  <title>Incidentes de zona gris en curso · Atlas Zona Gris</title>
+  <meta name="description" content="Matriz operativa de acontecimientos reales de Zona Gris: fecha, dominio, zona, estado de verificación, atribución y fuentes. Sin gravedad ni índice inventados.">
+  <link rel="canonical" href="https://zonagris.pruebapublica.com/incidentes.html">
+  <meta name="robots" content="index,follow">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Atlas Zona Gris">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="Incidentes de zona gris en curso · Atlas Zona Gris">
+  <meta property="og:description" content="Matriz operativa de acontecimientos reales: fecha, dominio, zona, verificación, atribución y fuentes. Sin gravedad ni índice inventados.">
+  <meta property="og:url" content="https://zonagris.pruebapublica.com/incidentes.html">
+  <meta property="og:image" content="https://zonagris.pruebapublica.com/assets/img/og-atlas.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Incidentes de zona gris en curso · Atlas Zona Gris">
+  <meta name="twitter:description" content="Acontecimientos reales con estado y atribución. Sin rellenar huecos por inferencia.">
+  <meta name="twitter:image" content="https://zonagris.pruebapublica.com/assets/img/og-atlas.png">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="manifest" href="site.webmanifest">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Incidentes de zona gris en curso · Atlas Zona Gris","description":"Acontecimientos reales con fecha, dominio, zona, estado de verificación, atribución y fuentes.","url":"https://zonagris.pruebapublica.com/incidentes.html","inLanguage":"es","isPartOf":{"@type":"WebSite","name":"Atlas Zona Gris","url":"https://zonagris.pruebapublica.com/"}}</script>
+</head>
+<body data-repo="https://github.com/mcasrom/zona-gris-atlas">
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<header class="site-header"><div class="container header-inner"><a class="brand" href="index.html"><svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="#C5CCD4" stroke-width="1.6"/><path d="M3.5 12a8.5 8.5 0 0 0 17 0Z" fill="#FFB020"/></svg>ZONA GRIS</a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-principal">Menú</button><nav class="nav" id="nav-principal" aria-label="Navegación principal"><a href="index.html">Inicio</a><a href="mapa.html">Mapa</a><a href="incidentes.html" aria-current="page">Incidentes</a><a href="registros.html">Registros</a><a href="primarias.html">Primarias</a><a href="metodologia.html">Método</a><a href="fuentes.html">Fuentes</a><a href="limites.html">Límites</a><a href="avisos.html">Avisos</a><a href="about.html">About</a><a href="https://github.com/mcasrom/zona-gris-atlas">Código</a></nav></div></header>
+<main id="contenido">
+  <div class="container page-hero"><p class="eyebrow">Incidentes · muestra operativa</p><h1>Incidentes de zona gris en curso.</h1><p class="lead">Una fila por acontecimiento real. Fecha, dominio, zona, estado de verificación, atribución y fuentes. Donde no hay atribución verificable, la celda dice <strong>por definir</strong>. No hay gravedad ni índice ZG inventados.</p><p class="muted small" id="incident-meta">Cargando…</p></div>
+  <section class="container" aria-label="Filtros y matriz de incidentes">
+    <div class="incident-toolbar">
+      <div><strong><span id="incident-count">0</span> incidentes visibles</strong> <span class="muted small">· <span id="incident-total">0</span> en total</span></div>
+      <div class="incident-filters">
+        <label>Dominio <select id="incident-domain"><option value="all">Todos</option></select></label>
+        <label>Verificación <select id="incident-status"><option value="all">Todas</option><option value="CONFIRMADO">Confirmado</option><option value="DOCUMENTADO">Documentado</option><option value="PENDIENTE">Pendiente</option></select></label>
+        <label>Atribución <select id="incident-attribution"><option value="all">Todas</option><option value="none">Por definir</option><option value="official">Oficial</option><option value="claimed">Reivindicada</option></select></label>
+        <label>Últimos <select id="incident-date"><option value="all">Todo</option><option value="7">7 días</option><option value="30">30 días</option><option value="90">90 días</option></select></label>
+        <label>Buscar <input id="incident-search" type="search" placeholder="título, zona, ID"></label>
+        <button class="btn" type="button" id="incident-reset">Quitar filtros</button>
+      </div>
+    </div>
+    <div class="incident-summary" id="incident-summary"></div>
+    <div class="table-wrap">
+      <table class="incident-table">
+        <caption class="muted small">Una muestra de los acontecimientos publicados; no es un censo ni una confirmación de autoría.</caption>
+        <thead><tr><th>ID</th><th>Fecha</th><th>Hecho</th><th>Dominio</th><th>Zona</th><th>Verificación</th><th>Atribución</th><th>Fuentes</th></tr></thead>
+        <tbody id="incident-rows"><tr><td colspan="8" class="muted">Cargando…</td></tr></tbody>
+      </table>
+    </div>
+    <p class="muted small" style="margin-top:14px">«Documentado» significa que hay fuente y revisión; no significa ataque confirmado. «Pendiente» es un candidato. «Por definir» es el valor correcto cuando no hay atribución verificable. No se rellena por inferencia.</p>
+  </section>
+</main>
+<footer class="site-footer"><div class="container footer-grid"><div><p>Proyecto personal de un único autor. Código bajo AGPL-3.0. Sin cookies ni rastreadores.</p></div><div class="footer-links"><a href="index.html">Inicio</a><a href="mapa.html">Mapa</a><a href="incidentes.html">Incidentes</a><a href="registros.html">Registros</a><a href="primarias.html">Primarias</a><a href="metodologia.html">Método</a><a href="fuentes.html">Fuentes</a><a href="https://github.com/mcasrom/zona-gris-atlas">GitHub</a><a class="kofi-link" href="https://ko-fi.com/m_castillo">Apoyar en Ko-fi</a><span class="footer-version">Miguel Castillo · v0.1.1</span></div></div></footer>
+<script src="assets/js/site.js" defer></script>
+<script src="assets/js/incidentes.js" defer></script>
+</body>
+</html>
