@@ -88,6 +88,8 @@ See `config/sources.yaml`. Bing News RSS is **discovery**. CERT-EU, JPCERT/CC, C
 
 Read [`docs/LIMITES.md`](docs/LIMITES.md): no self-attribution, no prediction and no judging people. Submarine cables and AI-enabled attacks have explicit categories and strict criteria. It also documents source-diet bias and the strict **MIG** inclusion criteria: a migration flow is not, by itself, instrumentalisation.
 
+Coverage lesson: [`docs/LECCION-AMERICA-ASIA.md`](docs/LECCION-AMERICA-ASIA.md). The Americas and Asia are not empty; they are outside the current source matrix. The note separates external hypotheses from verified records and states what is missing.
+
 ## Contributing
 
 Read [`CONTRIBUTING.md`](CONTRIBUTING.md). Open an issue with the relevant template. Do not include personal data or secrets.

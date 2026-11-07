@@ -157,6 +157,10 @@ con criterios estrictos y sin atribución por inferencia.
 También se declaran el sesgo de la dieta de fuentes y el criterio estricto de la
 categoría **MIG**: no todo flujo migratorio es instrumentalización.
 
+Lección de cobertura: [`docs/LECCION-AMERICA-ASIA.md`](docs/LECCION-AMERICA-ASIA.md).
+América y Asia no están vacías: están fuera de la matriz de fuentes actual. Ese
+documento separa hipótesis externas de fichas verificadas y fija qué falta.
+
 ## Seguridad
 
 La política de divulgación está en [`SECURITY.md`](SECURITY.md). No abras una
