@@ -384,3 +384,23 @@ button.btn:hover { background: var(--panel); }
 .newsletter-box form { display:flex; gap:10px; align-items:flex-end; flex-wrap:wrap; margin:14px 0 8px; }
 .newsletter-box label { display:block; font-size:.82rem; color:var(--muted); margin-bottom:4px; }
 .newsletter-box input[type=email] { min-width:250px; min-height:42px; padding:8px 10px; background:var(--ink); color:var(--paper); border:1px solid var(--line); border-radius:4px; }
+
+/* Contraste del funnel: button.btn oscuro pisaba .btn-primary */
+.newsletter-box h2,
+.newsletter-box p,
+.newsletter-box label { color: var(--text); }
+.newsletter-box .muted { color: var(--muted); }
+.newsletter-box button.btn-primary,
+form[data-subscribe] button[type="submit"] {
+  background: var(--signal);
+  border-color: var(--signal);
+  color: var(--ink);
+  font-weight: 700;
+}
+.newsletter-box button.btn-primary:hover,
+form[data-subscribe] button[type="submit"]:hover {
+  background: #ffd37a;
+  color: var(--ink);
+}
+.newsletter-box input[type="email"] { color: var(--paper); background: var(--ink); }
+.newsletter-box input[type="email"]::placeholder { color: var(--text-2); opacity: 1; }
