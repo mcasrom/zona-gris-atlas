@@ -277,7 +277,7 @@ def place_for(text: str, places: dict) -> dict | None:
     return max(candidates, key=lambda item: len(item["name"]), default=None) if candidates else None
 
 
-def build_events(groups: list[list[dict]], places: dict, captured_at: str, geo: bool = False) -> list[dict]:
+def build_events(groups: list[list[dict]], places: dict, captured_at: str, geo: bool = False, geo_shadow: bool = False) -> list[dict]:
     events = []
     for group in groups:
         first = group[0]
@@ -298,7 +298,7 @@ def build_events(groups: list[list[dict]], places: dict, captured_at: str, geo: 
         status, reason = assess(group)
         place = place_for(first["title"] + " " + first["description"], places)
         geo_country = None
-        if place is None and geo:
+        if place is None and (geo or geo_shadow):
             geo_country = country_for(first["title"] + " " + first["description"])
         event_date = min(row["published_at"] for row in group)
         event_id = "AUTO-" + hashlib.sha256((sources[0]["url"] + "|" + first["title"]).encode()).hexdigest()[:12].upper()
@@ -307,14 +307,18 @@ def build_events(groups: list[list[dict]], places: dict, captured_at: str, geo: 
             "event_date": event_date,
             "published_at": sources[0]["published_at"],
             "captured_at": captured_at,
-            "country": place["country"] if place else (geo_country["name"] if geo_country else None),
-            "country_iso2": place["country_iso2"] if place else (geo_country["iso2"] if geo_country else None),
+            "country": place["country"] if place else (geo_country["name"] if geo and geo_country else None),
+            "country_iso2": place["country_iso2"] if place else (geo_country["iso2"] if geo and geo_country else None),
             "city": place["city"] if place else None,
-            "place": place["place"] if place else (geo_country["name"] if geo_country else "No documentado"),
+            "place": place["place"] if place else (geo_country["name"] if geo and geo_country else "No documentado"),
             "lat": place["lat"] if place else None,
             "lon": place["lon"] if place else None,
-            "geo_precision": place["precision"] if place else ("country" if geo_country else None),
-            "geo_method": "gazetteer" if place else ("explicit_country" if geo_country else None),
+            "geo_precision": place["precision"] if place else ("country" if geo and geo_country else None),
+            "geo_method": "gazetteer" if place else ("explicit_country" if geo and geo_country else None),
+            "geo_suggestion": (
+                {"country": geo_country["name"], "country_iso2": geo_country["iso2"], "method": "explicit_country"}
+                if geo_shadow and geo_country else None
+            ),
             "category": first["category"],
             "category_label": CATEGORY_LABELS[first["category"]],
             "query_scope": first.get("query_scope") or None,
@@ -344,6 +348,7 @@ def main() -> int:
     parser.add_argument("--limit", type=int, default=120)
     parser.add_argument("--source", choices=["bing"], default="bing", help="fuente de descubrimiento")
     parser.add_argument("--geo", action="store_true", help="activa extracción conservadora de país")
+    parser.add_argument("--geo-shadow", action="store_true", help="calcula sugerencias de país sin publicarlas")
     parser.add_argument("--cached-dir", type=Path, help="XML de Bing ya descargados; no usa red")
     args = parser.parse_args()
     places = json.loads(args.places.read_text(encoding="utf-8"))
@@ -375,7 +380,9 @@ def main() -> int:
         unique.setdefault(row["url"].split("#")[0].rstrip("/"), row)
     rows = list(unique.values())
     groups = group_rows(rows, places)
-    events = build_events(groups, places, captured_at, geo=args.geo)[: args.limit]
+    if args.geo_shadow and args.out == DEFAULT_OUT:
+        parser.error("--geo-shadow requiere --out distinto de data/events/auto/events.jsonl")
+    events = build_events(groups, places, captured_at, geo=args.geo, geo_shadow=args.geo_shadow)[: args.limit]
     args.out.parent.mkdir(parents=True, exist_ok=True)
     args.out.write_text("\n".join(json.dumps(event, ensure_ascii=False) for event in events) + "\n", encoding="utf-8")
     args.sources.parent.mkdir(parents=True, exist_ok=True)

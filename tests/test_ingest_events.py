@@ -78,3 +78,11 @@ def test_explicit_country_is_accepted_but_actor_mention_is_not() -> None:
     assert ingest.country_for("Attack in France disrupts rail")["iso2"] == "FR"
     assert ingest.country_for("China-linked hackers hit 200 targets") is None
     assert ingest.country_for("French blood banks hit by cyberattack") is None
+
+
+def test_geo_shadow_suggests_without_assigning_country() -> None:
+    row = ingest.parse_feed(XML, "amenazas_bomba")[0]
+    row["title"] = "Bomb threat in France"
+    events = ingest.build_events([[row]], {"places": []}, "2026-11-07T00:00:00Z", geo_shadow=True)
+    assert events[0]["country"] is None
+    assert events[0]["geo_suggestion"]["country_iso2"] == "FR"
