@@ -28,6 +28,7 @@ DEFAULT_OUT = ROOT / "data" / "events" / "auto" / "events.jsonl"
 DEFAULT_SOURCES = ROOT / "data" / "events" / "auto" / "sources.json"
 DEFAULT_PLACES = ROOT / "data" / "event_places.json"
 QUERY_MATRIX = ROOT / "config" / "queries.json"
+GEO_COUNTRIES = ROOT / "config" / "geo_countries.json"
 UA = "Mozilla/5.0 (compatible; AtlasZonaGris/0.3; +https://zonagris.pruebapublica.com/metodologia.html)"
 MAX_BYTES = 2_500_000
 QUERIES = (
@@ -147,6 +148,24 @@ def similar(a: set[str], b: set[str]) -> float:
     return len(a & b) / len(a | b)
 
 
+def country_for(text: str) -> dict | None:
+    """Solo asigna país si hay una preposición/locución de lugar explícita.
+
+    No convierte "China-linked hackers" en un incidente en China.
+    """
+    try:
+        countries = json.loads(GEO_COUNTRIES.read_text(encoding="utf-8"))["countries"]
+    except (OSError, ValueError, KeyError):
+        return None
+    low = " " + text.casefold() + " "
+    for country in countries:
+        for alias in country.get("aliases", []):
+            a = re.escape(alias.casefold())
+            if re.search(rf"\b(?:in|at|near|across|from|inside|outside|throughout|over)\s+(?:the\s+)?{a}\b", low):
+                return country
+    return None
+
+
 def query_relevant(category: str, text: str) -> bool:
     low = text.casefold()
     if category == "cables_submarinos":
@@ -258,7 +277,7 @@ def place_for(text: str, places: dict) -> dict | None:
     return max(candidates, key=lambda item: len(item["name"]), default=None) if candidates else None
 
 
-def build_events(groups: list[list[dict]], places: dict, captured_at: str) -> list[dict]:
+def build_events(groups: list[list[dict]], places: dict, captured_at: str, geo: bool = False) -> list[dict]:
     events = []
     for group in groups:
         first = group[0]
@@ -278,6 +297,9 @@ def build_events(groups: list[list[dict]], places: dict, captured_at: str) -> li
             })
         status, reason = assess(group)
         place = place_for(first["title"] + " " + first["description"], places)
+        geo_country = None
+        if place is None and geo:
+            geo_country = country_for(first["title"] + " " + first["description"])
         event_date = min(row["published_at"] for row in group)
         event_id = "AUTO-" + hashlib.sha256((sources[0]["url"] + "|" + first["title"]).encode()).hexdigest()[:12].upper()
         events.append({
@@ -285,13 +307,14 @@ def build_events(groups: list[list[dict]], places: dict, captured_at: str) -> li
             "event_date": event_date,
             "published_at": sources[0]["published_at"],
             "captured_at": captured_at,
-            "country": place["country"] if place else None,
-            "country_iso2": place["country_iso2"] if place else None,
+            "country": place["country"] if place else (geo_country["name"] if geo_country else None),
+            "country_iso2": place["country_iso2"] if place else (geo_country["iso2"] if geo_country else None),
             "city": place["city"] if place else None,
-            "place": place["place"] if place else "No documentado",
+            "place": place["place"] if place else (geo_country["name"] if geo_country else "No documentado"),
             "lat": place["lat"] if place else None,
             "lon": place["lon"] if place else None,
-            "geo_precision": place["precision"] if place else None,
+            "geo_precision": place["precision"] if place else ("country" if geo_country else None),
+            "geo_method": "gazetteer" if place else ("explicit_country" if geo_country else None),
             "category": first["category"],
             "category_label": CATEGORY_LABELS[first["category"]],
             "query_scope": first.get("query_scope") or None,
@@ -320,6 +343,7 @@ def main() -> int:
     parser.add_argument("--days", type=int, default=7)
     parser.add_argument("--limit", type=int, default=120)
     parser.add_argument("--source", choices=["bing"], default="bing", help="fuente de descubrimiento")
+    parser.add_argument("--geo", action="store_true", help="activa extracción conservadora de país")
     parser.add_argument("--cached-dir", type=Path, help="XML de Bing ya descargados; no usa red")
     args = parser.parse_args()
     places = json.loads(args.places.read_text(encoding="utf-8"))
@@ -351,7 +375,7 @@ def main() -> int:
         unique.setdefault(row["url"].split("#")[0].rstrip("/"), row)
     rows = list(unique.values())
     groups = group_rows(rows, places)
-    events = build_events(groups, places, captured_at)[: args.limit]
+    events = build_events(groups, places, captured_at, geo=args.geo)[: args.limit]
     args.out.parent.mkdir(parents=True, exist_ok=True)
     args.out.write_text("\n".join(json.dumps(event, ensure_ascii=False) for event in events) + "\n", encoding="utf-8")
     args.sources.parent.mkdir(parents=True, exist_ok=True)

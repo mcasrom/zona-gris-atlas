@@ -72,3 +72,9 @@ def test_cable_market_noise_is_filtered() -> None:
     rows = ingest.parse_feed(xml, "cables_submarinos")
     assert len(rows) == 1
     assert "cut" in rows[0]["title"].lower()
+
+
+def test_explicit_country_is_accepted_but_actor_mention_is_not() -> None:
+    assert ingest.country_for("Attack in France disrupts rail")["iso2"] == "FR"
+    assert ingest.country_for("China-linked hackers hit 200 targets") is None
+    assert ingest.country_for("French blood banks hit by cyberattack") is None

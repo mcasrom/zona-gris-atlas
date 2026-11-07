@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "countries": [
+    {"name": "España", "iso2": "ES", "aliases": ["Spain", "España"]},
+    {"name": "Francia", "iso2": "FR", "aliases": ["France", "Francia"]},
+    {"name": "Alemania", "iso2": "DE", "aliases": ["Germany", "Alemania"]},
+    {"name": "Italia", "iso2": "IT", "aliases": ["Italy", "Italia"]},
+    {"name": "Reino Unido", "iso2": "GB", "aliases": ["United Kingdom", "UK", "Britain"]},
+    {"name": "Estados Unidos", "iso2": "US", "aliases": ["United States", "US", "USA"]},
+    {"name": "China", "iso2": "CN", "aliases": ["China"]},
+    {"name": "Japón", "iso2": "JP", "aliases": ["Japan", "Japón"]},
+    {"name": "India", "iso2": "IN", "aliases": ["India"]},
+    {"name": "Brasil", "iso2": "BR", "aliases": ["Brazil", "Brasil"]},
+    {"name": "Corea del Sur", "iso2": "KR", "aliases": ["South Korea", "Corea del Sur"]},
+    {"name": "Arabia Saudí", "iso2": "SA", "aliases": ["Saudi Arabia", "Arabia Saudí"]},
+    {"name": "Israel", "iso2": "IL", "aliases": ["Israel"]},
+    {"name": "Polonia", "iso2": "PL", "aliases": ["Poland", "Polonia"]},
+    {"name": "Dinamarca", "iso2": "DK", "aliases": ["Denmark", "Dinamarca"]},
+    {"name": "Chequia", "iso2": "CZ", "aliases": ["Czechia", "Czech Republic", "Chequia"]},
+    {"name": "Austria", "iso2": "AT", "aliases": ["Austria"]},
+    {"name": "Rusia", "iso2": "RU", "aliases": ["Russia", "Rusia"]},
+    {"name": "Colombia", "iso2": "CO", "aliases": ["Colombia"]},
+    {"name": "Canadá", "iso2": "CA", "aliases": ["Canada", "Canadá"]},
+    {"name": "Australia", "iso2": "AU", "aliases": ["Australia"]},
+    {"name": "México", "iso2": "MX", "aliases": ["Mexico", "México"]},
+    {"name": "Nigeria", "iso2": "NG", "aliases": ["Nigeria"]},
+    {"name": "Sudáfrica", "iso2": "ZA", "aliases": ["South Africa", "Sudáfrica"]}
+  ]
+}
