@@ -1,0 +1,13 @@
+{
+  "records": 59,
+  "with_source_timestamp": 42,
+  "with_source_location": 1,
+  "with_country_iso2": 19,
+  "with_airport_iata": 13,
+  "with_timestamp": 42,
+  "time_precision": {
+    "timestamp": 42,
+    "day": 17
+  },
+  "analysis_ready": 16
+}

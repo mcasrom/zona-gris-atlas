@@ -1,0 +1,114 @@
+source,target,type,weight,note
+CAN-C95109E1AC,category:ciberataque,tipo,1.0,categoría asignada; no relación
+CAN-C95109E1AC,country:Francia,lugar,0.7,país documentado o sugerido; no atribución
+CAN-43834C6578,category:ciberataque,tipo,1.0,categoría asignada; no relación
+CAN-CA36E9556D,category:amenazas_bomba,tipo,1.0,categoría asignada; no relación
+CAN-CA36E9556D,country:Austria,lugar,0.7,país documentado o sugerido; no atribución
+CAN-44E1C53A96,category:amenazas_bomba,tipo,1.0,categoría asignada; no relación
+CAN-44E1C53A96,country:Francia,lugar,0.7,país documentado o sugerido; no atribución
+CAN-E757339988,category:drones_aeropuertos,tipo,1.0,categoría asignada; no relación
+CAN-4E4AA13818,category:drones_aeropuertos,tipo,1.0,categoría asignada; no relación
+CAN-4E4AA13818,country:Alemania,lugar,0.7,país documentado o sugerido; no atribución
+CAN-05E7D224DB,category:drones_aeropuertos,tipo,1.0,categoría asignada; no relación
+CAN-05E7D224DB,country:Jersey,lugar,0.7,país documentado o sugerido; no atribución
+CAN-9D60B6B951,category:drones_aeropuertos,tipo,1.0,categoría asignada; no relación
+CAN-9D60B6B951,country:Arabia Saudí,lugar,0.7,país documentado o sugerido; no atribución
+CAN-66D2E1AEC9,category:amenazas_bomba,tipo,1.0,categoría asignada; no relación
+CAN-66D2E1AEC9,country:Dinamarca,lugar,0.7,país documentado o sugerido; no atribución
+CAN-3D50D6CA36,category:amenazas_bomba,tipo,1.0,categoría asignada; no relación
+CAN-3D50D6CA36,country:Chequia,lugar,0.7,país documentado o sugerido; no atribución
+CAN-EB777A6471,category:amenazas_bomba,tipo,1.0,categoría asignada; no relación
+CAN-EB777A6471,country:Italia,lugar,0.7,país documentado o sugerido; no atribución
+CAN-B180359A4F,category:amenazas_bomba,tipo,1.0,categoría asignada; no relación
+CAN-B180359A4F,country:Francia,lugar,0.7,país documentado o sugerido; no atribución
+CAN-EA3633C2CE,category:proteccion_civil,tipo,1.0,categoría asignada; no relación
+CAN-EA3633C2CE,country:Israel,lugar,0.7,país documentado o sugerido; no atribución
+CAN-135F3B5466,category:ciberataque,tipo,1.0,categoría asignada; no relación
+CAN-135F3B5466,country:Francia,lugar,0.7,país documentado o sugerido; no atribución
+CAN-4E921B931C,category:ciberataque,tipo,1.0,categoría asignada; no relación
+CAN-4E921B931C,country:Rusia,lugar,0.7,país documentado o sugerido; no atribución
+CAN-733B499629,category:ciberataque,tipo,1.0,categoría asignada; no relación
+CAN-733B499629,country:Unión Europea,lugar,0.7,país documentado o sugerido; no atribución
+CAN-7DE92D84F7,category:ferroviario,tipo,1.0,categoría asignada; no relación
+CAN-7DE92D84F7,country:Francia,lugar,0.7,país documentado o sugerido; no atribución
+CAN-D329CA0CEA,category:ferroviario,tipo,1.0,categoría asignada; no relación
+CAN-D329CA0CEA,country:Reino Unido,lugar,0.7,país documentado o sugerido; no atribución
+CAN-9A8A96D7A9,category:ferroviario,tipo,1.0,categoría asignada; no relación
+CAN-9A8A96D7A9,country:Reino Unido,lugar,0.7,país documentado o sugerido; no atribución
+CAN-7341C68B58,category:ferroviario,tipo,1.0,categoría asignada; no relación
+CAN-7341C68B58,country:Reino Unido,lugar,0.7,país documentado o sugerido; no atribución
+CAN-25108625DE,category:gnss,tipo,1.0,categoría asignada; no relación
+CAN-25108625DE,country:OTAN (flanco este),lugar,0.7,país documentado o sugerido; no atribución
+CAN-2D34BCDA34,category:amenazas_bomba,tipo,1.0,categoría asignada; no relación
+CAN-065C124D63,category:ciberataque,tipo,1.0,categoría asignada; no relación
+CAN-AF5F0552A1,category:amenazas_bomba,tipo,1.0,categoría asignada; no relación
+CAN-3A3072B4E9,category:drones_aeropuertos,tipo,1.0,categoría asignada; no relación
+CAN-B7EA263B5E,category:ciberataque,tipo,1.0,categoría asignada; no relación
+CAN-A1E2AFE9B8,category:ferroviario,tipo,1.0,categoría asignada; no relación
+CAN-A202172C52,category:amenazas_bomba,tipo,1.0,categoría asignada; no relación
+CAN-B94895D0B3,category:amenazas_bomba,tipo,1.0,categoría asignada; no relación
+CAN-DD98099B72,category:drones_aeropuertos,tipo,1.0,categoría asignada; no relación
+CAN-D75A174B94,category:drones_aeropuertos,tipo,1.0,categoría asignada; no relación
+CAN-39B10F371F,category:drones_aeropuertos,tipo,1.0,categoría asignada; no relación
+CAN-86B499BEA5,category:amenazas_bomba,tipo,1.0,categoría asignada; no relación
+CAN-01792C6E1F,category:amenazas_bomba,tipo,1.0,categoría asignada; no relación
+CAN-D344A99B3F,category:ciberataque,tipo,1.0,categoría asignada; no relación
+CAN-2DC05B5E11,category:ferroviario,tipo,1.0,categoría asignada; no relación
+CAN-02C03F489E,category:ciberataque,tipo,1.0,categoría asignada; no relación
+CAN-503F0BF842,category:ciberataque,tipo,1.0,categoría asignada; no relación
+CAN-D1987F64C5,category:ciberataque,tipo,1.0,categoría asignada; no relación
+CAN-ABB8EA393F,category:drones_aeropuertos,tipo,1.0,categoría asignada; no relación
+CAN-15E23D46DB,category:drones_aeropuertos,tipo,1.0,categoría asignada; no relación
+CAN-15E23D46DB,country:Jersey,lugar,0.7,país documentado o sugerido; no atribución
+CAN-42D456AD14,category:ciberataque,tipo,1.0,categoría asignada; no relación
+CAN-6E2612D57C,category:ciberataque,tipo,1.0,categoría asignada; no relación
+CAN-1CE69C92B4,category:ciberataque,tipo,1.0,categoría asignada; no relación
+CAN-2995EC3210,category:drones_aeropuertos,tipo,1.0,categoría asignada; no relación
+CAN-C95109E1AC,CAN-43834C6578,co_ocurrencia_6h,0.53,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-C95109E1AC,CAN-D1987F64C5,co_ocurrencia_6h,0.96,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-C95109E1AC,CAN-1CE69C92B4,co_ocurrencia_24h,0.474,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-43834C6578,CAN-D1987F64C5,co_ocurrencia_6h,0.57,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-43834C6578,CAN-1CE69C92B4,co_ocurrencia_6h,0.816,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-CA36E9556D,CAN-66D2E1AEC9,co_ocurrencia_24h,0.279,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-CA36E9556D,CAN-3D50D6CA36,co_ocurrencia_24h,0.303,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-CA36E9556D,CAN-B180359A4F,co_ocurrencia_24h,0.292,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-CA36E9556D,CAN-2D34BCDA34,co_ocurrencia_6h,0.905,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-44E1C53A96,CAN-66D2E1AEC9,co_ocurrencia_24h,0.301,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-44E1C53A96,CAN-3D50D6CA36,co_ocurrencia_24h,0.277,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-44E1C53A96,CAN-B180359A4F,co_ocurrencia_24h,0.287,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-44E1C53A96,CAN-01792C6E1F,co_ocurrencia_6h,0.638,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-E757339988,CAN-15E23D46DB,co_ocurrencia_6h,0.762,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-E757339988,CAN-2995EC3210,co_ocurrencia_24h,0.41,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-4E4AA13818,CAN-9D60B6B951,co_ocurrencia_24h,0.289,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-4E4AA13818,CAN-DD98099B72,co_ocurrencia_24h,0.398,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-4E4AA13818,CAN-39B10F371F,co_ocurrencia_24h,0.265,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-05E7D224DB,CAN-2995EC3210,co_ocurrencia_24h,0.382,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-9D60B6B951,CAN-DD98099B72,co_ocurrencia_24h,0.475,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-9D60B6B951,CAN-D75A174B94,co_ocurrencia_6h,0.575,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-9D60B6B951,CAN-39B10F371F,co_ocurrencia_6h,0.856,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-66D2E1AEC9,CAN-3D50D6CA36,co_ocurrencia_6h,0.856,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-66D2E1AEC9,CAN-B180359A4F,co_ocurrencia_6h,0.92,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-66D2E1AEC9,CAN-2D34BCDA34,co_ocurrencia_24h,0.294,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-3D50D6CA36,CAN-B180359A4F,co_ocurrencia_6h,0.936,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-3D50D6CA36,CAN-2D34BCDA34,co_ocurrencia_24h,0.318,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-B180359A4F,CAN-2D34BCDA34,co_ocurrencia_24h,0.308,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-135F3B5466,CAN-4E921B931C,co_ocurrencia_6h,0.952,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-135F3B5466,CAN-D344A99B3F,co_ocurrencia_6h,0.994,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-135F3B5466,CAN-503F0BF842,co_ocurrencia_24h,0.415,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-4E921B931C,CAN-D344A99B3F,co_ocurrencia_6h,0.958,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-4E921B931C,CAN-503F0BF842,co_ocurrencia_24h,0.407,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-7DE92D84F7,CAN-D329CA0CEA,co_ocurrencia_24h,0.257,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-7DE92D84F7,CAN-9A8A96D7A9,co_ocurrencia_24h,0.293,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-7DE92D84F7,CAN-2DC05B5E11,co_ocurrencia_24h,0.25,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-D329CA0CEA,CAN-9A8A96D7A9,co_ocurrencia_6h,0.781,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-D329CA0CEA,CAN-2DC05B5E11,co_ocurrencia_6h,0.96,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-9A8A96D7A9,CAN-2DC05B5E11,co_ocurrencia_6h,0.741,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-7341C68B58,CAN-A1E2AFE9B8,co_ocurrencia_6h,0.797,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-065C124D63,CAN-B7EA263B5E,co_ocurrencia_24h,0.336,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-DD98099B72,CAN-D75A174B94,co_ocurrencia_24h,0.404,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-DD98099B72,CAN-39B10F371F,co_ocurrencia_24h,0.451,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-D75A174B94,CAN-39B10F371F,co_ocurrencia_6h,0.719,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-D344A99B3F,CAN-503F0BF842,co_ocurrencia_24h,0.414,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-503F0BF842,CAN-1CE69C92B4,co_ocurrencia_24h,0.265,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-D1987F64C5,CAN-1CE69C92B4,co_ocurrencia_24h,0.481,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+CAN-15E23D46DB,CAN-2995EC3210,co_ocurrencia_24h,0.45,"misma categoría y ventana temporal de publicación; hipótesis, no atribución"

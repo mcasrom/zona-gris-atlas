@@ -1,0 +1,1479 @@
+{
+  "scope": "interno; campañas sugeridas; co-ocurrencia; no atribución",
+  "counts": {
+    "nodes": 66,
+    "edges": 122,
+    "campaigns": 2,
+    "edge_types": {
+      "tipo": 45,
+      "lugar": 20,
+      "co_ocurrencia_6h": 20,
+      "co_ocurrencia_24h": 28,
+      "campaign_member": 9
+    }
+  },
+  "nodes": [
+    {
+      "id": "CAN-C95109E1AC",
+      "type": "event",
+      "label": "French blood banks hit by cyberattack days after European freezer hacks",
+      "category": "ciberataque",
+      "first_date": "2026-11-02",
+      "first_published_at": "2026-11-02T18:30:54+00:00",
+      "records": 7,
+      "country": "Francia",
+      "source_timestamp": true
+    },
+    {
+      "id": "category:ciberataque",
+      "type": "category",
+      "label": "ciberataque"
+    },
+    {
+      "id": "country:Francia",
+      "type": "country",
+      "label": "Francia"
+    },
+    {
+      "id": "CAN-43834C6578",
+      "type": "event",
+      "label": "UK must expect AI-powered attack on critical infrastructure within two years, report says",
+      "category": "ciberataque",
+      "first_date": "2026-11-02",
+      "first_published_at": "2026-11-03T00:09:23+00:00",
+      "records": 4,
+      "country": null,
+      "source_timestamp": true
+    },
+    {
+      "id": "CAN-CA36E9556D",
+      "type": "event",
+      "label": "What to know about the hoax bomb threats that targeted flights in Europe",
+      "category": "amenazas_bomba",
+      "first_date": "2026-11-07",
+      "first_published_at": "2026-11-07T09:45:23+01:00",
+      "records": 3,
+      "country": "Austria",
+      "source_timestamp": true
+    },
+    {
+      "id": "category:amenazas_bomba",
+      "type": "category",
+      "label": "amenazas_bomba"
+    },
+    {
+      "id": "country:Austria",
+      "type": "country",
+      "label": "Austria"
+    },
+    {
+      "id": "CAN-44E1C53A96",
+      "type": "event",
+      "label": "3rd wave of bomb threats in Europe; flights disrupted again",
+      "category": "amenazas_bomba",
+      "first_date": "2026-11-05",
+      "first_published_at": "2026-11-05T14:28:17+00:00",
+      "records": 3,
+      "country": "Francia",
+      "source_timestamp": true
+    },
+    {
+      "id": "CAN-E757339988",
+      "type": "event",
+      "label": "ACI Asia-Pacific & Middle East secures regional support for airport security and resilience measures",
+      "category": "drones_aeropuertos",
+      "first_date": "2026-11-02",
+      "first_published_at": "2026-11-03T10:26:00.986000+00:00",
+      "records": 2,
+      "country": null,
+      "source_timestamp": true
+    },
+    {
+      "id": "category:drones_aeropuertos",
+      "type": "category",
+      "label": "drones_aeropuertos"
+    },
+    {
+      "id": "CAN-4E4AA13818",
+      "type": "event",
+      "label": "Investigación por un intento de ataque con dron en Leipzig/Halle",
+      "category": "drones_aeropuertos",
+      "first_date": "2026-11-05",
+      "first_published_at": "2026-11-06T15:04:00+00:00",
+      "records": 1,
+      "country": "Alemania",
+      "source_timestamp": true
+    },
+    {
+      "id": "country:Alemania",
+      "type": "country",
+      "label": "Alemania"
+    },
+    {
+      "id": "CAN-05E7D224DB",
+      "type": "event",
+      "label": "Actividad de drones interrumpe el aeropuerto de Jersey",
+      "category": "drones_aeropuertos",
+      "first_date": "2026-11-01",
+      "first_published_at": "2026-11-02T07:30:00+00:00",
+      "records": 1,
+      "country": "Jersey",
+      "source_timestamp": true
+    },
+    {
+      "id": "country:Jersey",
+      "type": "country",
+      "label": "Jersey"
+    },
+    {
+      "id": "CAN-9D60B6B951",
+      "type": "event",
+      "label": "Reivindicación de ataque con dron contra el aeropuerto de Dammam",
+      "category": "drones_aeropuertos",
+      "first_date": "2026-11-05",
+      "first_published_at": "2026-11-05T17:52:02+00:00",
+      "records": 1,
+      "country": "Arabia Saudí",
+      "source_timestamp": true
+    },
+    {
+      "id": "country:Arabia Saudí",
+      "type": "country",
+      "label": "Arabia Saudí"
+    },
+    {
+      "id": "CAN-66D2E1AEC9",
+      "type": "event",
+      "label": "Amenaza de bomba en el aeropuerto de Copenhague",
+      "category": "amenazas_bomba",
+      "first_date": "2026-11-06",
+      "first_published_at": "2026-11-06T10:49:12+00:00",
+      "records": 1,
+      "country": "Dinamarca",
+      "source_timestamp": true
+    },
+    {
+      "id": "country:Dinamarca",
+      "type": "country",
+      "label": "Dinamarca"
+    },
+    {
+      "id": "CAN-3D50D6CA36",
+      "type": "event",
+      "label": "Amenaza de bomba en un vuelo desde Praga",
+      "category": "amenazas_bomba",
+      "first_date": "2026-11-06",
+      "first_published_at": "2026-11-06T13:33:00+01:00",
+      "records": 1,
+      "country": "Chequia",
+      "source_timestamp": true
+    },
+    {
+      "id": "country:Chequia",
+      "type": "country",
+      "label": "Chequia"
+    },
+    {
+      "id": "CAN-EB777A6471",
+      "type": "event",
+      "label": "Amenaza de bomba en Malpensa",
+      "category": "amenazas_bomba",
+      "first_date": "2026-11-06",
+      "first_published_at": null,
+      "records": 1,
+      "country": "Italia",
+      "source_timestamp": false
+    },
+    {
+      "id": "country:Italia",
+      "type": "country",
+      "label": "Italia"
+    },
+    {
+      "id": "CAN-B180359A4F",
+      "type": "event",
+      "label": "Cuatro vuelos sobre Francia afectados por amenazas de bomba",
+      "category": "amenazas_bomba",
+      "first_date": "2026-11-06",
+      "first_published_at": "2026-11-06T12:47:08+01:00",
+      "records": 1,
+      "country": "Francia",
+      "source_timestamp": true
+    },
+    {
+      "id": "CAN-EA3633C2CE",
+      "type": "event",
+      "label": "Evacuación por susto de seguridad en el aeropuerto Ben Gurion",
+      "category": "proteccion_civil",
+      "first_date": "2026-11-05",
+      "first_published_at": "2026-11-05T10:20:02.367686+00:00",
+      "records": 1,
+      "country": "Israel",
+      "source_timestamp": true
+    },
+    {
+      "id": "category:proteccion_civil",
+      "type": "category",
+      "label": "proteccion_civil"
+    },
+    {
+      "id": "country:Israel",
+      "type": "country",
+      "label": "Israel"
+    },
+    {
+      "id": "CAN-135F3B5466",
+      "type": "event",
+      "label": "Ciberataque contra la cadena de frío del servicio de sangre francés",
+      "category": "ciberataque",
+      "first_date": "2026-11-04",
+      "first_published_at": "2026-11-04T13:22:28+00:00",
+      "records": 1,
+      "country": "Francia",
+      "source_timestamp": true
+    },
+    {
+      "id": "CAN-4E921B931C",
+      "type": "event",
+      "label": "Ciberataque borra datos en la nube del proveedor ruso Beget",
+      "category": "ciberataque",
+      "first_date": "2026-11-04",
+      "first_published_at": "2026-11-04T13:56:55.320000+00:00",
+      "records": 1,
+      "country": "Rusia",
+      "source_timestamp": true
+    },
+    {
+      "id": "country:Rusia",
+      "type": "country",
+      "label": "Rusia"
+    },
+    {
+      "id": "CAN-733B499629",
+      "type": "event",
+      "label": "Ciberataque contra neveras conectadas de supermercados europeos",
+      "category": "ciberataque",
+      "first_date": "2026-11-02",
+      "first_published_at": null,
+      "records": 1,
+      "country": "Unión Europea",
+      "source_timestamp": false
+    },
+    {
+      "id": "country:Unión Europea",
+      "type": "country",
+      "label": "Unión Europea"
+    },
+    {
+      "id": "CAN-7DE92D84F7",
+      "type": "event",
+      "label": "Lluvias e inundaciones interrumpen trenes en el sur de Francia",
+      "category": "ferroviario",
+      "first_date": "2026-11-03",
+      "first_published_at": "2026-11-04T00:00:00+00:00",
+      "records": 1,
+      "country": "Francia",
+      "source_timestamp": true
+    },
+    {
+      "id": "category:ferroviario",
+      "type": "category",
+      "label": "ferroviario"
+    },
+    {
+      "id": "CAN-D329CA0CEA",
+      "type": "event",
+      "label": "Incidente de emergencia interrumpe trenes entre Manchester Piccadilly y el aeropuerto",
+      "category": "ferroviario",
+      "first_date": "2026-11-04",
+      "first_published_at": "2026-11-04T23:31:10+00:00",
+      "records": 1,
+      "country": "Reino Unido",
+      "source_timestamp": true
+    },
+    {
+      "id": "country:Reino Unido",
+      "type": "country",
+      "label": "Reino Unido"
+    },
+    {
+      "id": "CAN-9A8A96D7A9",
+      "type": "event",
+      "label": "Fallo de señalización interrumpe trenes en Birmingham",
+      "category": "ferroviario",
+      "first_date": "2026-11-05",
+      "first_published_at": "2026-11-04T20:53:44+00:00",
+      "records": 1,
+      "country": "Reino Unido",
+      "source_timestamp": true
+    },
+    {
+      "id": "CAN-7341C68B58",
+      "type": "event",
+      "label": "Fallo en Wiltshire interrumpe trenes de Londres a Devon",
+      "category": "ferroviario",
+      "first_date": "2026-11-06",
+      "first_published_at": "2026-11-06T12:09:12+00:00",
+      "records": 1,
+      "country": "Reino Unido",
+      "source_timestamp": true
+    },
+    {
+      "id": "CAN-25108625DE",
+      "type": "event",
+      "label": "Interferencias GPS a gran escala en el flanco este de la OTAN",
+      "category": "gnss",
+      "first_date": "2026-11-04",
+      "first_published_at": "2026-11-04T18:23:40+02:00",
+      "records": 1,
+      "country": "OTAN (flanco este)",
+      "source_timestamp": true
+    },
+    {
+      "id": "category:gnss",
+      "type": "category",
+      "label": "gnss"
+    },
+    {
+      "id": "country:OTAN (flanco este)",
+      "type": "country",
+      "label": "OTAN (flanco este)"
+    },
+    {
+      "id": "CAN-2D34BCDA34",
+      "type": "event",
+      "label": "Wave of bomb threats in Europe spreads from transport networks to media organizations",
+      "category": "amenazas_bomba",
+      "first_date": "2026-11-07",
+      "first_published_at": "2026-11-07T10:37:13+03:00",
+      "records": 1,
+      "country": null,
+      "source_timestamp": true
+    },
+    {
+      "id": "CAN-065C124D63",
+      "type": "event",
+      "label": "Unverified fintech cyberattack reports highlight gaps in Nigeria’s threat-sharing framework",
+      "category": "ciberataque",
+      "first_date": "2026-11-07",
+      "first_published_at": "2026-11-07T16:09:32+00:00",
+      "records": 1,
+      "country": null,
+      "source_timestamp": true
+    },
+    {
+      "id": "CAN-AF5F0552A1",
+      "type": "event",
+      "label": "How dozens of bomb threats caused flight chaos in Europe this week",
+      "category": "amenazas_bomba",
+      "first_date": "2026-11-07",
+      "first_published_at": null,
+      "records": 1,
+      "country": null,
+      "source_timestamp": false
+    },
+    {
+      "id": "CAN-3A3072B4E9",
+      "type": "event",
+      "label": "Rising airport drone alerts raise safety concerns",
+      "category": "drones_aeropuertos",
+      "first_date": "2026-11-06",
+      "first_published_at": null,
+      "records": 1,
+      "country": null,
+      "source_timestamp": false
+    },
+    {
+      "id": "CAN-B7EA263B5E",
+      "type": "event",
+      "label": "Japan banking crisis hits 128 banks. Could Europe be next?",
+      "category": "ciberataque",
+      "first_date": "2026-11-06",
+      "first_published_at": "2026-11-06T22:23:11+00:00",
+      "records": 1,
+      "country": null,
+      "source_timestamp": true
+    },
+    {
+      "id": "CAN-A1E2AFE9B8",
+      "type": "event",
+      "label": "European Aviation Security Alerts: Flight Detours and Rail Travel Guide 2026",
+      "category": "ferroviario",
+      "first_date": "2026-11-06",
+      "first_published_at": "2026-11-06T14:35:00+00:00",
+      "records": 1,
+      "country": null,
+      "source_timestamp": true
+    },
+    {
+      "id": "CAN-A202172C52",
+      "type": "event",
+      "label": "Europe's bomb threat wave moves from airports to newsrooms. Who is behind it?",
+      "category": "amenazas_bomba",
+      "first_date": "2026-11-06",
+      "first_published_at": null,
+      "records": 1,
+      "country": null,
+      "source_timestamp": false
+    },
+    {
+      "id": "CAN-B94895D0B3",
+      "type": "event",
+      "label": "Bomb threats continue to target aircrafts across Europe",
+      "category": "amenazas_bomba",
+      "first_date": "2026-11-06",
+      "first_published_at": null,
+      "records": 1,
+      "country": null,
+      "source_timestamp": false
+    },
+    {
+      "id": "CAN-DD98099B72",
+      "type": "event",
+      "label": "TSA's 'Drone Drone Drone' Post Hits 736K Views And A Six-Figure Threat",
+      "category": "drones_aeropuertos",
+      "first_date": "2026-11-05",
+      "first_published_at": "2026-11-06T01:42:00+00:00",
+      "records": 1,
+      "country": null,
+      "source_timestamp": true
+    },
+    {
+      "id": "CAN-D75A174B94",
+      "type": "event",
+      "label": "From Drones to Bomb Hoaxes: Is Europe’s Civil Aviation Facing a New Form of Hybrid Warfare?",
+      "category": "drones_aeropuertos",
+      "first_date": "2026-11-05",
+      "first_published_at": "2026-11-05T12:46:18+00:00",
+      "records": 1,
+      "country": null,
+      "source_timestamp": true
+    },
+    {
+      "id": "CAN-39B10F371F",
+      "type": "event",
+      "label": "Dual-Use Sky Net: China Mobilizes Automotive Supply Chains and Airspace Reform to Build Militarized Drone Industrial Base",
+      "category": "drones_aeropuertos",
+      "first_date": "2026-11-05",
+      "first_published_at": "2026-11-05T16:08:40+00:00",
+      "records": 1,
+      "country": null,
+      "source_timestamp": true
+    },
+    {
+      "id": "CAN-86B499BEA5",
+      "type": "event",
+      "label": "Bomb threats affect at least 25 flights, leading to emergency landings at several European airports",
+      "category": "amenazas_bomba",
+      "first_date": "2026-11-05",
+      "first_published_at": null,
+      "records": 1,
+      "country": null,
+      "source_timestamp": false
+    },
+    {
+      "id": "CAN-01792C6E1F",
+      "type": "event",
+      "label": "Bomb hoaxes across Europe disrupt flights as two UK airports also receive threats",
+      "category": "amenazas_bomba",
+      "first_date": "2026-11-05",
+      "first_published_at": "2026-11-05T10:07:41.292000+00:00",
+      "records": 1,
+      "country": null,
+      "source_timestamp": true
+    },
+    {
+      "id": "CAN-D344A99B3F",
+      "type": "event",
+      "label": "SBI cyberattack customer data leak | SBI says no business disruption after ‘cyberattack’ bares 3,897 customer records to dark web",
+      "category": "ciberataque",
+      "first_date": "2026-11-04",
+      "first_published_at": "2026-11-04T13:26:52+00:00",
+      "records": 1,
+      "country": null,
+      "source_timestamp": true
+    },
+    {
+      "id": "CAN-2DC05B5E11",
+      "type": "event",
+      "label": "Netherlands Integrates Live Station Lift Alerts into Rail Itineraries as Europe Advances Accessible Travel Tech",
+      "category": "ferroviario",
+      "first_date": "2026-11-04",
+      "first_published_at": "2026-11-05T00:00:00+00:00",
+      "records": 1,
+      "country": null,
+      "source_timestamp": true
+    },
+    {
+      "id": "CAN-02C03F489E",
+      "type": "event",
+      "label": "Japan to seek software vulnerability data from US AI firms amid cyberattack surge, Nikkei reports",
+      "category": "ciberataque",
+      "first_date": "2026-11-04",
+      "first_published_at": null,
+      "records": 1,
+      "country": null,
+      "source_timestamp": false
+    },
+    {
+      "id": "CAN-503F0BF842",
+      "type": "event",
+      "label": "China-linked hackers deploy AI to hit 200+ targets across 14 countries",
+      "category": "ciberataque",
+      "first_date": "2026-11-04",
+      "first_published_at": "2026-11-04T01:17:01.766000+00:00",
+      "records": 1,
+      "country": null,
+      "source_timestamp": true
+    },
+    {
+      "id": "CAN-D1987F64C5",
+      "type": "event",
+      "label": "US sees 2 hours of annual power outages, Korea just 9 minutes as AI drives demand for 'K-power'",
+      "category": "ciberataque",
+      "first_date": "2026-11-03",
+      "first_published_at": "2026-11-03T04:00:00+09:00",
+      "records": 1,
+      "country": null,
+      "source_timestamp": true
+    },
+    {
+      "id": "CAN-ABB8EA393F",
+      "type": "event",
+      "label": "Saudi-led coalition says intercepted 3 drones as Houthis claim attacks on Saudi airport, airbase",
+      "category": "drones_aeropuertos",
+      "first_date": "2026-11-03",
+      "first_published_at": null,
+      "records": 1,
+      "country": null,
+      "source_timestamp": false
+    },
+    {
+      "id": "CAN-15E23D46DB",
+      "type": "event",
+      "label": "Illegal Drone Incursions Cancel Jersey Airport Flights And Trigger RAF Deployment",
+      "category": "drones_aeropuertos",
+      "first_date": "2026-11-03",
+      "first_published_at": "2026-11-03T07:34:56.098000+00:00",
+      "records": 1,
+      "country": "Jersey",
+      "source_timestamp": true
+    },
+    {
+      "id": "CAN-42D456AD14",
+      "type": "event",
+      "label": "10 countries, 1 cyberattack: Europe & US supermarkets go dark | AI? North Korea? Who did it?",
+      "category": "ciberataque",
+      "first_date": "2026-11-03",
+      "first_published_at": null,
+      "records": 1,
+      "country": null,
+      "source_timestamp": false
+    },
+    {
+      "id": "CAN-6E2612D57C",
+      "type": "event",
+      "label": "Supermarket freezers hacked in European countries: Could India's smart refrigeration systems be next?",
+      "category": "ciberataque",
+      "first_date": "2026-11-02",
+      "first_published_at": null,
+      "records": 1,
+      "country": null,
+      "source_timestamp": false
+    },
+    {
+      "id": "CAN-1CE69C92B4",
+      "type": "event",
+      "label": "New cyberattack on supermarket fridges sweeps across Europe",
+      "category": "ciberataque",
+      "first_date": "2026-11-02",
+      "first_published_at": "2026-11-03T02:22:10.158000+00:00",
+      "records": 1,
+      "country": null,
+      "source_timestamp": true
+    },
+    {
+      "id": "CAN-2995EC3210",
+      "type": "event",
+      "label": "Beijing's Drone Sign in the NYT Enforces a Ban That Widens Nov. 15",
+      "category": "drones_aeropuertos",
+      "first_date": "2026-11-02",
+      "first_published_at": "2026-11-02T21:59:00+00:00",
+      "records": 1,
+      "country": null,
+      "source_timestamp": true
+    },
+    {
+      "id": "campaign:CMP-B3E4E64412",
+      "type": "campaign",
+      "label": "3rd wave of bomb threats in Europe; flights disrupted again",
+      "category": "amenazas_bomba",
+      "confidence": "media",
+      "decision": "accepted_as_wave"
+    },
+    {
+      "id": "campaign:CMP-BC5839A290",
+      "type": "campaign",
+      "label": "French blood banks hit by cyberattack days after European freezer hacks",
+      "category": "ciberataque",
+      "confidence": "baja",
+      "decision": "accepted_as_campaign_hypothesis"
+    }
+  ],
+  "edges": [
+    {
+      "source": "CAN-C95109E1AC",
+      "target": "category:ciberataque",
+      "type": "tipo",
+      "weight": 1.0,
+      "note": "categoría asignada; no relación"
+    },
+    {
+      "source": "CAN-C95109E1AC",
+      "target": "country:Francia",
+      "type": "lugar",
+      "weight": 0.7,
+      "note": "país documentado o sugerido; no atribución"
+    },
+    {
+      "source": "CAN-43834C6578",
+      "target": "category:ciberataque",
+      "type": "tipo",
+      "weight": 1.0,
+      "note": "categoría asignada; no relación"
+    },
+    {
+      "source": "CAN-CA36E9556D",
+      "target": "category:amenazas_bomba",
+      "type": "tipo",
+      "weight": 1.0,
+      "note": "categoría asignada; no relación"
+    },
+    {
+      "source": "CAN-CA36E9556D",
+      "target": "country:Austria",
+      "type": "lugar",
+      "weight": 0.7,
+      "note": "país documentado o sugerido; no atribución"
+    },
+    {
+      "source": "CAN-44E1C53A96",
+      "target": "category:amenazas_bomba",
+      "type": "tipo",
+      "weight": 1.0,
+      "note": "categoría asignada; no relación"
+    },
+    {
+      "source": "CAN-44E1C53A96",
+      "target": "country:Francia",
+      "type": "lugar",
+      "weight": 0.7,
+      "note": "país documentado o sugerido; no atribución"
+    },
+    {
+      "source": "CAN-E757339988",
+      "target": "category:drones_aeropuertos",
+      "type": "tipo",
+      "weight": 1.0,
+      "note": "categoría asignada; no relación"
+    },
+    {
+      "source": "CAN-4E4AA13818",
+      "target": "category:drones_aeropuertos",
+      "type": "tipo",
+      "weight": 1.0,
+      "note": "categoría asignada; no relación"
+    },
+    {
+      "source": "CAN-4E4AA13818",
+      "target": "country:Alemania",
+      "type": "lugar",
+      "weight": 0.7,
+      "note": "país documentado o sugerido; no atribución"
+    },
+    {
+      "source": "CAN-05E7D224DB",
+      "target": "category:drones_aeropuertos",
+      "type": "tipo",
+      "weight": 1.0,
+      "note": "categoría asignada; no relación"
+    },
+    {
+      "source": "CAN-05E7D224DB",
+      "target": "country:Jersey",
+      "type": "lugar",
+      "weight": 0.7,
+      "note": "país documentado o sugerido; no atribución"
+    },
+    {
+      "source": "CAN-9D60B6B951",
+      "target": "category:drones_aeropuertos",
+      "type": "tipo",
+      "weight": 1.0,
+      "note": "categoría asignada; no relación"
+    },
+    {
+      "source": "CAN-9D60B6B951",
+      "target": "country:Arabia Saudí",
+      "type": "lugar",
+      "weight": 0.7,
+      "note": "país documentado o sugerido; no atribución"
+    },
+    {
+      "source": "CAN-66D2E1AEC9",
+      "target": "category:amenazas_bomba",
+      "type": "tipo",
+      "weight": 1.0,
+      "note": "categoría asignada; no relación"
+    },
+    {
+      "source": "CAN-66D2E1AEC9",
+      "target": "country:Dinamarca",
+      "type": "lugar",
+      "weight": 0.7,
+      "note": "país documentado o sugerido; no atribución"
+    },
+    {
+      "source": "CAN-3D50D6CA36",
+      "target": "category:amenazas_bomba",
+      "type": "tipo",
+      "weight": 1.0,
+      "note": "categoría asignada; no relación"
+    },
+    {
+      "source": "CAN-3D50D6CA36",
+      "target": "country:Chequia",
+      "type": "lugar",
+      "weight": 0.7,
+      "note": "país documentado o sugerido; no atribución"
+    },
+    {
+      "source": "CAN-EB777A6471",
+      "target": "category:amenazas_bomba",
+      "type": "tipo",
+      "weight": 1.0,
+      "note": "categoría asignada; no relación"
+    },
+    {
+      "source": "CAN-EB777A6471",
+      "target": "country:Italia",
+      "type": "lugar",
+      "weight": 0.7,
+      "note": "país documentado o sugerido; no atribución"
+    },
+    {
+      "source": "CAN-B180359A4F",
+      "target": "category:amenazas_bomba",
+      "type": "tipo",
+      "weight": 1.0,
+      "note": "categoría asignada; no relación"
+    },
+    {
+      "source": "CAN-B180359A4F",
+      "target": "country:Francia",
+      "type": "lugar",
+      "weight": 0.7,
+      "note": "país documentado o sugerido; no atribución"
+    },
+    {
+      "source": "CAN-EA3633C2CE",
+      "target": "category:proteccion_civil",
+      "type": "tipo",
+      "weight": 1.0,
+      "note": "categoría asignada; no relación"
+    },
+    {
+      "source": "CAN-EA3633C2CE",
+      "target": "country:Israel",
+      "type": "lugar",
+      "weight": 0.7,
+      "note": "país documentado o sugerido; no atribución"
+    },
+    {
+      "source": "CAN-135F3B5466",
+      "target": "category:ciberataque",
+      "type": "tipo",
+      "weight": 1.0,
+      "note": "categoría asignada; no relación"
+    },
+    {
+      "source": "CAN-135F3B5466",
+      "target": "country:Francia",
+      "type": "lugar",
+      "weight": 0.7,
+      "note": "país documentado o sugerido; no atribución"
+    },
+    {
+      "source": "CAN-4E921B931C",
+      "target": "category:ciberataque",
+      "type": "tipo",
+      "weight": 1.0,
+      "note": "categoría asignada; no relación"
+    },
+    {
+      "source": "CAN-4E921B931C",
+      "target": "country:Rusia",
+      "type": "lugar",
+      "weight": 0.7,
+      "note": "país documentado o sugerido; no atribución"
+    },
+    {
+      "source": "CAN-733B499629",
+      "target": "category:ciberataque",
+      "type": "tipo",
+      "weight": 1.0,
+      "note": "categoría asignada; no relación"
+    },
+    {
+      "source": "CAN-733B499629",
+      "target": "country:Unión Europea",
+      "type": "lugar",
+      "weight": 0.7,
+      "note": "país documentado o sugerido; no atribución"
+    },
+    {
+      "source": "CAN-7DE92D84F7",
+      "target": "category:ferroviario",
+      "type": "tipo",
+      "weight": 1.0,
+      "note": "categoría asignada; no relación"
+    },
+    {
+      "source": "CAN-7DE92D84F7",
+      "target": "country:Francia",
+      "type": "lugar",
+      "weight": 0.7,
+      "note": "país documentado o sugerido; no atribución"
+    },
+    {
+      "source": "CAN-D329CA0CEA",
+      "target": "category:ferroviario",
+      "type": "tipo",
+      "weight": 1.0,
+      "note": "categoría asignada; no relación"
+    },
+    {
+      "source": "CAN-D329CA0CEA",
+      "target": "country:Reino Unido",
+      "type": "lugar",
+      "weight": 0.7,
+      "note": "país documentado o sugerido; no atribución"
+    },
+    {
+      "source": "CAN-9A8A96D7A9",
+      "target": "category:ferroviario",
+      "type": "tipo",
+      "weight": 1.0,
+      "note": "categoría asignada; no relación"
+    },
+    {
+      "source": "CAN-9A8A96D7A9",
+      "target": "country:Reino Unido",
+      "type": "lugar",
+      "weight": 0.7,
+      "note": "país documentado o sugerido; no atribución"
+    },
+    {
+      "source": "CAN-7341C68B58",
+      "target": "category:ferroviario",
+      "type": "tipo",
+      "weight": 1.0,
+      "note": "categoría asignada; no relación"
+    },
+    {
+      "source": "CAN-7341C68B58",
+      "target": "country:Reino Unido",
+      "type": "lugar",
+      "weight": 0.7,
+      "note": "país documentado o sugerido; no atribución"
+    },
+    {
+      "source": "CAN-25108625DE",
+      "target": "category:gnss",
+      "type": "tipo",
+      "weight": 1.0,
+      "note": "categoría asignada; no relación"
+    },
+    {
+      "source": "CAN-25108625DE",
+      "target": "country:OTAN (flanco este)",
+      "type": "lugar",
+      "weight": 0.7,
+      "note": "país documentado o sugerido; no atribución"
+    },
+    {
+      "source": "CAN-2D34BCDA34",
+      "target": "category:amenazas_bomba",
+      "type": "tipo",
+      "weight": 1.0,
+      "note": "categoría asignada; no relación"
+    },
+    {
+      "source": "CAN-065C124D63",
+      "target": "category:ciberataque",
+      "type": "tipo",
+      "weight": 1.0,
+      "note": "categoría asignada; no relación"
+    },
+    {
+      "source": "CAN-AF5F0552A1",
+      "target": "category:amenazas_bomba",
+      "type": "tipo",
+      "weight": 1.0,
+      "note": "categoría asignada; no relación"
+    },
+    {
+      "source": "CAN-3A3072B4E9",
+      "target": "category:drones_aeropuertos",
+      "type": "tipo",
+      "weight": 1.0,
+      "note": "categoría asignada; no relación"
+    },
+    {
+      "source": "CAN-B7EA263B5E",
+      "target": "category:ciberataque",
+      "type": "tipo",
+      "weight": 1.0,
+      "note": "categoría asignada; no relación"
+    },
+    {
+      "source": "CAN-A1E2AFE9B8",
+      "target": "category:ferroviario",
+      "type": "tipo",
+      "weight": 1.0,
+      "note": "categoría asignada; no relación"
+    },
+    {
+      "source": "CAN-A202172C52",
+      "target": "category:amenazas_bomba",
+      "type": "tipo",
+      "weight": 1.0,
+      "note": "categoría asignada; no relación"
+    },
+    {
+      "source": "CAN-B94895D0B3",
+      "target": "category:amenazas_bomba",
+      "type": "tipo",
+      "weight": 1.0,
+      "note": "categoría asignada; no relación"
+    },
+    {
+      "source": "CAN-DD98099B72",
+      "target": "category:drones_aeropuertos",
+      "type": "tipo",
+      "weight": 1.0,
+      "note": "categoría asignada; no relación"
+    },
+    {
+      "source": "CAN-D75A174B94",
+      "target": "category:drones_aeropuertos",
+      "type": "tipo",
+      "weight": 1.0,
+      "note": "categoría asignada; no relación"
+    },
+    {
+      "source": "CAN-39B10F371F",
+      "target": "category:drones_aeropuertos",
+      "type": "tipo",
+      "weight": 1.0,
+      "note": "categoría asignada; no relación"
+    },
+    {
+      "source": "CAN-86B499BEA5",
+      "target": "category:amenazas_bomba",
+      "type": "tipo",
+      "weight": 1.0,
+      "note": "categoría asignada; no relación"
+    },
+    {
+      "source": "CAN-01792C6E1F",
+      "target": "category:amenazas_bomba",
+      "type": "tipo",
+      "weight": 1.0,
+      "note": "categoría asignada; no relación"
+    },
+    {
+      "source": "CAN-D344A99B3F",
+      "target": "category:ciberataque",
+      "type": "tipo",
+      "weight": 1.0,
+      "note": "categoría asignada; no relación"
+    },
+    {
+      "source": "CAN-2DC05B5E11",
+      "target": "category:ferroviario",
+      "type": "tipo",
+      "weight": 1.0,
+      "note": "categoría asignada; no relación"
+    },
+    {
+      "source": "CAN-02C03F489E",
+      "target": "category:ciberataque",
+      "type": "tipo",
+      "weight": 1.0,
+      "note": "categoría asignada; no relación"
+    },
+    {
+      "source": "CAN-503F0BF842",
+      "target": "category:ciberataque",
+      "type": "tipo",
+      "weight": 1.0,
+      "note": "categoría asignada; no relación"
+    },
+    {
+      "source": "CAN-D1987F64C5",
+      "target": "category:ciberataque",
+      "type": "tipo",
+      "weight": 1.0,
+      "note": "categoría asignada; no relación"
+    },
+    {
+      "source": "CAN-ABB8EA393F",
+      "target": "category:drones_aeropuertos",
+      "type": "tipo",
+      "weight": 1.0,
+      "note": "categoría asignada; no relación"
+    },
+    {
+      "source": "CAN-15E23D46DB",
+      "target": "category:drones_aeropuertos",
+      "type": "tipo",
+      "weight": 1.0,
+      "note": "categoría asignada; no relación"
+    },
+    {
+      "source": "CAN-15E23D46DB",
+      "target": "country:Jersey",
+      "type": "lugar",
+      "weight": 0.7,
+      "note": "país documentado o sugerido; no atribución"
+    },
+    {
+      "source": "CAN-42D456AD14",
+      "target": "category:ciberataque",
+      "type": "tipo",
+      "weight": 1.0,
+      "note": "categoría asignada; no relación"
+    },
+    {
+      "source": "CAN-6E2612D57C",
+      "target": "category:ciberataque",
+      "type": "tipo",
+      "weight": 1.0,
+      "note": "categoría asignada; no relación"
+    },
+    {
+      "source": "CAN-1CE69C92B4",
+      "target": "category:ciberataque",
+      "type": "tipo",
+      "weight": 1.0,
+      "note": "categoría asignada; no relación"
+    },
+    {
+      "source": "CAN-2995EC3210",
+      "target": "category:drones_aeropuertos",
+      "type": "tipo",
+      "weight": 1.0,
+      "note": "categoría asignada; no relación"
+    },
+    {
+      "source": "CAN-C95109E1AC",
+      "target": "CAN-43834C6578",
+      "type": "co_ocurrencia_6h",
+      "weight": 0.53,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-C95109E1AC",
+      "target": "CAN-D1987F64C5",
+      "type": "co_ocurrencia_6h",
+      "weight": 0.96,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-C95109E1AC",
+      "target": "CAN-1CE69C92B4",
+      "type": "co_ocurrencia_24h",
+      "weight": 0.474,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-43834C6578",
+      "target": "CAN-D1987F64C5",
+      "type": "co_ocurrencia_6h",
+      "weight": 0.57,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-43834C6578",
+      "target": "CAN-1CE69C92B4",
+      "type": "co_ocurrencia_6h",
+      "weight": 0.816,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-CA36E9556D",
+      "target": "CAN-66D2E1AEC9",
+      "type": "co_ocurrencia_24h",
+      "weight": 0.279,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-CA36E9556D",
+      "target": "CAN-3D50D6CA36",
+      "type": "co_ocurrencia_24h",
+      "weight": 0.303,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-CA36E9556D",
+      "target": "CAN-B180359A4F",
+      "type": "co_ocurrencia_24h",
+      "weight": 0.292,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-CA36E9556D",
+      "target": "CAN-2D34BCDA34",
+      "type": "co_ocurrencia_6h",
+      "weight": 0.905,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-44E1C53A96",
+      "target": "CAN-66D2E1AEC9",
+      "type": "co_ocurrencia_24h",
+      "weight": 0.301,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-44E1C53A96",
+      "target": "CAN-3D50D6CA36",
+      "type": "co_ocurrencia_24h",
+      "weight": 0.277,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-44E1C53A96",
+      "target": "CAN-B180359A4F",
+      "type": "co_ocurrencia_24h",
+      "weight": 0.287,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-44E1C53A96",
+      "target": "CAN-01792C6E1F",
+      "type": "co_ocurrencia_6h",
+      "weight": 0.638,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-E757339988",
+      "target": "CAN-15E23D46DB",
+      "type": "co_ocurrencia_6h",
+      "weight": 0.762,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-E757339988",
+      "target": "CAN-2995EC3210",
+      "type": "co_ocurrencia_24h",
+      "weight": 0.41,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-4E4AA13818",
+      "target": "CAN-9D60B6B951",
+      "type": "co_ocurrencia_24h",
+      "weight": 0.289,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-4E4AA13818",
+      "target": "CAN-DD98099B72",
+      "type": "co_ocurrencia_24h",
+      "weight": 0.398,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-4E4AA13818",
+      "target": "CAN-39B10F371F",
+      "type": "co_ocurrencia_24h",
+      "weight": 0.265,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-05E7D224DB",
+      "target": "CAN-2995EC3210",
+      "type": "co_ocurrencia_24h",
+      "weight": 0.382,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-9D60B6B951",
+      "target": "CAN-DD98099B72",
+      "type": "co_ocurrencia_24h",
+      "weight": 0.475,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-9D60B6B951",
+      "target": "CAN-D75A174B94",
+      "type": "co_ocurrencia_6h",
+      "weight": 0.575,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-9D60B6B951",
+      "target": "CAN-39B10F371F",
+      "type": "co_ocurrencia_6h",
+      "weight": 0.856,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-66D2E1AEC9",
+      "target": "CAN-3D50D6CA36",
+      "type": "co_ocurrencia_6h",
+      "weight": 0.856,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-66D2E1AEC9",
+      "target": "CAN-B180359A4F",
+      "type": "co_ocurrencia_6h",
+      "weight": 0.92,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-66D2E1AEC9",
+      "target": "CAN-2D34BCDA34",
+      "type": "co_ocurrencia_24h",
+      "weight": 0.294,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-3D50D6CA36",
+      "target": "CAN-B180359A4F",
+      "type": "co_ocurrencia_6h",
+      "weight": 0.936,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-3D50D6CA36",
+      "target": "CAN-2D34BCDA34",
+      "type": "co_ocurrencia_24h",
+      "weight": 0.318,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-B180359A4F",
+      "target": "CAN-2D34BCDA34",
+      "type": "co_ocurrencia_24h",
+      "weight": 0.308,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-135F3B5466",
+      "target": "CAN-4E921B931C",
+      "type": "co_ocurrencia_6h",
+      "weight": 0.952,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-135F3B5466",
+      "target": "CAN-D344A99B3F",
+      "type": "co_ocurrencia_6h",
+      "weight": 0.994,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-135F3B5466",
+      "target": "CAN-503F0BF842",
+      "type": "co_ocurrencia_24h",
+      "weight": 0.415,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-4E921B931C",
+      "target": "CAN-D344A99B3F",
+      "type": "co_ocurrencia_6h",
+      "weight": 0.958,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-4E921B931C",
+      "target": "CAN-503F0BF842",
+      "type": "co_ocurrencia_24h",
+      "weight": 0.407,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-7DE92D84F7",
+      "target": "CAN-D329CA0CEA",
+      "type": "co_ocurrencia_24h",
+      "weight": 0.257,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-7DE92D84F7",
+      "target": "CAN-9A8A96D7A9",
+      "type": "co_ocurrencia_24h",
+      "weight": 0.293,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-7DE92D84F7",
+      "target": "CAN-2DC05B5E11",
+      "type": "co_ocurrencia_24h",
+      "weight": 0.25,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-D329CA0CEA",
+      "target": "CAN-9A8A96D7A9",
+      "type": "co_ocurrencia_6h",
+      "weight": 0.781,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-D329CA0CEA",
+      "target": "CAN-2DC05B5E11",
+      "type": "co_ocurrencia_6h",
+      "weight": 0.96,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-9A8A96D7A9",
+      "target": "CAN-2DC05B5E11",
+      "type": "co_ocurrencia_6h",
+      "weight": 0.741,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-7341C68B58",
+      "target": "CAN-A1E2AFE9B8",
+      "type": "co_ocurrencia_6h",
+      "weight": 0.797,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-065C124D63",
+      "target": "CAN-B7EA263B5E",
+      "type": "co_ocurrencia_24h",
+      "weight": 0.336,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-DD98099B72",
+      "target": "CAN-D75A174B94",
+      "type": "co_ocurrencia_24h",
+      "weight": 0.404,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-DD98099B72",
+      "target": "CAN-39B10F371F",
+      "type": "co_ocurrencia_24h",
+      "weight": 0.451,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-D75A174B94",
+      "target": "CAN-39B10F371F",
+      "type": "co_ocurrencia_6h",
+      "weight": 0.719,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-D344A99B3F",
+      "target": "CAN-503F0BF842",
+      "type": "co_ocurrencia_24h",
+      "weight": 0.414,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-503F0BF842",
+      "target": "CAN-1CE69C92B4",
+      "type": "co_ocurrencia_24h",
+      "weight": 0.265,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-D1987F64C5",
+      "target": "CAN-1CE69C92B4",
+      "type": "co_ocurrencia_24h",
+      "weight": 0.481,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "CAN-15E23D46DB",
+      "target": "CAN-2995EC3210",
+      "type": "co_ocurrencia_24h",
+      "weight": 0.45,
+      "note": "misma categoría y ventana temporal de publicación; hipótesis, no atribución"
+    },
+    {
+      "source": "campaign:CMP-B3E4E64412",
+      "target": "CAN-44E1C53A96",
+      "type": "campaign_member",
+      "weight": 1.0,
+      "note": "pertenece a una campaña sugerida; no atribución"
+    },
+    {
+      "source": "campaign:CMP-B3E4E64412",
+      "target": "CAN-86B499BEA5",
+      "type": "campaign_member",
+      "weight": 1.0,
+      "note": "pertenece a una campaña sugerida; no atribución"
+    },
+    {
+      "source": "campaign:CMP-B3E4E64412",
+      "target": "CAN-B94895D0B3",
+      "type": "campaign_member",
+      "weight": 1.0,
+      "note": "pertenece a una campaña sugerida; no atribución"
+    },
+    {
+      "source": "campaign:CMP-B3E4E64412",
+      "target": "CAN-CA36E9556D",
+      "type": "campaign_member",
+      "weight": 1.0,
+      "note": "pertenece a una campaña sugerida; no atribución"
+    },
+    {
+      "source": "campaign:CMP-B3E4E64412",
+      "target": "CAN-2D34BCDA34",
+      "type": "campaign_member",
+      "weight": 1.0,
+      "note": "pertenece a una campaña sugerida; no atribución"
+    },
+    {
+      "source": "campaign:CMP-B3E4E64412",
+      "target": "CAN-AF5F0552A1",
+      "type": "campaign_member",
+      "weight": 1.0,
+      "note": "pertenece a una campaña sugerida; no atribución"
+    },
+    {
+      "source": "campaign:CMP-B3E4E64412",
+      "target": "CAN-01792C6E1F",
+      "type": "campaign_member",
+      "weight": 1.0,
+      "note": "pertenece a una campaña sugerida; no atribución"
+    },
+    {
+      "source": "campaign:CMP-BC5839A290",
+      "target": "CAN-C95109E1AC",
+      "type": "campaign_member",
+      "weight": 1.0,
+      "note": "pertenece a una campaña sugerida; no atribución"
+    },
+    {
+      "source": "campaign:CMP-BC5839A290",
+      "target": "CAN-1CE69C92B4",
+      "type": "campaign_member",
+      "weight": 1.0,
+      "note": "pertenece a una campaña sugerida; no atribución"
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+[
+  {
+    "campaign_id": "CMP-B3E4E64412",
+    "category": "amenazas_bomba",
+    "canonical_events": 7,
+    "first_date": "2026-11-05",
+    "last_date": "2026-11-07",
+    "label": "3rd wave of bomb threats in Europe; flights disrupted again",
+    "shared_entities": [
+      "country:Reino Unido",
+      "domain:bbc.com",
+      "domain:dailysabah.com",
+      "domain:en.abna24.com",
+      "domain:english.ajel.sa",
+      "domain:europesays.com",
+      "domain:ici.radio-canada.ca",
+      "domain:msn.com",
+      "domain:sana.sy",
+      "domain:thelocal.at",
+      "place:Viena, Austria"
+    ],
+    "shared_keys": [
+      "key:bomb hoax",
+      "key:bomb threat",
+      "key:hoax"
+    ],
+    "wave_marker": true,
+    "canonical_ids": [
+      "CAN-44E1C53A96",
+      "CAN-86B499BEA5",
+      "CAN-B94895D0B3",
+      "CAN-CA36E9556D",
+      "CAN-2D34BCDA34",
+      "CAN-AF5F0552A1",
+      "CAN-01792C6E1F"
+    ],
+    "titles": [
+      "3rd wave of bomb threats in Europe; flights disrupted again",
+      "Bomb threats disrupt flights at multiple European airports",
+      "Europe flight bomb threats: Multiple planes diverted and airports disrupted",
+      "Bomb threats affect at least 25 flights, leading to emergency landings at several European airports",
+      "Bomb threats continue to target aircrafts across Europe",
+      "What to know about the hoax bomb threats that targeted flights in Europe",
+      "Vienna airport targeted in Europe-wide bomb hoax threats",
+      "Inside wave of hoax bomb threats targeting European flights",
+      "Wave of bomb threats in Europe spreads from transport networks to media organizations",
+      "How dozens of bomb threats caused flight chaos in Europe this week"
+    ],
+    "note": "co-ocurrencia y entidades compartidas; hipótesis, no atribución",
+    "review": {
+      "decision": "accepted_as_wave",
+      "confidence": "media",
+      "reviewed_by": "triage_title_source",
+      "records": 11,
+      "unique_domains": 9,
+      "domains": [
+        "bbc.com",
+        "dailysabah.com",
+        "en.abna24.com",
+        "english.ajel.sa",
+        "europesays.com",
+        "ici.radio-canada.ca",
+        "msn.com",
+        "sana.sy",
+        "thelocal.at"
+      ],
+      "categories": {
+        "amenazas_bomba": 11
+      },
+      "record_types": {
+        "unknown": 9,
+        "analysis": 2
+      },
+      "countries": [
+        "Austria",
+        "Francia"
+      ],
+      "limits": [
+        "co-ocurrencia temporal y temática",
+        "no demuestra autoría ni dirección estatal",
+        "hora de publicación, no hora del hecho"
+      ]
+    }
+  },
+  {
+    "campaign_id": "CMP-BC5839A290",
+    "category": "ciberataque",
+    "canonical_events": 2,
+    "first_date": "2026-11-02",
+    "last_date": "2026-11-04",
+    "label": "French blood banks hit by cyberattack days after European freezer hacks",
+    "shared_entities": [
+      "domain:cbc.ca",
+      "domain:cybermagazine.com",
+      "domain:gizmodo.com",
+      "domain:msn.com",
+      "domain:profit.pakistantoday.com.pk",
+      "domain:safestate.com",
+      "domain:yahoo.com"
+    ],
+    "shared_keys": [
+      "key:blood bank",
+      "key:freezer",
+      "key:fridge",
+      "key:refriger",
+      "key:supermarket"
+    ],
+    "wave_marker": false,
+    "canonical_ids": [
+      "CAN-C95109E1AC",
+      "CAN-1CE69C92B4"
+    ],
+    "titles": [
+      "French blood banks hit by cyberattack days after European freezer hacks",
+      "French blood banks hit alongside cyberattack on European supermarkets",
+      "Cyberattack hits French blood banks as hackers disrupt supermarket refrigeration across Europe",
+      "Supermarket Refrigeration Cyberattack Hits Six Countries in Europe",
+      "Freezer Cyberattack in Europe: What the Industry Has to Say",
+      "Supermarket Freezers Across Europe Hit With Another Cyberattack",
+      "Another cyberattack on supermarket fridges sweeps Europe, leaving food spoiled",
+      "New cyberattack on supermarket fridges sweeps across Europe"
+    ],
+    "note": "co-ocurrencia y entidades compartidas; hipótesis, no atribución",
+    "review": {
+      "decision": "accepted_as_campaign_hypothesis",
+      "confidence": "baja",
+      "reviewed_by": "triage_title_source",
+      "records": 8,
+      "unique_domains": 7,
+      "domains": [
+        "cbc.ca",
+        "cybermagazine.com",
+        "gizmodo.com",
+        "msn.com",
+        "profit.pakistantoday.com.pk",
+        "safestate.com",
+        "yahoo.com"
+      ],
+      "categories": {
+        "ciberataque": 8
+      },
+      "record_types": {
+        "unknown": 7,
+        "analysis": 1
+      },
+      "countries": [
+        "Francia"
+      ],
+      "limits": [
+        "co-ocurrencia temporal y temática",
+        "no demuestra autoría ni dirección estatal",
+        "hora de publicación, no hora del hecho"
+      ]
+    }
+  }
+]

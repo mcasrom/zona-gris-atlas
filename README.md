@@ -140,6 +140,20 @@ hay puerta de publicación ni se exige un etiquetado masivo**. El clasificador e
 experimental y no publica fichas. La revisión humana es por ficha, no un lote
 masivo de etiquetado. No hay fichero de umbral ni conjunto de validación obligatorio.
 
+## Calidad de datos y análisis interno
+
+La capa interna vive en `data/quality/` y **no se publica**:
+
+- `quality_report.py`: normalización, deduplicado TF-IDF, canónicos y propuestas de corrección.
+- `review.json`: 13 correcciones aceptadas y 17 rechazadas/pendientes de 30.
+- `graph_report.py` y `graph_temporal.py`: grafo de co-ocurrencia y grafo temporal.
+- `campaign_report.py`: campañas/oleadas sugeridas con entidades compartidas.
+- `baseline_snapshot.py`: foto diaria para construir línea base histórica.
+
+Estado actual: **59 registros → 45 canónicos**, 42 con timestamp de publicación, 19 con país ISO y 13 con aeropuerto. Las 2 campañas revisadas son **hipótesis internas**, no atribuciones.
+
+El cron `45 8 * * *` guarda la foto diaria en el servidor; el comparador marcará `insufficient` hasta acumular la ventana mínima.
+
 ## Fuentes y licencias
 
 La captura automática usa **Bing News RSS** como descubrimiento. La **capa primaria**

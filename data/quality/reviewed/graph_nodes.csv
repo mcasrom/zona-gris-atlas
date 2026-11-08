@@ -1,0 +1,64 @@
+id,type,label,category,date,country,place,status
+CAN-C95109E1AC,event,French blood banks hit by cyberattack days after European freezer hacks,ciberataque,2026-11-02,,No documentado,PENDIENTE
+category:ciberataque,category,ciberataque,,,,,
+CAN-43834C6578,event,"UK must expect AI-powered attack on critical infrastructure within two years, report says",ciberataque,2026-11-02,,No documentado,PENDIENTE
+CAN-CA36E9556D,event,What to know about the hoax bomb threats that targeted flights in Europe,amenazas_bomba,2026-11-07,,No documentado,PENDIENTE
+category:amenazas_bomba,category,amenazas_bomba,,,,,
+CAN-44E1C53A96,event,3rd wave of bomb threats in Europe; flights disrupted again,amenazas_bomba,2026-11-05,,No documentado,PENDIENTE
+CAN-E757339988,event,ACI Asia-Pacific & Middle East secures regional support for airport security and resilience measures,drones_aeropuertos,2026-11-02,,No documentado,PENDIENTE
+category:drones_aeropuertos,category,drones_aeropuertos,,,,,
+CAN-4E4AA13818,event,Investigación por un intento de ataque con dron en Leipzig/Halle,drones_aeropuertos,2026-11-05,Alemania,"Aeropuerto de Leipzig/Halle, Schkeuditz",DOCUMENTADO
+country:Alemania,country,Alemania,,,,,
+CAN-05E7D224DB,event,Actividad de drones interrumpe el aeropuerto de Jersey,drones_aeropuertos,2026-11-01,Jersey,Aeropuerto de Jersey,DOCUMENTADO
+country:Jersey,country,Jersey,,,,,
+CAN-9D60B6B951,event,Reivindicación de ataque con dron contra el aeropuerto de Dammam,drones_aeropuertos,2026-11-05,Arabia Saudí,Aeropuerto Rey Fahd,DOCUMENTADO
+country:Arabia Saudí,country,Arabia Saudí,,,,,
+CAN-66D2E1AEC9,event,Amenaza de bomba en el aeropuerto de Copenhague,amenazas_bomba,2026-11-06,Dinamarca,Aeropuerto de Copenhague-Kastrup,DOCUMENTADO
+country:Dinamarca,country,Dinamarca,,,,,
+CAN-3D50D6CA36,event,Amenaza de bomba en un vuelo desde Praga,amenazas_bomba,2026-11-06,Chequia,Aeropuerto de Praga-Václav Havel,DOCUMENTADO
+country:Chequia,country,Chequia,,,,,
+CAN-EB777A6471,event,Amenaza de bomba en Malpensa,amenazas_bomba,2026-11-06,Italia,Aeropuerto de Malpensa,DOCUMENTADO
+country:Italia,country,Italia,,,,,
+CAN-B180359A4F,event,Cuatro vuelos sobre Francia afectados por amenazas de bomba,amenazas_bomba,2026-11-06,Francia,Espacio aéreo y aeropuertos de París,DOCUMENTADO
+country:Francia,country,Francia,,,,,
+CAN-EA3633C2CE,event,Evacuación por susto de seguridad en el aeropuerto Ben Gurion,proteccion_civil,2026-11-05,Israel,Aeropuerto Ben Gurion,DOCUMENTADO
+category:proteccion_civil,category,proteccion_civil,,,,,
+country:Israel,country,Israel,,,,,
+CAN-135F3B5466,event,Ciberataque contra la cadena de frío del servicio de sangre francés,ciberataque,2026-11-04,Francia,Servicio Nacional de Sangre (Francia),DOCUMENTADO
+CAN-4E921B931C,event,Ciberataque borra datos en la nube del proveedor ruso Beget,ciberataque,2026-11-04,Rusia,Proveedor de alojamiento Beget (Rusia),DOCUMENTADO
+country:Rusia,country,Rusia,,,,,
+CAN-733B499629,event,Ciberataque contra neveras conectadas de supermercados europeos,ciberataque,2026-11-02,Unión Europea,Supermercados europeos,PENDIENTE
+country:Unión Europea,country,Unión Europea,,,,,
+CAN-7DE92D84F7,event,Lluvias e inundaciones interrumpen trenes en el sur de Francia,ferroviario,2026-11-03,Francia,Red ferroviaria del sur de Francia,PENDIENTE
+category:ferroviario,category,ferroviario,,,,,
+CAN-D329CA0CEA,event,Incidente de emergencia interrumpe trenes entre Manchester Piccadilly y el aeropuerto,ferroviario,2026-11-04,Reino Unido,Manchester Piccadilly,DOCUMENTADO
+country:Reino Unido,country,Reino Unido,,,,,
+CAN-9A8A96D7A9,event,Fallo de señalización interrumpe trenes en Birmingham,ferroviario,2026-11-05,Reino Unido,Entre University y Five Ways,DOCUMENTADO
+CAN-7341C68B58,event,Fallo en Wiltshire interrumpe trenes de Londres a Devon,ferroviario,2026-11-06,Reino Unido,Tramo ferroviario de Wiltshire,DOCUMENTADO
+CAN-25108625DE,event,Interferencias GPS a gran escala en el flanco este de la OTAN,gnss,2026-11-04,OTAN (flanco este),Frontera este de la OTAN,DOCUMENTADO
+category:gnss,category,gnss,,,,,
+country:OTAN (flanco este),country,OTAN (flanco este),,,,,
+CAN-2D34BCDA34,event,Wave of bomb threats in Europe spreads from transport networks to media organizations,amenazas_bomba,2026-11-07,,No documentado,PENDIENTE
+CAN-065C124D63,event,Unverified fintech cyberattack reports highlight gaps in Nigeria’s threat-sharing framework,ciberataque,2026-11-07,,No documentado,PENDIENTE
+CAN-AF5F0552A1,event,How dozens of bomb threats caused flight chaos in Europe this week,amenazas_bomba,2026-11-07,,No documentado,PENDIENTE
+CAN-3A3072B4E9,event,Rising airport drone alerts raise safety concerns,drones_aeropuertos,2026-11-06,,No documentado,PENDIENTE
+CAN-B7EA263B5E,event,Japan banking crisis hits 128 banks. Could Europe be next?,ciberataque,2026-11-06,,No documentado,PENDIENTE
+CAN-A1E2AFE9B8,event,European Aviation Security Alerts: Flight Detours and Rail Travel Guide 2026,ferroviario,2026-11-06,,No documentado,PENDIENTE
+CAN-A202172C52,event,Europe's bomb threat wave moves from airports to newsrooms. Who is behind it?,amenazas_bomba,2026-11-06,,No documentado,PENDIENTE
+CAN-B94895D0B3,event,Bomb threats continue to target aircrafts across Europe,amenazas_bomba,2026-11-06,,No documentado,PENDIENTE
+CAN-DD98099B72,event,TSA's 'Drone Drone Drone' Post Hits 736K Views And A Six-Figure Threat,drones_aeropuertos,2026-11-05,,No documentado,PENDIENTE
+CAN-D75A174B94,event,From Drones to Bomb Hoaxes: Is Europe’s Civil Aviation Facing a New Form of Hybrid Warfare?,drones_aeropuertos,2026-11-05,,No documentado,PENDIENTE
+CAN-39B10F371F,event,Dual-Use Sky Net: China Mobilizes Automotive Supply Chains and Airspace Reform to Build Militarized Drone Industrial Base,drones_aeropuertos,2026-11-05,,No documentado,PENDIENTE
+CAN-86B499BEA5,event,"Bomb threats affect at least 25 flights, leading to emergency landings at several European airports",amenazas_bomba,2026-11-05,,No documentado,PENDIENTE
+CAN-01792C6E1F,event,Bomb hoaxes across Europe disrupt flights as two UK airports also receive threats,amenazas_bomba,2026-11-05,,No documentado,PENDIENTE
+CAN-D344A99B3F,event,"SBI cyberattack customer data leak | SBI says no business disruption after ‘cyberattack’ bares 3,897 customer records to dark web",ciberataque,2026-11-04,,No documentado,PENDIENTE
+CAN-2DC05B5E11,event,Netherlands Integrates Live Station Lift Alerts into Rail Itineraries as Europe Advances Accessible Travel Tech,ferroviario,2026-11-04,,No documentado,PENDIENTE
+CAN-02C03F489E,event,"Japan to seek software vulnerability data from US AI firms amid cyberattack surge, Nikkei reports",ciberataque,2026-11-04,,No documentado,PENDIENTE
+CAN-503F0BF842,event,China-linked hackers deploy AI to hit 200+ targets across 14 countries,ciberataque,2026-11-04,,No documentado,PENDIENTE
+CAN-D1987F64C5,event,"US sees 2 hours of annual power outages, Korea just 9 minutes as AI drives demand for 'K-power'",ciberataque,2026-11-03,,No documentado,PENDIENTE
+CAN-ABB8EA393F,event,"Saudi-led coalition says intercepted 3 drones as Houthis claim attacks on Saudi airport, airbase",drones_aeropuertos,2026-11-03,,No documentado,PENDIENTE
+CAN-15E23D46DB,event,Illegal Drone Incursions Cancel Jersey Airport Flights And Trigger RAF Deployment,drones_aeropuertos,2026-11-03,Jersey,Aeropuerto de Jersey,PENDIENTE
+CAN-42D456AD14,event,"10 countries, 1 cyberattack: Europe & US supermarkets go dark | AI? North Korea? Who did it?",ciberataque,2026-11-03,,No documentado,PENDIENTE
+CAN-6E2612D57C,event,Supermarket freezers hacked in European countries: Could India's smart refrigeration systems be next?,ciberataque,2026-11-02,,No documentado,PENDIENTE
+CAN-1CE69C92B4,event,New cyberattack on supermarket fridges sweeps across Europe,ciberataque,2026-11-02,,No documentado,PENDIENTE
+CAN-2995EC3210,event,Beijing's Drone Sign in the NYT Enforces a Ban That Widens Nov. 15,drones_aeropuertos,2026-11-02,,No documentado,PENDIENTE

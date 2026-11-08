@@ -1,0 +1,242 @@
+[
+  {
+    "event_id": "AUTO-1A0CA431FA87",
+    "field": "record_type",
+    "current": "unknown",
+    "suggested": "analysis",
+    "reason": "marcadores editoriales del título/descripción",
+    "title": "What to know about the hoax bomb threats that targeted flights in Europe"
+  },
+  {
+    "event_id": "AUTO-C4A1EE84C3E2",
+    "field": "incident_type",
+    "current": "amenazas_bomba",
+    "suggested": "ciberataque",
+    "reason": "términos del título/descripción",
+    "title": "Unverified fintech cyberattack reports highlight gaps in Nigeria’s threat-sharing framework"
+  },
+  {
+    "event_id": "AUTO-C4A1EE84C3E2",
+    "field": "record_type",
+    "current": "unknown",
+    "suggested": "report",
+    "reason": "marcadores editoriales del título/descripción",
+    "title": "Unverified fintech cyberattack reports highlight gaps in Nigeria’s threat-sharing framework"
+  },
+  {
+    "event_id": "AUTO-C4A1EE84C3E2",
+    "field": "country",
+    "current": null,
+    "suggested": "Nigeria",
+    "reason": "mención explícita con preposición de lugar; pendiente de revisión",
+    "title": "Unverified fintech cyberattack reports highlight gaps in Nigeria’s threat-sharing framework"
+  },
+  {
+    "event_id": "AUTO-2BBB6391541A",
+    "field": "record_type",
+    "current": "unknown",
+    "suggested": "analysis",
+    "reason": "marcadores editoriales del título/descripción",
+    "title": "Inside wave of hoax bomb threats targeting European flights"
+  },
+  {
+    "event_id": "AUTO-25ED6AC084FF",
+    "field": "record_type",
+    "current": "unknown",
+    "suggested": "analysis",
+    "reason": "marcadores editoriales del título/descripción",
+    "title": "Japan banking crisis hits 128 banks. Could Europe be next?"
+  },
+  {
+    "event_id": "AUTO-25ED6AC084FF",
+    "field": "country",
+    "current": null,
+    "suggested": "España",
+    "reason": "mención explícita con preposición de lugar; pendiente de revisión",
+    "title": "Japan banking crisis hits 128 banks. Could Europe be next?"
+  },
+  {
+    "event_id": "AUTO-3132830246C5",
+    "field": "incident_type",
+    "current": "ferroviario",
+    "suggested": "amenazas_bomba",
+    "reason": "términos del título/descripción",
+    "title": "European Aviation Security Alerts: Flight Detours and Rail Travel Guide 2026"
+  },
+  {
+    "event_id": "AUTO-3224E11DF4B6",
+    "field": "record_type",
+    "current": "unknown",
+    "suggested": "analysis",
+    "reason": "marcadores editoriales del título/descripción",
+    "title": "Europe's bomb threat wave moves from airports to newsrooms. Who is behind it?"
+  },
+  {
+    "event_id": "AUTO-A2A2DD35997B",
+    "field": "country",
+    "current": null,
+    "suggested": "Francia",
+    "reason": "mención explícita con preposición de lugar; pendiente de revisión",
+    "title": "Bomb threats disrupt flights at multiple European airports"
+  },
+  {
+    "event_id": "AUTO-F4AB131ACDAF",
+    "field": "incident_type",
+    "current": "drones_aeropuertos",
+    "suggested": "amenazas_bomba",
+    "reason": "términos del título/descripción",
+    "title": "From Drones to Bomb Hoaxes: Is Europe’s Civil Aviation Facing a New Form of Hybrid Warfare?"
+  },
+  {
+    "event_id": "AUTO-99C40FBC5663",
+    "field": "record_type",
+    "current": "unknown",
+    "suggested": "report",
+    "reason": "marcadores editoriales del título/descripción",
+    "title": "Japan to seek software vulnerability data from US AI firms amid cyberattack surge, Nikkei reports"
+  },
+  {
+    "event_id": "AUTO-99C40FBC5663",
+    "field": "country",
+    "current": null,
+    "suggested": "Estados Unidos",
+    "reason": "mención explícita con preposición de lugar; pendiente de revisión",
+    "title": "Japan to seek software vulnerability data from US AI firms amid cyberattack surge, Nikkei reports"
+  },
+  {
+    "event_id": "AUTO-2F4BAEA5CF61",
+    "field": "record_type",
+    "current": "unknown",
+    "suggested": "analysis",
+    "reason": "marcadores editoriales del título/descripción",
+    "title": "French blood banks hit by cyberattack days after European freezer hacks"
+  },
+  {
+    "event_id": "AUTO-3E3371497B26",
+    "field": "record_type",
+    "current": "unknown",
+    "suggested": "analysis",
+    "reason": "marcadores editoriales del título/descripción",
+    "title": "French blood banks hit alongside cyberattack on European supermarkets"
+  },
+  {
+    "event_id": "AUTO-2A95310FFF0D",
+    "field": "record_type",
+    "current": "unknown",
+    "suggested": "analysis",
+    "reason": "marcadores editoriales del título/descripción",
+    "title": "Cyberattack hits French blood banks as hackers disrupt supermarket refrigeration across Europe"
+  },
+  {
+    "event_id": "AUTO-3F1FA95E51D2",
+    "field": "record_type",
+    "current": "unknown",
+    "suggested": "analysis",
+    "reason": "marcadores editoriales del título/descripción",
+    "title": "UK must expect AI-powered attack on critical infrastructure within two years, report says"
+  },
+  {
+    "event_id": "AUTO-30F4706AEE3A",
+    "field": "record_type",
+    "current": "unknown",
+    "suggested": "analysis",
+    "reason": "marcadores editoriales del título/descripción",
+    "title": "UK agency alleges China AI cyberattack threat; expert views move to keep attack edge, deny deterrence"
+  },
+  {
+    "event_id": "AUTO-C61608E30B4C",
+    "field": "incident_type",
+    "current": "amenazas_bomba",
+    "suggested": "ciberataque",
+    "reason": "términos del título/descripción",
+    "title": "UK Warns of AI-Based Cyberattacks on Critical Infrastructure Within Two Years"
+  },
+  {
+    "event_id": "AUTO-8F3FC8EFB889",
+    "field": "record_type",
+    "current": "unknown",
+    "suggested": "analysis",
+    "reason": "marcadores editoriales del título/descripción",
+    "title": "Supermarket Refrigeration Cyberattack Hits Six Countries in Europe"
+  },
+  {
+    "event_id": "AUTO-8F3FC8EFB889",
+    "field": "country",
+    "current": null,
+    "suggested": "Francia",
+    "reason": "mención explícita con preposición de lugar; pendiente de revisión",
+    "title": "Supermarket Refrigeration Cyberattack Hits Six Countries in Europe"
+  },
+  {
+    "event_id": "AUTO-A23BB2F7FD0A",
+    "field": "record_type",
+    "current": "unknown",
+    "suggested": "analysis",
+    "reason": "marcadores editoriales del título/descripción",
+    "title": "Freezer Cyberattack in Europe: What the Industry Has to Say"
+  },
+  {
+    "event_id": "AUTO-EE18E966D529",
+    "field": "record_type",
+    "current": "unknown",
+    "suggested": "analysis",
+    "reason": "marcadores editoriales del título/descripción",
+    "title": "10 countries, 1 cyberattack: Europe & US supermarkets go dark | AI? North Korea? Who did it?"
+  },
+  {
+    "event_id": "AUTO-EE18E966D529",
+    "field": "country",
+    "current": null,
+    "suggested": "Estados Unidos",
+    "reason": "mención explícita con preposición de lugar; pendiente de revisión",
+    "title": "10 countries, 1 cyberattack: Europe & US supermarkets go dark | AI? North Korea? Who did it?"
+  },
+  {
+    "event_id": "AUTO-A50CF46D9FCB",
+    "field": "incident_type",
+    "current": "amenazas_bomba",
+    "suggested": "ciberataque",
+    "reason": "términos del título/descripción",
+    "title": "UK warns of AI-powered cyberattack risk to critical infrastructure"
+  },
+  {
+    "event_id": "AUTO-0FF0C330D93B",
+    "field": "record_type",
+    "current": "unknown",
+    "suggested": "analysis",
+    "reason": "marcadores editoriales del título/descripción",
+    "title": "Supermarket freezers hacked in European countries: Could India's smart refrigeration systems be next?"
+  },
+  {
+    "event_id": "AUTO-63D7A317FA23",
+    "field": "record_type",
+    "current": "unknown",
+    "suggested": "analysis",
+    "reason": "marcadores editoriales del título/descripción",
+    "title": "Supermarket Freezers Across Europe Hit With Another Cyberattack"
+  },
+  {
+    "event_id": "AUTO-63D7A317FA23",
+    "field": "country",
+    "current": null,
+    "suggested": "Francia",
+    "reason": "mención explícita con preposición de lugar; pendiente de revisión",
+    "title": "Supermarket Freezers Across Europe Hit With Another Cyberattack"
+  },
+  {
+    "event_id": "AUTO-13C5D4064052",
+    "field": "record_type",
+    "current": "unknown",
+    "suggested": "analysis",
+    "reason": "marcadores editoriales del título/descripción",
+    "title": "New cyberattack on supermarket fridges sweeps across Europe"
+  },
+  {
+    "event_id": "AUTO-81DDCA4C6F79",
+    "field": "record_type",
+    "current": "unknown",
+    "suggested": "analysis",
+    "reason": "marcadores editoriales del título/descripción",
+    "title": "Another cyberattack on supermarket fridges sweeps Europe, leaving food spoiled"
+  }
+]

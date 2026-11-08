@@ -1,0 +1,626 @@
+[
+  {
+    "canonical_event_id": "CAN-C95109E1AC",
+    "event_ids": [
+      "AUTO-2F4BAEA5CF61",
+      "AUTO-3E3371497B26",
+      "AUTO-2A95310FFF0D",
+      "AUTO-8F3FC8EFB889",
+      "AUTO-A23BB2F7FD0A",
+      "AUTO-63D7A317FA23",
+      "AUTO-81DDCA4C6F79"
+    ],
+    "titles": [
+      "French blood banks hit by cyberattack days after European freezer hacks",
+      "French blood banks hit alongside cyberattack on European supermarkets",
+      "Cyberattack hits French blood banks as hackers disrupt supermarket refrigeration across Europe",
+      "Supermarket Refrigeration Cyberattack Hits Six Countries in Europe",
+      "Freezer Cyberattack in Europe: What the Industry Has to Say",
+      "Supermarket Freezers Across Europe Hit With Another Cyberattack",
+      "Another cyberattack on supermarket fridges sweeps Europe, leaving food spoiled"
+    ],
+    "category": "ciberataque",
+    "first_date": "2026-11-02",
+    "last_date": "2026-11-04",
+    "records": 7
+  },
+  {
+    "canonical_event_id": "CAN-CA36E9556D",
+    "event_ids": [
+      "AUTO-1A0CA431FA87",
+      "AUTO-B95027A07551",
+      "AUTO-2BBB6391541A"
+    ],
+    "titles": [
+      "What to know about the hoax bomb threats that targeted flights in Europe",
+      "Vienna airport targeted in Europe-wide bomb hoax threats",
+      "Inside wave of hoax bomb threats targeting European flights"
+    ],
+    "category": "amenazas_bomba",
+    "first_date": "2026-11-07",
+    "last_date": "2026-11-07",
+    "records": 3
+  },
+  {
+    "canonical_event_id": "CAN-44E1C53A96",
+    "event_ids": [
+      "AUTO-3BE3A3F12F57",
+      "AUTO-A2A2DD35997B",
+      "AUTO-D3F523EBB36E"
+    ],
+    "titles": [
+      "3rd wave of bomb threats in Europe; flights disrupted again",
+      "Bomb threats disrupt flights at multiple European airports",
+      "Europe flight bomb threats: Multiple planes diverted and airports disrupted"
+    ],
+    "category": "amenazas_bomba",
+    "first_date": "2026-11-05",
+    "last_date": "2026-11-07",
+    "records": 3
+  },
+  {
+    "canonical_event_id": "CAN-43834C6578",
+    "event_ids": [
+      "AUTO-3F1FA95E51D2",
+      "AUTO-30F4706AEE3A"
+    ],
+    "titles": [
+      "UK must expect AI-powered attack on critical infrastructure within two years, report says",
+      "UK agency alleges China AI cyberattack threat; expert views move to keep attack edge, deny deterrence"
+    ],
+    "category": "ciberataque",
+    "first_date": "2026-11-03",
+    "last_date": "2026-11-03",
+    "records": 2
+  },
+  {
+    "canonical_event_id": "CAN-9ACB24B9E5",
+    "event_ids": [
+      "AUTO-C61608E30B4C",
+      "AUTO-A50CF46D9FCB"
+    ],
+    "titles": [
+      "UK Warns of AI-Based Cyberattacks on Critical Infrastructure Within Two Years",
+      "UK warns of AI-powered cyberattack risk to critical infrastructure"
+    ],
+    "category": "amenazas_bomba",
+    "first_date": "2026-11-02",
+    "last_date": "2026-11-03",
+    "records": 2
+  },
+  {
+    "canonical_event_id": "CAN-E757339988",
+    "event_ids": [
+      "AUTO-293B0ABD3CDE",
+      "AUTO-4C8CADA76228"
+    ],
+    "titles": [
+      "ACI Asia-Pacific & Middle East secures regional support for airport security and resilience measures",
+      "ACI APAC & MID secures regional support for stronger airport security, resilience"
+    ],
+    "category": "drones_aeropuertos",
+    "first_date": "2026-11-02",
+    "last_date": "2026-11-02",
+    "records": 2
+  },
+  {
+    "canonical_event_id": "CAN-4E4AA13818",
+    "event_ids": [
+      "EV-20261106-001"
+    ],
+    "titles": [
+      "Investigación por un intento de ataque con dron en Leipzig/Halle"
+    ],
+    "category": "drones_aeropuertos",
+    "first_date": "2026-11-05",
+    "last_date": "2026-11-05",
+    "records": 1
+  },
+  {
+    "canonical_event_id": "CAN-05E7D224DB",
+    "event_ids": [
+      "EV-20261106-002"
+    ],
+    "titles": [
+      "Actividad de drones interrumpe el aeropuerto de Jersey"
+    ],
+    "category": "drones_aeropuertos",
+    "first_date": "2026-11-01",
+    "last_date": "2026-11-01",
+    "records": 1
+  },
+  {
+    "canonical_event_id": "CAN-9D60B6B951",
+    "event_ids": [
+      "EV-20261106-004"
+    ],
+    "titles": [
+      "Reivindicación de ataque con dron contra el aeropuerto de Dammam"
+    ],
+    "category": "drones_aeropuertos",
+    "first_date": "2026-11-05",
+    "last_date": "2026-11-05",
+    "records": 1
+  },
+  {
+    "canonical_event_id": "CAN-66D2E1AEC9",
+    "event_ids": [
+      "EV-20261106-006"
+    ],
+    "titles": [
+      "Amenaza de bomba en el aeropuerto de Copenhague"
+    ],
+    "category": "amenazas_bomba",
+    "first_date": "2026-11-06",
+    "last_date": "2026-11-06",
+    "records": 1
+  },
+  {
+    "canonical_event_id": "CAN-3D50D6CA36",
+    "event_ids": [
+      "EV-20261106-007"
+    ],
+    "titles": [
+      "Amenaza de bomba en un vuelo desde Praga"
+    ],
+    "category": "amenazas_bomba",
+    "first_date": "2026-11-06",
+    "last_date": "2026-11-06",
+    "records": 1
+  },
+  {
+    "canonical_event_id": "CAN-EB777A6471",
+    "event_ids": [
+      "EV-20261106-008"
+    ],
+    "titles": [
+      "Amenaza de bomba en Malpensa"
+    ],
+    "category": "amenazas_bomba",
+    "first_date": "2026-11-06",
+    "last_date": "2026-11-06",
+    "records": 1
+  },
+  {
+    "canonical_event_id": "CAN-B180359A4F",
+    "event_ids": [
+      "EV-20261106-009"
+    ],
+    "titles": [
+      "Cuatro vuelos sobre Francia afectados por amenazas de bomba"
+    ],
+    "category": "amenazas_bomba",
+    "first_date": "2026-11-06",
+    "last_date": "2026-11-06",
+    "records": 1
+  },
+  {
+    "canonical_event_id": "CAN-EA3633C2CE",
+    "event_ids": [
+      "EV-20261106-010"
+    ],
+    "titles": [
+      "Evacuación por susto de seguridad en el aeropuerto Ben Gurion"
+    ],
+    "category": "proteccion_civil",
+    "first_date": "2026-11-05",
+    "last_date": "2026-11-05",
+    "records": 1
+  },
+  {
+    "canonical_event_id": "CAN-135F3B5466",
+    "event_ids": [
+      "EV-20261106-011"
+    ],
+    "titles": [
+      "Ciberataque contra la cadena de frío del servicio de sangre francés"
+    ],
+    "category": "ciberataque",
+    "first_date": "2026-11-04",
+    "last_date": "2026-11-04",
+    "records": 1
+  },
+  {
+    "canonical_event_id": "CAN-4E921B931C",
+    "event_ids": [
+      "EV-20261106-012"
+    ],
+    "titles": [
+      "Ciberataque borra datos en la nube del proveedor ruso Beget"
+    ],
+    "category": "ciberataque",
+    "first_date": "2026-11-04",
+    "last_date": "2026-11-04",
+    "records": 1
+  },
+  {
+    "canonical_event_id": "CAN-733B499629",
+    "event_ids": [
+      "EV-20261106-013"
+    ],
+    "titles": [
+      "Ciberataque contra neveras conectadas de supermercados europeos"
+    ],
+    "category": "ciberataque",
+    "first_date": "2026-11-02",
+    "last_date": "2026-11-02",
+    "records": 1
+  },
+  {
+    "canonical_event_id": "CAN-7DE92D84F7",
+    "event_ids": [
+      "EV-20261106-015"
+    ],
+    "titles": [
+      "Lluvias e inundaciones interrumpen trenes en el sur de Francia"
+    ],
+    "category": "ferroviario",
+    "first_date": "2026-11-03",
+    "last_date": "2026-11-03",
+    "records": 1
+  },
+  {
+    "canonical_event_id": "CAN-D329CA0CEA",
+    "event_ids": [
+      "EV-20261106-016"
+    ],
+    "titles": [
+      "Incidente de emergencia interrumpe trenes entre Manchester Piccadilly y el aeropuerto"
+    ],
+    "category": "ferroviario",
+    "first_date": "2026-11-04",
+    "last_date": "2026-11-04",
+    "records": 1
+  },
+  {
+    "canonical_event_id": "CAN-9A8A96D7A9",
+    "event_ids": [
+      "EV-20261106-017"
+    ],
+    "titles": [
+      "Fallo de señalización interrumpe trenes en Birmingham"
+    ],
+    "category": "ferroviario",
+    "first_date": "2026-11-05",
+    "last_date": "2026-11-05",
+    "records": 1
+  },
+  {
+    "canonical_event_id": "CAN-7341C68B58",
+    "event_ids": [
+      "EV-20261106-018"
+    ],
+    "titles": [
+      "Fallo en Wiltshire interrumpe trenes de Londres a Devon"
+    ],
+    "category": "ferroviario",
+    "first_date": "2026-11-06",
+    "last_date": "2026-11-06",
+    "records": 1
+  },
+  {
+    "canonical_event_id": "CAN-25108625DE",
+    "event_ids": [
+      "EV-20261106-020"
+    ],
+    "titles": [
+      "Interferencias GPS a gran escala en el flanco este de la OTAN"
+    ],
+    "category": "gnss",
+    "first_date": "2026-11-04",
+    "last_date": "2026-11-04",
+    "records": 1
+  },
+  {
+    "canonical_event_id": "CAN-2D34BCDA34",
+    "event_ids": [
+      "AUTO-E8771C4DE57A"
+    ],
+    "titles": [
+      "Wave of bomb threats in Europe spreads from transport networks to media organizations"
+    ],
+    "category": "amenazas_bomba",
+    "first_date": "2026-11-07",
+    "last_date": "2026-11-07",
+    "records": 1
+  },
+  {
+    "canonical_event_id": "CAN-065C124D63",
+    "event_ids": [
+      "AUTO-C4A1EE84C3E2"
+    ],
+    "titles": [
+      "Unverified fintech cyberattack reports highlight gaps in Nigeria’s threat-sharing framework"
+    ],
+    "category": "amenazas_bomba",
+    "first_date": "2026-11-07",
+    "last_date": "2026-11-07",
+    "records": 1
+  },
+  {
+    "canonical_event_id": "CAN-AF5F0552A1",
+    "event_ids": [
+      "AUTO-67894411CECB"
+    ],
+    "titles": [
+      "How dozens of bomb threats caused flight chaos in Europe this week"
+    ],
+    "category": "amenazas_bomba",
+    "first_date": "2026-11-07",
+    "last_date": "2026-11-07",
+    "records": 1
+  },
+  {
+    "canonical_event_id": "CAN-3A3072B4E9",
+    "event_ids": [
+      "AUTO-74E92E592126"
+    ],
+    "titles": [
+      "Rising airport drone alerts raise safety concerns"
+    ],
+    "category": "drones_aeropuertos",
+    "first_date": "2026-11-06",
+    "last_date": "2026-11-06",
+    "records": 1
+  },
+  {
+    "canonical_event_id": "CAN-B7EA263B5E",
+    "event_ids": [
+      "AUTO-25ED6AC084FF"
+    ],
+    "titles": [
+      "Japan banking crisis hits 128 banks. Could Europe be next?"
+    ],
+    "category": "ciberataque",
+    "first_date": "2026-11-06",
+    "last_date": "2026-11-06",
+    "records": 1
+  },
+  {
+    "canonical_event_id": "CAN-A1E2AFE9B8",
+    "event_ids": [
+      "AUTO-3132830246C5"
+    ],
+    "titles": [
+      "European Aviation Security Alerts: Flight Detours and Rail Travel Guide 2026"
+    ],
+    "category": "ferroviario",
+    "first_date": "2026-11-06",
+    "last_date": "2026-11-06",
+    "records": 1
+  },
+  {
+    "canonical_event_id": "CAN-A202172C52",
+    "event_ids": [
+      "AUTO-3224E11DF4B6"
+    ],
+    "titles": [
+      "Europe's bomb threat wave moves from airports to newsrooms. Who is behind it?"
+    ],
+    "category": "amenazas_bomba",
+    "first_date": "2026-11-06",
+    "last_date": "2026-11-06",
+    "records": 1
+  },
+  {
+    "canonical_event_id": "CAN-B94895D0B3",
+    "event_ids": [
+      "AUTO-AA62F8DCD108"
+    ],
+    "titles": [
+      "Bomb threats continue to target aircrafts across Europe"
+    ],
+    "category": "amenazas_bomba",
+    "first_date": "2026-11-06",
+    "last_date": "2026-11-06",
+    "records": 1
+  },
+  {
+    "canonical_event_id": "CAN-DD98099B72",
+    "event_ids": [
+      "AUTO-BD5E5BFC6A4B"
+    ],
+    "titles": [
+      "TSA's 'Drone Drone Drone' Post Hits 736K Views And A Six-Figure Threat"
+    ],
+    "category": "drones_aeropuertos",
+    "first_date": "2026-11-05",
+    "last_date": "2026-11-05",
+    "records": 1
+  },
+  {
+    "canonical_event_id": "CAN-D75A174B94",
+    "event_ids": [
+      "AUTO-F4AB131ACDAF"
+    ],
+    "titles": [
+      "From Drones to Bomb Hoaxes: Is Europe’s Civil Aviation Facing a New Form of Hybrid Warfare?"
+    ],
+    "category": "drones_aeropuertos",
+    "first_date": "2026-11-05",
+    "last_date": "2026-11-05",
+    "records": 1
+  },
+  {
+    "canonical_event_id": "CAN-39B10F371F",
+    "event_ids": [
+      "AUTO-E547289C24CE"
+    ],
+    "titles": [
+      "Dual-Use Sky Net: China Mobilizes Automotive Supply Chains and Airspace Reform to Build Militarized Drone Industrial Base"
+    ],
+    "category": "drones_aeropuertos",
+    "first_date": "2026-11-05",
+    "last_date": "2026-11-05",
+    "records": 1
+  },
+  {
+    "canonical_event_id": "CAN-86B499BEA5",
+    "event_ids": [
+      "AUTO-86D287371F04"
+    ],
+    "titles": [
+      "Bomb threats affect at least 25 flights, leading to emergency landings at several European airports"
+    ],
+    "category": "amenazas_bomba",
+    "first_date": "2026-11-05",
+    "last_date": "2026-11-05",
+    "records": 1
+  },
+  {
+    "canonical_event_id": "CAN-01792C6E1F",
+    "event_ids": [
+      "AUTO-7F69D32C4027"
+    ],
+    "titles": [
+      "Bomb hoaxes across Europe disrupt flights as two UK airports also receive threats"
+    ],
+    "category": "amenazas_bomba",
+    "first_date": "2026-11-05",
+    "last_date": "2026-11-05",
+    "records": 1
+  },
+  {
+    "canonical_event_id": "CAN-D344A99B3F",
+    "event_ids": [
+      "AUTO-5C6CF4BC1453"
+    ],
+    "titles": [
+      "SBI cyberattack customer data leak | SBI says no business disruption after ‘cyberattack’ bares 3,897 customer records to dark web"
+    ],
+    "category": "ciberataque",
+    "first_date": "2026-11-04",
+    "last_date": "2026-11-04",
+    "records": 1
+  },
+  {
+    "canonical_event_id": "CAN-2DC05B5E11",
+    "event_ids": [
+      "AUTO-25AD5CA2AB92"
+    ],
+    "titles": [
+      "Netherlands Integrates Live Station Lift Alerts into Rail Itineraries as Europe Advances Accessible Travel Tech"
+    ],
+    "category": "ferroviario",
+    "first_date": "2026-11-04",
+    "last_date": "2026-11-04",
+    "records": 1
+  },
+  {
+    "canonical_event_id": "CAN-02C03F489E",
+    "event_ids": [
+      "AUTO-99C40FBC5663"
+    ],
+    "titles": [
+      "Japan to seek software vulnerability data from US AI firms amid cyberattack surge, Nikkei reports"
+    ],
+    "category": "ciberataque",
+    "first_date": "2026-11-04",
+    "last_date": "2026-11-04",
+    "records": 1
+  },
+  {
+    "canonical_event_id": "CAN-503F0BF842",
+    "event_ids": [
+      "AUTO-52B7927900EF"
+    ],
+    "titles": [
+      "China-linked hackers deploy AI to hit 200+ targets across 14 countries"
+    ],
+    "category": "ciberataque",
+    "first_date": "2026-11-04",
+    "last_date": "2026-11-04",
+    "records": 1
+  },
+  {
+    "canonical_event_id": "CAN-D1987F64C5",
+    "event_ids": [
+      "AUTO-9987D7C90B72"
+    ],
+    "titles": [
+      "US sees 2 hours of annual power outages, Korea just 9 minutes as AI drives demand for 'K-power'"
+    ],
+    "category": "ciberataque",
+    "first_date": "2026-11-03",
+    "last_date": "2026-11-03",
+    "records": 1
+  },
+  {
+    "canonical_event_id": "CAN-ABB8EA393F",
+    "event_ids": [
+      "AUTO-4A02AC35ABC3"
+    ],
+    "titles": [
+      "Saudi-led coalition says intercepted 3 drones as Houthis claim attacks on Saudi airport, airbase"
+    ],
+    "category": "drones_aeropuertos",
+    "first_date": "2026-11-03",
+    "last_date": "2026-11-03",
+    "records": 1
+  },
+  {
+    "canonical_event_id": "CAN-15E23D46DB",
+    "event_ids": [
+      "AUTO-F74A169911E7"
+    ],
+    "titles": [
+      "Illegal Drone Incursions Cancel Jersey Airport Flights And Trigger RAF Deployment"
+    ],
+    "category": "drones_aeropuertos",
+    "first_date": "2026-11-03",
+    "last_date": "2026-11-03",
+    "records": 1
+  },
+  {
+    "canonical_event_id": "CAN-42D456AD14",
+    "event_ids": [
+      "AUTO-EE18E966D529"
+    ],
+    "titles": [
+      "10 countries, 1 cyberattack: Europe & US supermarkets go dark | AI? North Korea? Who did it?"
+    ],
+    "category": "ciberataque",
+    "first_date": "2026-11-03",
+    "last_date": "2026-11-03",
+    "records": 1
+  },
+  {
+    "canonical_event_id": "CAN-6E2612D57C",
+    "event_ids": [
+      "AUTO-0FF0C330D93B"
+    ],
+    "titles": [
+      "Supermarket freezers hacked in European countries: Could India's smart refrigeration systems be next?"
+    ],
+    "category": "ciberataque",
+    "first_date": "2026-11-02",
+    "last_date": "2026-11-02",
+    "records": 1
+  },
+  {
+    "canonical_event_id": "CAN-1CE69C92B4",
+    "event_ids": [
+      "AUTO-13C5D4064052"
+    ],
+    "titles": [
+      "New cyberattack on supermarket fridges sweeps across Europe"
+    ],
+    "category": "ciberataque",
+    "first_date": "2026-11-02",
+    "last_date": "2026-11-02",
+    "records": 1
+  },
+  {
+    "canonical_event_id": "CAN-2995EC3210",
+    "event_ids": [
+      "AUTO-69CF86E2C993"
+    ],
+    "titles": [
+      "Beijing's Drone Sign in the NYT Enforces a Ban That Widens Nov. 15"
+    ],
+    "category": "drones_aeropuertos",
+    "first_date": "2026-11-02",
+    "last_date": "2026-11-02",
+    "records": 1
+  }
+]

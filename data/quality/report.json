@@ -1,0 +1,211 @@
+{
+  "generated_at": "2026-11-08T13:26:11.077811+00:00",
+  "records": 59,
+  "canonical_events": 46,
+  "duplicates_collapsed": 13,
+  "groups_with_multiple_records": 6,
+  "without_country": 41,
+  "without_timestamp": 59,
+  "without_airport": 59,
+  "unknown_record_type": 59,
+  "record_type_suggestions": {
+    "unknown": 41,
+    "analysis": 16,
+    "report": 2
+  },
+  "category_mismatches": 5,
+  "country_suggestions": 8,
+  "categories": {
+    "drones_aeropuertos": 12,
+    "amenazas_bomba": 19,
+    "proteccion_civil": 1,
+    "ciberataque": 20,
+    "ferroviario": 6,
+    "gnss": 1
+  },
+  "top_groups": [
+    {
+      "canonical_event_id": "CAN-C95109E1AC",
+      "event_ids": [
+        "AUTO-2F4BAEA5CF61",
+        "AUTO-3E3371497B26",
+        "AUTO-2A95310FFF0D",
+        "AUTO-8F3FC8EFB889",
+        "AUTO-A23BB2F7FD0A",
+        "AUTO-63D7A317FA23",
+        "AUTO-81DDCA4C6F79"
+      ],
+      "titles": [
+        "French blood banks hit by cyberattack days after European freezer hacks",
+        "French blood banks hit alongside cyberattack on European supermarkets",
+        "Cyberattack hits French blood banks as hackers disrupt supermarket refrigeration across Europe",
+        "Supermarket Refrigeration Cyberattack Hits Six Countries in Europe",
+        "Freezer Cyberattack in Europe: What the Industry Has to Say",
+        "Supermarket Freezers Across Europe Hit With Another Cyberattack",
+        "Another cyberattack on supermarket fridges sweeps Europe, leaving food spoiled"
+      ],
+      "category": "ciberataque",
+      "first_date": "2026-11-02",
+      "last_date": "2026-11-04",
+      "records": 7
+    },
+    {
+      "canonical_event_id": "CAN-CA36E9556D",
+      "event_ids": [
+        "AUTO-1A0CA431FA87",
+        "AUTO-B95027A07551",
+        "AUTO-2BBB6391541A"
+      ],
+      "titles": [
+        "What to know about the hoax bomb threats that targeted flights in Europe",
+        "Vienna airport targeted in Europe-wide bomb hoax threats",
+        "Inside wave of hoax bomb threats targeting European flights"
+      ],
+      "category": "amenazas_bomba",
+      "first_date": "2026-11-07",
+      "last_date": "2026-11-07",
+      "records": 3
+    },
+    {
+      "canonical_event_id": "CAN-44E1C53A96",
+      "event_ids": [
+        "AUTO-3BE3A3F12F57",
+        "AUTO-A2A2DD35997B",
+        "AUTO-D3F523EBB36E"
+      ],
+      "titles": [
+        "3rd wave of bomb threats in Europe; flights disrupted again",
+        "Bomb threats disrupt flights at multiple European airports",
+        "Europe flight bomb threats: Multiple planes diverted and airports disrupted"
+      ],
+      "category": "amenazas_bomba",
+      "first_date": "2026-11-05",
+      "last_date": "2026-11-07",
+      "records": 3
+    },
+    {
+      "canonical_event_id": "CAN-43834C6578",
+      "event_ids": [
+        "AUTO-3F1FA95E51D2",
+        "AUTO-30F4706AEE3A"
+      ],
+      "titles": [
+        "UK must expect AI-powered attack on critical infrastructure within two years, report says",
+        "UK agency alleges China AI cyberattack threat; expert views move to keep attack edge, deny deterrence"
+      ],
+      "category": "ciberataque",
+      "first_date": "2026-11-03",
+      "last_date": "2026-11-03",
+      "records": 2
+    },
+    {
+      "canonical_event_id": "CAN-9ACB24B9E5",
+      "event_ids": [
+        "AUTO-C61608E30B4C",
+        "AUTO-A50CF46D9FCB"
+      ],
+      "titles": [
+        "UK Warns of AI-Based Cyberattacks on Critical Infrastructure Within Two Years",
+        "UK warns of AI-powered cyberattack risk to critical infrastructure"
+      ],
+      "category": "amenazas_bomba",
+      "first_date": "2026-11-02",
+      "last_date": "2026-11-03",
+      "records": 2
+    },
+    {
+      "canonical_event_id": "CAN-E757339988",
+      "event_ids": [
+        "AUTO-293B0ABD3CDE",
+        "AUTO-4C8CADA76228"
+      ],
+      "titles": [
+        "ACI Asia-Pacific & Middle East secures regional support for airport security and resilience measures",
+        "ACI APAC & MID secures regional support for stronger airport security, resilience"
+      ],
+      "category": "drones_aeropuertos",
+      "first_date": "2026-11-02",
+      "last_date": "2026-11-02",
+      "records": 2
+    },
+    {
+      "canonical_event_id": "CAN-4E4AA13818",
+      "event_ids": [
+        "EV-20261106-001"
+      ],
+      "titles": [
+        "Investigación por un intento de ataque con dron en Leipzig/Halle"
+      ],
+      "category": "drones_aeropuertos",
+      "first_date": "2026-11-05",
+      "last_date": "2026-11-05",
+      "records": 1
+    },
+    {
+      "canonical_event_id": "CAN-05E7D224DB",
+      "event_ids": [
+        "EV-20261106-002"
+      ],
+      "titles": [
+        "Actividad de drones interrumpe el aeropuerto de Jersey"
+      ],
+      "category": "drones_aeropuertos",
+      "first_date": "2026-11-01",
+      "last_date": "2026-11-01",
+      "records": 1
+    },
+    {
+      "canonical_event_id": "CAN-9D60B6B951",
+      "event_ids": [
+        "EV-20261106-004"
+      ],
+      "titles": [
+        "Reivindicación de ataque con dron contra el aeropuerto de Dammam"
+      ],
+      "category": "drones_aeropuertos",
+      "first_date": "2026-11-05",
+      "last_date": "2026-11-05",
+      "records": 1
+    },
+    {
+      "canonical_event_id": "CAN-66D2E1AEC9",
+      "event_ids": [
+        "EV-20261106-006"
+      ],
+      "titles": [
+        "Amenaza de bomba en el aeropuerto de Copenhague"
+      ],
+      "category": "amenazas_bomba",
+      "first_date": "2026-11-06",
+      "last_date": "2026-11-06",
+      "records": 1
+    },
+    {
+      "canonical_event_id": "CAN-3D50D6CA36",
+      "event_ids": [
+        "EV-20261106-007"
+      ],
+      "titles": [
+        "Amenaza de bomba en un vuelo desde Praga"
+      ],
+      "category": "amenazas_bomba",
+      "first_date": "2026-11-06",
+      "last_date": "2026-11-06",
+      "records": 1
+    },
+    {
+      "canonical_event_id": "CAN-EB777A6471",
+      "event_ids": [
+        "EV-20261106-008"
+      ],
+      "titles": [
+        "Amenaza de bomba en Malpensa"
+      ],
+      "category": "amenazas_bomba",
+      "first_date": "2026-11-06",
+      "last_date": "2026-11-06",
+      "records": 1
+    }
+  ],
+  "corrections": 30
+}

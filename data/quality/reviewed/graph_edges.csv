@@ -1,0 +1,249 @@
+source,target,type,weight,note
+CAN-C95109E1AC,category:ciberataque,tipo,1.0,pertenece a la categoría; no implica relación
+CAN-43834C6578,category:ciberataque,tipo,1.0,pertenece a la categoría; no implica relación
+CAN-CA36E9556D,category:amenazas_bomba,tipo,1.0,pertenece a la categoría; no implica relación
+CAN-44E1C53A96,category:amenazas_bomba,tipo,1.0,pertenece a la categoría; no implica relación
+CAN-E757339988,category:drones_aeropuertos,tipo,1.0,pertenece a la categoría; no implica relación
+CAN-4E4AA13818,category:drones_aeropuertos,tipo,1.0,pertenece a la categoría; no implica relación
+CAN-4E4AA13818,country:Alemania,lugar_mencionado,0.7,país documentado o sugerido para el registro; no atribución
+CAN-05E7D224DB,category:drones_aeropuertos,tipo,1.0,pertenece a la categoría; no implica relación
+CAN-05E7D224DB,country:Jersey,lugar_mencionado,0.7,país documentado o sugerido para el registro; no atribución
+CAN-9D60B6B951,category:drones_aeropuertos,tipo,1.0,pertenece a la categoría; no implica relación
+CAN-9D60B6B951,country:Arabia Saudí,lugar_mencionado,0.7,país documentado o sugerido para el registro; no atribución
+CAN-66D2E1AEC9,category:amenazas_bomba,tipo,1.0,pertenece a la categoría; no implica relación
+CAN-66D2E1AEC9,country:Dinamarca,lugar_mencionado,0.7,país documentado o sugerido para el registro; no atribución
+CAN-3D50D6CA36,category:amenazas_bomba,tipo,1.0,pertenece a la categoría; no implica relación
+CAN-3D50D6CA36,country:Chequia,lugar_mencionado,0.7,país documentado o sugerido para el registro; no atribución
+CAN-EB777A6471,category:amenazas_bomba,tipo,1.0,pertenece a la categoría; no implica relación
+CAN-EB777A6471,country:Italia,lugar_mencionado,0.7,país documentado o sugerido para el registro; no atribución
+CAN-B180359A4F,category:amenazas_bomba,tipo,1.0,pertenece a la categoría; no implica relación
+CAN-B180359A4F,country:Francia,lugar_mencionado,0.7,país documentado o sugerido para el registro; no atribución
+CAN-EA3633C2CE,category:proteccion_civil,tipo,1.0,pertenece a la categoría; no implica relación
+CAN-EA3633C2CE,country:Israel,lugar_mencionado,0.7,país documentado o sugerido para el registro; no atribución
+CAN-135F3B5466,category:ciberataque,tipo,1.0,pertenece a la categoría; no implica relación
+CAN-135F3B5466,country:Francia,lugar_mencionado,0.7,país documentado o sugerido para el registro; no atribución
+CAN-4E921B931C,category:ciberataque,tipo,1.0,pertenece a la categoría; no implica relación
+CAN-4E921B931C,country:Rusia,lugar_mencionado,0.7,país documentado o sugerido para el registro; no atribución
+CAN-733B499629,category:ciberataque,tipo,1.0,pertenece a la categoría; no implica relación
+CAN-733B499629,country:Unión Europea,lugar_mencionado,0.7,país documentado o sugerido para el registro; no atribución
+CAN-7DE92D84F7,category:ferroviario,tipo,1.0,pertenece a la categoría; no implica relación
+CAN-7DE92D84F7,country:Francia,lugar_mencionado,0.7,país documentado o sugerido para el registro; no atribución
+CAN-D329CA0CEA,category:ferroviario,tipo,1.0,pertenece a la categoría; no implica relación
+CAN-D329CA0CEA,country:Reino Unido,lugar_mencionado,0.7,país documentado o sugerido para el registro; no atribución
+CAN-9A8A96D7A9,category:ferroviario,tipo,1.0,pertenece a la categoría; no implica relación
+CAN-9A8A96D7A9,country:Reino Unido,lugar_mencionado,0.7,país documentado o sugerido para el registro; no atribución
+CAN-7341C68B58,category:ferroviario,tipo,1.0,pertenece a la categoría; no implica relación
+CAN-7341C68B58,country:Reino Unido,lugar_mencionado,0.7,país documentado o sugerido para el registro; no atribución
+CAN-25108625DE,category:gnss,tipo,1.0,pertenece a la categoría; no implica relación
+CAN-25108625DE,country:OTAN (flanco este),lugar_mencionado,0.7,país documentado o sugerido para el registro; no atribución
+CAN-2D34BCDA34,category:amenazas_bomba,tipo,1.0,pertenece a la categoría; no implica relación
+CAN-065C124D63,category:ciberataque,tipo,1.0,pertenece a la categoría; no implica relación
+CAN-AF5F0552A1,category:amenazas_bomba,tipo,1.0,pertenece a la categoría; no implica relación
+CAN-3A3072B4E9,category:drones_aeropuertos,tipo,1.0,pertenece a la categoría; no implica relación
+CAN-B7EA263B5E,category:ciberataque,tipo,1.0,pertenece a la categoría; no implica relación
+CAN-A1E2AFE9B8,category:ferroviario,tipo,1.0,pertenece a la categoría; no implica relación
+CAN-A202172C52,category:amenazas_bomba,tipo,1.0,pertenece a la categoría; no implica relación
+CAN-B94895D0B3,category:amenazas_bomba,tipo,1.0,pertenece a la categoría; no implica relación
+CAN-DD98099B72,category:drones_aeropuertos,tipo,1.0,pertenece a la categoría; no implica relación
+CAN-D75A174B94,category:drones_aeropuertos,tipo,1.0,pertenece a la categoría; no implica relación
+CAN-39B10F371F,category:drones_aeropuertos,tipo,1.0,pertenece a la categoría; no implica relación
+CAN-86B499BEA5,category:amenazas_bomba,tipo,1.0,pertenece a la categoría; no implica relación
+CAN-01792C6E1F,category:amenazas_bomba,tipo,1.0,pertenece a la categoría; no implica relación
+CAN-D344A99B3F,category:ciberataque,tipo,1.0,pertenece a la categoría; no implica relación
+CAN-2DC05B5E11,category:ferroviario,tipo,1.0,pertenece a la categoría; no implica relación
+CAN-02C03F489E,category:ciberataque,tipo,1.0,pertenece a la categoría; no implica relación
+CAN-503F0BF842,category:ciberataque,tipo,1.0,pertenece a la categoría; no implica relación
+CAN-D1987F64C5,category:ciberataque,tipo,1.0,pertenece a la categoría; no implica relación
+CAN-ABB8EA393F,category:drones_aeropuertos,tipo,1.0,pertenece a la categoría; no implica relación
+CAN-15E23D46DB,category:drones_aeropuertos,tipo,1.0,pertenece a la categoría; no implica relación
+CAN-15E23D46DB,country:Jersey,lugar_mencionado,0.7,país documentado o sugerido para el registro; no atribución
+CAN-42D456AD14,category:ciberataque,tipo,1.0,pertenece a la categoría; no implica relación
+CAN-6E2612D57C,category:ciberataque,tipo,1.0,pertenece a la categoría; no implica relación
+CAN-1CE69C92B4,category:ciberataque,tipo,1.0,pertenece a la categoría; no implica relación
+CAN-2995EC3210,category:drones_aeropuertos,tipo,1.0,pertenece a la categoría; no implica relación
+CAN-C95109E1AC,CAN-43834C6578,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-C95109E1AC,CAN-135F3B5466,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-C95109E1AC,CAN-4E921B931C,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-C95109E1AC,CAN-733B499629,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-C95109E1AC,CAN-D344A99B3F,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-C95109E1AC,CAN-02C03F489E,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-C95109E1AC,CAN-503F0BF842,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-C95109E1AC,CAN-D1987F64C5,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-C95109E1AC,CAN-42D456AD14,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-C95109E1AC,CAN-6E2612D57C,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-C95109E1AC,CAN-1CE69C92B4,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-43834C6578,CAN-135F3B5466,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-43834C6578,CAN-4E921B931C,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-43834C6578,CAN-733B499629,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-43834C6578,CAN-D344A99B3F,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-43834C6578,CAN-02C03F489E,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-43834C6578,CAN-503F0BF842,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-43834C6578,CAN-D1987F64C5,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-43834C6578,CAN-42D456AD14,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-43834C6578,CAN-6E2612D57C,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-43834C6578,CAN-1CE69C92B4,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-CA36E9556D,CAN-44E1C53A96,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-CA36E9556D,CAN-66D2E1AEC9,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-CA36E9556D,CAN-3D50D6CA36,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-CA36E9556D,CAN-EB777A6471,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-CA36E9556D,CAN-B180359A4F,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-CA36E9556D,CAN-2D34BCDA34,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-CA36E9556D,CAN-AF5F0552A1,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-CA36E9556D,CAN-A202172C52,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-CA36E9556D,CAN-B94895D0B3,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-CA36E9556D,CAN-86B499BEA5,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-CA36E9556D,CAN-01792C6E1F,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-44E1C53A96,CAN-66D2E1AEC9,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-44E1C53A96,CAN-3D50D6CA36,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-44E1C53A96,CAN-EB777A6471,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-44E1C53A96,CAN-B180359A4F,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-44E1C53A96,CAN-2D34BCDA34,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-44E1C53A96,CAN-AF5F0552A1,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-44E1C53A96,CAN-A202172C52,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-44E1C53A96,CAN-B94895D0B3,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-44E1C53A96,CAN-86B499BEA5,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-44E1C53A96,CAN-01792C6E1F,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-E757339988,CAN-05E7D224DB,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-E757339988,CAN-ABB8EA393F,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-E757339988,CAN-15E23D46DB,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-E757339988,CAN-2995EC3210,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-4E4AA13818,CAN-9D60B6B951,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-4E4AA13818,CAN-3A3072B4E9,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-4E4AA13818,CAN-DD98099B72,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-4E4AA13818,CAN-D75A174B94,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-4E4AA13818,CAN-39B10F371F,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-4E4AA13818,CAN-ABB8EA393F,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-4E4AA13818,CAN-15E23D46DB,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-05E7D224DB,CAN-ABB8EA393F,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-05E7D224DB,CAN-15E23D46DB,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-05E7D224DB,CAN-2995EC3210,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-9D60B6B951,CAN-3A3072B4E9,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-9D60B6B951,CAN-DD98099B72,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-9D60B6B951,CAN-D75A174B94,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-9D60B6B951,CAN-39B10F371F,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-9D60B6B951,CAN-ABB8EA393F,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-9D60B6B951,CAN-15E23D46DB,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-66D2E1AEC9,CAN-3D50D6CA36,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-66D2E1AEC9,CAN-EB777A6471,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-66D2E1AEC9,CAN-B180359A4F,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-66D2E1AEC9,CAN-2D34BCDA34,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-66D2E1AEC9,CAN-AF5F0552A1,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-66D2E1AEC9,CAN-A202172C52,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-66D2E1AEC9,CAN-B94895D0B3,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-66D2E1AEC9,CAN-86B499BEA5,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-66D2E1AEC9,CAN-01792C6E1F,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-3D50D6CA36,CAN-EB777A6471,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-3D50D6CA36,CAN-B180359A4F,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-3D50D6CA36,CAN-2D34BCDA34,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-3D50D6CA36,CAN-AF5F0552A1,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-3D50D6CA36,CAN-A202172C52,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-3D50D6CA36,CAN-B94895D0B3,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-3D50D6CA36,CAN-86B499BEA5,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-3D50D6CA36,CAN-01792C6E1F,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-EB777A6471,CAN-B180359A4F,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-EB777A6471,CAN-2D34BCDA34,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-EB777A6471,CAN-AF5F0552A1,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-EB777A6471,CAN-A202172C52,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-EB777A6471,CAN-B94895D0B3,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-EB777A6471,CAN-86B499BEA5,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-EB777A6471,CAN-01792C6E1F,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-B180359A4F,CAN-2D34BCDA34,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-B180359A4F,CAN-AF5F0552A1,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-B180359A4F,CAN-A202172C52,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-B180359A4F,CAN-B94895D0B3,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-B180359A4F,CAN-86B499BEA5,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-B180359A4F,CAN-01792C6E1F,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-135F3B5466,CAN-4E921B931C,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-135F3B5466,CAN-733B499629,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-135F3B5466,CAN-B7EA263B5E,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-135F3B5466,CAN-D344A99B3F,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-135F3B5466,CAN-02C03F489E,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-135F3B5466,CAN-503F0BF842,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-135F3B5466,CAN-D1987F64C5,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-135F3B5466,CAN-42D456AD14,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-135F3B5466,CAN-6E2612D57C,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-135F3B5466,CAN-1CE69C92B4,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-4E921B931C,CAN-733B499629,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-4E921B931C,CAN-B7EA263B5E,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-4E921B931C,CAN-D344A99B3F,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-4E921B931C,CAN-02C03F489E,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-4E921B931C,CAN-503F0BF842,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-4E921B931C,CAN-D1987F64C5,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-4E921B931C,CAN-42D456AD14,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-4E921B931C,CAN-6E2612D57C,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-4E921B931C,CAN-1CE69C92B4,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-733B499629,CAN-D344A99B3F,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-733B499629,CAN-02C03F489E,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-733B499629,CAN-503F0BF842,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-733B499629,CAN-D1987F64C5,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-733B499629,CAN-42D456AD14,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-733B499629,CAN-6E2612D57C,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-733B499629,CAN-1CE69C92B4,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-7DE92D84F7,CAN-D329CA0CEA,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-7DE92D84F7,CAN-9A8A96D7A9,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-7DE92D84F7,CAN-2DC05B5E11,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-D329CA0CEA,CAN-9A8A96D7A9,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-D329CA0CEA,CAN-7341C68B58,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-D329CA0CEA,CAN-A1E2AFE9B8,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-D329CA0CEA,CAN-2DC05B5E11,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-9A8A96D7A9,CAN-7341C68B58,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-9A8A96D7A9,CAN-A1E2AFE9B8,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-9A8A96D7A9,CAN-2DC05B5E11,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-7341C68B58,CAN-A1E2AFE9B8,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-7341C68B58,CAN-2DC05B5E11,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-2D34BCDA34,CAN-AF5F0552A1,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-2D34BCDA34,CAN-A202172C52,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-2D34BCDA34,CAN-B94895D0B3,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-2D34BCDA34,CAN-86B499BEA5,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-2D34BCDA34,CAN-01792C6E1F,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-065C124D63,CAN-B7EA263B5E,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-AF5F0552A1,CAN-A202172C52,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-AF5F0552A1,CAN-B94895D0B3,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-AF5F0552A1,CAN-86B499BEA5,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-AF5F0552A1,CAN-01792C6E1F,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-3A3072B4E9,CAN-DD98099B72,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-3A3072B4E9,CAN-D75A174B94,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-3A3072B4E9,CAN-39B10F371F,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-B7EA263B5E,CAN-D344A99B3F,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-B7EA263B5E,CAN-02C03F489E,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-B7EA263B5E,CAN-503F0BF842,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-A1E2AFE9B8,CAN-2DC05B5E11,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-A202172C52,CAN-B94895D0B3,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-A202172C52,CAN-86B499BEA5,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-A202172C52,CAN-01792C6E1F,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-B94895D0B3,CAN-86B499BEA5,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-B94895D0B3,CAN-01792C6E1F,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-DD98099B72,CAN-D75A174B94,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-DD98099B72,CAN-39B10F371F,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-DD98099B72,CAN-ABB8EA393F,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-DD98099B72,CAN-15E23D46DB,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-D75A174B94,CAN-39B10F371F,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-D75A174B94,CAN-ABB8EA393F,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-D75A174B94,CAN-15E23D46DB,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-39B10F371F,CAN-ABB8EA393F,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-39B10F371F,CAN-15E23D46DB,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-86B499BEA5,CAN-01792C6E1F,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-D344A99B3F,CAN-02C03F489E,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-D344A99B3F,CAN-503F0BF842,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-D344A99B3F,CAN-D1987F64C5,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-D344A99B3F,CAN-42D456AD14,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-D344A99B3F,CAN-6E2612D57C,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-D344A99B3F,CAN-1CE69C92B4,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-02C03F489E,CAN-503F0BF842,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-02C03F489E,CAN-D1987F64C5,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-02C03F489E,CAN-42D456AD14,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-02C03F489E,CAN-6E2612D57C,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-02C03F489E,CAN-1CE69C92B4,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-503F0BF842,CAN-D1987F64C5,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-503F0BF842,CAN-42D456AD14,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-503F0BF842,CAN-6E2612D57C,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-503F0BF842,CAN-1CE69C92B4,co_ocurrencia,0.333,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-D1987F64C5,CAN-42D456AD14,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-D1987F64C5,CAN-6E2612D57C,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-D1987F64C5,CAN-1CE69C92B4,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-ABB8EA393F,CAN-15E23D46DB,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-ABB8EA393F,CAN-2995EC3210,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-15E23D46DB,CAN-2995EC3210,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-42D456AD14,CAN-6E2612D57C,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-42D456AD14,CAN-1CE69C92B4,co_ocurrencia,0.5,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"
+CAN-6E2612D57C,CAN-1CE69C92B4,co_ocurrencia,1.0,"misma categoría y cercanía temporal; hipótesis de trabajo, no atribución"

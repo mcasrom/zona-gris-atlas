@@ -1,0 +1,14 @@
+{
+  "records": 59,
+  "with_country_iso2": 19,
+  "with_airport_iata": 13,
+  "with_timestamp": 0,
+  "time_precision": {
+    "day": 59
+  },
+  "geo_status": {
+    "located": 19,
+    "unlocated": 40
+  },
+  "analysis_ready": 0
+}

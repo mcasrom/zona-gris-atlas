@@ -80,6 +80,20 @@ The last **10** bundles are kept.
 
 `eval/metrics.py` is available for optional sample checks, but there is **no publication gate and no bulk-labelling requirement**. Human review is per record. The classifier is experimental and never publishes.
 
+## Internal data quality
+
+The internal layer lives in `data/quality/` and is **not published**:
+
+- `quality_report.py`: normalization, TF-IDF dedupe, canonical events and correction proposals.
+- `review.json`: 13 accepted and 17 rejected/pending corrections out of 30.
+- `graph_report.py` and `graph_temporal.py`: co-occurrence and temporal graphs.
+- `campaign_report.py`: candidate campaigns/waves with shared entities.
+- `baseline_snapshot.py`: daily snapshot for a historical baseline.
+
+Current state: **59 records → 45 canonical events**, 42 with a source timestamp, 19 with ISO country and 13 with an airport. The two reviewed campaigns are **internal hypotheses**, not attribution.
+
+The `45 8 * * *` cron stores the daily snapshot on the server; the comparator stays `insufficient` until the minimum window is reached.
+
 ## Sources and licences
 
 See `config/sources.yaml`. Bing News RSS is **discovery**. CERT-EU, JPCERT/CC, CERT.br and NCSC-UK feed the separate primary-document layer. CISA, CCN-CERT and other sources remain pending review. No paid APIs, cookies, trackers or remote Google Fonts.

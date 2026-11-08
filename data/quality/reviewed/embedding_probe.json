@@ -1,0 +1,19 @@
+{
+  "method": "tfidf_char_wb_3_5+svd",
+  "records": 59,
+  "components": 20,
+  "explained_variance": 0.5242,
+  "thresholds": {
+    "0.25": 10,
+    "0.3": 11,
+    "0.35": 13,
+    "0.4": 15,
+    "0.45": 16,
+    "0.5": 20,
+    "0.55": 23,
+    "0.6": 23,
+    "0.65": 25,
+    "0.7": 26
+  },
+  "note": "LSA no neuronal; los grupos siguen siendo exploratorios"
+}

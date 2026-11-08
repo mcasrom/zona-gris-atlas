@@ -1,0 +1,474 @@
+{
+  "EV-20261106-008": {
+    "url": "https://www.notizie.it/en/Bomb-threat-at-Malpensa%3B-flights-from-Thessaloniki-and-Porto-blocked./",
+    "http": 403,
+    "fetched_at": "2026-11-08T13:33:03+00:00",
+    "published_at": null,
+    "time_precision": null,
+    "location_hint": null
+  },
+  "EV-20261106-007": {
+    "url": "https://nltimes.nl/2026/11/06/bomb-threats-reported-prague-airport-including-flight-netherlands",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:03+00:00",
+    "published_at": "2026-11-06T13:33:00+01:00",
+    "time_precision": "timestamp",
+    "location_hint": null
+  },
+  "EV-20261106-004": {
+    "url": "https://www.siasat.com/houthis-claim-drone-attack-on-dammam-airport-3570433/",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:03+00:00",
+    "published_at": "2026-11-05T17:52:02+00:00",
+    "time_precision": "timestamp",
+    "location_hint": "Hyderabad"
+  },
+  "EV-20261106-006": {
+    "url": "https://londonlovesbusiness.com/copenhagen-airport-hit-by-fresh-bomb-threat-as-european-aviation-faces-growing-wave-of-security-scares/",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:03+00:00",
+    "published_at": "2026-11-06T10:49:12+00:00",
+    "time_precision": "timestamp",
+    "location_hint": null
+  },
+  "EV-20261106-001": {
+    "url": "https://www.tagesspiegel.de/politik/anschlagsversuch-mit-drohne-in-leipzig-ermittler-fahnden-mit-ki-bild-nach-verdachtigem-auf-e-bike-16251482.html",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:04+00:00",
+    "published_at": "2026-11-06T15:04:00+00:00",
+    "time_precision": "timestamp",
+    "location_hint": null
+  },
+  "EV-20261106-009": {
+    "url": "https://www.thelocal.fr/20261106/latest-four-new-bomb-threats-on-flights-over-france",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:04+00:00",
+    "published_at": "2026-11-06T12:47:08+01:00",
+    "time_precision": "timestamp",
+    "location_hint": null
+  },
+  "EV-20261106-002": {
+    "url": "https://www.islandfm.com/news/jersey/airport-drones-every-available-avenue-is-being-pursued/",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:04+00:00",
+    "published_at": "2026-11-02T07:30:00+00:00",
+    "time_precision": "timestamp",
+    "location_hint": null
+  },
+  "EV-20261106-012": {
+    "url": "https://therecord.media/russia-cyberattack-beget-cloud",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:04+00:00",
+    "published_at": "2026-11-04T13:56:55.320000+00:00",
+    "time_precision": "timestamp",
+    "location_hint": null
+  },
+  "EV-20261106-011": {
+    "url": "https://www.theguardian.com/technology/2026/nov/04/france-national-blood-service-hack-cyber-attack-europe",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:04+00:00",
+    "published_at": "2026-11-04T13:22:28+00:00",
+    "time_precision": "timestamp",
+    "location_hint": null
+  },
+  "EV-20261106-017": {
+    "url": "https://www.expressandstar.com/news/birmingham/train-disruption-between-university-and-five-ways-9331206",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:04+00:00",
+    "published_at": "2026-11-04T20:53:44+00:00",
+    "time_precision": "timestamp",
+    "location_hint": null
+  },
+  "EV-20261106-018": {
+    "url": "https://www.railadvent.co.uk/2026/11/london-to-devon-trains-disrupted-after-fault-in-wiltshire.html",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:04+00:00",
+    "published_at": "2026-11-06T12:09:12+00:00",
+    "time_precision": "timestamp",
+    "location_hint": null
+  },
+  "EV-20261106-015": {
+    "url": "https://www.nomadlawyer.org/southern-france-railway-disruption-marseille-sncf-flood-damage-ter-tgv-2026",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:05+00:00",
+    "published_at": "2026-11-04T00:00:00",
+    "time_precision": "timestamp",
+    "location_hint": null
+  },
+  "EV-20261106-010": {
+    "url": "https://www.ynetnews.com/travel/article/hyqi4rtagl",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:05+00:00",
+    "published_at": "2026-11-05T10:20:02.367686+00:00",
+    "time_precision": "timestamp",
+    "location_hint": null
+  },
+  "EV-20261106-016": {
+    "url": "https://www.mirror.co.uk/news/uk-news/manchester-airport-trains-disruption-mauldeth-37844592",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:05+00:00",
+    "published_at": "2026-11-04T23:31:10+00:00",
+    "time_precision": "timestamp",
+    "location_hint": null
+  },
+  "AUTO-1A0CA431FA87": {
+    "url": "https://www.msn.com/en-us/news/other/what-to-know-about-the-hoax-bomb-threats-that-targeted-flights-in-europe/ar-AA2gX8x6",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:05+00:00",
+    "published_at": null,
+    "time_precision": null,
+    "location_hint": null
+  },
+  "AUTO-E8771C4DE57A": {
+    "url": "https://sana.sy/en/international/2356655/",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:05+00:00",
+    "published_at": "2026-11-07T10:37:13+03:00",
+    "time_precision": "timestamp",
+    "location_hint": null
+  },
+  "AUTO-C4A1EE84C3E2": {
+    "url": "https://businessday.ng/technology/article/unverified-fintech-cyberattack-reports-highlight-gaps-in-nigerias-threat-sharing-framework/",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:05+00:00",
+    "published_at": "2026-11-07T16:09:32+00:00",
+    "time_precision": "timestamp",
+    "location_hint": null
+  },
+  "AUTO-67894411CECB": {
+    "url": "https://www.msn.com/en-us/news/other/mapped-how-dozens-of-bomb-threats-caused-flight-chaos-in-europe-this-week/ar-AA2gWCCt",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:06+00:00",
+    "published_at": null,
+    "time_precision": null,
+    "location_hint": null
+  },
+  "AUTO-2BBB6391541A": {
+    "url": "https://www.dailysabah.com/world/europe/inside-wave-of-hoax-bomb-threats-targeting-european-flights",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:06+00:00",
+    "published_at": "2026-11-07T14:00:00+03:00",
+    "time_precision": "timestamp",
+    "location_hint": null
+  },
+  "AUTO-B95027A07551": {
+    "url": "https://www.thelocal.at/20261107/vienna-airport-targeted-in-europe-wide-bomb-hoax-threats",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:06+00:00",
+    "published_at": "2026-11-07T09:45:23+01:00",
+    "time_precision": "timestamp",
+    "location_hint": null
+  },
+  "EV-20261106-020": {
+    "url": "https://militarnyi.com/en/news/from-the-baltic-to-the-black-sea-large-scale-gps-jamming-detected-along-nato-borders/",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:06+00:00",
+    "published_at": "2026-11-04T18:23:40+02:00",
+    "time_precision": "timestamp",
+    "location_hint": null
+  },
+  "AUTO-74E92E592126": {
+    "url": "https://www.msn.com/en-us/news/other/rising-airport-drone-alerts-raise-safety-concerns/ar-AA2gWxOV",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:06+00:00",
+    "published_at": null,
+    "time_precision": null,
+    "location_hint": null
+  },
+  "AUTO-3BE3A3F12F57": {
+    "url": "https://en.abna24.com/news/1887423/3rd-wave-of-bomb-threats-in-Europe-flights-disrupted-again",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:06+00:00",
+    "published_at": "2026-11-07T09:03:23+00:00",
+    "time_precision": "timestamp",
+    "location_hint": null
+  },
+  "AUTO-3224E11DF4B6": {
+    "url": "https://www.msn.com/en-in/news/other/europes-bomb-threat-wave-moves-from-airports-to-newsrooms-who-is-behind-it/ar-AA2gUKUn",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:06+00:00",
+    "published_at": null,
+    "time_precision": null,
+    "location_hint": null
+  },
+  "AUTO-25ED6AC084FF": {
+    "url": "https://euroweeklynews.com/2026/11/06/japan-banking-crisis-hits-128-banks-could-europe-be-next/",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:06+00:00",
+    "published_at": "2026-11-06T22:23:11+00:00",
+    "time_precision": "timestamp",
+    "location_hint": null
+  },
+  "AUTO-A2A2DD35997B": {
+    "url": "https://english.ajel.sa/world/2etthdcw1",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:06+00:00",
+    "published_at": "2026-11-06T13:18:20.115000+00:00",
+    "time_precision": "timestamp",
+    "location_hint": null
+  },
+  "AUTO-BD5E5BFC6A4B": {
+    "url": "https://dronexl.co/2026/11/05/tsa-drone-drone-drone-post-airport-no-drone-zone-fines/",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:06+00:00",
+    "published_at": "2026-11-06T01:42:00+00:00",
+    "time_precision": "timestamp",
+    "location_hint": null
+  },
+  "AUTO-AA62F8DCD108": {
+    "url": "https://www.msn.com/en-ae/news/other/bomb-threats-continue-to-target-aircrafts-across-europe/ar-AA2gS8yG",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:06+00:00",
+    "published_at": null,
+    "time_precision": null,
+    "location_hint": null
+  },
+  "AUTO-3132830246C5": {
+    "url": "https://www.nomadlawyer.org/europe-flight-security-threats-rail-travel-guide-2026",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:07+00:00",
+    "published_at": "2026-11-06T14:35:00+00:00",
+    "time_precision": "timestamp",
+    "location_hint": null
+  },
+  "AUTO-E547289C24CE": {
+    "url": "https://www.chinatechnews.com/2026/11/06/132060-dual-use-sky-net-china-mobilizes-automotive-supply-chains-and-airspace-reform-to-build-militarized-drone-industrial-base",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:07+00:00",
+    "published_at": "2026-11-05T16:08:40+00:00",
+    "time_precision": "timestamp",
+    "location_hint": null
+  },
+  "AUTO-D3F523EBB36E": {
+    "url": "https://www.europesays.com/3354674/",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:07+00:00",
+    "published_at": "2026-11-05T14:28:17+00:00",
+    "time_precision": "timestamp",
+    "location_hint": null
+  },
+  "AUTO-7F69D32C4027": {
+    "url": "https://www.bbc.com/news/live/cwjdmnrg94ezt?page=3",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:07+00:00",
+    "published_at": "2026-11-05T10:07:41.292000+00:00",
+    "time_precision": "timestamp",
+    "location_hint": null
+  },
+  "AUTO-5C6CF4BC1453": {
+    "url": "https://www.europesays.com/3352439/",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:07+00:00",
+    "published_at": "2026-11-04T13:26:52+00:00",
+    "time_precision": "timestamp",
+    "location_hint": null
+  },
+  "AUTO-25AD5CA2AB92": {
+    "url": "https://www.nomadlawyer.org/netherlands-accessible-rail-travel-live-lift-updates-prorail-ns-europe-2026",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:08+00:00",
+    "published_at": "2026-11-05T00:00:00",
+    "time_precision": "timestamp",
+    "location_hint": null
+  },
+  "AUTO-99C40FBC5663": {
+    "url": "https://www.msn.com/en-us/news/other/japan-to-seek-software-vulnerability-data-from-us-ai-firms-amid-cyberattack-surge-nikkei-reports/ar-AA2gLqx1",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:08+00:00",
+    "published_at": null,
+    "time_precision": null,
+    "location_hint": null
+  },
+  "AUTO-2A95310FFF0D": {
+    "url": "https://profit.pakistantoday.com.pk/2026/11/05/cyberattack-hits-french-blood-banks-as-hackers-disrupt-supermarket-refrigeration-across-europe",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:08+00:00",
+    "published_at": "2026-11-05T07:30:16.346000+00:00",
+    "time_precision": "timestamp",
+    "location_hint": null
+  },
+  "AUTO-3E3371497B26": {
+    "url": "https://www.msn.com/en-us/news/other/french-blood-banks-hit-alongside-cyberattack-on-european-supermarkets/ar-AA2gKQpM",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:08+00:00",
+    "published_at": null,
+    "time_precision": null,
+    "location_hint": null
+  },
+  "AUTO-2F4BAEA5CF61": {
+    "url": "https://www.yahoo.com/news/world/articles/french-blood-banks-hit-cyberattack-183919491.html",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:09+00:00",
+    "published_at": "2026-11-04T18:39:19+00:00",
+    "time_precision": "timestamp",
+    "location_hint": null
+  },
+  "AUTO-3F1FA95E51D2": {
+    "url": "https://www.msn.com/en-ca/technology/artificial-intelligence/uk-must-expect-ai-powered-attack-on-critical-infrastructure-within-two-years-report-says/ar-AA2gD0fe",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:09+00:00",
+    "published_at": null,
+    "time_precision": null,
+    "location_hint": null
+  },
+  "AUTO-9987D7C90B72": {
+    "url": "https://www.mt.co.kr/index.php/en/tech/2026/11/03/2026110208085777815",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:09+00:00",
+    "published_at": "2026-11-03T04:00:00+09:00",
+    "time_precision": "timestamp",
+    "location_hint": null
+  },
+  "AUTO-30F4706AEE3A": {
+    "url": "https://www.globaltimes.cn/page/202611/1373570.shtml",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:10+00:00",
+    "published_at": null,
+    "time_precision": null,
+    "location_hint": null
+  },
+  "AUTO-52B7927900EF": {
+    "url": "https://biz.chosun.com/en/en-it/2026/11/04/Q22E23JWXBARHKGEWUR7QCUOBQ/",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:10+00:00",
+    "published_at": "2026-11-04T01:17:01.766000+00:00",
+    "time_precision": "timestamp",
+    "location_hint": null
+  },
+  "AUTO-C61608E30B4C": {
+    "url": "https://www.timesofai.com/news/uk-warns-of-ai-based-cyberattacks-on-critical-infrastructure-within-two-years/",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:10+00:00",
+    "published_at": "2026-11-03T11:10:21+00:00",
+    "time_precision": "timestamp",
+    "location_hint": null
+  },
+  "AUTO-8F3FC8EFB889": {
+    "url": "https://www.safestate.com/post/supermarket-refrigeration-cyberattack-hits-six-countries-in-europe",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:10+00:00",
+    "published_at": "2026-11-03T14:25:16.418000+00:00",
+    "time_precision": "timestamp",
+    "location_hint": null
+  },
+  "AUTO-F4AB131ACDAF": {
+    "url": "https://theaviationist.com/2026/11/05/from-drones-to-bomb-hoaxes/",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:11+00:00",
+    "published_at": "2026-11-05T12:46:18+00:00",
+    "time_precision": "timestamp",
+    "location_hint": null
+  },
+  "AUTO-A23BB2F7FD0A": {
+    "url": "https://cybermagazine.com/news/freezer-cyberattack-in-europe-what-the-industry-has-to-say",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:11+00:00",
+    "published_at": "2026-11-03T10:54:17+00:00",
+    "time_precision": "timestamp",
+    "location_hint": null
+  },
+  "AUTO-F74A169911E7": {
+    "url": "https://streamlinefeed.co.ke/news/jersey-airport-drone-incursions-raf-deployment-2026",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:11+00:00",
+    "published_at": "2026-11-03T07:34:56.098000+00:00",
+    "time_precision": "timestamp",
+    "location_hint": null
+  },
+  "AUTO-4A02AC35ABC3": {
+    "url": "http://www.chinaview.cn/20261104/63111060703b4708aecd77e2745d2b41/c.html",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:11+00:00",
+    "published_at": null,
+    "time_precision": null,
+    "location_hint": null
+  },
+  "AUTO-EE18E966D529": {
+    "url": "https://www.msn.com/en-in/news/other/10-countries-1-cyberattack-europe-us-supermarkets-go-dark-ai-north-korea-who-did-it/vi-AA2gG0aM",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:11+00:00",
+    "published_at": null,
+    "time_precision": null,
+    "location_hint": null
+  },
+  "AUTO-0FF0C330D93B": {
+    "url": "https://www.msn.com/en-in/money/topstories/supermarket-freezers-hacked-in-european-countries-could-indias-smart-refrigeration-systems-be-next/ar-AA2gDkfz",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:11+00:00",
+    "published_at": null,
+    "time_precision": null,
+    "location_hint": null
+  },
+  "AUTO-13C5D4064052": {
+    "url": "https://profit.pakistantoday.com.pk/2026/11/03/new-cyberattack-on-supermarket-fridges-sweeps-across-europe",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:11+00:00",
+    "published_at": "2026-11-03T02:22:10.158000+00:00",
+    "time_precision": "timestamp",
+    "location_hint": null
+  },
+  "AUTO-69CF86E2C993": {
+    "url": "https://dronexl.co/2026/11/02/beijing-airport-drone-sign-nyt-friedman-ban-november-15/",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:12+00:00",
+    "published_at": "2026-11-02T21:59:00+00:00",
+    "time_precision": "timestamp",
+    "location_hint": null
+  },
+  "AUTO-63D7A317FA23": {
+    "url": "https://gizmodo.com/supermarket-freezers-across-europe-hit-with-another-cyberattack-2000833828",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:12+00:00",
+    "published_at": "2026-11-02T18:30:54+00:00",
+    "time_precision": "timestamp",
+    "location_hint": null
+  },
+  "AUTO-293B0ABD3CDE": {
+    "url": "https://www.gtrmag.com/blog/aci-asia-pacific-middle-east-secures-regional-support-for-airport-security-and-resilience-measures",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:12+00:00",
+    "published_at": null,
+    "time_precision": null,
+    "location_hint": null
+  },
+  "AUTO-4C8CADA76228": {
+    "url": "https://www.zawya.com/en/business/aci-apac-mid-secures-regional-support-for-stronger-airport-security-resilience-1888059",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:12+00:00",
+    "published_at": "2026-11-03T10:26:00.986000+00:00",
+    "time_precision": "timestamp",
+    "location_hint": null
+  },
+  "AUTO-A50CF46D9FCB": {
+    "url": "https://tradersunion.com/news/regulators/show/4068910-uk-ai-cyberattack-critical-infrastructure/",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:13+00:00",
+    "published_at": "2026-11-03T00:09:23+00:00",
+    "time_precision": "timestamp",
+    "location_hint": null
+  },
+  "EV-20261106-013": {
+    "url": "https://www.presstv.co.uk/Detail/2026/11/03/779816/european-supermarkets-reel-from-cyberattack-raising-infrastructure-security-concerns",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:18+00:00",
+    "published_at": null,
+    "time_precision": null,
+    "location_hint": null
+  },
+  "AUTO-86D287371F04": {
+    "url": "https://ici.radio-canada.ca/rci/en/news/2298552/bomb-threats-affect-at-least-25-flights-leading-to-emergency-landings-at-several-european-airports",
+    "http": 200,
+    "fetched_at": "2026-11-08T13:33:21+00:00",
+    "published_at": null,
+    "time_precision": null,
+    "location_hint": null
+  },
+  "AUTO-81DDCA4C6F79": {
+    "url": "https://www.cbc.ca/news/business/europe-fridge-cyber-incident-9.7405834",
+    "http": null,
+    "fetched_at": "2026-11-08T13:33:24+00:00",
+    "published_at": null,
+    "time_precision": null,
+    "location_hint": null
+  }
+}
