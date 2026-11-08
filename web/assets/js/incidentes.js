@@ -1,7 +1,8 @@
 (function () {
   "use strict";
-  var events = [];
-  var reference = new Date();
+  var API = "/api/atlas/incidentes";
+  var PAGE_SIZE = 50;
+  var state = { cursor: null, stack: [], total: 0, next: null, facets: false };
 
   function text(value) { return value == null || value === "" ? "—" : String(value); }
   function statusLabel(value) {
@@ -16,15 +17,8 @@
     if (status === "claimed") return "Reivindicada";
     return "Por definir";
   }
-  function attributionKey(item) {
-    return (item.attribution && item.attribution.status) || "none";
-  }
   function zone(item) {
     return [item.place, item.country].filter(Boolean).join(" · ") || "No documentada";
-  }
-  function dateValue(item) {
-    var value = Date.parse((item.event_date || item.published_at || "") + "T00:00:00Z");
-    return Number.isNaN(value) ? 0 : value;
   }
   function sourceCell(item) {
     var sources = item.sources || [];
@@ -39,16 +33,7 @@
   function row(item) {
     var tr = document.createElement("tr");
     tr.dataset.id = item.id;
-    var cells = [
-      item.id,
-      item.event_date || item.published_at || "—",
-      null,
-      item.category_label || item.category || "—",
-      zone(item),
-      null,
-      attributionLabel(item),
-      null,
-    ];
+    var cells = [item.id, item.event_date || "—", null, item.category_label || item.category || "—", zone(item), null, attributionLabel(item), null];
     cells.forEach(function (value, index) {
       var td = document.createElement("td");
       if (index === 2) {
@@ -75,75 +60,111 @@
     });
     return tr;
   }
-  function filtered() {
+  function params(cursor) {
+    var p = new URLSearchParams();
+    p.set("limit", String(PAGE_SIZE));
     var domain = document.getElementById("incident-domain").value;
     var status = document.getElementById("incident-status").value;
     var attribution = document.getElementById("incident-attribution").value;
-    var date = document.getElementById("incident-date").value;
-    var q = document.getElementById("incident-search").value.trim().toLowerCase();
-    var limit = date === "all" ? Infinity : Number(date) * 86400000;
-    var base = reference.getTime();
-    return events.filter(function (item) {
-      if (domain !== "all" && item.category !== domain) return false;
-      if (status !== "all" && item.verification_status !== status) return false;
-      if (attribution !== "all" && attributionKey(item) !== attribution) return false;
-      if (limit !== Infinity && base - dateValue(item) > limit) return false;
-      if (q && [item.id, item.title, item.description, item.place, item.country, item.category_label].join(" ").toLowerCase().indexOf(q) === -1) return false;
-      return true;
-    }).sort(function (a, b) { return dateValue(b) - dateValue(a); });
+    var days = document.getElementById("incident-date").value;
+    var q = document.getElementById("incident-search").value.trim();
+    if (domain !== "all") p.set("domain", domain);
+    if (status !== "all") p.set("status", status);
+    if (attribution !== "all") p.set("attribution", attribution);
+    if (days !== "all") p.set("days", days);
+    if (q) p.set("q", q);
+    if (cursor) p.set("cursor", cursor);
+    return p;
   }
-  function summary(list) {
-    var total = events.length;
-    var docs = events.filter(function (i) { return i.verification_status === "DOCUMENTADO"; }).length;
-    var pending = events.filter(function (i) { return i.verification_status === "PENDIENTE"; }).length;
-    var confirmed = events.filter(function (i) { return i.verification_status === "CONFIRMADO"; }).length;
-    var attributed = events.filter(function (i) { return attributionKey(i) !== "none"; }).length;
-    return list.length + " de " + total + " · " + docs + " documentados · " + pending + " pendientes · " + confirmed + " confirmados · " + attributed + " con atribución";
+  function downloadUrl() {
+    var p = params(null);
+    p.delete("limit");
+    p.delete("cursor");
+    return "/api/atlas/incidentes.csv?" + p.toString();
   }
-  function update() {
-    var list = filtered();
+  function fillDomains(domains) {
+    if (state.facets || !domains) return;
+    var node = document.getElementById("incident-domain");
+    domains.forEach(function (pair) {
+      var option = document.createElement("option");
+      option.value = pair.id;
+      option.textContent = pair.label;
+      node.appendChild(option);
+    });
+    state.facets = true;
+  }
+  function render(data) {
+    var items = data.items || [];
     var body = document.getElementById("incident-rows");
     body.replaceChildren();
-    if (!list.length) {
+    if (!items.length) {
       var tr = document.createElement("tr");
       var td = document.createElement("td");
       td.colSpan = 8; td.className = "muted"; td.textContent = "No hay incidentes con estos filtros.";
       tr.appendChild(td); body.appendChild(tr);
     } else {
-      list.forEach(function (item) { body.appendChild(row(item)); });
+      items.forEach(function (item) { body.appendChild(row(item)); });
     }
-    document.getElementById("incident-count").textContent = list.length;
-    document.getElementById("incident-total").textContent = events.length;
-    document.getElementById("incident-summary").textContent = summary(list);
+    state.total = data.total || 0;
+    state.next = data.next_cursor || null;
+    var counts = data.counts || {};
+    document.getElementById("incident-count").textContent = items.length;
+    document.getElementById("incident-total").textContent = state.total;
+    document.getElementById("incident-summary").textContent =
+      items.length + " en esta página · " + state.total + " con los filtros · " +
+      (counts.documented || 0) + " documentados · " + (counts.pending || 0) +
+      " pendientes · " + (counts.confirmed || 0) + " confirmados · " +
+      (counts.attributed || 0) + " con atribución";
+    document.getElementById("incident-page").textContent = String(state.stack.length + 1);
+    document.getElementById("incident-prev").disabled = state.stack.length === 0;
+    document.getElementById("incident-next").disabled = !state.next;
+    document.getElementById("incident-download").href = downloadUrl();
+    document.getElementById("incident-meta").textContent = state.total + " hechos revisados · 50 por página · filtros en servidor";
   }
-  function fill(id, values) {
-    var node = document.getElementById(id);
-    values.forEach(function (pair) {
-      var option = document.createElement("option");
-      option.value = pair[0]; option.textContent = pair[1]; node.appendChild(option);
-    });
-  }
-  function boot() {
-    fetch("assets/data/incidentes.json?v=20261108b").then(function (r) { return r.json(); }).then(function (data) {
-      events = data.events || [];
-      reference = new Date(data.generated_at || Date.now());
-      var domains = {};
-      events.forEach(function (item) { domains[item.category] = item.category_label || item.category; });
-      fill("incident-domain", Object.keys(domains).sort().map(function (k) { return [k, domains[k]]; }));
-      document.getElementById("incident-meta").textContent = events.length + " acontecimientos · actualizado " + (data.generated_at || "sin fecha") + " · sin gravedad ni índice ZG inventados";
-      ["incident-domain", "incident-status", "incident-attribution", "incident-date"].forEach(function (id) {
-        document.getElementById(id).addEventListener("change", update);
-      });
-      document.getElementById("incident-search").addEventListener("input", update);
-      document.getElementById("incident-reset").addEventListener("click", function () {
-        ["incident-domain", "incident-status", "incident-attribution", "incident-date"].forEach(function (id) { document.getElementById(id).value = "all"; });
-        document.getElementById("incident-search").value = "";
-        update();
-      });
-      update();
+  function load() {
+    var p = params(state.cursor);
+    fetch(API + "?" + p.toString()).then(function (r) {
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      return r.json();
+    }).then(function (data) {
+      fillDomains(data.domains);
+      render(data);
     }).catch(function () {
       document.getElementById("incident-rows").innerHTML = "<tr><td colspan=\"8\" class=\"muted\">No se pudo cargar la matriz.</td></tr>";
+      document.getElementById("incident-summary").textContent = "Error de carga";
     });
+  }
+  function reset() {
+    state.cursor = null;
+    state.stack = [];
+    load();
+  }
+  function boot() {
+    ["incident-domain", "incident-status", "incident-attribution", "incident-date"].forEach(function (id) {
+      document.getElementById(id).addEventListener("change", reset);
+    });
+    var timer = null;
+    document.getElementById("incident-search").addEventListener("input", function () {
+      clearTimeout(timer);
+      timer = setTimeout(reset, 300);
+    });
+    document.getElementById("incident-reset").addEventListener("click", function () {
+      ["incident-domain", "incident-status", "incident-attribution", "incident-date"].forEach(function (id) { document.getElementById(id).value = "all"; });
+      document.getElementById("incident-search").value = "";
+      reset();
+    });
+    document.getElementById("incident-prev").addEventListener("click", function () {
+      if (!state.stack.length) return;
+      state.cursor = state.stack.pop();
+      load();
+    });
+    document.getElementById("incident-next").addEventListener("click", function () {
+      if (!state.next) return;
+      state.stack.push(state.cursor);
+      state.cursor = state.next;
+      load();
+    });
+    load();
   }
   boot();
 })();

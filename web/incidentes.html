@@ -58,12 +58,18 @@
         <tbody id="incident-rows"><tr><td colspan="8" class="muted">Cargando…</td></tr></tbody>
       </table>
     </div>
+    <div class="incident-pager">
+      <button class="btn" type="button" id="incident-prev" disabled>‹ anteriores</button>
+      <span class="muted small">Página <strong id="incident-page">1</strong></span>
+      <button class="btn" type="button" id="incident-next" disabled>siguientes ›</button>
+      <a class="btn" id="incident-download" href="/api/atlas/incidentes.csv">Descargar CSV</a>
+    </div>
     <p class="muted small" style="margin-top:14px">«Documentado» significa que hay fuente y revisión; no significa ataque confirmado. «Pendiente» es un candidato. «Por definir» es el valor correcto cuando no hay atribución verificable. No se rellena por inferencia.</p>
   </section>
 </main>
 <footer class="site-footer"><div class="container footer-grid"><div><p>Proyecto personal de un único autor. Código bajo AGPL-3.0. Sin cookies ni rastreadores.</p></div><div class="footer-links"><a href="index.html">Inicio</a><a href="mapa.html">Mapa</a><a href="incidentes.html">Incidentes</a><a href="cobertura.html">Cobertura</a><a href="registros.html">Registros</a><a href="primarias.html">Primarias</a><a href="metodologia.html">Método</a><a href="fuentes.html">Fuentes</a><a href="https://github.com/mcasrom/zona-gris-atlas">GitHub</a><a class="kofi-link" href="https://ko-fi.com/m_castillo">Apoyar en Ko-fi</a><span class="footer-version">Miguel Castillo · v0.1.1</span></div></div></footer>
 <script src="assets/js/site.js" defer></script>
-<script src="assets/js/incidentes.js?v=20261108b" defer></script>
+<script src="assets/js/incidentes.js?v=20261108d" defer></script>
 <script src="assets/js/subscribe.js" defer></script>
 </body>
 </html>

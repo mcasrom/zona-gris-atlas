@@ -140,6 +140,12 @@ hay puerta de publicación ni se exige un etiquetado masivo**. El clasificador e
 experimental y no publica fichas. La revisión humana es por ficha, no un lote
 masivo de etiquetado. No hay fichero de umbral ni conjunto de validación obligatorio.
 
+## API de incidentes
+
+- `GET /api/atlas/incidentes?limit=50&cursor=...` — matriz paginada con cursor estable, filtros `domain`, `status`, `attribution`, `days` y `q`; devuelve `total`, `next_cursor`, `counts` y facetas.
+- `GET /api/atlas/incidentes.csv?domain=...&status=...` — descarga CSV con los mismos filtros, sin cursor.
+- La tabla pública usa **50 filas por página**, botones anterior/siguiente y descarga CSV; los filtros se resuelven en el servidor.
+
 ## Calidad de datos y análisis interno
 
 La capa interna vive en `data/quality/` y **no se publica**:

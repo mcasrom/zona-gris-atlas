@@ -5,6 +5,9 @@ Escucha en 127.0.0.1:3033. Sin dependencias externas.
 """
 from __future__ import annotations
 
+import base64
+import csv
+import io
 import json
 import os
 import re
@@ -15,7 +18,7 @@ import threading
 import time
 import urllib.error
 import urllib.request
-from datetime import datetime, timedelta, timezone
+from datetime import date, datetime, timedelta, timezone
 from html import escape
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
@@ -28,6 +31,7 @@ BASE_URL = os.environ.get("ATLAS_SUBS_BASE_URL", "https://zonagris.pruebapublica
 REPLY_TO = os.environ.get("ATLAS_SUBS_REPLY_TO", "info.zonagris@pruebapublica.com")
 HOST = os.environ.get("ATLAS_SUBS_HOST", "127.0.0.1")
 PORT = int(os.environ.get("ATLAS_SUBS_PORT", "3033"))
+INCIDENTS_PATH = Path(os.environ.get("ATLAS_INCIDENTS_PATH", "/var/www/atlas-zonagris/current/assets/data/incidentes.json"))
 DRY_RUN = os.environ.get("ATLAS_SUBS_DRY_RUN", "0") == "1"
 API = "/api/atlas"
 EMAIL_RE = re.compile(r"^[^@\s]{1,64}@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$")
@@ -236,6 +240,126 @@ def rate_ok(ip: str) -> bool:
         return True
 
 
+def _incidents() -> list[dict]:
+    try:
+        payload = json.loads(INCIDENTS_PATH.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return []
+    return payload.get("events", []) if isinstance(payload, dict) else payload
+
+
+def _cursor(item: dict) -> str:
+    raw = f"{item.get('event_date') or ''}|{item.get('id') or ''}".encode()
+    return base64.urlsafe_b64encode(raw).decode().rstrip("=")
+
+
+def _decode_cursor(value: str) -> tuple[str, str] | None:
+    try:
+        raw = base64.urlsafe_b64decode(value + "=" * (-len(value) % 4)).decode()
+        date, ident = raw.split("|", 1)
+        return date, ident
+    except (ValueError, UnicodeDecodeError):
+        return None
+
+
+def _incident_query(query: str) -> tuple[list[dict], dict]:
+    params = parse_qs(query)
+    domain = (params.get("domain") or ["all"])[0]
+    status = (params.get("status") or ["all"])[0]
+    attribution = (params.get("attribution") or ["all"])[0]
+    search = (params.get("q") or [""])[0].strip().casefold()
+    cursor = (params.get("cursor") or [""])[0]
+    try:
+        days = int((params.get("days") or ["0"])[0])
+    except ValueError:
+        days = 0
+    cutoff = (date.today() - timedelta(days=days)).isoformat() if days > 0 else None
+    try:
+        limit = max(1, min(100, int((params.get("limit") or ["50"])[0])))
+    except ValueError:
+        limit = 50
+    rows = _incidents()
+    filtered = []
+    for item in rows:
+        if cutoff and (item.get("event_date") or "") < cutoff:
+            continue
+        if domain != "all" and item.get("category") != domain:
+            continue
+        if status != "all" and item.get("verification_status") != status:
+            continue
+        attr = (item.get("attribution") or {}).get("status") or "none"
+        if attribution != "all" and attr != attribution:
+            continue
+        if search:
+            text = " ".join(str(item.get(k) or "") for k in ("id", "title", "description", "place", "country", "category_label")).casefold()
+            if search not in text:
+                continue
+        filtered.append(item)
+    filtered.sort(key=lambda x: (x.get("event_date") or "", x.get("id") or ""), reverse=True)
+    total = len(filtered)
+    if cursor:
+        decoded = _decode_cursor(cursor)
+        if decoded:
+            filtered = [x for x in filtered if (x.get("event_date") or "", x.get("id") or "") < decoded]
+    page = filtered[:limit]
+    domains = {}
+    for item in rows:
+        if item.get("category"):
+            domains[item["category"]] = item.get("category_label") or item["category"]
+    counts = {
+        "documented": sum(1 for x in filtered if x.get("verification_status") == "DOCUMENTADO"),
+        "pending": sum(1 for x in filtered if x.get("verification_status") == "PENDIENTE"),
+        "confirmed": sum(1 for x in filtered if x.get("verification_status") == "CONFIRMADO"),
+        "attributed": sum(1 for x in filtered if ((x.get("attribution") or {}).get("status") or "none") != "none"),
+    }
+    return page, {
+        "total": total,
+        "limit": limit,
+        "next_cursor": _cursor(filtered[limit - 1]) if len(filtered) > limit else None,
+        "counts": counts,
+        "domains": [{"id": k, "label": v} for k, v in sorted(domains.items())],
+    }
+
+
+def _incidents_csv(query: str) -> str:
+    # Descarga con los mismos filtros, sin cursor ni límite de página.
+    params = parse_qs(query)
+    params.pop("limit", None)
+    params.pop("cursor", None)
+    all_rows = _incidents()
+    out = []
+    for item in all_rows:
+        try:
+            days = int((params.get("days") or ["0"])[0])
+        except ValueError:
+            days = 0
+        if days > 0 and (item.get("event_date") or "") < (date.today() - timedelta(days=days)).isoformat():
+            continue
+        if params.get("domain") and params["domain"][0] != "all" and item.get("category") != params["domain"][0]:
+            continue
+        if params.get("status") and params["status"][0] != "all" and item.get("verification_status") != params["status"][0]:
+            continue
+        attr = (item.get("attribution") or {}).get("status") or "none"
+        if params.get("attribution") and params["attribution"][0] != "all" and attr != params["attribution"][0]:
+            continue
+        q = (params.get("q") or [""])[0].casefold()
+        if q and q not in " ".join(str(item.get(k) or "") for k in ("id", "title", "description", "place", "country", "category_label")).casefold():
+            continue
+        out.append(item)
+    out.sort(key=lambda x: (x.get("event_date") or "", x.get("id") or ""), reverse=True)
+    handle = io.StringIO()
+    writer = csv.writer(handle)
+    writer.writerow(["id", "event_date", "title", "category", "category_label", "place", "country", "verification_status", "attribution", "sources"])
+    for item in out:
+        writer.writerow([
+            item.get("id"), item.get("event_date"), item.get("title"), item.get("category"),
+            item.get("category_label"), item.get("place"), item.get("country"),
+            item.get("verification_status"), (item.get("attribution") or {}).get("status") or "none",
+            " | ".join(s.get("url", "") for s in item.get("sources", [])),
+        ])
+    return handle.getvalue()
+
+
 def action_page(kind: str, token: str) -> str:
     confirm = kind == "confirm"
     title = "Confirma tu suscripción" if confirm else "Darse de baja"
@@ -302,6 +426,18 @@ class Handler(BaseHTTPRequestHandler):
         path = parts.path.rstrip("/")
         if path == f"{API}/health":
             return self.send_json(200, {"ok": True, "dry_run": DRY_RUN})
+        if path == f"{API}/incidentes":
+            page, meta = _incident_query(parts.query)
+            return self.send_json(200, {"items": page, **meta})
+        if path == f"{API}/incidentes.csv":
+            body = _incidents_csv(parts.query).encode("utf-8")
+            self.send_response(200)
+            self.send_header("Content-Type", "text/csv; charset=utf-8")
+            self.send_header("Content-Disposition", 'attachment; filename="incidentes-zonagris.csv"')
+            self.send_header("Content-Length", str(len(body)))
+            self.end_headers()
+            self.wfile.write(body)
+            return
         if path in {f"{API}/confirm", f"{API}/unsubscribe"}:
             token = (parse_qs(parts.query).get("id") or [""])[0]
             if not token:

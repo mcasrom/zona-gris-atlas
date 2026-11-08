@@ -423,3 +423,7 @@ form[data-subscribe] button[type="submit"]:hover {
 .incident-filters select option { background: #12171d; color: #e9ecef; }
 .incident-filters select:focus,
 .incident-filters input:focus { outline: 2px solid #ffb020; outline-offset: 2px; }
+
+.incident-pager { display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-top:14px; }
+.incident-pager .btn { min-width:auto; }
+.incident-pager .btn:disabled { opacity:.45; cursor:not-allowed; }
