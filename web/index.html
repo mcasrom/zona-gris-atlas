@@ -69,12 +69,21 @@
   <section class="section map-home" id="mapa">
     <div class="container">
       <div class="section-head"><div><p class="eyebrow">Mapa</p><h2>Dónde ocurrió y qué se sabe.</h2></div><p>Los marcadores solo se dibujan cuando hay una ciudad o región documentada. Si no hay coordenada verificable, el acontecimiento queda en la lista, no se inventa una posición.</p></div>
-      <div class="map-frame" data-map="preview">
-        <img src="assets/img/world-dots.svg" alt="Mapa mundial de puntos para situar acontecimientos documentados" width="1000" height="435">
-        <div class="map-markers" aria-live="polite"></div>
+      <div class="map-preview-grid">
+        <div class="map-preview-visual">
+          <div class="map-frame" data-map="preview">
+            <img src="assets/img/world-dots.svg" alt="Mapa mundial de puntos para situar acontecimientos documentados" width="1000" height="435">
+            <div class="map-markers" aria-live="polite"></div>
+          </div>
+          <div class="map-legend" aria-label="Leyenda de verificación"><span class="legend-item"><span class="legend-dot confirmed"></span>Confirmado</span><span class="legend-item"><span class="legend-dot documented"></span>Documentado</span><span class="legend-item"><span class="legend-dot pending"></span>Pendiente</span></div>
+        </div>
+        <aside class="map-preview-side">
+          <h3>Últimos incorporados</h3>
+          <ol class="preview-list" id="preview-latest"><li class="muted small">Cargando…</li></ol>
+          <p class="muted small" id="preview-coverage">Cargando cobertura…</p>
+          <div class="actions"><a class="btn btn-primary" href="mapa.html">Abrir el mapa completo</a><a class="btn" href="incidentes.html">Ver matriz</a></div>
+        </aside>
       </div>
-      <div class="map-legend" aria-label="Leyenda de verificación"><span class="legend-item"><span class="legend-dot confirmed"></span>Confirmado</span><span class="legend-item"><span class="legend-dot documented"></span>Documentado</span><span class="legend-item"><span class="legend-dot pending"></span>Pendiente</span></div>
-      <div class="actions" style="margin-top:18px"><a class="btn btn-primary" href="mapa.html">Abrir el mapa completo</a><a class="btn" href="mapa.html#EV-20261106-001">Ver una ficha</a></div>
     </div>
   </section>
 

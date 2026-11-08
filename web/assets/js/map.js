@@ -285,6 +285,24 @@
         bindFilters();
         update();
       }
+      var previewLatest = document.getElementById("preview-latest");
+      if (previewLatest) {
+        previewLatest.replaceChildren();
+        events.slice().sort(function (a, b) { return timeValue(b) - timeValue(a); }).slice(0, 5).forEach(function (item) {
+          var li = document.createElement("li");
+          var a = document.createElement("a");
+          a.href = "mapa.html#" + encodeURIComponent(item.id);
+          a.textContent = item.title;
+          li.appendChild(a);
+          li.appendChild(makeText("span", "meta", (item.event_date || "—") + " · " + (item.place || "sin ubicación") + " · " + statusLabel(item.verification_status)));
+          previewLatest.appendChild(li);
+        });
+      }
+      var coverage = document.getElementById("preview-coverage");
+      if (coverage) {
+        var located = events.filter(function (item) { return item.lat !== null && item.lon !== null; }).length;
+        coverage.textContent = located + " de " + events.length + " registros tienen ubicación documentada; los demás quedan en la lista, no en el mapa.";
+      }
       var latest = document.getElementById("latest-events");
       if (latest) {
         var recent = events.slice().sort(function (a, b) { return timeValue(b) - timeValue(a); }).slice(0, 5);
