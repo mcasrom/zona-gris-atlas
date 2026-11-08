@@ -119,6 +119,17 @@ if remote "test -e '$TARGET'"; then
 fi
 remote "mkdir -p '$RELEASES'"
 rsync -az --delete -e ssh "$ROOT/web/" "deploy@$SERVER:$TARGET/"
+# La captura automática es dueña de estos JSON. Un deploy manual de estáticos
+# no debe devolver la release a una foto antigua.
+if [ -n "$previous_target" ]; then
+  for dynamic in assets/data/events.json assets/data/primary.json; do
+    if remote "test -f '$previous_target/$dynamic'"; then
+      remote "mkdir -p '$TARGET/$(dirname "$dynamic")' && cp '$previous_target/$dynamic' '$TARGET/$dynamic'"
+    fi
+  done
+fi
+# El HTML es estático, pero el timestamp debe reflejar la última captura.
+remote "/usr/bin/python3 /home/deploy/atlas-zonagris-auto/scripts/update_capture_stamp.py --html '$TARGET/index.html' --events '$TARGET/assets/data/events.json' || true"
 for required in index.html mapa.html incidentes.html cobertura.html suscribirse.html en.html primarias.html 404.html assets/css/styles.css assets/js/map.js; do
   if ! remote "test -f '$TARGET/$required'"; then
     echo "release incompleto: falta $required; no se cambia current." >&2
