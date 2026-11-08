@@ -432,9 +432,17 @@ form[data-subscribe] button[type="submit"]:hover {
 .map-preview-visual .map-frame { max-height:320px; }
 .map-preview-side { border:1px solid var(--line); background:var(--panel); padding:18px; display:flex; flex-direction:column; min-height:0; }
 .map-preview-side h3 { margin:0 0 10px; }
-.preview-list { list-style:none; margin:0 0 12px; padding:0; overflow:auto; max-height:230px; border-top:1px solid var(--line); }
+.preview-list { list-style:none; margin:0 0 12px; padding:0; overflow:auto; max-height:160px; border-top:1px solid var(--line); }
 .preview-list li { border-bottom:1px solid var(--line); padding:9px 0; }
 .preview-list a { display:block; color:var(--text); text-decoration:none; font-size:.86rem; line-height:1.25; }
 .preview-list a:hover { color:var(--signal); }
 .preview-list .meta { display:block; color:var(--muted); font-size:.72rem; margin-top:4px; }
-@media (max-width:800px) { .map-preview-grid { grid-template-columns:1fr; } .map-preview-visual .map-frame { max-height:none; } .preview-list { max-height:260px; } }
+.preview-days { border-top:1px solid var(--line); padding-top:10px; margin:0 0 10px; }
+.preview-days-head { display:flex; justify-content:space-between; gap:8px; color:var(--muted); font-size:.66rem; letter-spacing:.08em; text-transform:uppercase; margin-bottom:7px; }
+.preview-days-bars { display:grid; grid-template-columns:repeat(8,minmax(0,1fr)); align-items:end; gap:4px; height:56px; }
+.preview-day { display:flex; flex-direction:column; align-items:center; justify-content:flex-end; height:100%; gap:3px; min-width:0; }
+.preview-day-bar { width:100%; min-height:2px; background:var(--signal); border-radius:2px 2px 0 0; opacity:.92; }
+.preview-day-bar.is-zero { background:var(--line); opacity:1; }
+.preview-day-count { font:500 .6rem/1 "IBM Plex Mono",monospace; color:var(--text-2); font-variant-numeric:tabular-nums; }
+.preview-day-label { color:var(--muted); font-size:.58rem; line-height:1; }
+@media (max-width:800px) { .map-preview-grid { grid-template-columns:1fr; } .map-preview-visual .map-frame { max-height:none; } .preview-list { max-height:200px; } }

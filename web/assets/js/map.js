@@ -259,6 +259,55 @@
     renderMap(frame, list);
   }
 
+  function renderDays() {
+    var holder = document.getElementById("preview-days-bars");
+    if (!holder) return;
+    var end = new Date(referenceDate || Date.now());
+    end.setUTCHours(0, 0, 0, 0);
+    var counts = {};
+    events.forEach(function (item) {
+      var raw = eventDate(item);
+      if (!raw) return;
+      var key = raw.slice(0, 10);
+      counts[key] = (counts[key] || 0) + 1;
+    });
+    var days = [];
+    var max = 1;
+    for (var i = 7; i >= 0; i -= 1) {
+      var date = new Date(end.getTime());
+      date.setUTCDate(end.getUTCDate() - i);
+      var key = date.toISOString().slice(0, 10);
+      var count = counts[key] || 0;
+      if (count > max) max = count;
+      days.push({date: date, count: count, key: key});
+    }
+    var dayFmt = new Intl.DateTimeFormat("es-ES", {day: "numeric", timeZone: "UTC"});
+    var monthFmt = new Intl.DateTimeFormat("es-ES", {month: "short", timeZone: "UTC"});
+    holder.replaceChildren();
+    days.forEach(function (day) {
+      var column = document.createElement("div");
+      column.className = "preview-day";
+      column.title = day.key + ": " + day.count + (day.count === 1 ? " evento" : " eventos");
+      var count = makeText("span", "preview-day-count", String(day.count));
+      var bar = document.createElement("span");
+      bar.className = "preview-day-bar";
+      bar.style.height = Math.max(2, Math.round((day.count / max) * 28)) + "px";
+      if (!day.count) bar.classList.add("is-zero");
+      var label = makeText("span", "preview-day-label", dayFmt.format(day.date));
+      column.appendChild(count);
+      column.appendChild(bar);
+      column.appendChild(label);
+      holder.appendChild(column);
+    });
+    holder.setAttribute("aria-label", "Eventos documentados por día: " + days.map(function (day) {
+      return dayFmt.format(day.date) + ": " + day.count;
+    }).join(", "));
+    var range = document.getElementById("preview-days-range");
+    if (range) {
+      range.textContent = dayFmt.format(days[0].date) + "–" + dayFmt.format(days[7].date) + " " + monthFmt.format(days[7].date).replace(".", "");
+    }
+  }
+
   function boot() {
     var frames = document.querySelectorAll("[data-map]");
     if (!frames.length) return;
@@ -298,6 +347,7 @@
           previewLatest.appendChild(li);
         });
       }
+      renderDays();
       var coverage = document.getElementById("preview-coverage");
       if (coverage) {
         var located = events.filter(function (item) { return item.lat !== null && item.lon !== null; }).length;
