@@ -19,6 +19,8 @@ EVENTS_AUTO = ROOT / "data" / "events" / "auto" / "events.jsonl"
 EVENTS_WEB = WEB / "assets" / "data" / "events.json"
 PRIMARY = ROOT / "data" / "events" / "primary" / "documents.json"
 PRIMARY_WEB = WEB / "assets" / "data" / "primary.json"
+PUBLIC_INCIDENTS = ROOT / "data" / "quality" / "reviewed" / "public_incidentes.json"
+PUBLIC_INCIDENTS_WEB = WEB / "assets" / "data" / "incidentes.json"
 QUERIES_CONFIG = ROOT / "config" / "queries.json"
 COVERAGE_WEB = WEB / "assets" / "data" / "coverage.json"
 REPO = SITE["repo"].rstrip("/")
@@ -49,6 +51,11 @@ def _jsonl(path: Path) -> list[dict]:
     if not path.exists():
         return []
     return [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
+
+
+def write_public_incidents() -> None:
+    if PUBLIC_INCIDENTS.exists():
+        PUBLIC_INCIDENTS_WEB.write_text(PUBLIC_INCIDENTS.read_text(encoding="utf-8"), encoding="utf-8")
 
 
 def write_events() -> None:
@@ -227,6 +234,7 @@ def replace_tokens() -> None:
 
 def main() -> int:
     write_events()
+    write_public_incidents()
     write_index_stats()
     write_coverage()
     write_primary()

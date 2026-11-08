@@ -124,7 +124,7 @@
     });
   }
   function boot() {
-    fetch("assets/data/events.json").then(function (r) { return r.json(); }).then(function (data) {
+    fetch("assets/data/incidentes.json").then(function (r) { return r.json(); }).then(function (data) {
       events = data.events || [];
       reference = new Date(data.generated_at || Date.now());
       var domains = {};

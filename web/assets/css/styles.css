@@ -404,3 +404,10 @@ form[data-subscribe] button[type="submit"]:hover {
 }
 .newsletter-box input[type="email"] { color: var(--paper); background: var(--ink); }
 .newsletter-box input[type="email"]::placeholder { color: var(--text-2); opacity: 1; }
+
+/* Contraste de la cabecera de la matriz */
+.incident-toolbar { background: var(--panel); color: var(--text); padding: 14px; border: 1px solid var(--line); }
+.incident-toolbar strong { color: var(--text); }
+.incident-filters label { color: var(--text-2); }
+.incident-summary { color: var(--text-2); }
+.incident-table th { color: var(--text-2); background: var(--panel); }

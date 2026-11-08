@@ -11,7 +11,7 @@ def test_incident_matrix_is_public_and_indexable() -> None:
     sitemap = (ROOT / "web" / "sitemap.xml").read_text(encoding="utf-8")
     assert 'Incidentes de zona gris en curso' in page
     assert 'canonical" href="https://zonagris.pruebapublica.com/incidentes.html"' in page
-    assert 'assets/data/events.json' in script
+    assert 'assets/data/incidentes.json' in script
     assert 'Por definir' in script
     assert 'incidentes.html' in sitemap
     assert 'assets/js/incidentes.js' in page
