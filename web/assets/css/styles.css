@@ -411,3 +411,15 @@ form[data-subscribe] button[type="submit"]:hover {
 .incident-filters label { color: var(--text-2); }
 .incident-summary { color: var(--text-2); }
 .incident-table th { color: var(--text-2); background: var(--panel); }
+
+/* Filtros de la matriz: texto legible sobre fondo oscuro */
+.incident-filters label { color: #ffffff !important; font-weight: 600; }
+.incident-filters select,
+.incident-filters input {
+  background: #12171d !important;
+  color: #e9ecef !important;
+  border-color: #5b6877 !important;
+}
+.incident-filters select option { background: #12171d; color: #e9ecef; }
+.incident-filters select:focus,
+.incident-filters input:focus { outline: 2px solid #ffb020; outline-offset: 2px; }
