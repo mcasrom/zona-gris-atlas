@@ -63,9 +63,12 @@ varias fuentes lo dejan en `PENDIENTE` hasta la revisión humana. El constructor
 degrada también los registros antiguos sin revisión. Los registros revisados tienen
 prioridad en la fusión. Detalle: [`docs/AUTO-INGESTA.md`](docs/AUTO-INGESTA.md).
 
-La web usa **dos columnas con scroll propio** para la lista del mapa, y una columna en
-móvil. Los marcadores solo aparecen cuando hay una ciudad o región documentada; los
-demás registros quedan en la lista.
+La portada combina un **mapa compacto**, los últimos incorporados y un
+**microcronograma de eventos por día** (últimos 8 días). Ese gráfico cuenta fechas
+de acontecimientos, **no ejecuciones de ingesta**. La lista del mapa usa **dos
+columnas con scroll propio** en escritorio y una columna en móvil. Los marcadores
+solo aparecen cuando hay una ciudad o región documentada; los demás registros
+quedan en la lista.
 
 ## Estado actual
 

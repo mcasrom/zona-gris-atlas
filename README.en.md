@@ -36,6 +36,11 @@ flowchart LR
   E --> X[Rejected or draft]
 ```
 
+The home page combines a **compact map**, the latest records and an
+**events-per-day strip** (last 8 days). The strip counts event dates, **not
+ingestion runs**. Map lists use two independently scrolling columns on desktop
+and one on mobile; markers only appear when a city or region is documented.
+
 ## Current state
 
 - **Live:** <https://zonagris.pruebapublica.com>.
