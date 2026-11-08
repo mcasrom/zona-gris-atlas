@@ -30,6 +30,7 @@ test -f "$CURRENT/assets/data/events.json"
 mkdir -p "$TARGET"
 cp -a "$CURRENT"/. "$TARGET/"
 cp "$BASE/build/events.json" "$TARGET/assets/data/events.json"
+/usr/bin/python3 scripts/update_capture_stamp.py --html "$TARGET/index.html" --events "$TARGET/assets/data/events.json" || true
 if [ -s "$BASE/data/events/primary/documents.json" ]; then
   cp "$BASE/data/events/primary/documents.json" "$TARGET/assets/data/primary.json"
 fi
