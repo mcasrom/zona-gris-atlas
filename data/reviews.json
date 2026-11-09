@@ -1,0 +1,27 @@
+{
+  "AUTO-0B744424F11B": {
+    "status": "RECHAZADO",
+    "note": "agregado de la ola de bombas; ya cubierta por casos específicos",
+    "reviewed_at": "2026-11-09T17:19:20+00:00"
+  },
+  "AUTO-B04F198D2C31": {
+    "status": "RECHAZADO",
+    "note": "agregado de la ola de bombas; ya cubierta por casos específicos",
+    "reviewed_at": "2026-11-09T17:20:06+00:00"
+  },
+  "AUTO-A2A2DD35997B": {
+    "status": "RECHAZADO",
+    "note": "agregado de la ola de bombas; ya cubierta por casos específicos",
+    "reviewed_at": "2026-11-09T18:14:04+00:00"
+  },
+  "AUTO-52B7927900EF": {
+    "status": "RECHAZADO",
+    "note": "Cuarentena: artículo del 4-nov dice Dec. 4 y campaña desde 17-nov (fechas imposibles); CrowdStrike data el informe el 29-oct. Es un informe de campaña, no un incidente con fecha/lugar.",
+    "reviewed_at": "2026-11-09T19:26:38.340625+00:00"
+  },
+  "AUTO-AB3F08EC7D67": {
+    "status": "RECHAZADO",
+    "note": "Agregado de la nueva ola de amenazas; cubierto por casos específicos. No es un incidente localizado.",
+    "reviewed_at": "2026-11-09T19:27:28.441992+00:00"
+  }
+}
