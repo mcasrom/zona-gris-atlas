@@ -16,6 +16,7 @@
 - Eventos publicados: https://zonagris.pruebapublica.com/assets/data/events.json
 - API paginada: https://zonagris.pruebapublica.com/api/atlas/incidentes
 - CSV: https://zonagris.pruebapublica.com/api/atlas/incidentes.csv
+- Grafo: https://zonagris.pruebapublica.com/assets/data/graph.json
 
 ## Cómo citar
 
