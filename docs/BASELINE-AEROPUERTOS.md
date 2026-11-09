@@ -1,6 +1,6 @@
 # Línea base de aeropuertos
 
-**Estado:** esquema y validador listos; backfill pendiente.  
+**Estado:** esquema y validador listos; semilla de 8 eventos en 1 mes. Backfill pendiente.  
 **Objetivo:** pasar de N0 (registro) a N1 (línea base) sin inventar tendencia.
 
 ## Qué cuenta
@@ -42,7 +42,7 @@ python scripts/build_baseline.py \
   --out data/baseline/airports-baseline.json
 ```
 
-El comando devuelve `status: insufficient` hasta que se alcancen los mínimos.
+La semilla actual son 8 eventos documentados de noviembre de 2026 en 8 dominios; el validador devuelve `insufficient` (8/50 eventos, 1/24 meses). No es una línea base.
 
 ## Descubrimiento de candidatos
 
