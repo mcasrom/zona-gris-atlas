@@ -32,3 +32,42 @@ def test_unreviewed_automatic_record_is_demoted_to_pending() -> None:
 def test_human_reviewed_automatic_record_keeps_documented() -> None:
     rows = builder.merge([], [_auto(reviewed=True)])
     assert rows[0]["verification_status"] == "DOCUMENTADO"
+
+
+def test_relation_followup_is_not_counted_as_independent() -> None:
+    parent = {
+        "id": "EV-PARENT",
+        "event_date": "2026-11-06",
+        "published_at": "2026-11-06",
+        "captured_at": "2026-11-06T16:00:00Z",
+        "title": "Bomb threat at Malpensa",
+        "sources": [{"url": "https://example.com/a"}],
+    }
+    follow = {
+        "id": "EV-FOLLOW",
+        "event_date": "2026-11-09",
+        "published_at": "2026-11-09",
+        "captured_at": "2026-11-09T16:00:00Z",
+        "title": "Follow-up on the same wave",
+        "sources": [{"url": "https://example.com/b"}],
+    }
+    out = builder.apply_relations(
+        [parent, follow],
+        {"EV-FOLLOW": {"type": "seguimiento", "of": "EV-PARENT", "note": "misma ola"}},
+    )
+    assert [row["id"] for row in out] == ["EV-PARENT"]
+    assert out[0]["follow_up_sources"][0]["url"] == "https://example.com/b"
+    assert "misma ola" in out[0]["observations"]
+
+
+def test_future_dates_are_quarantined() -> None:
+    assert not builder.valid_dates({
+        "event_date": "2026-12-04",
+        "published_at": "2026-11-04",
+        "captured_at": "2026-11-09T00:00:00Z",
+    })
+    assert builder.valid_dates({
+        "event_date": "2026-11-05",
+        "published_at": "2026-11-06",
+        "captured_at": "2026-11-09T00:00:00Z",
+    })
