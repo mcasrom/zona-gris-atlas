@@ -35,7 +35,7 @@ def main() -> int:
         "sources": len({s.get("url") for e in events for s in (e.get("sources") or []) if s.get("url")}),
     }
     for key, value in counts.items():
-        text = re.sub(rf'(data-stat="{key}"[^>]*>)[^<]*', lambda m: m.group(1) + str(value), text)
+        text = re.sub(rf'(data-stat="{key}"[^>]*>)[^<]*', lambda m, v=value: m.group(1) + str(v), text)
     coverage = f'{counts["coordinates"]} de {counts["total"]} registros tienen ubicación documentada; los demás quedan en la lista, no en el mapa.'
     text = re.sub(r'(id="preview-coverage"[^>]*>)[^<]*', lambda m: m.group(1) + coverage, text)
     args.html.write_text(text, encoding="utf-8")
