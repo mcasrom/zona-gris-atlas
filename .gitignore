@@ -20,3 +20,4 @@ models/*.pkl
 
 # Candidatos de descubrimiento; no son eventos verificados
 data/baseline/airports-candidates.csv
+data/baseline/airports-candidates-google.csv

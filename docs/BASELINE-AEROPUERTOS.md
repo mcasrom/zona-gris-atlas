@@ -50,9 +50,12 @@ La semilla actual son 8 eventos documentados de noviembre de 2026 en 8 dominios;
 `data/baseline/airports-candidates.csv` con `status=CANDIDATO`. **No entra en la
 línea base**: solo sirve para localizar piezas que luego se revisan a mano.
 
-GDELT limita peticiones (HTTP 429); si falla, no se inventan candidatos. La
-siguiente vía es el archivo de fuentes oficiales y hemerotecas, no insistir en
-el mismo endpoint.
+GDELT limita peticiones (HTTP 429); si falla, no se inventan candidatos.
+
+`scripts/discover_airports_google.py` usa Google News RSS como vía alternativa
+para descubrir piezas históricas por ventanas. Escribe
+`data/baseline/airports-candidates-google.csv`; tampoco entra en la línea base
+y no sustituye la revisión de la fuente original.
 
 ## Regla
 
