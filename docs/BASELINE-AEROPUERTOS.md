@@ -57,6 +57,10 @@ para descubrir piezas históricas por ventanas. Escribe
 `data/baseline/airports-candidates-google.csv`; tampoco entra en la línea base
 y no sustituye la revisión de la fuente original.
 
+`scripts/filter_airport_candidates.py` cruza los candidatos con el gazetteer y
+descarta falsos positivos evidentes. La última pasada dejó 94 candidatos en 21
+meses; siguen siendo candidatos, no eventos aceptados.
+
 ## Regla
 
 **N1 no es “hay muchos registros”. Es “hay serie histórica suficiente para comparar”.**
