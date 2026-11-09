@@ -82,7 +82,7 @@ el mismo `events.json` que el mapa, de modo que portada, mapa y API comparten un
 - **Estado (9-nov):** 17 eventos · **16 documentados** · **1 pendiente** · **12 con ubicación**. Mapa, matriz/API y fallback comparten el mismo total. `llms.txt` publicado.
 - **Release actual:** consultar `current`; las releases anteriores se conservan para rollback.
 - **Captura automática:** cron cada 6 horas; Bing News RSS como descubrimiento, matriz regional de consultas y capa primaria separada.
-- **Capa primaria:** `/primarias.html` · CERT-EU, JPCERT/CC, CERT.br y NCSC-UK; documentos, no incidentes.
+- **Capa primaria:** `/primarias.html` · CERT-EU, JPCERT/CC, CERT.br, NCSC-UK y EASA; **115 documentos**, no incidentes.
 - **Cobertura:** `/cobertura.html` · separa ámbito de consulta, candidatos y registros con ubicación documentada.
 - **Geolocalización:** `--geo-shadow` calcula sugerencias sin publicarlas; no está activa en producción.
 - **Resumen semanal:** `/suscribirse.html` · lista propia con doble opt-in, Resend y baja en un clic; no se mezcla con otras listas.

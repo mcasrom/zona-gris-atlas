@@ -29,6 +29,8 @@ SOURCES = (
      "country": "BR", "language": "pt", "license": "Revisar condiciones", "license_url": "https://www.cert.br/"},
     {"id": "ncsc-uk", "name": "NCSC-UK", "url": "https://www.ncsc.gov.uk/api/1/services/v1/report-rss-feed.xml",
      "country": "GB", "language": "en", "license": "Revisar condiciones", "license_url": "https://www.ncsc.gov.uk/"},
+    {"id": "easa", "name": "EASA", "url": "https://www.easa.europa.eu/en/newsroom-and-events/news/rss.xml",
+     "country": "EU", "language": "en", "license": "Revisar condiciones", "license_url": "https://www.easa.europa.eu/"},
 )
 SOURCE_ID = "cert-eu"
 SOURCE_NAME = "CERT-EU"
@@ -121,7 +123,7 @@ def parse_feed(raw: bytes, meta: dict | None = None) -> list[dict]:
 def main() -> int:
     parser = argparse.ArgumentParser(description="Capa de documentos primarios CERT-EU")
     parser.add_argument("--out", type=Path, default=DEFAULT_OUT)
-    parser.add_argument("--limit", type=int, default=60)
+    parser.add_argument("--limit", type=int, default=120)
     args = parser.parse_args()
 
     documents = []
