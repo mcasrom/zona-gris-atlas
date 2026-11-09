@@ -7,6 +7,7 @@
 - Mapa de acontecimientos: https://zonagris.pruebapublica.com/mapa.html
 - Matriz de incidentes: https://zonagris.pruebapublica.com/incidentes.html
 - Cobertura y límites: https://zonagris.pruebapublica.com/cobertura.html
+- Grafo: https://zonagris.pruebapublica.com/grafo.html
 - Metodología: https://zonagris.pruebapublica.com/metodologia.html
 - Fuentes: https://zonagris.pruebapublica.com/fuentes.html
 - Límites: https://zonagris.pruebapublica.com/limites.html

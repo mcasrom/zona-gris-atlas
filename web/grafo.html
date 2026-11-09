@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <title>Grafo de acontecimientos · Atlas Zona Gris</title>
+  <meta name="description" content="Grafo documental de acontecimientos, fuentes, lugares y categorías. Relaciones observadas, sin atribución de autoría.">
+  <link rel="canonical" href="https://zonagris.pruebapublica.com/grafo.html">
+  <meta name="theme-color" content="#12171d">
+  <link rel="preload" href="assets/fonts/archivo-latin-wdth.woff2" as="font" type="font/woff2" crossorigin>
+  <meta name="robots" content="index,follow">
+  <link rel="stylesheet" href="assets/css/styles.css?v=20261108f">
+  <style>
+    .graph-toolbar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:0 0 14px;color:var(--text-2);font-size:.8rem}
+    .graph-toolbar label{display:flex;gap:6px;align-items:center;cursor:pointer}
+    .graph-frame{position:relative;background:#151c24;border:1px solid var(--line);border-radius:2px;overflow:hidden}
+    .graph-frame svg{display:block;width:100%;height:auto;background:radial-gradient(circle at 50% 50%,#1b2430 0,#12171d 68%)}
+    .graph-legend{display:flex;flex-wrap:wrap;gap:14px;margin:10px 0 0;color:var(--muted);font-size:.75rem}
+    .graph-legend i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px;vertical-align:middle}
+    .graph-empty{padding:24px;color:var(--muted)}
+    .graph-edge{stroke:#394657;stroke-width:.7;opacity:.55}
+    .graph-node text{display:none;fill:var(--text-2);font-size:10px;pointer-events:none}
+    .graph-node.source text{fill:#8794a3;font-size:9px}
+    .graph-node.place text{fill:#8ec5ff}
+    .graph-node.category text{fill:#3ddc97}
+    .graph-node.event text{fill:#e9ecef;font-weight:700}
+    .graph-node circle{stroke:#12171d;stroke-width:2}
+    .graph-node.event circle{cursor:pointer}
+    .graph-node:hover circle{stroke:#ffb020;stroke-width:3}
+    .graph-node:hover text{display:block}
+    @media(max-width:700px){.graph-frame svg{min-height:480px}.graph-node.source text{display:none}}
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Atlas Zona Gris, inicio"><svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="#C5CCD4" stroke-width="1.6"/><path d="M3.5 12a8.5 8.5 0 0 0 17 0Z" fill="#FFB020"/></svg>ZONA GRIS</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-principal">Menú</button>
+    <nav class="nav" id="nav-principal" aria-label="Navegación principal"><a href="mapa.html">Mapa</a><a href="incidentes.html">Incidentes</a><a href="grafo.html" aria-current="page">Grafo</a><a href="cobertura.html">Cobertura</a><a href="registros.html">Registros</a><a href="metodologia.html">Método</a><a href="fuentes.html">Fuentes</a><a href="primarias.html">Primarias</a><a href="limites.html">Límites</a><a href="avisos.html">Avisos</a><a href="about.html">About</a><a href="suscribirse.html">Resumen</a><a href="en.html" hreflang="en">EN</a><a href="https://github.com/mcasrom/zona-gris-atlas">Código</a></nav>
+  </div>
+</header>
+<main id="contenido" class="container" style="padding-top:44px;padding-bottom:60px">
+  <div class="page-hero">
+    <p class="eyebrow">Grafo · relaciones documentales</p>
+    <h1>Qué aparece junto a qué.</h1>
+    <p class="lead">Cada evento se conecta con sus fuentes, su lugar documentado y su categoría. No es un grafo de autoría ni de coordinación: muestra relaciones presentes en los datos publicados.</p>
+  </div>
+  <div class="graph-toolbar" aria-label="Filtros del grafo">
+    <span><strong id="graph-count">—</strong> eventos · <span id="graph-edges">—</span> aristas</span>
+    <label><input type="checkbox" data-type="source" checked> Fuentes</label>
+    <label><input type="checkbox" data-type="place" checked> Lugares</label>
+    <label><input type="checkbox" data-type="category" checked> Categorías</label>
+  </div>
+  <div class="graph-frame" id="graph-frame"><div class="graph-empty">Cargando grafo…</div></div>
+  <div class="graph-legend" aria-label="Leyenda"><span><i style="background:#ffb020"></i>Evento documentado</span><span><i style="background:#5b6877"></i>Evento pendiente</span><span><i style="background:#8ec5ff"></i>Lugar</span><span><i style="background:#3ddc97"></i>Categoría</span><span><i style="background:#8794a3"></i>Fuente</span></div>
+  <p class="muted small">La posición es una distribución radial para hacer legible el conjunto; no representa distancia geográfica. Las fuentes se muestran como dominio, no como cuenta. Pasa el cursor sobre un nodo para ver su nombre.</p>
+  <p><a class="btn" href="mapa.html">Ver mapa completo</a> <a class="btn" href="incidentes.html">Ver matriz</a></p>
+</main>
+<footer class="site-footer"><div class="container footer-grid"><div><p>Proyecto personal de un único autor. Código bajo AGPL-3.0. Sin cookies ni rastreadores.</p></div><div class="footer-links"><a href="index.html">Inicio</a><a href="mapa.html">Mapa</a><a href="incidentes.html">Incidentes</a><a href="grafo.html">Grafo</a><a href="cobertura.html">Cobertura</a><a href="registros.html">Registros</a><a href="metodologia.html">Método</a><a href="fuentes.html">Fuentes</a><a href="primarias.html">Primarias</a><a href="https://github.com/mcasrom/zona-gris-atlas">GitHub</a><a class="kofi-link" href="https://ko-fi.com/m_castillo">Apoyar en Ko-fi</a><span class="footer-version">Miguel Castillo · v0.1.1</span></div></div></footer>
+<script src="assets/js/site.js" defer></script>
+<script src="assets/js/grafo.js?v=20261109" defer></script>
+</body>
+</html>
