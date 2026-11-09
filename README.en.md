@@ -46,7 +46,7 @@ and one on mobile; markers only appear when a city or region is documented.
 - **Live:** <https://zonagris.pruebapublica.com>.
 - **State (9 Nov):** 17 events · **16 documented** · **1 pending** · **12 located**. Map, matrix/API and no-JS fallback share the same total. `llms.txt` is published.
 - **Automatic capture:** every 6 hours from Bing News RSS as discovery, plus a regional query matrix.
-- **Primary layer:** `/primarias.html` — CERT-EU, JPCERT/CC, CERT.br, NCSC-UK and EASA; **115 documents**, not incidents.
+- **Primary layer:** `/primarias.html` — CERT-EU, JPCERT/CC, CERT.br, NCSC-UK, EASA and CERT-FR; **155 documents**, not incidents.
 - **Coverage:** `/cobertura.html` — query scope, candidates and documented locations are separate.
 - **Publication rule:** automatic candidates always remain `PENDIENTE`; only human review can promote a record to `DOCUMENTADO`.
 - **Classifier:** experimental and never publishes. There is no release gate and no bulk-labelling requirement; human review is per record.
