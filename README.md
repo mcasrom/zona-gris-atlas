@@ -79,7 +79,7 @@ el mismo `events.json` que el mapa, de modo que portada, mapa y API comparten un
 ## Estado actual
 
 - **Publicado en Hetzner:** `https://zonagris.pruebapublica.com`.
-- **Estado (9-nov):** 18 eventos · **16 documentados** · **2 pendientes** · **12 con ubicación**. Mapa, matriz/API y fallback comparten el mismo total. `llms.txt` publicado.
+- **Estado (9-nov):** 17 eventos · **16 documentados** · **1 pendiente** · **12 con ubicación**. Mapa, matriz/API y fallback comparten el mismo total. `llms.txt` publicado.
 - **Release actual:** consultar `current`; las releases anteriores se conservan para rollback.
 - **Captura automática:** cron cada 6 horas; Bing News RSS como descubrimiento, matriz regional de consultas y capa primaria separada.
 - **Capa primaria:** `/primarias.html` · CERT-EU, JPCERT/CC, CERT.br y NCSC-UK; documentos, no incidentes.
