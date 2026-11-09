@@ -9,10 +9,8 @@ from __future__ import annotations
 import argparse
 import csv
 import hashlib
-import re
 import time
 import xml.etree.ElementTree as ET
-from datetime import date, datetime
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 
