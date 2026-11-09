@@ -63,15 +63,34 @@ def merge(curated: list[dict], automatic: list[dict]) -> list[dict]:
     return rows
 
 
+def apply_reviews(rows: list[dict], reviews: dict) -> list[dict]:
+    out = []
+    for row in rows:
+        review = reviews.get(row.get("id"))
+        if review:
+            status = str(review.get("status") or "").upper()
+            if status == "RECHAZADO":
+                continue
+            if status in {"DOCUMENTADO", "PENDIENTE", "CONFIRMADO"}:
+                row["verification_status"] = status
+                row["reviewed_by_human"] = True
+                row["reviewed_at"] = review.get("reviewed_at")
+                row["status_reason"] = review.get("note") or "decisión de revisión humana"
+        out.append(row)
+    return out
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--curated", type=Path, default=CURATED)
     parser.add_argument("--auto", type=Path, default=AUTO)
+    parser.add_argument("--reviews", type=Path, default=ROOT / "data" / "reviews.json")
     parser.add_argument("--out", type=Path, default=OUT)
     args = parser.parse_args()
     curated = load(args.curated)
     automatic = load(args.auto)
-    rows = merge(curated, automatic)
+    reviews = json.loads(args.reviews.read_text(encoding="utf-8")) if args.reviews.exists() else {}
+    rows = apply_reviews(merge(curated, automatic), reviews)
     if not rows:
         raise SystemExit("datos inválidos: faltan registros")
     generated = max((row.get("captured_at") or "" for row in rows), default="") or datetime.now(timezone.utc).isoformat()

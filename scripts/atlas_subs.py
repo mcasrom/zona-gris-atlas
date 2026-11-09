@@ -32,6 +32,8 @@ REPLY_TO = os.environ.get("ATLAS_SUBS_REPLY_TO", "info.zonagris@pruebapublica.co
 HOST = os.environ.get("ATLAS_SUBS_HOST", "127.0.0.1")
 PORT = int(os.environ.get("ATLAS_SUBS_PORT", "3033"))
 INCIDENTS_PATH = Path(os.environ.get("ATLAS_INCIDENTS_PATH", "/var/www/atlas-zonagris/current/assets/data/incidentes.json"))
+REVIEWS_PATH = Path("/home/deploy/atlas-zonagris-auto/data/reviews.json")
+REVIEW_TOKEN_PATH = Path("/home/deploy/atlas-subs/review_token")
 DRY_RUN = os.environ.get("ATLAS_SUBS_DRY_RUN", "0") == "1"
 API = "/api/atlas"
 EMAIL_RE = re.compile(r"^[^@\s]{1,64}@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$")
@@ -445,10 +447,42 @@ class Handler(BaseHTTPRequestHandler):
             return self.send_html(200, action_page("confirm" if path.endswith("confirm") else "unsubscribe", token))
         return self.send_json(404, {"error": "not found"})
 
+    def review_ok(self) -> bool:
+        try:
+            expected = REVIEW_TOKEN_PATH.read_text(encoding="utf-8").strip()
+        except OSError:
+            return False
+        supplied = (self.headers.get("X-Atlas-Review-Token") or "").strip()
+        return bool(expected and supplied and secrets.compare_digest(expected, supplied))
+
+    def save_review(self, data: dict) -> tuple[bool, str]:
+        event_id = clean(data.get("id"), 80)
+        status = clean(data.get("status"), 20).upper()
+        note = clean(data.get("note"), 500)
+        if not event_id or status not in {"DOCUMENTADO", "PENDIENTE", "RECHAZADO"}:
+            return False, "decisión inválida"
+        reviews = {}
+        try:
+            if REVIEWS_PATH.exists():
+                reviews = json.loads(REVIEWS_PATH.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            reviews = {}
+        reviews[event_id] = {"status": status, "note": note, "reviewed_at": now_iso()}
+        REVIEWS_PATH.parent.mkdir(parents=True, exist_ok=True)
+        tmp = REVIEWS_PATH.with_suffix(".tmp")
+        tmp.write_text(json.dumps(reviews, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        tmp.replace(REVIEWS_PATH)
+        return True, "decisión guardada"
+
     def do_POST(self):
         if not rate_ok(self.client_address[0]):
             return self.send_json(429, {"error": "demasiadas peticiones"})
         path = urlsplit(self.path).path.rstrip("/")
+        if path == f"{API}/review":
+            if not self.review_ok():
+                return self.send_json(401, {"error": "no autorizado"})
+            ok, message = self.save_review(self.read_json())
+            return self.send_json(200 if ok else 400, {"ok": ok, "message": message})
         if path == f"{API}/subscribe":
             data = self.read_json()
             email = data.get("email")

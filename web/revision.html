@@ -12,8 +12,9 @@
 <body>
 <header class="site-header"><div class="container header-inner"><a class="brand" href="index.html"><svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="#C5CCD4" stroke-width="1.6"/><path d="M3.5 12a8.5 8.5 0 0 0 17 0Z" fill="#FFB020"/></svg>ZONA GRIS</a><nav class="nav"><a href="index.html">Portada</a><a href="mapa.html">Mapa</a><a href="incidentes.html">Incidentes</a><a href="grafo.html">Grafo</a></nav></div></header>
 <main id="contenido" class="container" style="padding-top:44px;padding-bottom:60px">
-  <div class="page-hero"><p class="eyebrow">Interno · solo lectura</p><h1>Cola de revisión.</h1><p class="lead">Candidatos automáticos que aún no tienen revisión humana. Esta página no aprueba, rechaza ni modifica estados: solo muestra qué falta por decidir.</p></div>
-  <p class="muted small">Fuente: <code>assets/data/events.json</code>. No indexable.</p>
+  <div class="page-hero"><p class="eyebrow">Interno · revisión</p><h1>Cola de revisión.</h1><p class="lead">Candidatos automáticos que aún no tienen revisión humana. Introduce el token para decidir. Las decisiones se guardan y se aplican en el próximo ciclo.</p></div>
+  <p class="muted small">Fuente: <code>assets/data/events.json</code>. No indexable. El token no se publica en el HTML.</p>
+  <div class="review-auth"><label for="review-token">Token de revisión</label><input id="review-token" type="password" autocomplete="off"><button type="button" id="review-token-save">Entrar</button><span id="review-msg" class="muted small"></span></div>
   <div id="review-list" class="muted">Cargando…</div>
 </main>
 <footer class="site-footer"><div class="container"><p>Proyecto personal de un único autor. Código AGPL-3.0. Sin cookies.</p></div></footer>
