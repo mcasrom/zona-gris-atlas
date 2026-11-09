@@ -1,0 +1,22 @@
+# Zona Gris · Atlas de acontecimientos
+
+> Observatorio documental de acontecimientos e incidencias en infraestructuras y servicios esenciales. No atribuye autoría ni intención. Los registros automáticos permanecen como `PENDIENTE` hasta revisión humana.
+
+## Qué ofrece
+
+- Mapa de acontecimientos: https://zonagris.pruebapublica.com/mapa.html
+- Matriz de incidentes: https://zonagris.pruebapublica.com/incidentes.html
+- Cobertura y límites: https://zonagris.pruebapublica.com/cobertura.html
+- Metodología: https://zonagris.pruebapublica.com/metodologia.html
+- Fuentes: https://zonagris.pruebapublica.com/fuentes.html
+- Límites: https://zonagris.pruebapublica.com/limites.html
+
+## Datos
+
+- Eventos publicados: https://zonagris.pruebapublica.com/assets/data/events.json
+- API paginada: https://zonagris.pruebapublica.com/api/atlas/incidentes
+- CSV: https://zonagris.pruebapublica.com/api/atlas/incidentes.csv
+
+## Cómo citar
+
+Atlas Zona Gris. Miguel Castillo. https://zonagris.pruebapublica.com/

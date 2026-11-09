@@ -24,8 +24,22 @@ def main() -> int:
     label = f"{stamp.day} {months[stamp.month - 1]} {stamp.year}, {stamp:%H:%M}"
     text = args.html.read_text(encoding="utf-8")
     text = re.sub(r'<time[^>]*data-last-capture[^>]*>[^<]*</time>', f'<time id="last-capture" data-last-capture datetime="{captured}">{label}</time>', text)
+    events = data.get("events", [])
+    counts = {
+        "total": len(events),
+        "confirmed": sum(1 for e in events if e.get("verification_status") == "CONFIRMADO"),
+        "documented": sum(1 for e in events if e.get("verification_status") == "DOCUMENTADO"),
+        "pending": sum(1 for e in events if e.get("verification_status") == "PENDIENTE"),
+        "coordinates": sum(1 for e in events if e.get("lat") is not None and e.get("lon") is not None),
+        "unlocated": sum(1 for e in events if e.get("lat") is None or e.get("lon") is None),
+        "sources": len({s.get("url") for e in events for s in (e.get("sources") or []) if s.get("url")}),
+    }
+    for key, value in counts.items():
+        text = re.sub(rf'(data-stat="{key}"[^>]*>)[^<]*', lambda m: m.group(1) + str(value), text)
+    coverage = f'{counts["coordinates"]} de {counts["total"]} registros tienen ubicación documentada; los demás quedan en la lista, no en el mapa.'
+    text = re.sub(r'(id="preview-coverage"[^>]*>)[^<]*', lambda m: m.group(1) + coverage, text)
     args.html.write_text(text, encoding="utf-8")
-    print(f"timestamp {label}")
+    print(f"timestamp {label} · {counts}")
     return 0
 
 

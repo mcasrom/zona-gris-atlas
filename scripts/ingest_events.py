@@ -83,7 +83,14 @@ CATEGORY_TERMS = {
     "ia_ataques": ("ai-powered", "ai attack", "artificial intelligence attack", "llm attack", "machine learning attack", "model poisoning", "prompt injection", "ai cyberattack"),
     "migracion_instrumentalizada": ("instrumentalized migration", "instrumentalised migration", "weaponized migration", "weaponised migration", "hybrid migration", "border pressure", "migratory pressure", "migration as a weapon", "state-sponsored migration"),
 }
-NOISE = re.compile(r"\b(opinion|opinión|analysis|análisis|explainer|explicador|what we know|lo que sabemos|raise[sd]? concerns?|raise[sd]? questions?|rail works|engineering works|rail strike|planned disruption|forecast|outlook)\b", re.I)
+NOISE = re.compile(
+    r"\b(opinion|opinión|analysis|análisis|explainer|explicador|what we know|lo que sabemos|"
+    r"raise[sd]? concerns?|raise[sd]? questions?|rail works|engineering works|rail strike|"
+    r"planned disruption|forecast|outlook|report says|according to (?:a )?report|study|survey|"
+    r"on alert|must expect|to seek|project|completion|views?|post|podcast|editorial|"
+    r"road closures|policing operation|integration|annual|guide|travel guide|risk[s]?|"
+    r"warns?|warning|unverified|threat-sharing|gaps?)\b", re.I)
+BLOCKED_DOMAINS = {"msn.com", "europesays.com", "nomadlawyer.org"}
 OFFICIAL_DOMAINS = {
     "boe.es", "europa.eu", "ec.europa.eu", "cert.europa.eu", "easa.europa.eu",
     "eurocontrol.int", "cisa.gov", "nato.int", "interior.gob.es", "guardiacivil.es",
@@ -205,6 +212,9 @@ def parse_feed(raw: bytes, category: str, region: str = "") -> list[dict]:
         )
         if NOISE.search(title):
             continue
+        url = decode_bing(raw_link)
+        if domain(url) in BLOCKED_DOMAINS:
+            continue
         if not query_relevant(category, title + " " + description):
             continue
         published = parse_date(text_of(item, "pubDate") or text_of(item, "{http://www.w3.org/2005/Atom}updated"))
@@ -216,8 +226,8 @@ def parse_feed(raw: bytes, category: str, region: str = "") -> list[dict]:
         rows.append({
             "title": title,
             "description": description,
-            "url": decode_bing(raw_link),
-            "domain": domain(decode_bing(raw_link)),
+            "url": url,
+            "domain": domain(url),
             "published_at": published,
             "category": category_guess,
             "query_scope": region,
@@ -227,6 +237,18 @@ def parse_feed(raw: bytes, category: str, region: str = "") -> list[dict]:
     return rows
 
 
+def event_family(row: dict, place: dict | None) -> str | None:
+    """Une la ola europea de amenazas de bomba sin fundir casos con lugar propio."""
+    if row.get("category") != "amenazas_bomba" or place:
+        return None
+    text = (row.get("title", "") + " " + row.get("description", "")).casefold()
+    if re.search(r"\b(bomb|bombs|hoax|hoaxes)\b", text) and re.search(
+        r"\b(airport|airports|flight|flights|airline|airlines|europe|newsroom|newsrooms)\b", text
+    ):
+        return "bomb-europe-wave"
+    return None
+
+
 def group_rows(rows: list[dict], places: dict | None = None) -> list[list[dict]]:
     groups: list[list[dict]] = []
     for row in sorted(rows, key=lambda x: x["published_at"], reverse=True):
@@ -234,15 +256,19 @@ def group_rows(rows: list[dict], places: dict | None = None) -> list[list[dict]]
         row_place = place_for(row["title"] + " " + row["description"], places) if places else None
         place_key = row_place["name"] if row_place else None
         target = None
+        family = event_family(row, row_place)
         for group in groups:
             first = group[0]
             if first["category"] != row["category"]:
                 continue
-            if abs((date.fromisoformat(first["published_at"]) - date.fromisoformat(row["published_at"])).days) > 2:
-                continue
             first_place = place_for(first["title"] + " " + first["description"], places) if places else None
+            first_family = event_family(first, first_place)
             same_place = bool(place_key and first_place and place_key == first_place["name"])
-            if similar(tokens, title_tokens(first["title"])) >= 0.58 or same_place:
+            family_match = bool(family and family == first_family)
+            window = 5 if family_match else 2
+            if abs((date.fromisoformat(first["published_at"]) - date.fromisoformat(row["published_at"])).days) > window:
+                continue
+            if family_match or similar(tokens, title_tokens(first["title"])) >= 0.58 or same_place:
                 target = group
                 break
         if target is None:

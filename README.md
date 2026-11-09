@@ -70,6 +70,12 @@ columnas con scroll propio** en escritorio y una columna en móvil. Los marcador
 solo aparecen cuando hay una ciudad o región documentada; los demás registros
 quedan en la lista.
 
+La captura automática descarta análisis, previsiones, obras, posts virales y
+agregadores de baja calidad; agrupa titulares del mismo episodio y bloquea
+dominios que no aportan una fuente verificable. La matriz pública se genera desde
+el mismo `events.json` que el mapa, de modo que portada, mapa y API comparten un
+único total. El fallback sin JavaScript se actualiza desde esa misma captura.
+
 ## Estado actual
 
 - **Publicado en Hetzner:** `https://zonagris.pruebapublica.com`.
