@@ -46,3 +46,14 @@ def test_duplicate_event_ids_are_not_counted_twice() -> None:
     }
     result = baseline.build([row, row], domain="airports", min_months=1, min_events=1)
     assert result["n_events"] == 1
+
+
+def test_candidate_rows_do_not_enter_baseline() -> None:
+    row = {
+        "event_id": "C1", "event_date": "2026-01-01", "published_at": "2026-01-02",
+        "airport": "", "country": "", "event_type": "bomb",
+        "source_url": "https://example.org", "source_type": "news",
+        "independent_group": "example.org", "status": "CANDIDATO", "notes": "",
+    }
+    result = baseline.build([row], domain="airports", min_months=1, min_events=1)
+    assert result["n_events"] == 0

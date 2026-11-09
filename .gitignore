@@ -17,3 +17,6 @@ web/assets/data/incidents.generated.json
 
 models/
 models/*.pkl
+
+# Candidatos de descubrimiento; no son eventos verificados
+data/baseline/airports-candidates.csv

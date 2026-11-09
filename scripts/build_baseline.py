@@ -41,6 +41,8 @@ def build(rows: list[dict], *, domain: str, min_months: int, min_events: int) ->
         event_id = row["event_id"].strip()
         if not event_id or event_id in seen:
             continue
+        if row.get("status", "").strip().upper() not in {"DOCUMENTADO", "CORROBORADO", "CONFIRMADO"}:
+            continue
         event_date = _date(row["event_date"])
         published = _date(row["published_at"]) if row.get("published_at") else event_date
         if event_date > published:

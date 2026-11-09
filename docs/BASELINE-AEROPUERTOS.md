@@ -44,6 +44,16 @@ python scripts/build_baseline.py \
 
 El comando devuelve `status: insufficient` hasta que se alcancen los mínimos.
 
+## Descubrimiento de candidatos
+
+`scripts/discover_airports_baseline.py` consulta GDELT por ventanas y escribe
+`data/baseline/airports-candidates.csv` con `status=CANDIDATO`. **No entra en la
+línea base**: solo sirve para localizar piezas que luego se revisan a mano.
+
+GDELT limita peticiones (HTTP 429); si falla, no se inventan candidatos. La
+siguiente vía es el archivo de fuentes oficiales y hemerotecas, no insistir en
+el mismo endpoint.
+
 ## Regla
 
 **N1 no es “hay muchos registros”. Es “hay serie histórica suficiente para comparar”.**
