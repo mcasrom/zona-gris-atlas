@@ -89,8 +89,8 @@ NOISE = re.compile(
     r"planned disruption|forecast|outlook|report says|according to (?:a )?report|study|survey|"
     r"on alert|must expect|to seek|project|completion|views?|post|podcast|editorial|"
     r"road closures|policing operation|integration|annual|guide|travel guide|risk[s]?|"
-    r"warns?|warning|unverified|threat-sharing|gaps?)\b", re.I)
-BLOCKED_DOMAINS = {"msn.com", "europesays.com", "nomadlawyer.org"}
+    r"warns?|warning|unverified|threat-sharing|gaps?|exposes? a new front|raises? questions?)\b", re.I)
+BLOCKED_DOMAINS = {"msn.com", "europesays.com", "nomadlawyer.org", "rustourismnews.com"}
 OFFICIAL_DOMAINS = {
     "boe.es", "europa.eu", "ec.europa.eu", "cert.europa.eu", "easa.europa.eu",
     "eurocontrol.int", "cisa.gov", "nato.int", "interior.gob.es", "guardiacivil.es",
