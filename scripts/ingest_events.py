@@ -238,13 +238,18 @@ def parse_feed(raw: bytes, category: str, region: str = "") -> list[dict]:
 
 
 def event_family(row: dict, place: dict | None) -> str | None:
-    """Une la ola europea de amenazas de bomba sin fundir casos con lugar propio."""
-    if row.get("category") != "amenazas_bomba" or place:
+    """Une la ola europea de amenazas de bomba sin fundir casos concretos.
+
+    Un titular con un aeropuerto identificado sigue siendo un caso propio. Los
+    titulares de alcance ("varios vuelos", "varios aeropuertos", "redacciones",
+    "en toda Europa") se agrupan como un solo episodio.
+    """
+    if row.get("category") != "amenazas_bomba":
         return None
     text = (row.get("title", "") + " " + row.get("description", "")).casefold()
-    if re.search(r"\b(bomb|bombs|hoax|hoaxes)\b", text) and re.search(
-        r"\b(airport|airports|flight|flights|airline|airlines|europe|newsroom|newsrooms)\b", text
-    ):
+    if not re.search(r"\b(bomb|bombs|hoax|hoaxes)\b", text):
+        return None
+    if re.search(r"\b(several|multiple|newsrooms?|across europe|airports across|flights across)\b", text):
         return "bomb-europe-wave"
     return None
 
