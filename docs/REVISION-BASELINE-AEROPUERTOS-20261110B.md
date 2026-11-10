@@ -24,8 +24,8 @@ inconsistencias entre la fecha del registro y la fecha real de la pieza:
 
 ## Consecuencias documentales
 
-- Corroborados: **55**.
-- Documentados: **10**.
+- Corroborados: **60**.
+- Documentados: **5**.
 - El mes de **2025-06** queda sin eventos; no se rellena con una pieza de otro
   episodio.
 - **2026-11** queda en 8 eventos, pero sigue siendo parcial y no se compara.
