@@ -1,0 +1,10 @@
+review_id,event_date,airport,primary_url,secondary_url,secondary_domain,status
+R09,2025-05-06,Moscow,https://www.pbs.org/newshour/world/ukraine-drone-attacks-briefly-shut-down-moscows-international-airports,https://www.france24.com/en/europe/20250506-russia-suspends-airport-traffic-following-overnight-drone-strikes-ukraine,france24.com,CANDIDATO
+R20,2025-09-22,Copenhagen,https://www.nbcnews.com/world/europe/copenhagen-airport-suspends-flights-due-large-drone-sightings-rcna233091,https://www.reuters.com/business/aerospace-defense/copenhagen-airport-halts-traffic-due-drone-sightings-police-says-2025-09-22/,reuters.com,CANDIDATO
+R21,2025-10-02,Munich,https://www.reuters.com/world/europe/munich-airport-reopens-after-overnight-closure-due-drone-sightings-reuters-2025-10-03/,https://www.nbcnews.com/world/europe/drone-sightings-disrupt-munich-airport-halt-flights-impact-thousands-rcna235327,nbcnews.com,CANDIDATO
+R24,2025-11-04,Brussels,https://www.politico.eu/article/brussels-zaventem-airport-closure-drone/,https://www.vrt.be/vrtnws/en/2025/11/05/air-traffic-halted-last-night-due-to-drones-at-brussels-airport/,vrt.be,CANDIDATO
+R39,2026-05-30,Munich,https://www.pravda.com.ua/eng/news/2026/05/30/8037043/,https://www.euronews.com/2026/05/30/flights-suspended-at-munich-airport-after-reported-drone-sighting,euronews.com,CANDIDATO
+R42,2026-06-29,New York,https://www.nytimes.com/2026/06/29/nyregion/drone-jetblue-kennedy-airport.html,https://www.wsj.com/business/airlines/jetblue-pilot-reports-striking-drone-at-new-yorks-jfk-airport-cddab75d,wsj.com,CANDIDATO
+R44,2026-08-05,Leipzig/Halle,https://www.theguardian.com/world/2026/aug/05/the-leipzig-drone-bomb-marks-a-dangerous-escalation-for-europe,https://www.bbc.com/news/articles/cyvlg4q48l3o,bbc.com,CANDIDATO
+R54,2026-10-13,Ben Gurion,https://www.calcalistech.com/ctechnews/article/rkeyyljjzg,https://simpleflying.com/bomb-threat-delta-a330-isolation-tel-aviv-airport/,simpleflying.com,CANDIDATO
+R55,2026-10-19,Ben Gurion,https://www.dw.com/en/austrian-airlines-flight-from-tel-aviv-makes-emergency-landing-after-bomb-threat/a-79695070,https://www.bbc.com/news/articles/c680zdmn100lo,bbc.com,CANDIDATO
