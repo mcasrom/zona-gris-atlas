@@ -1,16 +1,20 @@
 event_id,event_date,published_at,airport,country,event_type,source_url,source_type,independent_group,status,notes
 REV-R01,2024-11-09,2024-11-09,LaGuardia Airport,,bomb,https://simpleflying.com/suspicious-package-new-york-laguardia-evacuation/,news,simpleflying.com,DOCUMENTADO,revisión manual
+REV-E01,2024-12-15,2024-12-15,Boston Logan International Airport,,drone,https://www.bbc.com/news/articles/clyvnnj8g34o,news,bbc.com,DOCUMENTADO,revisión manual
 REV-M01,2024-12-17,2024-12-17,Nantucket Memorial Airport,,drone,https://nantucketcurrent.com/news/small-drone-discovered-on-airfield-at-nantucket-memorial-airport,news,nantucketcurrent.com,DOCUMENTADO,revisión manual
 REV-R04,2025-01-04,2025-01-04,Pulkovo Airport,,drone,https://www.themoscowtimes.com/2025/01/04/drone-attack-halts-flights-at-st-petersburg-airport-a87508,news,themoscowtimes.com,DOCUMENTADO,revisión manual
 REV-R05,2025-01-23,2025-01-23,Newark Liberty International Airport,,bomb,https://www.nydailynews.com/2025/01/23/atlantic-city-airport-bomb-threat-standoff/,news,nydailynews.com,DOCUMENTADO,revisión manual
 REV-R06,2025-02-23,2025-02-23,John F. Kennedy International Airport,,bomb,https://patch.com/new-york/new-york-city/bomb-threat-forces-flight-jfk-airport-land-rome-reports,news,patch.com,DOCUMENTADO,revisión manual
 REV-R08,2025-03-06,2025-03-06,Jersey Airport,,bomb,https://www.bailiwickexpress.com/news/investigation-underway-into-cause-of-jersey-airport-evacuation/,news,bailiwickexpress.com,DOCUMENTADO,revisión manual
+REV-E02,2025-04-13,2025-04-13,Aspen/Pitkin County Airport,,evacuation,https://www.cbsnews.com/colorado/news/aspen-colorado-airport-evacuated-security-situation/,news,cbsnews.com,DOCUMENTADO,revisión manual
 REV-M02,2025-04-25,2025-04-25,St. Pete-Clearwater International Airport,,bomb_threat,https://www.wtsp.com/article/news/local/pinellascounty/st-pete-clearwater-airport-security-incident-evacuate/67-c31574fb-b3f0-4f36-ae34-71bba119f642,news,wtsp.com,DOCUMENTADO,revisión manual
 REV-R09,2025-05-06,2025-05-06,Moscow Airports,,drone,https://www.pbs.org/newshour/world/ukraine-drone-attacks-briefly-shut-down-moscows-international-airports,news,pbs.org,DOCUMENTADO,revisión manual
 REV-R10,2025-05-21,2025-05-21,Moscow Airports,,drone,https://united24media.com/latest-news/moscows-air-defenses-intercept-drone-attack-causing-temporary-airport-disruptions-8554,news,united24media.com,DOCUMENTADO,revisión manual
 REV-R13,2025-06-25,2025-06-25,Jersey Airport,,bomb,https://www.bbc.co.uk/news/articles/c8e476w2j0zo,news,bbc.co.uk,DOCUMENTADO,revisión manual
 REV-R17,2025-07-20,2025-07-20,Moscow Airports,,drone,https://www.bbc.com/news/articles/cpvjewnrde0o,news,bbc.com,DOCUMENTADO,revisión manual
+REV-E05,2025-08-15,2025-08-15,Lanzarote Airport,,drone,https://gazettelife.com/news/reported-drone-suspends-air-traffic-at-lanzarote-airport/,news,gazettelife.com,DOCUMENTADO,revisión manual
 REV-M03,2025-08-20,2025-08-20,Vilnius Airport,,drone,https://www.lrt.lt/en/news-in-english/19/2649181/drone-sighting-temporarily-halts-flights-at-vilnius-airport,news,lrt.lt,DOCUMENTADO,revisión manual
+REV-E04,2025-08-24,2025-08-24,Chattanooga Metropolitan Airport,,bomb_threat,https://newschannel9.com/news/local/chattanooga-airport-temporarily-closed-after-bomb-threat-call-prompts-security-sweep,news,newschannel9.com,DOCUMENTADO,revisión manual
 REV-R19,2025-09-07,2025-09-07,Ramon International Airport,,drone,https://abc7ny.com/post/israel-news-today-rare-hit-drone-fired-yemens-houthi-rebels-strikes-ramon-international-airport-eilat/17764676/,news,abc7ny.com,DOCUMENTADO,revisión manual
 REV-R20,2025-09-22,2025-09-22,Copenhagen Airport,,drone,https://www.nbcnews.com/world/europe/copenhagen-airport-suspends-flights-due-large-drone-sightings-rcna233091,news,nbcnews.com,DOCUMENTADO,revisión manual
 REV-R21,2025-10-02,2025-10-02,Munich Airport,,drone,https://www.reuters.com/world/europe/munich-airport-reopens-after-overnight-closure-due-drone-sightings-reuters-2025-10-03/,news,reuters.com,DOCUMENTADO,revisión manual
@@ -18,8 +22,13 @@ REV-R24,2025-11-04,2025-11-04,Brussels Airport,,drone,https://www.politico.eu/ar
 REV-R25,2025-11-04,2025-11-04,Ronald Reagan Washington National Airport,,bomb,https://www.nytimes.com/2025/11/04/us/reagan-airport-ground-stop.html,news,nytimes.com,DOCUMENTADO,revisión manual
 REV-R27,2025-11-05,2025-11-05,Brussels Airport,,drone,https://www.dw.com/en/flights-resume-at-brussels-airport-after-drone-sightings/a-74620347,news,dw.com,DOCUMENTADO,revisión manual
 REV-R29,2025-11-06,2025-11-06,Brussels Airport,,drone,https://www.reuters.com/business/aerospace-defense/flights-diverted-brussels-airport-amid-new-unconfirmed-drone-sightings-2025-11-06/,news,reuters.com,DOCUMENTADO,revisión manual
+REV-E06,2025-12-03,2025-12-03,Baltimore/Washington International Airport,,evacuation,https://www.cbsnews.com/baltimore/video/hundreds-of-bwi-airport-travelers-evacuated-by-law-enforcement-investigation/,news,cbsnews.com,DOCUMENTADO,revisión manual
+REV-E07,2025-12-08,2025-12-08,Vilnius Airport,,drone,https://www.aviation24.be/airports/vilnius-vno/two-detained-after-drone-incursion-halts-flights-at-vilnius-airport/,news,aviation24.be,DOCUMENTADO,revisión manual
 REV-M04,2025-12-31,2025-12-31,Kansas City International Airport,,bomb_threat,https://www.newsweek.com/bomb-threat-kansas-city-international-airport-mci-11290575,news,newsweek.com,DOCUMENTADO,revisión manual
+REV-E10,2026-01-05,2026-01-05,Bismarck Municipal Airport,,bomb_threat,https://www.kfyrtv.com/2026/01/05/bismarck-airport-evacuated-due-bomb-threat/,news,kfyrtv.com,DOCUMENTADO,revisión manual
+REV-E09,2026-01-15,2026-01-15,Great Falls International Airport,,bomb_threat,https://www.krtv.com/news/great-falls-news/bomb-threat-prompts-multi-agency-response-at-great-falls-airport,news,krtv.com,DOCUMENTADO,revisión manual
 REV-M05,2026-01-26,2026-01-26,Montgomery Regional Airport,,bomb_threat,https://www.wsfa.com/2026/01/26/montgomery-regional-airport-resumes-normal-operations-after-bomb-threat/,news,wsfa.com,DOCUMENTADO,revisión manual
+REV-E08,2026-01-31,2026-01-31,Yeager Airport,,bomb_threat,https://wchstv.com/news/local/multiple-agencies-respond-to-reported-bomb-threat-at-wva-international-yeager-airport,news,wchstv.com,DOCUMENTADO,revisión manual
 REV-R30,2026-02-11,2026-02-11,El Paso International Airport,,drone,https://www.nytimes.com/live/2026/02/11/us/faa-el-paso-flights-airport,news,nytimes.com,DOCUMENTADO,revisión manual
 REV-R31,2026-03-02,2026-03-02,Fort Lauderdale-Hollywood International Airport,,bomb,https://www.wpbf.com/article/florida-new-york-elderly-man-arrested-for-bomb-threat-at-fort-lauderdale-airport/70578410,news,wpbf.com,DOCUMENTADO,revisión manual
 REV-R32,2026-03-11,2026-03-11,Warsaw Chopin Airport,,bomb,https://www.ynetnews.com/travel/article/bybatsppze,news,ynetnews.com,DOCUMENTADO,revisión manual
