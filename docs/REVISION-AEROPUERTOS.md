@@ -57,6 +57,6 @@ No se rellena con noticias inventadas ni con seguimientos.
 - Total con la semilla: **47 eventos**
 - Cobertura: **20 meses**
 - Faltan: **3 eventos y 5 meses**
-- **39/39 aceptados** tienen solo el dominio como fuente, no la URL de la pieza
+- **39/39 aceptados** tienen URL directa de la pieza tras resolver los enlaces de Google News
 
 El baseline sigue en **`insufficient`**. No se publica N1.

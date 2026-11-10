@@ -42,7 +42,7 @@ python scripts/build_baseline.py \
   --out data/baseline/airports-baseline.json
 ```
 
-La semilla + revisión manual suma 47 eventos documentados en 20 meses; el validador devuelve `insufficient` (47/50 eventos, 20/24 meses). No es una línea base. Además, 39 aceptados tienen solo el dominio como URL, no la pieza original.
+La semilla + revisión manual suma 47 eventos documentados en 20 meses; el validador devuelve `insufficient` (47/50 eventos, 20/24 meses). Las 39 piezas aceptadas ya tienen URL directa tras resolver los enlaces de Google News.
 
 ## Descubrimiento de candidatos
 

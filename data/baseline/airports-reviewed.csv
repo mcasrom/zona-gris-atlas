@@ -1,43 +1,43 @@
 event_id,event_date,published_at,airport,country,event_type,source_url,source_type,independent_group,status,notes
-REV-R01,2024-11-09,2024-11-09,LaGuardia Airport,,bomb,https://simpleflying.com,news,simpleflying.com,DOCUMENTADO,"revisión manual; fuente=dominio, falta URL de pieza"
-REV-R04,2025-01-04,2025-01-04,Pulkovo Airport,,drone,https://www.themoscowtimes.com,news,themoscowtimes.com,DOCUMENTADO,"revisión manual; fuente=dominio, falta URL de pieza"
-REV-R05,2025-01-23,2025-01-23,Newark Liberty International Airport,,bomb,https://www.nydailynews.com,news,nydailynews.com,DOCUMENTADO,"revisión manual; fuente=dominio, falta URL de pieza"
-REV-R06,2025-02-23,2025-02-23,John F. Kennedy International Airport,,bomb,https://patch.com,news,patch.com,DOCUMENTADO,"revisión manual; fuente=dominio, falta URL de pieza"
-REV-R08,2025-03-06,2025-03-06,Jersey Airport,,bomb,https://www.bailiwickexpress.com,news,bailiwickexpress.com,DOCUMENTADO,"revisión manual; fuente=dominio, falta URL de pieza"
-REV-R09,2025-05-06,2025-05-06,Moscow Airports,,drone,https://www.pbs.org,news,pbs.org,DOCUMENTADO,"revisión manual; fuente=dominio, falta URL de pieza"
-REV-R10,2025-05-21,2025-05-21,Moscow Airports,,drone,https://united24media.com,news,united24media.com,DOCUMENTADO,"revisión manual; fuente=dominio, falta URL de pieza"
-REV-R13,2025-06-25,2025-06-25,Jersey Airport,,bomb,https://www.bbc.co.uk,news,bbc.co.uk,DOCUMENTADO,"revisión manual; fuente=dominio, falta URL de pieza"
-REV-R17,2025-07-20,2025-07-20,Moscow Airports,,drone,https://www.bbc.com,news,bbc.com,DOCUMENTADO,"revisión manual; fuente=dominio, falta URL de pieza"
-REV-R19,2025-09-07,2025-09-07,Ramon International Airport,,drone,https://abc7ny.com,news,abc7ny.com,DOCUMENTADO,"revisión manual; fuente=dominio, falta URL de pieza"
-REV-R20,2025-09-22,2025-09-22,Copenhagen Airport,,drone,https://www.reuters.com,news,reuters.com,DOCUMENTADO,"revisión manual; fuente=dominio, falta URL de pieza"
-REV-R21,2025-10-02,2025-10-02,Munich Airport,,drone,https://www.reuters.com,news,reuters.com,DOCUMENTADO,"revisión manual; fuente=dominio, falta URL de pieza"
-REV-R24,2025-11-04,2025-11-04,Brussels Airport,,drone,https://www.politico.eu,news,politico.eu,DOCUMENTADO,"revisión manual; fuente=dominio, falta URL de pieza"
-REV-R25,2025-11-04,2025-11-04,Ronald Reagan Washington National Airport,,bomb,https://www.nytimes.com,news,nytimes.com,DOCUMENTADO,"revisión manual; fuente=dominio, falta URL de pieza"
-REV-R27,2025-11-05,2025-11-05,Brussels Airport,,drone,https://www.dw.com,news,dw.com,DOCUMENTADO,"revisión manual; fuente=dominio, falta URL de pieza"
-REV-R29,2025-11-06,2025-11-06,Brussels Airport,,drone,https://www.reuters.com,news,reuters.com,DOCUMENTADO,"revisión manual; fuente=dominio, falta URL de pieza"
-REV-R30,2026-02-11,2026-02-11,El Paso International Airport,,drone,https://www.nytimes.com,news,nytimes.com,DOCUMENTADO,"revisión manual; fuente=dominio, falta URL de pieza"
-REV-R31,2026-03-02,2026-03-02,Fort Lauderdale-Hollywood International Airport,,bomb,https://www.wpbf.com,news,wpbf.com,DOCUMENTADO,"revisión manual; fuente=dominio, falta URL de pieza"
-REV-R32,2026-03-11,2026-03-11,Warsaw Chopin Airport,,bomb,https://www.ynetnews.com,news,ynetnews.com,DOCUMENTADO,"revisión manual; fuente=dominio, falta URL de pieza"
-REV-R33,2026-03-12,2026-03-12,Ronald Reagan Washington National Airport,,evacuation,https://www.nbcwashington.com,news,nbcwashington.com,DOCUMENTADO,"revisión manual; fuente=dominio, falta URL de pieza"
-REV-R34,2026-03-16,2026-03-16,Dubai International Airport,,drone,https://www.washingtonpost.com,news,washingtonpost.com,DOCUMENTADO,"revisión manual; fuente=dominio, falta URL de pieza"
-REV-R35,2026-04-20,2026-04-20,Denver International Airport,,bomb,https://nypost.com,news,nypost.com,DOCUMENTADO,"revisión manual; fuente=dominio, falta URL de pieza"
-REV-R36,2026-04-20,2026-04-20,Washington Dulles International Airport,,bomb,https://www.nbcwashington.com,news,nbcwashington.com,DOCUMENTADO,"revisión manual; fuente=dominio, falta URL de pieza"
-REV-R37,2026-05-11,2026-05-11,Ben Gurion Airport,,evacuation,https://www.ynetnews.com,news,ynetnews.com,DOCUMENTADO,"revisión manual; fuente=dominio, falta URL de pieza"
-REV-R38,2026-05-11,2026-05-11,Brussels Airport,,bomb,https://www.israelhayom.com,news,israelhayom.com,DOCUMENTADO,"revisión manual; fuente=dominio, falta URL de pieza"
-REV-R39,2026-05-30,2026-05-30,Munich Airport,,drone,https://www.reuters.com,news,reuters.com,DOCUMENTADO,"revisión manual; fuente=dominio, falta URL de pieza"
-REV-R40,2026-06-12,2026-06-12,John F. Kennedy International Airport,,bomb,https://www.nbcnewyork.com,news,nbcnewyork.com,DOCUMENTADO,"revisión manual; fuente=dominio, falta URL de pieza"
-REV-R41,2026-06-27,2026-06-27,Newark Liberty International Airport,,drone,https://www.nytimes.com,news,nytimes.com,DOCUMENTADO,"revisión manual; fuente=dominio, falta URL de pieza"
-REV-R42,2026-06-29,2026-06-29,John F. Kennedy International Airport,,drone,https://www.nytimes.com,news,nytimes.com,DOCUMENTADO,"revisión manual; fuente=dominio, falta URL de pieza"
-REV-R43,2026-07-14,2026-07-14,Jersey Airport,,drone,https://www.bbc.com,news,bbc.com,DOCUMENTADO,"revisión manual; fuente=dominio, falta URL de pieza"
-REV-R44,2026-08-05,2026-08-05,Leipzig/Halle Airport,,drone,https://www.theguardian.com,news,theguardian.com,DOCUMENTADO,"revisión manual; fuente=dominio, falta URL de pieza"
-REV-R51,2026-09-03,2026-09-03,Birmingham Airport,,bomb,https://1819news.com,news,1819news.com,DOCUMENTADO,"revisión manual; fuente=dominio, falta URL de pieza"
-REV-R52,2026-09-12,2026-09-12,Brussels Airport,,drone,https://www.reuters.com,news,reuters.com,DOCUMENTADO,"revisión manual; fuente=dominio, falta URL de pieza"
-REV-R53,2026-10-02,2026-10-02,Chișinău International Airport,,bomb,https://www.kyivpost.com,news,kyivpost.com,DOCUMENTADO,"revisión manual; fuente=dominio, falta URL de pieza"
-REV-R54,2026-10-13,2026-10-13,Ben Gurion Airport,,bomb,https://simpleflying.com,news,simpleflying.com,DOCUMENTADO,"revisión manual; fuente=dominio, falta URL de pieza"
-REV-R55,2026-10-19,2026-10-19,Ben Gurion Airport,,bomb,https://www.dw.com,news,dw.com,DOCUMENTADO,"revisión manual; fuente=dominio, falta URL de pieza"
-REV-R56,2026-10-30,2026-10-30,Jersey Airport,,drone,https://migflug.com,news,migflug.com,DOCUMENTADO,"revisión manual; fuente=dominio, falta URL de pieza"
-REV-R57,2026-10-30,2026-10-30,Moscow Airports,,drone,https://www.pravda.com.ua,news,pravda.com.ua,DOCUMENTADO,"revisión manual; fuente=dominio, falta URL de pieza"
-REV-R58,2026-10-31,2026-10-31,Jersey Airport,,drone,https://jerseyeveningpost.com,news,jerseyeveningpost.com,DOCUMENTADO,"revisión manual; fuente=dominio, falta URL de pieza"
+REV-R01,2024-11-09,2024-11-09,LaGuardia Airport,,bomb,https://simpleflying.com/suspicious-package-new-york-laguardia-evacuation/,news,simpleflying.com,DOCUMENTADO,revisión manual
+REV-R04,2025-01-04,2025-01-04,Pulkovo Airport,,drone,https://www.themoscowtimes.com/2025/01/04/drone-attack-halts-flights-at-st-petersburg-airport-a87508,news,themoscowtimes.com,DOCUMENTADO,revisión manual
+REV-R05,2025-01-23,2025-01-23,Newark Liberty International Airport,,bomb,https://www.nydailynews.com/2025/01/23/atlantic-city-airport-bomb-threat-standoff/,news,nydailynews.com,DOCUMENTADO,revisión manual
+REV-R06,2025-02-23,2025-02-23,John F. Kennedy International Airport,,bomb,https://patch.com/new-york/new-york-city/bomb-threat-forces-flight-jfk-airport-land-rome-reports,news,patch.com,DOCUMENTADO,revisión manual
+REV-R08,2025-03-06,2025-03-06,Jersey Airport,,bomb,https://www.bailiwickexpress.com/news/investigation-underway-into-cause-of-jersey-airport-evacuation/,news,bailiwickexpress.com,DOCUMENTADO,revisión manual
+REV-R09,2025-05-06,2025-05-06,Moscow Airports,,drone,https://www.pbs.org/newshour/world/ukraine-drone-attacks-briefly-shut-down-moscows-international-airports,news,pbs.org,DOCUMENTADO,revisión manual
+REV-R10,2025-05-21,2025-05-21,Moscow Airports,,drone,https://united24media.com/latest-news/moscows-air-defenses-intercept-drone-attack-causing-temporary-airport-disruptions-8554,news,united24media.com,DOCUMENTADO,revisión manual
+REV-R13,2025-06-25,2025-06-25,Jersey Airport,,bomb,https://www.bbc.co.uk/news/articles/c8e476w2j0zo,news,bbc.co.uk,DOCUMENTADO,revisión manual
+REV-R17,2025-07-20,2025-07-20,Moscow Airports,,drone,https://www.bbc.com/news/articles/cpvjewnrde0o,news,bbc.com,DOCUMENTADO,revisión manual
+REV-R19,2025-09-07,2025-09-07,Ramon International Airport,,drone,https://abc7ny.com/post/israel-news-today-rare-hit-drone-fired-yemens-houthi-rebels-strikes-ramon-international-airport-eilat/17764676/,news,abc7ny.com,DOCUMENTADO,revisión manual
+REV-R20,2025-09-22,2025-09-22,Copenhagen Airport,,drone,https://www.nbcnews.com/world/europe/copenhagen-airport-suspends-flights-due-large-drone-sightings-rcna233091,news,nbcnews.com,DOCUMENTADO,revisión manual
+REV-R21,2025-10-02,2025-10-02,Munich Airport,,drone,https://www.reuters.com/world/europe/munich-airport-reopens-after-overnight-closure-due-drone-sightings-reuters-2025-10-03/,news,reuters.com,DOCUMENTADO,revisión manual
+REV-R24,2025-11-04,2025-11-04,Brussels Airport,,drone,https://www.politico.eu/article/brussels-zaventem-airport-closure-drone/,news,politico.eu,DOCUMENTADO,revisión manual
+REV-R25,2025-11-04,2025-11-04,Ronald Reagan Washington National Airport,,bomb,https://www.nytimes.com/2025/11/04/us/reagan-airport-ground-stop.html,news,nytimes.com,DOCUMENTADO,revisión manual
+REV-R27,2025-11-05,2025-11-05,Brussels Airport,,drone,https://www.dw.com/en/flights-resume-at-brussels-airport-after-drone-sightings/a-74620347,news,dw.com,DOCUMENTADO,revisión manual
+REV-R29,2025-11-06,2025-11-06,Brussels Airport,,drone,https://www.reuters.com/business/aerospace-defense/flights-diverted-brussels-airport-amid-new-unconfirmed-drone-sightings-2025-11-06/,news,reuters.com,DOCUMENTADO,revisión manual
+REV-R30,2026-02-11,2026-02-11,El Paso International Airport,,drone,https://www.nytimes.com/live/2026/02/11/us/faa-el-paso-flights-airport,news,nytimes.com,DOCUMENTADO,revisión manual
+REV-R31,2026-03-02,2026-03-02,Fort Lauderdale-Hollywood International Airport,,bomb,https://www.wpbf.com/article/florida-new-york-elderly-man-arrested-for-bomb-threat-at-fort-lauderdale-airport/70578410,news,wpbf.com,DOCUMENTADO,revisión manual
+REV-R32,2026-03-11,2026-03-11,Warsaw Chopin Airport,,bomb,https://www.ynetnews.com/travel/article/bybatsppze,news,ynetnews.com,DOCUMENTADO,revisión manual
+REV-R33,2026-03-12,2026-03-12,Ronald Reagan Washington National Airport,,evacuation,https://www.nbcwashington.com/news/local/reagan-national-airport-concourse-evacuated-over-suspicious-package/4074512/,news,nbcwashington.com,DOCUMENTADO,revisión manual
+REV-R34,2026-03-16,2026-03-16,Dubai International Airport,,drone,https://www.washingtonpost.com/world/2026/03/16/dubai-airport-drone-strike-iran/,news,washingtonpost.com,DOCUMENTADO,revisión manual
+REV-R35,2026-04-20,2026-04-20,Denver International Airport,,bomb,https://nypost.com/2026/04/20/us-news/united-plane-forced-to-evacuate-over-bomb-threat-at-denver-airport-the-second-scare-in-days/,news,nypost.com,DOCUMENTADO,revisión manual
+REV-R36,2026-04-20,2026-04-20,Washington Dulles International Airport,,bomb,https://www.nbcwashington.com/news/local/flight-from-denver-lands-safely-at-dulles-airport-after-bomb-threat/4093085/,news,nbcwashington.com,DOCUMENTADO,revisión manual
+REV-R37,2026-05-11,2026-05-11,Ben Gurion Airport,,evacuation,https://www.ynetnews.com/travel/article/hyqi4rtagl,news,ynetnews.com,DOCUMENTADO,revisión manual
+REV-R38,2026-05-11,2026-05-11,Brussels Airport,,bomb,https://www.israelhayom.com/2026/11/05/airliner-lands-brussels-bomb-threats-bulgaria/,news,israelhayom.com,DOCUMENTADO,revisión manual
+REV-R39,2026-05-30,2026-05-30,Munich Airport,,drone,https://www.pravda.com.ua/eng/news/2026/05/30/8037043/,news,pravda.com.ua,DOCUMENTADO,revisión manual
+REV-R40,2026-06-12,2026-06-12,John F. Kennedy International Airport,,bomb,https://www.nbcnewyork.com/new-york-city/jfk-bomb-threat-evacuation-terminal-4/6512396/,news,nbcnewyork.com,DOCUMENTADO,revisión manual
+REV-R41,2026-06-27,2026-06-27,Newark Liberty International Airport,,drone,https://www.nytimes.com/2026/06/27/nyregion/united-plane-pilot-drone-newark.html,news,nytimes.com,DOCUMENTADO,revisión manual
+REV-R42,2026-06-29,2026-06-29,John F. Kennedy International Airport,,drone,https://www.nytimes.com/2026/06/29/nyregion/drone-jetblue-kennedy-airport.html,news,nytimes.com,DOCUMENTADO,revisión manual
+REV-R43,2026-07-14,2026-07-14,Jersey Airport,,drone,https://www.bbc.com/news/articles/cx2x7ln3d41o,news,bbc.com,DOCUMENTADO,revisión manual
+REV-R44,2026-08-05,2026-08-05,Leipzig/Halle Airport,,drone,https://www.theguardian.com/world/2026/aug/05/the-leipzig-drone-bomb-marks-a-dangerous-escalation-for-europe,news,theguardian.com,DOCUMENTADO,revisión manual
+REV-R51,2026-09-03,2026-09-03,Birmingham Airport,,bomb,https://1819news.com/news/item/birmingham-airport-confirms-bomb-threat-calling-it-a-security-issue-that-led-to-flight-to-dc-cancellation,news,1819news.com,DOCUMENTADO,revisión manual
+REV-R52,2026-09-12,2026-09-12,Brussels Airport,,drone,https://www.reuters.com/world/brussels-airport-traffic-disrupted-friday-evening-after-drone-sighting-2026-09-12/,news,reuters.com,DOCUMENTADO,revisión manual
+REV-R53,2026-10-02,2026-10-02,Chișinău International Airport,,bomb,https://www.kyivpost.com/post/85973,news,kyivpost.com,DOCUMENTADO,revisión manual
+REV-R54,2026-10-13,2026-10-13,Ben Gurion Airport,,bomb,https://www.calcalistech.com/ctechnews/article/rkeyyljjzg,news,calcalistech.com,DOCUMENTADO,revisión manual
+REV-R55,2026-10-19,2026-10-19,Ben Gurion Airport,,bomb,https://www.dw.com/en/austrian-airlines-flight-from-tel-aviv-makes-emergency-landing-after-bomb-threat/a-79695070,news,dw.com,DOCUMENTADO,revisión manual
+REV-R56,2026-10-30,2026-10-30,Jersey Airport,,drone,https://migflug.com/afterburner/de/jersey-airport-drone-disruption-diverted-flights-october-2026/,news,migflug.com,DOCUMENTADO,revisión manual
+REV-R57,2026-10-30,2026-10-30,Moscow Airports,,drone,https://www.pravda.com.ua/eng/news/2026/10/30/8060370/,news,pravda.com.ua,DOCUMENTADO,revisión manual
+REV-R58,2026-10-31,2026-10-31,Jersey Airport,,drone,https://jerseyeveningpost.com/news/2026/10/31/flights-diverted-after-drone-reports-spark-major-operation-near-jersey-airport/,news,jerseyeveningpost.com,DOCUMENTADO,revisión manual
 EV-20261106-002,2026-11-01,2026-11-01,Aeropuerto de Jersey,Jersey,drone,https://www.islandfm.com/news/jersey/airport-drones-every-available-avenue-is-being-pursued/,news,www.islandfm.com,DOCUMENTADO,seed desde events.json; pendiente de contraste
 EV-20261106-001,2026-11-05,2026-11-06,"Aeropuerto de Leipzig/Halle, Schkeuditz",Alemania,drone,https://www.tagesspiegel.de/politik/anschlagsversuch-mit-drohne-in-leipzig-ermittler-fahnden-mit-ki-bild-nach-verdachtigem-auf-e-bike-16251482.html,news,www.tagesspiegel.de,DOCUMENTADO,seed desde events.json; pendiente de contraste
 EV-20261106-004,2026-11-05,2026-11-05,Aeropuerto Rey Fahd,Arabia Saudí,drone,https://www.siasat.com/houthis-claim-drone-attack-on-dammam-airport-3570433/,news,www.siasat.com,DOCUMENTADO,seed desde events.json; pendiente de contraste
