@@ -1,7 +1,7 @@
 # Corroboración de aeropuertos
 
 **Fecha:** 10-nov-2026  
-**Estado:** 9 candidatos de segunda fuente; **ninguno elevado todavía**.
+**Estado:** **9 eventos corroborados** con segunda fuente directa; 50 siguen solo documentados.
 
 | Evento | Primera fuente | Segunda fuente |
 |---|---|---|
@@ -24,4 +24,4 @@ Dos medios distintos no bastan si comparten el mismo cable o la misma nota de ag
 - **59 eventos**
 - **9 con candidato de segunda fuente**
 - **50 solo con fuente primaria**
-- N1 sigue siendo **documental**, no una base de incidentes corroborados.
+- N1 combina **9 corroborados** y **50 documentados**. La corroboración es por fuente directa de dominio distinto; no se ha auditado sindicación en todos los casos.
