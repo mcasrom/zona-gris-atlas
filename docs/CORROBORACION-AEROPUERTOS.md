@@ -1,7 +1,7 @@
 # Corroboración de aeropuertos
 
 **Fecha:** 10-nov-2026  
-**Estado:** **55 eventos corroborados** con segunda fuente directa; 10 siguen solo documentados.
+**Estado:** **60 eventos corroborados** con segunda fuente directa; 5 siguen solo documentados.
 
 | Evento | Primera fuente | Segunda fuente |
 |---|---|---|
@@ -60,6 +60,11 @@
 | Jersey, 5-mar-2025 | Bailiwick Express | BBC |
 | Fort Lauderdale, 1-mar-2026 | WPBF | NBC Miami |
 | Varsovia, 3-nov-2026 | Ynet | TVP World |
+| Atlantic City, 23-ene-2025 | New York Daily News | Press of Atlantic City |
+| Augusta, 1-abr-2025 | WRDW | Augusta Chronicle |
+| Lanzarote, 15-ago-2025 | Gazette Life | La Voz de Lanzarote |
+| Suvarnabhumi, 22-dic-2025 | Thai PBS | Nation Thailand |
+| Rey Fahd, 5-nov-2026 | Siasat | Dawn |
 
 ## Regla
 
@@ -68,6 +73,6 @@ Dos medios distintos no bastan si comparten el mismo cable o la misma nota de ag
 ## Estado del baseline
 
 - **65 eventos**
-- **55 con candidato de segunda fuente**
-- **10 solo con fuente primaria**
-- N1 combina **55 corroborados** y **10 documentados**. La corroboración es por fuente directa de dominio distinto; no se ha auditado sindicación en todos los casos.
+- **60 con candidato de segunda fuente**
+- **5 solo con fuente primaria**
+- N1 combina **60 corroborados** y **5 documentados**. La corroboración es por fuente directa de dominio distinto; no se ha auditado sindicación en todos los casos.
