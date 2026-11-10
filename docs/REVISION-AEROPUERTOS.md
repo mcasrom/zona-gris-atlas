@@ -48,3 +48,15 @@ La revisión puede dar menos de 50 eventos. En ese caso faltan:
 - fuentes oficiales o hemeroteca.
 
 No se rellena con noticias inventadas ni con seguimientos.
+
+## Resultado de la revisión (10-nov-2026)
+
+- **39 aceptados**
+- **17 duplicados**
+- **3 rechazados**
+- Total con la semilla: **47 eventos**
+- Cobertura: **20 meses**
+- Faltan: **3 eventos y 5 meses**
+- **39/39 aceptados** tienen solo el dominio como fuente, no la URL de la pieza
+
+El baseline sigue en **`insufficient`**. No se publica N1.
