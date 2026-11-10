@@ -89,7 +89,7 @@ el mismo `events.json` que el mapa, de modo que portada, mapa y API comparten un
 ## Estado actual
 
 - **Publicado en Hetzner:** `https://zonagris.pruebapublica.com`.
-- **Estado del registro público (10-nov):** **15 eventos documentados**, 0 pendientes, con mapa, matriz/API y fallback compartiendo el mismo total.
+- **Estado del registro público (10-nov):** **19 eventos**, **15 documentados** y **4 pendientes**, con mapa, matriz/API y fallback compartiendo el mismo total.
 - **Baseline de aeropuertos (capa separada):** **69 eventos / 25 meses**, **9 corroborados** y **60 documentados**; `data/baseline/airports-baseline-v1.json` congelado con SHA-256.
 - **N2 aeropuertos:** **61 eventos / 24 meses completos**; mediana 2, p90 5; solo **2025-12** (6) por encima. 2026-11 es parcial y queda fuera.
 - **Release actual:** consultar `current`; las releases anteriores se conservan para rollback.
