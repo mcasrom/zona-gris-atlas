@@ -1,7 +1,7 @@
 # Corroboración de aeropuertos
 
 **Fecha:** 10-nov-2026  
-**Estado:** **27 eventos corroborados** con segunda fuente directa; 41 siguen solo documentados.
+**Estado:** **27 eventos corroborados** con segunda fuente directa; 39 siguen solo documentados.
 
 | Evento | Primera fuente | Segunda fuente |
 |---|---|---|
@@ -39,7 +39,7 @@ Dos medios distintos no bastan si comparten el mismo cable o la misma nota de ag
 
 ## Estado del baseline
 
-- **68 eventos**
+- **66 eventos**
 - **27 con candidato de segunda fuente**
-- **41 solo con fuente primaria**
-- N1 combina **27 corroborados** y **41 documentados**. La corroboración es por fuente directa de dominio distinto; no se ha auditado sindicación en todos los casos.
+- **39 solo con fuente primaria**
+- N1 combina **27 corroborados** y **39 documentados**. La corroboración es por fuente directa de dominio distinto; no se ha auditado sindicación en todos los casos.

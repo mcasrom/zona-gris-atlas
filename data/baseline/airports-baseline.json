@@ -1,6 +1,6 @@
 {
   "domain": "airports",
-  "generated_at": "2026-11-10T21:27:47.517621+00:00",
+  "generated_at": "2026-11-10T21:30:49.828118+00:00",
   "status": "ready",
   "reason": "ok",
   "criteria": {
@@ -8,7 +8,7 @@
     "min_months": 24,
     "min_independent_groups": 2
   },
-  "n_events": 68,
+  "n_events": 66,
   "months_covered": 24,
   "first_month": "2024-11",
   "last_month": "2026-11",
@@ -36,7 +36,7 @@
     "2026-08": 1,
     "2026-09": 2,
     "2026-10": 5,
-    "2026-11": 10
+    "2026-11": 8
   },
   "median_monthly": 2.0,
   "iqr_monthly": 3.0,
@@ -90,12 +90,10 @@
     "wrdw.com",
     "wsfa.com",
     "wtsp.com",
-    "www.islandfm.com",
     "www.notizie.it",
     "www.siasat.com",
     "www.tagesspiegel.de",
     "www.thelocal.fr",
-    "www.ynetnews.com",
     "ynetnews.com"
   ],
   "note": "Una línea base no es una predicción; los seguimientos y agregados no cuentan como eventos."

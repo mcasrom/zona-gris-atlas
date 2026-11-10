@@ -19,4 +19,4 @@
 
 ## Resultado
 
-**68 eventos / 24 meses.** N1 sigue `ready`; v1.1 incorpora la retirada de R13 y la corrección de fechas de R37/R38.
+**66 eventos / 24 meses.** N1 sigue `ready`; v1.2 incorpora la retirada de R13, la corrección de fechas de R37/R38 y la retirada de EV-20261106-002 y EV-20261106-010.

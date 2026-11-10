@@ -16,7 +16,7 @@
 - **61 eventos iniciales** (antes de la ampliación)
 - **2 seguimientos retirados** (R27 y R58)
 - **R13 retirado después** por ser seguimiento de R08
-- **68 eventos finales**
+- **66 eventos finales**
 - **24 meses**
 - **mediana 2/mes**
 - **57 dominios de fuente**
