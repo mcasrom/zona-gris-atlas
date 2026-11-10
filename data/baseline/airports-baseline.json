@@ -1,6 +1,6 @@
 {
   "domain": "airports",
-  "generated_at": "2026-11-10T18:12:53.904252+00:00",
+  "generated_at": "2026-11-10T18:16:26.879143+00:00",
   "status": "ready",
   "reason": "ok",
   "criteria": {
@@ -8,7 +8,7 @@
     "min_months": 24,
     "min_independent_groups": 2
   },
-  "n_events": 61,
+  "n_events": 59,
   "months_covered": 25,
   "first_month": "2024-11",
   "last_month": "2026-11",
@@ -25,7 +25,7 @@
     "2025-08": 3,
     "2025-09": 2,
     "2025-10": 1,
-    "2025-11": 4,
+    "2025-11": 3,
     "2025-12": 3,
     "2026-01": 4,
     "2026-02": 1,
@@ -36,7 +36,7 @@
     "2026-07": 1,
     "2026-08": 1,
     "2026-09": 2,
-    "2026-10": 6,
+    "2026-10": 5,
     "2026-11": 8
   },
   "median_monthly": 2,
@@ -53,7 +53,6 @@
     "dw.com",
     "gazettelife.com",
     "israelhayom.com",
-    "jerseyeveningpost.com",
     "kfyrtv.com",
     "krtv.com",
     "kyivpost.com",
