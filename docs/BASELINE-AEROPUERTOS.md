@@ -1,6 +1,6 @@
 # Línea base de aeropuertos
 
-**Estado:** **N1 inicial**: 69 eventos / 25 meses; mediana 2 eventos/mes.  
+**Estado:** **N1 inicial v1**: 69 eventos / 25 meses; mediana 2 eventos/mes. Baseline congelado el 10-nov-2026.  
 **Objetivo:** pasar de N0 (registro) a N1 (línea base) sin inventar tendencia.
 
 ## Qué cuenta
