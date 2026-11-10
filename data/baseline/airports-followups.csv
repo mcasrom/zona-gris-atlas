@@ -1,3 +1,4 @@
 event_id,event_date,published_at,airport,country,event_type,source_url,source_type,independent_group,status,notes
 REV-R27,2025-11-05,2025-11-05,Brussels Airport,,drone,https://www.dw.com/en/flights-resume-at-brussels-airport-after-drone-sightings/a-74620347,news,dw.com,DOCUMENTADO,revisión manual seguimiento del mismo episodio; no cuenta como evento nuevo
 REV-R58,2026-10-31,2026-10-31,Jersey Airport,,drone,https://jerseyeveningpost.com/news/2026/10/31/flights-diverted-after-drone-reports-spark-major-operation-near-jersey-airport/,news,jerseyeveningpost.com,DOCUMENTADO,revisión manual seguimiento del mismo episodio; no cuenta como evento nuevo
+REV-R13,2025-06-25,2025-06-25,Jersey Airport,,bomb,https://www.bbc.co.uk/news/articles/c8e476w2j0zo,news,bbc.co.uk,DOCUMENTADO,"revisión manual; seguimiento del mismo episodio de Jersey (R08, incidente de marzo); no cuenta como evento nuevo"

@@ -59,4 +59,4 @@ No se rellena con noticias inventadas ni con seguimientos.
 - Faltan: **3 eventos y 5 meses**
 - **39/39 aceptados** tienen URL directa de la pieza tras resolver los enlaces de Google News
 
-El baseline pasa a **`ready`**: 69 eventos / 25 meses, mediana 2/mes, tras la ampliación y la retirada de 2 seguimientos. N1 es inicial y descriptivo; no se afirma tendencia ni atribución.
+El baseline pasa a **`ready`**: 68 eventos / 24 meses, mediana 2/mes, tras la ampliación y la retirada de 3 seguimientos (R27, R58 y R13). N1 es inicial y descriptivo; no se afirma tendencia ni atribución.

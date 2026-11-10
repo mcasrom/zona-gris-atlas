@@ -1,7 +1,7 @@
 # Corroboración de aeropuertos
 
 **Fecha:** 10-nov-2026  
-**Estado:** **9 eventos corroborados** con segunda fuente directa; 50 siguen solo documentados.
+**Estado:** **17 eventos corroborados** con segunda fuente directa; 51 siguen solo documentados.
 
 | Evento | Primera fuente | Segunda fuente |
 |---|---|---|
@@ -14,6 +14,14 @@
 | Leipzig, 5-ago-2026 | The Guardian | BBC |
 | Ben Gurión, 13-oct-2026 | Calcalist | Simple Flying |
 | Ben Gurión, 19-oct-2026 | DW | BBC |
+| LaGuardia, 9-nov-2024 | Simple Flying | ABC7 New York |
+| Reagan, 4-nov-2025 | NYT | Reuters |
+| El Paso, 11-feb-2026 | NYT | AP |
+| Dubái, 16-mar-2026 | Washington Post | Reuters |
+| Denver, 20-abr-2026 | New York Post | 9News |
+| JFK, 12-jun-2026 | NBC New York | USA Today |
+| Chișinău, 2-oct-2026 | Kyiv Post | LB.ua |
+| Moscú, 30-oct-2026 | Ukrainska Pravda | Charter97 |
 
 ## Regla
 
@@ -21,7 +29,7 @@ Dos medios distintos no bastan si comparten el mismo cable o la misma nota de ag
 
 ## Estado del baseline
 
-- **59 eventos**
-- **9 con candidato de segunda fuente**
-- **50 solo con fuente primaria**
-- N1 combina **9 corroborados** y **50 documentados**. La corroboración es por fuente directa de dominio distinto; no se ha auditado sindicación en todos los casos.
+- **68 eventos**
+- **17 con candidato de segunda fuente**
+- **51 solo con fuente primaria**
+- N1 combina **17 corroborados** y **51 documentados**. La corroboración es por fuente directa de dominio distinto; no se ha auditado sindicación en todos los casos.

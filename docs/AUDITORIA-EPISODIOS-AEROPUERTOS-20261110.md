@@ -13,12 +13,13 @@
 
 ## Resultado
 
-- **61 eventos iniciales**
-- **2 seguimientos retirados del conteo**
-- **59 eventos**
-- **25 meses**
+- **61 eventos iniciales** (antes de la ampliación)
+- **2 seguimientos retirados** (R27 y R58)
+- **R13 retirado después** por ser seguimiento de R08
+- **68 eventos finales**
+- **24 meses**
 - **mediana 2/mes**
-- **48 dominios de fuente**
+- **57 dominios de fuente**
 - Validación: **`ready`**
 
 Los seguimientos quedan en `data/baseline/airports-followups.csv` para trazabilidad.
