@@ -1,6 +1,6 @@
 # Línea base de aeropuertos
 
-**Estado:** revisión manual importada: **47 eventos / 20 meses**; faltan 3 eventos y 5 meses.  
+**Estado:** **N1 inicial**: 52 eventos / 25 meses; mediana 1 evento/mes.  
 **Objetivo:** pasar de N0 (registro) a N1 (línea base) sin inventar tendencia.
 
 ## Qué cuenta
@@ -42,7 +42,7 @@ python scripts/build_baseline.py \
   --out data/baseline/airports-baseline.json
 ```
 
-La semilla + revisión manual suma 47 eventos documentados en 20 meses; el validador devuelve `insufficient` (47/50 eventos, 20/24 meses). Las 39 piezas aceptadas ya tienen URL directa tras resolver los enlaces de Google News.
+La semilla + revisión manual suma **52 eventos en 25 meses**; el validador devuelve `ready`. La mediana es **1 evento/mes**, así que la línea base es fina y descriptiva: no autoriza a hablar de tendencia consolidada ni de atribución.
 
 ## Descubrimiento de candidatos
 
