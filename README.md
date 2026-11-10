@@ -1,11 +1,11 @@
-# Zona Gris · Mapa de acontecimientos reales
+# Zona Gris · Observatorio documental de infraestructura crítica
 
 [![CI](https://github.com/mcasrom/zona-gris-atlas/actions/workflows/ci.yml/badge.svg)](https://github.com/mcasrom/zona-gris-atlas/actions/workflows/ci.yml)
 [![Licencia: AGPL-3.0](https://img.shields.io/badge/licencia-AGPL--3.0-ffb020)](LICENSE)
 
-> **Aviso visible:** el mapa público contiene registros documentados y candidatos automáticos. Los candidatos llevan `PENDIENTE` y no se presentan como incidentes confirmados. No hay datos de demostración.
+> **Aviso visible:** el mapa público contiene registros documentados y candidatos automáticos. Los candidatos llevan `PENDIENTE` y no se presentan como incidentes confirmados. El baseline de aeropuertos es una capa aparte, en N1 inicial; no es un censo ni una atribución.
 
-Atlas Zona Gris es un mapa documental de acontecimientos e incidencias en infraestructuras y servicios esenciales. Registra fecha, lugar documentado, categoría, estado de verificación y enlace a la fuente original. El sistema **no atribuye autoría ni intención** por su cuenta.
+Atlas Zona Gris es un **observatorio documental de incidentes en infraestructura crítica**. Registra fecha, lugar documentado, categoría, estado de verificación y enlace a la fuente original. El sistema **no atribuye autoría ni intención** por su cuenta.
 
 ![Vista previa de Zona Gris](web/assets/img/og-atlas.png)
 
@@ -14,6 +14,16 @@ Atlas Zona Gris es un mapa documental de acontecimientos e incidencias en infrae
 **Es** un registro fechado de acontecimientos documentados y candidatos automáticos en aeropuertos, ferrocarril, ciberseguridad, GNSS, energía, telecomunicaciones y protección civil.
 
 **No es** un atribuidor automático, un predictor de ataques, un perfilador de personas ni una base de inteligencia en tiempo real. Las alertas, amenazas y reivindicaciones se conservan como tales; no se convierten en ataques confirmados.
+
+## Hito 10-nov-2026: de recolector a observatorio documental
+
+- **Subtítulo público:** Observatorio documental de incidentes en infraestructura crítica.
+- **Aeropuertos: N1 inicial.** **69 eventos · 25 meses · 57 dominios**, con baseline v1 congelado y SHA-256.
+- **Episodios auditados:** 2 seguimientos retirados del conteo; siguen trazables en `data/baseline/airports-followups.csv`.
+- **Corroboración:** **9 eventos** con segunda fuente directa; **60 solo documentados**. Una fuente no se presenta como corroboración.
+- **N2 descriptivo:** con **61 eventos / 24 meses completos**, mediana 2 y p90 5; **2025-12** es el único mes completo por encima del p90 (6 eventos). **2026-10** queda en 5; **2026-11** no se compara por ser parcial.
+- **Página pública:** [`/baseline-aeropuertos.html`](https://zonagris.pruebapublica.com/baseline-aeropuertos.html) y [`/alcance.html`](https://zonagris.pruebapublica.com/alcance.html).
+- **Límite:** N1/N2 son descriptivos. No hay atribución, campaña ni tendencia consolidada; N3 no está abierto.
 
 ## Principio de atribución
 
@@ -79,7 +89,9 @@ el mismo `events.json` que el mapa, de modo que portada, mapa y API comparten un
 ## Estado actual
 
 - **Publicado en Hetzner:** `https://zonagris.pruebapublica.com`.
-- **Estado (9-nov):** 17 eventos · **16 documentados** · **1 pendiente** · **12 con ubicación**. Mapa, matriz/API y fallback comparten el mismo total. `llms.txt` publicado.
+- **Estado del registro público (10-nov):** **15 eventos documentados**, 0 pendientes, con mapa, matriz/API y fallback compartiendo el mismo total.
+- **Baseline de aeropuertos (capa separada):** **69 eventos / 25 meses**, **9 corroborados** y **60 documentados**; `data/baseline/airports-baseline-v1.json` congelado con SHA-256.
+- **N2 aeropuertos:** **61 eventos / 24 meses completos**; mediana 2, p90 5; solo **2025-12** (6) por encima. 2026-11 es parcial y queda fuera.
 - **Release actual:** consultar `current`; las releases anteriores se conservan para rollback.
 - **Captura automática:** cron cada 6 horas; Bing News RSS como descubrimiento, matriz regional de consultas y capa primaria separada.
 - **Capa primaria:** `/primarias.html` · CERT-EU, JPCERT/CC, CERT.br, NCSC-UK, EASA y CERT-FR; **155 documentos**, no incidentes.
@@ -166,9 +178,9 @@ La capa interna vive en `data/quality/` y **no se publica**:
 - `campaign_report.py`: campañas/oleadas sugeridas con entidades compartidas.
 - `baseline_snapshot.py`: foto diaria para construir línea base histórica.
 
-Estado actual: **59 registros → 45 canónicos**, 42 con timestamp de publicación, 19 con país ISO y 13 con aeropuerto. Las 2 campañas revisadas son **hipótesis internas**, no atribuciones.
+Estado actual: el baseline de aeropuertos tiene **69 eventos en 25 meses**, **61 en 24 meses completos**, **9 corroborados** y **60 documentados**. La base v1 está congelada; las campañas internas siguen siendo hipótesis, no atribuciones.
 
-El cron `45 8 * * *` guarda la foto diaria en el servidor; el comparador marcará `insufficient` hasta acumular la ventana mínima.
+El cron `45 8 * * *` guarda la foto diaria en el servidor. N2 solo se interpreta como patrón descriptivo; **no se abre N3** con esta base.
 
 ## Fuentes y licencias
 
