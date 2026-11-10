@@ -1,7 +1,7 @@
 # Corroboración de aeropuertos
 
 **Fecha:** 10-nov-2026  
-**Estado:** **27 eventos corroborados** con segunda fuente directa; 39 siguen solo documentados.
+**Estado:** **37 eventos corroborados** con segunda fuente directa; 29 siguen solo documentados.
 
 | Evento | Primera fuente | Segunda fuente |
 |---|---|---|
@@ -32,6 +32,16 @@
 | Bruselas, 5-nov-2026 | Israel Hayom | Reuters |
 | Newark, 27-jun-2026 | NYT | CNN |
 | Bruselas, 12-sep-2026 | Reuters | Aviation24 |
+| Vilnius, 20-ago-2025 | LRT | Baltic News |
+| Vilnius, 22-ago-2025 | Delfi | Made in Vilnius |
+| BWI, 3-dic-2025 | CBS Baltimore | WBAL |
+| St. Pete-Clearwater, 25-abr-2025 | WTSP | Tampa Bay Times |
+| JFK, 23-feb-2025 | Patch | NBC News |
+| Jersey, 30-oct-2026 | MiGFlug | Jersey Evening Post |
+| Copenhague, 6-nov-2026 | London Loves Business | Reuters |
+| Malpensa, 6-nov-2026 | Notizie.it | ANSA |
+| Hyderabad, 9-dic-2025 | Telangana Today | NDTV |
+| Bismarck, 5-ene-2026 | KFYR | Bismarck Tribune |
 
 ## Regla
 
@@ -40,6 +50,6 @@ Dos medios distintos no bastan si comparten el mismo cable o la misma nota de ag
 ## Estado del baseline
 
 - **66 eventos**
-- **27 con candidato de segunda fuente**
-- **39 solo con fuente primaria**
-- N1 combina **27 corroborados** y **39 documentados**. La corroboración es por fuente directa de dominio distinto; no se ha auditado sindicación en todos los casos.
+- **37 con candidato de segunda fuente**
+- **29 solo con fuente primaria**
+- N1 combina **37 corroborados** y **29 documentados**. La corroboración es por fuente directa de dominio distinto; no se ha auditado sindicación en todos los casos.
