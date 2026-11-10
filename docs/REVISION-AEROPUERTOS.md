@@ -1,0 +1,50 @@
+# Revisión manual de aeropuertos
+
+**Archivo:** `data/baseline/airports-review.csv`  
+**Objetivo:** decidir qué candidatos pasan a la línea base.  
+**Regla:** nada entra automáticamente.
+
+## Qué tienes que hacer
+
+Por cada fila:
+
+1. **`decision`**: `ACEPTAR`, `RECHAZAR`, `DUPLICADO` o `DUDOSO`.
+2. Si aceptas:
+   - corrige **`airport_final`** (el gazetteer puede fallar);
+   - corrige **`date_final`** si la fecha publicada no es la del hecho;
+   - pon la **URL de la pieza** en `source_url_final`, no solo el dominio.
+3. Si es duplicado:
+   - rellena `duplicate_of` con el `review_id` del episodio principal.
+4. Si rechazas o dudas, deja una nota breve en `notes`.
+
+No hace falta rellenar filas que rechaces.
+
+## Criterio rápido
+
+- **ACEPTAR:** aeropuerto identificable, fecha del hecho plausible y una pieza concreta.
+- **RECHAZAR:** es análisis, agregado, noticia genérica, otro tipo de incidente o no hay aeropuerto.
+- **DUPLICADO:** es seguimiento o segunda pieza del mismo episodio.
+- **DUDOSO:** falta la fuente, la fecha no cuadra o el aeropuerto no está claro.
+
+## Tiempo estimado
+
+**59 grupos × 1–2 minutos ≈ 1–2 horas.**  
+No hay que revisar 59 si rechazas rápido los agregados.
+
+## Qué hago yo después
+
+- Importar tus decisiones.
+- Cruzar los aceptados con la semilla actual.
+- Mantener la relación de seguimientos.
+- Ejecutar el validador: **50 eventos / 24 meses / 2 grupos de fuente**.
+- Publicar N1 solo si pasa.
+
+## Qué falta además de los 59
+
+La revisión puede dar menos de 50 eventos. En ese caso faltan:
+
+- meses sin candidatos;
+- acontecimientos históricos que no aparecen en Google News;
+- fuentes oficiales o hemeroteca.
+
+No se rellena con noticias inventadas ni con seguimientos.
