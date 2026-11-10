@@ -36,7 +36,7 @@
   <div class="container header-inner">
     <a class="brand" href="index.html" aria-label="Atlas Zona Gris, inicio"><svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="#C5CCD4" stroke-width="1.6"/><path d="M3.5 12a8.5 8.5 0 0 0 17 0Z" fill="#FFB020"/></svg>ZONA GRIS</a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-principal">Menú</button>
-    <nav class="nav" id="nav-principal" aria-label="Navegación principal"><a href="mapa.html">Mapa</a><a href="incidentes.html">Incidentes</a><a href="cobertura.html">Cobertura</a><a href="registros.html">Registros</a><a href="metodologia.html">Método</a><a href="fuentes.html">Fuentes</a><a href="primarias.html">Primarias</a><a href="limites.html">Límites</a><a href="avisos.html">Avisos</a><a href="about.html">About</a><a href="suscribirse.html">Resumen</a><a href="en.html" hreflang="en">EN</a><a href="https://github.com/mcasrom/zona-gris-atlas">Código</a></nav>
+    <nav class="nav" id="nav-principal" aria-label="Navegación principal"><a href="mapa.html">Mapa</a><a href="incidentes.html">Incidentes</a><a href="cobertura.html">Cobertura</a><a href="registros.html">Registros</a><a href="metodologia.html">Método</a><a href="alcance.html">Alcance</a><a href="fuentes.html">Fuentes</a><a href="primarias.html">Primarias</a><a href="limites.html">Límites</a><a href="avisos.html">Avisos</a><a href="about.html">About</a><a href="suscribirse.html">Resumen</a><a href="en.html" hreflang="en">EN</a><a href="https://github.com/mcasrom/zona-gris-atlas">Código</a></nav>
   </div>
 </header>
 
@@ -44,23 +44,23 @@
   <section class="hero">
     <div class="container hero-grid">
       <div class="hero-copy">
-        <p class="eyebrow">Mapa de acontecimientos · captura documental</p>
+        <p class="eyebrow">Observatorio documental · infraestructura crítica</p>
         <h1>Acontecimientos reales, situados y con fuente.</h1>
-        <p class="lead">Atlas Zona Gris es un mapa de acontecimientos e incidencias en infraestructuras y servicios esenciales. Cada registro indica fecha, lugar documentado, categoría, estado de verificación y enlace a la fuente original.</p>
+        <p class="lead"><strong>Observatorio documental de incidentes en infraestructura crítica.</strong> Atlas Zona Gris es un mapa de acontecimientos e incidencias en infraestructuras y servicios esenciales. Cada registro indica fecha, lugar documentado, categoría, estado de verificación y enlace a la fuente original.</p>
         <p class="lead">No mide incidentes confirmados donde no los hay, no atribuye autoría y no convierte una amenaza en un ataque consumado.</p>
         <div class="actions"><a class="btn btn-primary" href="mapa.html">Abrir el mapa</a><a class="btn" href="incidentes.html">Ver matriz de incidentes</a><a class="btn" href="registros.html">Ver los registros</a><a class="btn" href="metodologia.html">Leer el método</a><a class="btn btn-ghost" href="fuentes.html">Fuentes y condiciones</a></div>
       </div>
       <aside class="hero-map" aria-label="Balance de la captura real">
         <p class="eyebrow">Captura documental</p>
         <div class="hero-stats">
-          <div class="hero-stat"><strong data-stat="total">54</strong><span>acontecimientos</span></div>
+          <div class="hero-stat"><strong data-stat="total">19</strong><span>acontecimientos</span></div>
           <div class="hero-stat"><strong>6</strong><span>categorías</span></div>
           <div class="hero-stat"><strong data-stat="confirmed">0</strong><span>confirmados</span></div>
-          <div class="hero-stat"><strong data-stat="documented">14</strong><span>documentados</span></div>
-          <div class="hero-stat"><strong data-stat="pending">40</strong><span>pendientes</span></div>
-          <div class="hero-stat"><strong data-stat="sources">62</strong><span>enlaces de fuente</span></div>
+          <div class="hero-stat"><strong data-stat="documented">15</strong><span>documentados</span></div>
+          <div class="hero-stat"><strong data-stat="pending">4</strong><span>pendientes</span></div>
+          <div class="hero-stat"><strong data-stat="sources">28</strong><span>enlaces de fuente</span></div>
         </div>
-        <p class="muted small" style="margin:10px 0 0">Última captura: <time id="last-capture" data-last-capture datetime="2026-11-08T15:33:50.139404+00:00">8 nov 2026, 16:33</time> <span aria-hidden="true">·</span> hora de Madrid</p>
+        <p class="muted small" style="margin:10px 0 0">Última captura: <time id="last-capture" data-last-capture datetime="2026-11-10T18:17:27.058618+00:00">10 nov 2026, 19:17</time> <span aria-hidden="true">·</span> hora de Madrid</p>
         <div class="map-callout"><span class="data-badge">Datos reales</span><a href="mapa.html">Abrir mapa con filtros →</a></div>
       </aside>
     </div>
@@ -84,7 +84,7 @@
             <div class="preview-days-head"><span>Eventos por día</span><span id="preview-days-range"></span></div>
             <div class="preview-days-bars" id="preview-days-bars" role="img" aria-label="Eventos documentados por día"><span class="muted small">—</span></div>
           </div>
-          <p class="muted small" id="preview-coverage">La cobertura se calcula desde los datos publicados.</p>
+          <p class="muted small" id="preview-coverage">11 de 19 registros tienen ubicación documentada; los demás quedan en la lista, no en el mapa.</p>
           <div class="actions"><a class="btn btn-primary" href="mapa.html">Abrir el mapa completo</a><a class="btn" href="incidentes.html">Ver matriz</a></div>
         </aside>
       </div>
@@ -103,11 +103,24 @@
     <div class="container">
       <div class="section-head"><div><p class="eyebrow">Actividad real</p><h2>Qué hay en la captura.</h2></div><p>Indicadores de acontecimientos, no de documentos revisados.</p></div>
       <div class="state-grid">
-        <div class="state-card"><span class="code-label">01 · registros</span><strong><span data-stat="total">54</span> acontecimientos</strong><p>Drones, amenazas de bomba, ciberataques, ferrocarril, aeropuertos y GNSS.</p></div>
-        <div class="state-card"><span class="code-label">02 · verificación</span><strong><span data-stat="confirmed">0</span> confirmados · <span data-stat="documented">14</span> documentados</strong><p><span data-stat="pending">40</span> pendientes. Ningún registro se eleva a ataque confirmado sin base.</p></div>
-        <div class="state-card"><span class="code-label">03 · ubicación</span><strong><span data-stat="coordinates">17</span> con ciudad o región</strong><p><span data-stat="unlocated">37</span> registros sin coordenada única aparecen solo en la lista.</p></div>
+        <div class="state-card"><span class="code-label">01 · registros</span><strong><span data-stat="total">19</span> acontecimientos</strong><p>Drones, amenazas de bomba, ciberataques, ferrocarril, aeropuertos y GNSS.</p></div>
+        <div class="state-card"><span class="code-label">02 · verificación</span><strong><span data-stat="confirmed">0</span> confirmados · <span data-stat="documented">15</span> documentados</strong><p><span data-stat="pending">4</span> pendientes. Ningún registro se eleva a ataque confirmado sin base.</p></div>
+        <div class="state-card"><span class="code-label">03 · ubicación</span><strong><span data-stat="coordinates">11</span> con ciudad o región</strong><p><span data-stat="unlocated">8</span> registros sin coordenada única aparecen solo en la lista.</p></div>
       </div>
       <p class="muted small" style="margin-top:18px">Los documentos institucionales de B13 siguen en <a href="registros.html">Registros</a>; no se cuentan como acontecimientos.</p>
+    </div>
+  </section>
+
+  <section class="section" id="alcance">
+    <div class="container">
+      <div class="section-head"><div><p class="eyebrow">Alcance</p><h2>Qué analizamos y qué solo registramos.</h2></div><p>No todo el registro tiene el mismo nivel de análisis. Decirlo es parte del método.</p></div>
+      <div class="state-grid">
+        <div class="state-card"><span class="code-label">01 · núcleo analítico</span><strong>Aeropuertos</strong><p>Amenazas de bomba, evacuaciones y drones aeroportuarios. <strong>N1 · baseline inicial</strong>: 68 eventos / 24 meses; todavía no se afirma tendencia ni campaña.</p></div>
+        <div class="state-card"><span class="code-label">02 · núcleo analítico</span><strong>GNSS</strong><p>Interferencias y perturbaciones de navegación. <strong>N1 · línea base en construcción</strong>: se documenta y se relaciona, no se atribuye.</p></div>
+        <div class="state-card"><span class="code-label">03 · registro general</span><strong>Ciberataques, ferrocarril y protección civil</strong><p><strong>N0 · registro documentado</strong>: fecha, fuente y estado; sin comparación de tendencia ni atribución.</p></div>
+      </div>
+      <div class="notice" style="margin-top:18px"><strong>El resto no desaparece.</strong> Queda en el registro general y puede pasar a análisis cuando tenga serie histórica y baseline. No se mezcla con los dominios núcleo para fabricar una cifra única.</div>
+      <div class="actions" style="margin-top:18px"><a class="btn btn-primary" href="alcance.html">Ver niveles, dominios y límites</a><a class="btn" href="incidentes.html">Ver registro completo</a></div>
     </div>
   </section>
 
