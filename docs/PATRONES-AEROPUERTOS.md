@@ -1,14 +1,14 @@
 # N2 · Patrones de aeropuertos
 
 **Fecha:** 10-nov-2026  
-**Base:** 23 meses completos con eventos (2024-11 → 2026-10; sin 2025-06), **58 eventos**. Se excluye 2026-11 por ser un mes parcial.
+**Base:** 23 meses completos con eventos (2024-11 → 2026-10; sin 2025-06), **57 eventos**. Se excluye 2026-11 por ser un mes parcial.
 
 ## Resultado descriptivo
 
 - Mediana: **2 eventos/mes**
 - P90 con base móvil de 12 meses: **5 eventos/mes**.
 - **2025-12:** 6 eventos, único mes completo por encima del p90.
-- **2026-11:** 7 eventos, pero es un mes parcial en curso; no se compara.
+- **2026-11:** 8 eventos, pero es un mes parcial en curso; no se compara.
 
 ## Lectura
 
