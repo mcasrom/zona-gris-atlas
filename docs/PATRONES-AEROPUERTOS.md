@@ -6,7 +6,7 @@
 ## Resultado descriptivo
 
 - Mediana: **2 eventos/mes**
-- P90: **4 eventos/mes**
+- P90 con base móvil de 12 meses: **4 eventos/mes**.
 - **2026-10:** 5 eventos, único mes completo por encima del p90.
 - **2026-11:** 8 eventos, pero es un mes parcial en curso; no se compara.
 
