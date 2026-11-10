@@ -19,13 +19,13 @@ inconsistencias entre la fecha del registro y la fecha real de la pieza:
   R08.
 - **R37 y R38** se fechan el **2026-11-05**.
 - Se reconstruye el baseline: **65 eventos / 24 meses**; N1 sigue `ready`.
-- Se crea **v1.4** y se conservan **v1** (69), **v1.1** (68), **v1.2** (66) y **v1.3** (65) como versiones anteriores.
+- Se crea **v1.5** y se conservan **v1** (69), **v1.1** (68), **v1.2** (66), **v1.3** (65) y **v1.4** (65) como versiones anteriores.
 - N2 queda en **57 eventos / 23 meses completos** (sin 2025-06), p90 5.
 
 ## Consecuencias documentales
 
-- Corroborados: **41**.
-- Documentados: **24**.
+- Corroborados: **55**.
+- Documentados: **10**.
 - El mes de **2025-06** queda sin eventos; no se rellena con una pieza de otro
   episodio.
 - **2026-11** queda en 8 eventos, pero sigue siendo parcial y no se compara.

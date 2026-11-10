@@ -1,7 +1,7 @@
 # Corroboración de aeropuertos
 
 **Fecha:** 10-nov-2026  
-**Estado:** **52 eventos corroborados** con segunda fuente directa; 13 siguen solo documentados.
+**Estado:** **55 eventos corroborados** con segunda fuente directa; 10 siguen solo documentados.
 
 | Evento | Primera fuente | Segunda fuente |
 |---|---|---|
@@ -57,6 +57,9 @@
 | Chattanooga, 24-ago-2025 | NewsChannel9 | Mix 104.1 |
 | Jersey, 14-jul-2026 | BBC | Bailiwick Express |
 | Praga, 6-nov-2026 | NL Times | Expats.cz |
+| Jersey, 5-mar-2025 | Bailiwick Express | BBC |
+| Fort Lauderdale, 1-mar-2026 | WPBF | NBC Miami |
+| Varsovia, 3-nov-2026 | Ynet | TVP World |
 
 ## Regla
 
@@ -65,6 +68,6 @@ Dos medios distintos no bastan si comparten el mismo cable o la misma nota de ag
 ## Estado del baseline
 
 - **65 eventos**
-- **52 con candidato de segunda fuente**
-- **13 solo con fuente primaria**
-- N1 combina **52 corroborados** y **13 documentados**. La corroboración es por fuente directa de dominio distinto; no se ha auditado sindicación en todos los casos.
+- **55 con candidato de segunda fuente**
+- **10 solo con fuente primaria**
+- N1 combina **55 corroborados** y **10 documentados**. La corroboración es por fuente directa de dominio distinto; no se ha auditado sindicación en todos los casos.
