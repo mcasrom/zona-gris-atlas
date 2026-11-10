@@ -1,7 +1,7 @@
 # Corroboración de aeropuertos
 
 **Fecha:** 10-nov-2026  
-**Estado:** **37 eventos corroborados** con segunda fuente directa; 29 siguen solo documentados.
+**Estado:** **41 eventos corroborados** con segunda fuente directa; 24 siguen solo documentados.
 
 | Evento | Primera fuente | Segunda fuente |
 |---|---|---|
@@ -42,6 +42,10 @@
 | Malpensa, 6-nov-2026 | Notizie.it | ANSA |
 | Hyderabad, 9-dic-2025 | Telangana Today | NDTV |
 | Bismarck, 5-ene-2026 | KFYR | Bismarck Tribune |
+| Yeager, 31-ene-2026 | WCHS | WSAZ |
+| Kansas City, 31-dic-2025 | Newsweek | KCTV5 |
+| Rapid City, 31-dic-2025 | KOTA | KELOLAND |
+| Montgomery, 26-ene-2026 | WSFA | Montgomery Advertiser |
 
 ## Regla
 
@@ -49,7 +53,7 @@ Dos medios distintos no bastan si comparten el mismo cable o la misma nota de ag
 
 ## Estado del baseline
 
-- **66 eventos**
-- **37 con candidato de segunda fuente**
-- **29 solo con fuente primaria**
-- N1 combina **37 corroborados** y **29 documentados**. La corroboración es por fuente directa de dominio distinto; no se ha auditado sindicación en todos los casos.
+- **65 eventos**
+- **41 con candidato de segunda fuente**
+- **24 solo con fuente primaria**
+- N1 combina **41 corroborados** y **24 documentados**. La corroboración es por fuente directa de dominio distinto; no se ha auditado sindicación en todos los casos.

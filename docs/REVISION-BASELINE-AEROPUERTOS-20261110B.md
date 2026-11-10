@@ -18,17 +18,17 @@ inconsistencias entre la fecha del registro y la fecha real de la pieza:
 - **R13** sale del baseline y pasa a `airports-followups.csv` como seguimiento de
   R08.
 - **R37 y R38** se fechan el **2026-11-05**.
-- Se reconstruye el baseline: **66 eventos / 24 meses**; N1 sigue `ready`.
-- Se crea **v1.2** y se conservan **v1** (69) y **v1.1** (68) como versiones anteriores.
+- Se reconstruye el baseline: **65 eventos / 24 meses**; N1 sigue `ready`.
+- Se crea **v1.3** y se conservan **v1** (69), **v1.1** (68) y **v1.2** (66) como versiones anteriores.
 - N2 queda en **58 eventos / 23 meses completos** (sin 2025-06), p90 5.
 
 ## Consecuencias documentales
 
-- Corroborados: **27**.
-- Documentados: **39**.
+- Corroborados: **41**.
+- Documentados: **24**.
 - El mes de **2025-06** queda sin eventos; no se rellena con una pieza de otro
   episodio.
-- **2026-11** queda en 8 eventos, pero sigue siendo parcial y no se compara.
+- **2026-11** queda en 7 eventos, pero sigue siendo parcial y no se compara.
 
 ## Límite
 

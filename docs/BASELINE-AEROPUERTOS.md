@@ -1,6 +1,6 @@
 # Línea base de aeropuertos
 
-**Estado:** **N1 inicial v1.2**: 66 eventos / 24 meses; mediana 2 eventos/mes. Baseline congelado el 10-nov-2026; v1 y v1.1 se conservan como versiones anteriores.
+**Estado:** **N1 inicial v1.3**: 65 eventos / 24 meses; mediana 2 eventos/mes. Baseline congelado el 10-nov-2026; v1, v1.1 y v1.2 se conservan como versiones anteriores.
 **Objetivo:** pasar de N0 (registro) a N1 (línea base) sin inventar tendencia.
 
 ## Qué cuenta
@@ -42,7 +42,7 @@ python scripts/build_baseline.py \
   --out data/baseline/airports-baseline.json
 ```
 
-La semilla + revisión manual, tras retirar tres seguimientos/duplicados y corregir dos fechas, suma **66 eventos en 24 meses**; el validador devuelve `ready`. La mediana es **2 eventos/mes**, así que la línea base es fina y descriptiva: no autoriza a hablar de tendencia consolidada ni de atribución.
+La semilla + revisión manual, tras retirar seis seguimientos/duplicados y corregir dos fechas, suma **65 eventos en 24 meses**; el validador devuelve `ready`. La mediana es **2 eventos/mes**, así que la línea base es fina y descriptiva: no autoriza a hablar de tendencia consolidada ni de atribución.
 
 ## Descubrimiento de candidatos
 
