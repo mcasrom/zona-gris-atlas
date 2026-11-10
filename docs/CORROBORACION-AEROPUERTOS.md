@@ -1,7 +1,7 @@
 # Corroboración de aeropuertos
 
 **Fecha:** 10-nov-2026  
-**Estado:** **48 eventos corroborados** con segunda fuente directa; 17 siguen solo documentados.
+**Estado:** **52 eventos corroborados** con segunda fuente directa; 13 siguen solo documentados.
 
 | Evento | Primera fuente | Segunda fuente |
 |---|---|---|
@@ -53,6 +53,10 @@
 | Sochi, 31-ago-2025 | Ukrainska Pravda | UAWire |
 | Vilnius, 8-dic-2025 | Aviation24 | LRT |
 | Miami, 26-ene-2026 | TravelPulse | NBC Miami |
+| Atbara, 9-dic-2024 | Sudan Tribune | Sudan Events |
+| Chattanooga, 24-ago-2025 | NewsChannel9 | Mix 104.1 |
+| Jersey, 14-jul-2026 | BBC | Bailiwick Express |
+| Praga, 6-nov-2026 | NL Times | Expats.cz |
 
 ## Regla
 
@@ -61,6 +65,6 @@ Dos medios distintos no bastan si comparten el mismo cable o la misma nota de ag
 ## Estado del baseline
 
 - **65 eventos**
-- **48 con candidato de segunda fuente**
-- **17 solo con fuente primaria**
-- N1 combina **48 corroborados** y **17 documentados**. La corroboración es por fuente directa de dominio distinto; no se ha auditado sindicación en todos los casos.
+- **52 con candidato de segunda fuente**
+- **13 solo con fuente primaria**
+- N1 combina **52 corroborados** y **13 documentados**. La corroboración es por fuente directa de dominio distinto; no se ha auditado sindicación en todos los casos.
