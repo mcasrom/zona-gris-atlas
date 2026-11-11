@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Genera la página pública del inventario GNSS N0 v0.1."""
 from __future__ import annotations
+
 import csv
 import html
 from pathlib import Path
