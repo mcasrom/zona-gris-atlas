@@ -23,7 +23,7 @@ Atlas Zona Gris es un **observatorio documental de incidentes en infraestructura
 - **Corroboración:** **60 eventos** con segunda fuente directa; **5 solo documentados**. Una fuente no se presenta como corroboración.
 - **N2 descriptivo:** con **57 eventos / 23 meses completos**, mediana 2 y p90 5; **2025-12** es el único mes completo por encima del p90 (6 eventos). **2026-10** queda en 5; **2026-11** no se compara por ser parcial.
 - **Página pública:** [`/baseline-aeropuertos.html`](https://zonagris.pruebapublica.com/baseline-aeropuertos.html) y [`/alcance.html`](https://zonagris.pruebapublica.com/alcance.html).
-- **GNSS: N0.** Inventario de **13 episodios** documentados (**11 en ventana de 24 meses**) y **3 agregados**; **no hay N1** ni frecuencia publicable.
+- **GNSS: N0.** Inventario de **15 episodios** documentados (**13 en ventana de 24 meses**) y **3 agregados**; **no hay N1** ni frecuencia publicable.
 - **Límite:** N1/N2 son descriptivos. No hay atribución, campaña ni tendencia consolidada; N3 no está abierto.
 
 ## Principio de atribución
