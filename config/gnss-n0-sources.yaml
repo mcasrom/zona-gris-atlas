@@ -1,0 +1,30 @@
+version: 0.1
+domain: GNS
+stage: N0
+note: "Registro de fuentes para inventario manual. No hay captura automática ni publicación de N1."
+sources:
+  - id: easa-czib
+    name: EASA CZIB
+    url: https://www.easa.europa.eu/en/domains/air-operations/czibs
+    type: official
+    use: "Avisos de zona; no son incidentes por sí solos"
+  - id: eurocontrol
+    name: EUROCONTROL
+    url: https://www.eurocontrol.int/
+    type: official
+    use: "Contexto operativo y avisos; no sustituye una fuente del episodio"
+  - id: gpsjam
+    name: GPSJam
+    url: https://gpsjam.org/
+    type: measurement
+    use: "Indicador agregado; nunca se convierte solo en incidente"
+  - id: reuters
+    name: Reuters
+    url: https://www.reuters.com/
+    type: news
+    use: "Fuente directa si fecha, lugar y afectación están explícitos"
+  - id: ap
+    name: Associated Press
+    url: https://apnews.com/
+    type: news
+    use: "Fuente directa si fecha, lugar y afectación están explícitos"
