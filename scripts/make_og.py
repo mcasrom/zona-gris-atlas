@@ -62,10 +62,26 @@ def build_registros() -> None:
     print(f"og: {out}")
 
 
+def build_caso_moscu() -> None:
+    image = Image.new("RGB", (1200, 630), INK)
+    draw = ImageDraw.Draw(image)
+    logo(draw)
+    draw.text((74, 168), "CASO · AEROPUERTOS · N1", font=font(BOLD, 24), fill=SIGNAL)
+    draw.text((74, 218), "Cuatro episodios,", font=font(BOLD, 62), fill=TEXT)
+    draw.text((74, 288), "no una campaña.", font=font(BOLD, 62), fill=SIGNAL)
+    draw.text((76, 386), "Moscú · 2025–2026 · recurrencia documentada", font=font(BOLD, 30), fill=TEXT)
+    draw.text((76, 430), "Sin atribución y sin conclusión de campaña.", font=font(REGULAR, 28), fill=MUTED)
+    footer(draw)
+    out = IMG / "og-caso-moscu.png"
+    image.save(out, optimize=True)
+    print(f"og: {out}")
+
+
 def main() -> int:
     IMG.mkdir(parents=True, exist_ok=True)
     build_atlas()
     build_registros()
+    build_caso_moscu()
     return 0
 
 

@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-11 — caso de Moscú y baseline v1.6
+
+- Publicado `/caso-moscu-aeropuertos.html`: cuatro episodios documentados, sin atribución ni campaña.
+- Añadida OG propia y enlace desde portada, alcance y baseline.
+- Sitemap corregido para incluir baseline de aeropuertos, GNSS N0, grafo y el caso.
+- París (6-nov-2026) pasa a `CORROBORADO` con CBS News; baseline **v1.6**: 65 eventos, 61 corroborados y 4 documentados.
+
 ## 0.1.1 — 2026-11-07
 
 - Sin demo, sin gold set obligatorio, autoría/contacto público y versión en el pie.

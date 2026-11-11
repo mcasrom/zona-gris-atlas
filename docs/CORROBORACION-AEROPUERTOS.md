@@ -1,7 +1,7 @@
 # Corroboración de aeropuertos
 
 **Fecha:** 10-nov-2026  
-**Estado:** **60 eventos corroborados** con segunda fuente directa; 5 siguen solo documentados.
+**Estado:** **61 eventos corroborados** con segunda fuente directa; 4 siguen solo documentados.
 
 | Evento | Primera fuente | Segunda fuente |
 |---|---|---|
@@ -65,6 +65,7 @@
 | Lanzarote, 15-ago-2025 | Gazette Life | La Voz de Lanzarote |
 | Suvarnabhumi, 22-dic-2025 | Thai PBS | Nation Thailand |
 | Rey Fahd, 5-nov-2026 | Siasat | Dawn |
+| París, 6-nov-2026 | The Local | CBS News |
 
 ## Regla
 
@@ -73,6 +74,6 @@ Dos medios distintos no bastan si comparten el mismo cable o la misma nota de ag
 ## Estado del baseline
 
 - **65 eventos**
-- **60 con candidato de segunda fuente**
-- **5 solo con fuente primaria**
-- N1 combina **60 corroborados** y **5 documentados**. La corroboración es por fuente directa de dominio distinto; no se ha auditado sindicación en todos los casos.
+- **61 con candidato de segunda fuente**
+- **4 solo con fuente primaria**
+- N1 combina **61 corroborados** y **4 documentados**. La corroboración es por fuente directa de dominio distinto; no se ha auditado sindicación en todos los casos.

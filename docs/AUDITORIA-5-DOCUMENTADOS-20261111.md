@@ -1,11 +1,13 @@
-# Auditoría de los 5 documentados restantes · 11-nov-2026
+# Auditoría de los documentados restantes · 11-nov-2026
 
 ## Resultado
 
-Los **5 eventos sin segunda fuente** se mantienen como `DOCUMENTADO`. No se
-elevan a `CORROBORADO` y no se retiran del baseline: cada uno tiene una fuente
-directa identificable y un episodio verificable, pero no una confirmación
-independiente del mismo hecho.
+Cuatro eventos sin segunda fuente se mantienen como `DOCUMENTADO`. **París
+(6-nov-2026)** se eleva a `CORROBORADO` con CBS News: The Local precisa que tres
+vuelos aterrizaron en Orly y uno en Burdeos; CBS documenta la misma oleada de
+cuatro amenazas sobre espacio aéreo francés. Los demás no se retiran del
+baseline: cada uno tiene una fuente directa identificable y un episodio
+verificable, pero no una confirmación independiente del mismo hecho.
 
 | Evento | Fuente | Comprobación | Decisión |
 |---|---|---|---|
@@ -13,7 +15,7 @@ independiente del mismo hecho.
 | Great Falls, 15-ene-2026 | KRTV | Bomb threat; K99 y Newsbreak remiten a mayo-2025, no a enero-2026 | Se queda documentado |
 | Ben Gurión, 5-nov-2026 | Ynet | Evacuación; JFeed describe una intrusión de coche robado, no una segunda confirmación del mismo relato | Se queda documentado |
 | Birmingham, 27-may-2026 | 1819 News | Bomb threat; el DOJ es un comunicado posterior y no una pieza contemporánea | Se queda documentado |
-| París, 6-nov-2026 | The Local | Ola de amenazas; Le Monde describe el episodio de Praga, no el de París | Se queda documentado |
+| París, 6-nov-2026 | The Local | Ola de amenazas; CBS News confirma cuatro vuelos sobre Francia, tres a Orly y uno a Burdeos | Se eleva a `CORROBORADO` |
 
 ## Lo que no se ha hecho
 
@@ -25,12 +27,12 @@ independiente del mismo hecho.
 ## Estado del baseline
 
 - **65 eventos / 24 meses**
-- **60 corroborados / 5 documentados**
+- **61 corroborados / 4 documentados**
 - N2: **57 eventos / 23 meses completos**
-- Baseline **v1.5**
+- Baseline **v1.6**
 
 ## Siguiente
 
-Cerrar N1 con esta fotografía y pasar a **GNSS N0**: inventario de interferencias
-y suplantación, con consultas y fuentes separadas. No se abrirá GNSS N1 hasta
-tener 50 eventos y 24 meses.
+Mantener N1 como fotografía descriptiva. El siguiente trabajo es distribución y
+revisión de los cuatro documentados restantes; no se abre N3 ni se fuerza una
+segunda fuente con una pieza de otro episodio.

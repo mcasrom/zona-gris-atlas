@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://zonagris.pruebapublica.com/</loc><lastmod>2026-11-08</lastmod></url>
-  <url><loc>https://zonagris.pruebapublica.com/mapa.html</loc><lastmod>2026-11-08</lastmod></url>
-  <url><loc>https://zonagris.pruebapublica.com/incidentes.html</loc><lastmod>2026-11-08</lastmod></url>
-  <url><loc>https://zonagris.pruebapublica.com/cobertura.html</loc><lastmod>2026-11-08</lastmod></url>
-  <url><loc>https://zonagris.pruebapublica.com/suscribirse.html</loc><lastmod>2026-11-08</lastmod></url>
-  <url><loc>https://zonagris.pruebapublica.com/en.html</loc><lastmod>2026-11-08</lastmod></url>
-  <url><loc>https://zonagris.pruebapublica.com/registros.html</loc><lastmod>2026-11-08</lastmod></url>
-  <url><loc>https://zonagris.pruebapublica.com/primarias.html</loc><lastmod>2026-11-08</lastmod></url>
-  <url><loc>https://zonagris.pruebapublica.com/metodologia.html</loc><lastmod>2026-11-08</lastmod></url>
-  <url><loc>https://zonagris.pruebapublica.com/limites.html</loc><lastmod>2026-11-08</lastmod></url>
-  <url><loc>https://zonagris.pruebapublica.com/fuentes.html</loc><lastmod>2026-11-08</lastmod></url>
-  <url><loc>https://zonagris.pruebapublica.com/privacidad.html</loc><lastmod>2026-11-08</lastmod></url>
-  <url><loc>https://zonagris.pruebapublica.com/avisos.html</loc><lastmod>2026-11-08</lastmod></url>
-  <url><loc>https://zonagris.pruebapublica.com/about.html</loc><lastmod>2026-11-08</lastmod></url>
+  <url><loc>https://zonagris.pruebapublica.com/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://zonagris.pruebapublica.com/mapa.html</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://zonagris.pruebapublica.com/incidentes.html</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://zonagris.pruebapublica.com/cobertura.html</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://zonagris.pruebapublica.com/suscribirse.html</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://zonagris.pruebapublica.com/en.html</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://zonagris.pruebapublica.com/registros.html</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://zonagris.pruebapublica.com/primarias.html</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://zonagris.pruebapublica.com/metodologia.html</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://zonagris.pruebapublica.com/limites.html</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://zonagris.pruebapublica.com/fuentes.html</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://zonagris.pruebapublica.com/privacidad.html</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://zonagris.pruebapublica.com/avisos.html</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://zonagris.pruebapublica.com/about.html</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://zonagris.pruebapublica.com/baseline-aeropuertos.html</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://zonagris.pruebapublica.com/gnss-n0.html</loc><lastmod>2026-11-11</lastmod></url>
-  <url><loc>https://zonagris.pruebapublica.com/grafo.html</loc><lastmod>2026-11-09</lastmod></url>
+  <url><loc>https://zonagris.pruebapublica.com/grafo.html</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://zonagris.pruebapublica.com/caso-moscu-aeropuertos.html</loc><lastmod>2026-11-11</lastmod></url>
 </urlset>
