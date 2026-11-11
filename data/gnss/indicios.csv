@@ -1,0 +1,4 @@
+lead_id,date_known,region,place,event_type,source,source_url,evidence,reason
+IND-ASRS-2062181,,Egipto,Cairo FIR,jamming,NASA ASRS,https://asrs.arc.nasa.gov/docs/rpsts/gps.pdf,informe_voluntario,sin fecha exacta ni lugar verificable; no es episodio N1
+IND-ASRS-2054512,,Arabia Saudí / Egipto,Jeddah FIR / mar Rojo,jamming,NASA ASRS,https://asrs.arc.nasa.gov/docs/rpsts/gps.pdf,informe_voluntario,sin fecha exacta ni lugar verificable; no es episodio N1
+IND-ASRS-2062063,,Europa del Este,Espacio aéreo de Europa del Este,interference,NASA ASRS,https://asrs.arc.nasa.gov/docs/rpsts/gps.pdf,informe_voluntario,sin fecha exacta ni lugar verificable; no es episodio N1
