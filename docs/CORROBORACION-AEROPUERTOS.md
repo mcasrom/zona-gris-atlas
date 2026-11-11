@@ -1,7 +1,7 @@
 # Corroboración de aeropuertos
 
 **Fecha:** 10-nov-2026  
-**Estado:** **61 eventos corroborados** con segunda fuente directa; 4 siguen solo documentados.
+**Estado:** **63 eventos corroborados** con segunda fuente directa; 2 siguen solo documentados.
 
 | Evento | Primera fuente | Segunda fuente |
 |---|---|---|
@@ -66,6 +66,8 @@
 | Suvarnabhumi, 22-dic-2025 | Thai PBS | Nation Thailand |
 | Rey Fahd, 5-nov-2026 | Siasat | Dawn |
 | París, 6-nov-2026 | The Local | CBS News |
+| Auckland, 10-abr-2025 | NZ Herald | RNZ |
+| Great Falls, 15-ene-2026 | KRTV | Nonstop Local Montana |
 
 ## Regla
 
@@ -74,6 +76,6 @@ Dos medios distintos no bastan si comparten el mismo cable o la misma nota de ag
 ## Estado del baseline
 
 - **65 eventos**
-- **61 con candidato de segunda fuente**
-- **4 solo con fuente primaria**
-- N1 combina **61 corroborados** y **4 documentados**. La corroboración es por fuente directa de dominio distinto; no se ha auditado sindicación en todos los casos.
+- **63 con candidato de segunda fuente**
+- **2 solo con fuente primaria**
+- N1 combina **63 corroborados** y **2 documentados**. La corroboración es por fuente directa de dominio distinto; no se ha auditado sindicación en todos los casos.

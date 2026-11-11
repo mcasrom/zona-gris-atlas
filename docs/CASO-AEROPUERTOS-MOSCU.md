@@ -2,7 +2,7 @@
 
 **Fecha de cierre:** 11-nov-2026  
 **Serie:** aeropuertos · N1 inicial  
-**Base:** `data/baseline/airports.csv` v1.6  
+**Base:** `data/baseline/airports.csv` v1.7
 **Estado:** cuatro episodios documentados; sin atribución y sin conclusión de campaña
 
 ## Por qué este caso

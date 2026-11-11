@@ -5,7 +5,7 @@
 
 ## Punto de partida
 
-- Aeropuertos: **N1 v1.6**, 65 eventos / 24 meses; 61 corroborados / 4 documentados.
+- Aeropuertos: **N1 v1.7**, 65 eventos / 24 meses; 63 corroborados / 2 documentados.
 - GNSS: **N0 v0.1**, 30 episodios; 24 dentro de la ventana de 24 meses. N1 sigue cerrado (24/50).
 - Web y captura automática: operativas.
 - Distribución y audiencia: sin campaña de lanzamiento ni medición propia consolidada.
@@ -19,7 +19,7 @@ No se abre N3. No se convierte un agregado, una alerta o un seguimiento en un in
 - [x] **GNSS:** llegar a **15 episodios dentro de la ventana** (10 nuevos), con fecha, lugar y fuente directa. *Cierre 11-nov: 24 en ventana.*
 - [x] **GNSS:** separar visualmente episodios, agregados y alertas en la web. *`/gnss-n0.html`.*
 - [x] **Aeropuertos:** cerrar **1 dossier de caso** con fuentes y límites. *`/caso-moscu-aeropuertos.html`.*
-- [x] **Aeropuertos:** añadir **5 corroboraciones** sin forzar fuentes. *Base actual: 61/65.*
+- [x] **Aeropuertos:** añadir **5 corroboraciones** sin forzar fuentes. *Base actual: 63/65.*
 - [x] **Método:** publicar una nota de alcance N0/N1 y qué no se puede concluir. *`/alcance.html`.*
 - [ ] **Medición:** fijar una línea base de tráfico y suscriptores.
 
