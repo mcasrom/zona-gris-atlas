@@ -17,7 +17,7 @@ No incluye:
 
 ## Unidad de inventario
 
-Un **episodio** por combinación de:
+Un **episodio** (`record_type: episode`) por combinación de:
 
 - fecha del hecho (no de publicación);
 - región o lugar documentado;
@@ -26,6 +26,9 @@ Un **episodio** por combinación de:
 
 Dos piezas del mismo episodio no crean dos inventarios. Una nueva fecha o una
 zona distinta sí pueden ser episodios separados, pero deben justificarse.
+
+Los **agregados** (`record_type: aggregate`) y las **alertas** (`alert`) se guardan
+como contexto y **no cuentan** para la puerta N1.
 
 ## Evidencia
 
@@ -41,7 +44,7 @@ una ficha sin un episodio concreto.
 
 ## Campos
 
-`inventory_id,event_date,region,country,place,event_type,source_url,source_type,evidence_type,status,notes`
+`inventory_id,event_date,region,country,place,event_type,record_type,source_url,source_type,evidence_type,status,notes`
 
 ## Estados
 
@@ -53,7 +56,7 @@ una ficha sin un episodio concreto.
 
 No se abre N1 hasta cumplir:
 
-- **50 episodios** únicos;
+- **50 episodios** únicos (`record_type: episode`, `DOCUMENTADO`);
 - **24 meses** con datos;
 - al menos **2 grupos de fuente independientes**;
 - revisión manual de fechas, lugares y duplicados.

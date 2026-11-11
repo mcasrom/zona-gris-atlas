@@ -10,9 +10,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 CSV = ROOT / "data" / "baseline" / "gnss-n0.csv"
 FIELDS = ("inventory_id", "event_date", "region", "country", "place", "event_type",
-          "source_url", "source_type", "evidence_type", "status", "notes")
+          "record_type", "source_url", "source_type", "evidence_type", "status", "notes")
 VALID_TYPES = {"jamming", "spoofing", "interference"}
 VALID_STATUS = {"PENDIENTE", "DOCUMENTADO", "DESCARTADO"}
+VALID_RECORD = {"episode", "aggregate", "alert"}
 
 
 def main() -> int:
@@ -23,6 +24,7 @@ def main() -> int:
     ids = set()
     months = set()
     status = Counter()
+    record = Counter()
     errors = []
     for n, row in enumerate(rows, 2):
         rid = row["inventory_id"].strip()
@@ -37,14 +39,18 @@ def main() -> int:
             errors.append(f"línea {n}: tipo inválido")
         if row["status"] not in VALID_STATUS:
             errors.append(f"línea {n}: estado inválido")
+        if row["record_type"] not in VALID_RECORD:
+            errors.append(f"línea {n}: record_type inválido")
+        record[row["record_type"]] += 1
         if not row["source_url"].startswith("https://"):
             errors.append(f"línea {n}: URL no https")
         status[row["status"]] += 1
-    print(f"N0 · {len(rows)} episodios · {len(months)} meses · {dict(status)}")
+    episodes = sum(1 for r in rows if r["record_type"] == "episode" and r["status"] == "DOCUMENTADO")
+    print(f"N0 · {len(rows)} registros · {episodes} episodios documentados · {dict(record)} · {len(months)} meses")
     if errors:
         print("\n".join("ERROR " + e for e in errors), file=sys.stderr)
         return 2
-    print("N1: cerrado (faltan 50 episodios y 24 meses)")
+    print(f"N1: cerrado ({episodes}/50 episodios; {len(months)}/24 meses)")
     return 0
 
 
