@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Valida el inventario GNSS N0. No es una puerta N1."""
 from __future__ import annotations
+
 import csv
 import sys
 from collections import Counter
