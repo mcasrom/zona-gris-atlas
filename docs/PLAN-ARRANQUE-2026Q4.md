@@ -58,3 +58,11 @@ No se abre N3. No se convierte un agregado, una alerta o un seguimiento en un in
 - Rellenar la serie con agregados o alertas.
 - Automatizar la atribución.
 - Enviar correos a terceros sin lista y confirmación explícita.
+
+## Cierre GNSS N0 v0.1 (11-nov-2026)
+
+- N0 v0.1: **30 episodios** documentados (**24 en ventana**), **4 agregados** y **3 indicios ASRS** separados.
+- Página pública: `/gnss-n0.html`; OG propia; CSV v0.1 con SHA-256.
+- **N1 sigue cerrado**: 24/50; 18/24 meses.
+- No se añaden agregados ni alertas como episodios.
+- **Siguiente sprint:** distribución de Zona Gris y/o aeropuertos N1. Si se retoma GNSS, buscar fuentes de ocurrencia; ASRS/NTSB/Aviation Herald son solo indicios.
