@@ -115,7 +115,7 @@ p { margin: 0 0 1em; }
 .state-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; border: 1px solid var(--line); background: var(--line); }
 .state-card { background: var(--paper); padding: 18px; }
 .state-card .code-label { display: block; color: var(--paper-muted); margin-bottom: 18px; }
-.state-card strong { display: block; font-family: var(--sans); font-size: 1.35rem; margin-bottom: 8px; }
+.state-card strong { display: block; color: var(--ink); font-family: var(--sans); font-size: 1.35rem; margin-bottom: 8px; }
 .state-card p { color: var(--paper-muted); font-size: .84rem; margin: 0; }
 
 .hero-copy .lead { font-size: clamp(1.15rem, 1.6vw, 1.35rem); color: var(--text-2); max-width: 560px; }
@@ -365,6 +365,8 @@ button.btn:hover { background: var(--panel); }
 .incident-filters select, .incident-filters input { min-height:38px; padding:6px 9px; background:var(--panel); color:var(--ink); border:1px solid var(--line); border-radius:4px; }
 .incident-summary { color:var(--muted); font-size:.82rem; margin:8px 0 12px; }
 .table-wrap { overflow:auto; border:1px solid var(--line); }
+.tablewrap { overflow-x:auto; max-width:100%; -webkit-overflow-scrolling:touch; }
+.tablewrap table { min-width:680px; }
 .incident-table { width:100%; border-collapse:collapse; min-width:900px; font-size:.86rem; }
 .incident-table th { text-align:left; color:var(--muted); font-size:.72rem; text-transform:uppercase; letter-spacing:.06em; padding:9px 10px; border-bottom:1px solid var(--line); }
 .incident-table td { vertical-align:top; padding:10px; border-bottom:1px solid var(--line); }
