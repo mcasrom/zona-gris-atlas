@@ -5,7 +5,7 @@ from __future__ import annotations
 import csv
 import sys
 from collections import Counter
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -46,12 +46,16 @@ def main() -> int:
         if not row["source_url"].startswith("https://"):
             errors.append(f"línea {n}: URL no https")
         status[row["status"]] += 1
+    cutoff = date.today() - timedelta(days=730)
     episodes = sum(1 for r in rows if r["record_type"] == "episode" and r["status"] == "DOCUMENTADO")
+    in_window = [r for r in rows if r["record_type"] == "episode" and r["status"] == "DOCUMENTADO" and date.fromisoformat(r["event_date"]) >= cutoff]
+    win_months = {date.fromisoformat(r["event_date"]).strftime("%Y-%m") for r in in_window}
     print(f"N0 · {len(rows)} registros · {episodes} episodios documentados · {dict(record)} · {len(months)} meses")
+    print(f"Ventana 24 meses · {len(in_window)} episodios · {len(win_months)} meses")
     if errors:
         print("\n".join("ERROR " + e for e in errors), file=sys.stderr)
         return 2
-    print(f"N1: cerrado ({episodes}/50 episodios; {len(months)}/24 meses)")
+    print(f"N1: cerrado ({len(in_window)}/50 episodios en ventana; {len(win_months)}/24 meses)")
     return 0
 
 

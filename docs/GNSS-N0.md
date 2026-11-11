@@ -2,6 +2,8 @@
 
 **Estado:** inventario en curso. **No hay N1.**
 
+**Registros:** 5 episodios documentados y 3 agregados. Solo **3 episodios** están dentro de la ventana de 24 meses; los de 2024 se conservan como contexto histórico y no cuentan para N1.
+
 ## Alcance
 
 Registro de **episodios documentados** de interferencia, suplantación o perturbación
@@ -61,4 +63,4 @@ No se abre N1 hasta cumplir:
 - al menos **2 grupos de fuente independientes**;
 - revisión manual de fechas, lugares y duplicados.
 
-Con el inventario actual no se publica tendencia, frecuencia ni nivel de amenaza.
+Con el inventario actual no se publica tendencia, frecuencia ni nivel de amenaza. La puerta N1 cuenta solo episodios dentro de los últimos 24 meses.
