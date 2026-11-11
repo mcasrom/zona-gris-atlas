@@ -32,7 +32,8 @@ agg_rows = "\n".join(
     for r in aggs
 )
 base = BASE.read_text(encoding="utf-8")
-header = base.split("<main id=\"contenido\">", 1)[0]
+header = base[base.index('<header class="site-header">'):base.index("</header>") + len("</header>")]
+header_clean = header.replace('aria-current="page">Alcance', '>Alcance').replace('href="gnss-n0.html"', 'href="gnss-n0.html" aria-current="page"')
 footer = base.split("</main>", 1)[1]
 page = f'''<!doctype html>
 <html lang="es">
@@ -53,18 +54,18 @@ page = f'''<!doctype html>
   <meta property="og:title" content="GNSS N0 · inventario documentado">
   <meta property="og:description" content="30 episodios documentados; 24 en ventana de 24 meses. Sin N1 ni tendencia.">
   <meta property="og:url" content="https://zonagris.pruebapublica.com/gnss-n0.html">
-  <meta property="og:image" content="https://zonagris.pruebapublica.com/assets/img/og-atlas.png">
+  <meta property="og:image" content="https://zonagris.pruebapublica.com/assets/img/og-gnss-n0.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="GNSS N0 · inventario documentado">
   <meta name="twitter:description" content="30 episodios documentados; 24 en ventana de 24 meses. Sin N1 ni tendencia.">
-  <meta name="twitter:image" content="https://zonagris.pruebapublica.com/assets/img/og-atlas.png">
-  <link rel="stylesheet" href="assets/css/styles.css?v=20261108f">
+  <meta name="twitter:image" content="https://zonagris.pruebapublica.com/assets/img/og-gnss-n0.png">
+  <link rel="stylesheet" href="assets/css/styles.css?v=20261111b">
   <script type="application/ld+json">{{"@context":"https://schema.org","@type":"WebPage","name":"GNSS N0 · inventario documentado","description":"Inventario GNSS N0: 30 episodios documentados, 24 en ventana de 24 meses y 4 agregados. Sin N1 ni tendencia.","url":"https://zonagris.pruebapublica.com/gnss-n0.html","inLanguage":"es"}}</script>
 </head>
 <body>
-{header}
+{header_clean}
 <main id="contenido">
   <section class="hero"><div class="container">
     <p class="eyebrow">GNSS · N0 · v0.1</p>
