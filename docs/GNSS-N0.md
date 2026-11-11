@@ -2,7 +2,7 @@
 
 **Estado:** inventario en curso. **No hay N1.**
 
-**Registros:** 24 episodios documentados y 4 agregados. Solo **22 episodios** están dentro de la ventana de 24 meses; los de 2024 se conservan como contexto histórico y no cuentan para N1.
+**Registros:** 25 episodios documentados y 4 agregados. Solo **23 episodios** están dentro de la ventana de 24 meses; los de 2024 se conservan como contexto histórico y no cuentan para N1.
 
 ## Alcance
 
