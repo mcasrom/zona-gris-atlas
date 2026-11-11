@@ -1,6 +1,6 @@
 # GNSS · N0
 
-**Estado:** inventario en curso. **No hay N1.**
+**Estado:** inventario **v0.1 congelado**. **No hay N1.**
 
 **Registros:** 30 episodios documentados y 4 agregados. Solo **24 episodios** están dentro de la ventana de 24 meses; los de 2024 se conservan como contexto histórico y no cuentan para N1.
 
@@ -64,3 +64,10 @@ No se abre N1 hasta cumplir:
 - revisión manual de fechas, lugares y duplicados.
 
 Con el inventario actual no se publica tendencia, frecuencia ni nivel de amenaza. La puerta N1 cuenta solo episodios dentro de los últimos 24 meses.
+
+## Versión v0.1
+
+- Snapshot: `data/baseline/gnss-n0-v0.1.csv`.
+- SHA-256: `data/baseline/gnss-n0-v0.1.sha256`.
+- Página pública: `web/gnss-n0.html`.
+- Indicios separados: `data/gnss/indicios.csv` (3 informes ASRS; no cuentan para N1).
