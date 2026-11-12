@@ -91,3 +91,15 @@ def test_geo_shadow_suggests_without_assigning_country() -> None:
 def test_generic_migration_is_not_instrumentalisation() -> None:
     assert ingest.query_relevant("migracion_instrumentalizada", "Migrants arrive at the border") is False
     assert ingest.query_relevant("migracion_instrumentalizada", "Belarus weaponised migration at the border") is True
+
+
+def test_context_and_roundup_headlines_are_filtered() -> None:
+    xml = b"""<?xml version="1.0"?><rss><channel>
+    <item><title>Wizz Air chief calls for Europe-wide coordination on bomb threats</title><link>https://example.org/a</link><description>Statement.</description><pubDate>Wed, 11 Nov 2026 10:00:00 GMT</pubDate></item>
+    <item><title>IATA sets out three priorities for aviation safety</title><link>https://example.org/b</link><description>Priorities.</description><pubDate>Wed, 11 Nov 2026 10:00:00 GMT</pubDate></item>
+    <item><title>Europe's leaders gather after weeks of bomb threats</title><link>https://example.org/c</link><description>Meeting.</description><pubDate>Wed, 12 Nov 2026 10:00:00 GMT</pubDate></item>
+    <item><title>Bomb threat at Copenhagen Airport</title><link>https://example.org/d</link><description>Airport evacuated.</description><pubDate>Wed, 12 Nov 2026 10:00:00 GMT</pubDate></item>
+    </channel></rss>"""
+    rows = ingest.parse_feed(xml, "amenazas_bomba")
+    assert len(rows) == 1
+    assert rows[0]["title"] == "Bomb threat at Copenhagen Airport"

@@ -90,6 +90,11 @@ NOISE = re.compile(
     r"on alert|must expect|to seek|project|completion|views?|post|podcast|editorial|"
     r"road closures|policing operation|integration|annual|guide|travel guide|risk[s]?|"
     r"warns?|warning|unverified|threat-sharing|gaps?|exposes? a new front|raises? questions?)\b", re.I)
+CONTEXT_NOISE = re.compile(
+    r"\b(?:calls? (?:for|on)|sets? out|leaders? gather|summit|raises? (?:fear|concern)|"
+    r"fear of|completes? (?:a )?maiden flight|maiden flight|names? .{0,40} for|"
+    r"as .{0,60} escalates|urges?|asks? for|priorities for|coordination on|"
+    r"after weeks of|wave of)\b", re.I)
 BLOCKED_DOMAINS = {"msn.com", "europesays.com", "nomadlawyer.org", "rustourismnews.com"}
 OFFICIAL_DOMAINS = {
     "boe.es", "europa.eu", "ec.europa.eu", "cert.europa.eu", "easa.europa.eu",
@@ -210,7 +215,7 @@ def parse_feed(raw: bytes, category: str, region: str = "") -> list[dict]:
             or text_of(item, "{http://www.w3.org/2005/Atom}summary")
             or text_of(item, "{http://www.w3.org/2005/Atom}content")
         )
-        if NOISE.search(title):
+        if NOISE.search(title) or CONTEXT_NOISE.search(title):
             continue
         url = decode_bing(raw_link)
         if domain(url) in BLOCKED_DOMAINS:

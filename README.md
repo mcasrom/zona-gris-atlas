@@ -82,16 +82,17 @@ columnas con scroll propio** en escritorio y una columna en móvil. Los marcador
 solo aparecen cuando hay una ciudad o región documentada; los demás registros
 quedan en la lista.
 
-La captura automática descarta análisis, previsiones, obras, posts virales y
-agregadores de baja calidad; agrupa titulares del mismo episodio y bloquea
-dominios que no aportan una fuente verificable. La matriz pública se genera desde
+La captura automática descarta análisis, previsiones, obras, posts virales,
+declaraciones y titulares de contexto o agregados (cumbres, "calls for",
+"sets out", "wave of"), además de agregadores de baja calidad; agrupa titulares
+del mismo episodio y bloquea dominios que no aportan una fuente verificable. La matriz pública se genera desde
 el mismo `events.json` que el mapa, de modo que portada, mapa y API comparten un
 único total. El fallback sin JavaScript se actualiza desde esa misma captura.
 
 ## Estado actual
 
 - **Publicado en Hetzner:** `https://zonagris.pruebapublica.com`.
-- **Estado del registro público (10-nov):** **19 eventos**, **15 documentados** y **4 pendientes**, con mapa, matriz/API y fallback compartiendo el mismo total.
+- **Estado del registro público (12-nov):** **15 eventos**, **15 documentados** y **0 pendientes**, con mapa, matriz/API y fallback compartiendo el mismo total.
 - **Baseline de aeropuertos (capa separada):** **65 eventos / 24 meses**, **63 corroborados** y **2 documentados**; `data/baseline/airports-baseline-v1.7.json` congelado con SHA-256.
 - **N2 aeropuertos:** **57 eventos / 23 meses completos**; mediana 2, p90 5; solo **2025-12** (6) por encima. 2026-11 es parcial y queda fuera.
 - **Release actual:** consultar `current`; las releases anteriores se conservan para rollback.
