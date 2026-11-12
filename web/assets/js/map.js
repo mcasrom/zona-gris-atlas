@@ -163,7 +163,7 @@
   }
 
   function filtered() {
-    var dateValue = (document.getElementById("filter-date") || {}).value || "168";
+    var dateValue = (document.getElementById("filter-date") || {}).value || "all";
     var category = (document.getElementById("filter-category") || {}).value || "all";
     var country = (document.getElementById("filter-country") || {}).value || "all";
     var status = (document.getElementById("filter-status") || {}).value || "all";
@@ -194,7 +194,7 @@
     });
     var reset = document.getElementById("filter-reset");
     if (reset) reset.addEventListener("click", function () {
-      document.getElementById("filter-date").value = "168";
+      document.getElementById("filter-date").value = "all";
       document.getElementById("filter-category").value = "all";
       document.getElementById("filter-country").value = "all";
       document.getElementById("filter-status").value = "all";
@@ -255,7 +255,7 @@
   }
 
   function renderPreview(frame) {
-    var list = events.filter(function (item) { return item.lat !== null && item.lon !== null; }).slice(0, 10);
+    var list = events.filter(function (item) { return item.lat !== null && item.lon !== null; });
     renderMap(frame, list);
   }
 

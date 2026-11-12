@@ -80,7 +80,10 @@ La portada combina un **mapa compacto**, los últimos incorporados y un
 de acontecimientos, **no ejecuciones de ingesta**. La lista del mapa usa **dos
 columnas con scroll propio** en escritorio y una columna en móvil. Los marcadores
 solo aparecen cuando hay una ciudad o región documentada; los demás registros
-quedan en la lista.
+quedan en la lista. El mapa completo abre en **Todo** para no ocultar eventos
+históricos; los filtros de fecha son opcionales. La portada muestra todos los
+marcadores con coordenada (11 de 15 en la captura actual) y declara los 4 que
+solo aparecen en la lista.
 
 La captura automática descarta análisis, previsiones, obras, posts virales,
 declaraciones y titulares de contexto o agregados (cumbres, "calls for",
